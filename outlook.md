@@ -17,4 +17,4 @@ use room finder to find a room
 ### import ics file
 two methods:
 1. drag it to calendar
-2. open with outlook
+2. right click and open with outlook
