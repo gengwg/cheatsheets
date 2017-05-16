@@ -1,0 +1,14 @@
+
+## plugins
+* AdBlock
+* Dark Reader
+
+## download pdf directly
+### disable pdf viewer
+1. Go to `chrome://settings/content`
+2. Find Chrome PDF Viewer in the list and click the Disable link
+
+## shortcuts
+```
+^e  search google
+```
