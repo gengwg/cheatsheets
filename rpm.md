@@ -11,3 +11,5 @@ List all info of a package:
 List content of a single file from RPM (NOTE the dot infront of path):
 
     rpm2cpio redis-3.2.8-5.x86_64.rpm | cpio -iv --to-stdout ./opt/labs/redis/etc/redis7379.conf
+
+In general config files should be marked `%config(noreplace)`, unless the change being implimented is sufficiently major that a config file derived from a previous install is simpy not going to work. Even then it seens questionalble to me if installing a new 'default' configuration files is better or worse than leaving behind an edited one that may not work. 
