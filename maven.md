@@ -126,3 +126,55 @@ example:
    <systemPath>${basedir}\src\lib\ldapjdk.jar</systemPath>
 </dependency>
 ```
+
+in case of SNAPSHOT, Maven automatically fetches the latest snapshot on daily basis. you can force maven to download latest snapshot build using -U switch:
+```
+mvn clean package
+```
+
+we only need to define direct dependency in each project pom. maven handles the rest automatically.
+
+#### Create a Web application
+
+```bash
+$ mvn archetype:generate \
+> -DgroupId=com.companyname.automobile \
+> -DartifactId=trucks \
+> -DarchetypeArtifactId=maven-archetype-webapp \
+> -DinteractiveMode=false
+
+$ tree trucks/
+trucks/
+├── pom.xml
+└── src
+    └── main
+        ├── resources
+        └── webapp
+            ├── WEB-INF
+            │   └── web.xml
+            └── index.jsp
+
+5 directories, 3 files
+
+$ mvn clean package
+
+
+```
+copy the trucks.war in target directory to webserver webapp directory and restart the webserver. then go to:
+
+http://localhost:8080/trucks/
+
+you will see the hello world page.
+
+#### Install m2eclipse plugin
+
+Select Help > Install New Software
+
+Input:
+http://download.eclipse.org/technology/m2e/releases/
+
+Enter
+
+##### Run maven package from eclipse
+
+Rightclick on your pom.xml and choose "Run as" -> "Maven build.." and put in Goals:package.
