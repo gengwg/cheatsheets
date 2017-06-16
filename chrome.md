@@ -12,3 +12,8 @@
 ```
 ^e  search google
 ```
+
+## export bookmarks
+Go to:  
+chrome://bookmarks/  
+Click on 'Organize' --> 'Export bookmarks to HTML'
