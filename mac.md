@@ -60,3 +60,11 @@ $ sudo launchctl limit
 
 Note this does not endure a reboot. To keep config after reboot:  
 https://superuser.com/questions/836883/increasing-yosemite-maxfile-limit-for-application
+
+### To override security settings and open the app from unidentified developer anyway
+
+1. In the Finder, locate the app you want to open. 
+2. Press the Control key, then click the app icon.
+3. Choose Open from the shortcut menu.
+4. Click Open.
+
