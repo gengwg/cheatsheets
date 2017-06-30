@@ -1,6 +1,6 @@
-### Short cuts
+### Keyboard shortcuts
 
-#### open finder
+#### Open Finder
 
 `Cmd + Tab` and navigate to Finder.  
 Then, `Cmd + Up`.  
