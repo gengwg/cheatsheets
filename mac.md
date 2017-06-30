@@ -1,3 +1,10 @@
+### Short cuts
+
+#### open finder
+
+`Cmd + Tab` and navigate to Finder.  
+Then, `Cmd + Up`.  
+This will take you into your Home directory.
 
 ### Fixing mac os yosemite issue "bash: fork: Resource temporarily unavailable"
 
