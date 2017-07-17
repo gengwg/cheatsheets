@@ -2,6 +2,7 @@
 ## plugins
 * AdBlock
 * Dark Reader
+* SmoothScroll
 
 ## download pdf directly
 ### disable pdf viewer
