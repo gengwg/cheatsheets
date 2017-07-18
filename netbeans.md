@@ -12,3 +12,8 @@ In NetBean, You can run the code by selecting `Run`->`Run File` from the menu or
 
 #### Renaming
 Variables, methods and classes (we will learn about these in the next set) need to have descriptive names. Often, a name is not that describing and needs to be changed. In NetBeans, it is really easy to rename things. Just select and "paint" the name you want to change with the mouse. Then press ctrl and r simultaneously, and write the new name.
+
+#### automatic generating of constructors, getters and setters.
+Go inside of the code block of the class, but outside of all methods and simultaneously press Ctrl+Space. If your class, for example, has an object variable `balance`, NetBeans will offer you the opportunity to generate the getter and setter methods, and a constructor that sets a starting value for the object variable.
+
+
