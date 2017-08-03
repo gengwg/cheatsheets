@@ -20,7 +20,7 @@ try {
 // use myData.
 ```
 
-## CONTROLLING THE NUMBER OF DECIMALS WHEN PRINTING A FLOAT
+### CONTROLLING THE NUMBER OF DECIMALS WHEN PRINTING A FLOAT
 
 If value is a float number, the command String.value( "%.2f", value ) returns a string where the value is rounded to contain 2 decimals. The number between dot and f defines the amount of decimals shown.
 ```java
@@ -35,3 +35,15 @@ John,  body mass index: 20,90
 ```
 
 Integer variable value can be turned into a string by prefixing it with an empty string: "" + value.
+
+### Read User Input
+
+```java
+Scanner reader = new Scanner(System.in);
+
+System.out.print("Enter the first string: ");
+String first = reader.nextLine();
+
+System.out.print("Enter the second string: ");
+String second = reader.nextLine();
+```
