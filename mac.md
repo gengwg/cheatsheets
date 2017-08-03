@@ -75,3 +75,16 @@ https://superuser.com/questions/836883/increasing-yosemite-maxfile-limit-for-app
 3. Choose Open from the shortcut menu.
 4. Click Open.
 
+### access usb disk
+cd /Volumes/SANDISK
+
+### kill a frozen program
+cmd + space -> search 'monitor'
+then choose Activity Monitor.
+find that process and kill it, or force quit.
+
+### get mouse out of vbox VM
+press left cmd button
+
+### view pdf from terminal
+$ open myfile.pdf
