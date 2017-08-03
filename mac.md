@@ -88,3 +88,29 @@ press left cmd button
 
 ### view pdf from terminal
 $ open myfile.pdf
+
+### brew local install sshpass w/o access to sourceforge
+
+On some server that has access sourceforge:
+```
+%) wget http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz
+%) python -m SimpleHTTPServer 8000
+```
+
+On Mac:
+
+    wget  https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+
+Modify the url to the above server IP, where you set up a HTTP server.
+```
+  # url 'http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz'
+  url 'http://10.93.81.178:8000/sshpass-1.06.tar.gz'
+```
+
+Brew local install.
+```
+$ brew install ./sshpass.rb
+==> Downloading http://10.93.81.178:8000/sshpass-1.06.tar.gz
+...
+```
+
