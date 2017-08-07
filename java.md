@@ -47,3 +47,28 @@ String first = reader.nextLine();
 System.out.print("Enter the second string: ");
 String second = reader.nextLine();
 ```
+
+### use a Scanner object as class variable
+
+```java
+import java.util.Scanner;
+
+public class UserInterface {
+    private Scanner reader;
+
+    public UserInterface(Scanner reader) {
+        this.reader = reader;
+    }
+    ...
+}
+
+public class Reader {
+
+    private Scanner reader;
+
+    public Reader() {
+        this.reader = new Scanner(System.in);
+    }
+...
+}
+```
