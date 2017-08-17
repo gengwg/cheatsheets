@@ -72,3 +72,8 @@ public class Reader {
 ...
 }
 ```
+
+### javac : command not found
+
+===>
+    yum install java-devel
