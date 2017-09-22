@@ -114,3 +114,7 @@ $ brew install ./sshpass.rb
 ...
 ```
 
+### connect to SMB (samba/CIFS) share
+https://users.wfu.edu/yipcw/atg/apple/smb/
+e.g.:
+smb://192.168.1.70/gengwg
