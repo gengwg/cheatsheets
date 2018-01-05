@@ -18,3 +18,13 @@
 Go to:  
 chrome://bookmarks/  
 Click on 'Organize' --> 'Export bookmarks to HTML'
+
+## Obtain User Cookies
+Enter Chrome dev tool by `Cmd + Opt + J`.  
+Go to `Network` Tab;  
+Cmd + R to refresh;  
+click on `www.example.com`;  
+Find `Request Headers`;  
+cookie: <several long strings, which is the cookie>
+
+
