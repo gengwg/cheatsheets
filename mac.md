@@ -123,4 +123,11 @@ smb://servername/sharename
 e.g.:
 smb://192.168.1.70/gengwg
 
-
+```
+$ brew install htop
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+Error: Failure while executing: git config --local --replace-all homebrew.private true
+===>
+$ xcode-select --install
+It will call the XCode installer for the command line developer tools. A window will open requesting for you to install them. All you have to do is click the install button
+```
