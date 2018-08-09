@@ -26,6 +26,10 @@ If host is blocking ping probe:
     
     nmap -Pn abc.example.com
 
+Quick way to find live hosts on my network
+
+    nmap -sP 192.168.1.103/24
+
 Scan all resolved ip addresses for a given domain name:
 ```
 nmap -Pn  --script resolveall --script-args newtargets,resolveall.hosts=gwg.example.com
