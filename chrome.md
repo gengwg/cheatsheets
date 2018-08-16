@@ -27,4 +27,7 @@ click on `www.example.com`;
 Find `Request Headers`;  
 cookie: <several long strings, which is the cookie>
 
+## Disable Ctrl-Q
+Go to `opera://config` --> Shortcuts --> Hold Command-Q (or press it twice) to quit Opera
+
 
