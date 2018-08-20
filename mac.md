@@ -131,3 +131,8 @@ Error: Failure while executing: git config --local --replace-all homebrew.privat
 $ xcode-select --install
 It will call the XCode installer for the command line developer tools. A window will open requesting for you to install them. All you have to do is click the install button
 ```
+
+### Modify host file 
+sudo vim /private/etc/hosts
+
+
