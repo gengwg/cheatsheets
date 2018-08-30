@@ -1,5 +1,9 @@
 ### Keyboard shortcuts
 
+#### Save a Screenshot to the Clipboard
+
+Command + Control + Shift + 4
+
 #### Open Finder
 
 `Cmd + Tab` and navigate to Finder.  
