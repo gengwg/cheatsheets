@@ -93,6 +93,14 @@ press left cmd button
 ### view pdf from terminal
 $ open myfile.pdf
 
+### Install Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+### Brew packages
+```
+trash-cli
+```
+
 ### brew local install sshpass w/o access to sourceforge
 
 On some server that has access sourceforge:
