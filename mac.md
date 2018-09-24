@@ -99,6 +99,14 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ### Brew packages
 ```
 trash-cli
+# install latest java (10)
+brew cask install java
+# install latest java8
+# To get a list of all older versions of java:  
+brew tap caskroom/versions 
+# then 
+brew cask search java
+brew cask install java8
 ```
 
 ### brew local install sshpass w/o access to sourceforge
