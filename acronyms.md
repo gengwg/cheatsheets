@@ -20,5 +20,6 @@ POM     Project Object Model
 SCA     Shopping Cart Abandon
 SDI     State Disability Insurance (Short Term Insurance California only)
 SEM     Search Engine Marketing (SEM)
+SRCR    Security Risk and Compliance Review
 TOV     Tune of Voce (marketing)
 ```
