@@ -2,6 +2,9 @@
 
 ```
 A       Active Segment
+B2B     busines to business
+B2C     busines to consumer
+B2E     busines to employee
 BFD     big fast data
 BIS     Back-In-Stock
 CBB     Customer Backbone (Segmentr)
