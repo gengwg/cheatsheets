@@ -20,6 +20,7 @@ PB      Post Browse
 PD      Price Drop
 PII     Personally identifiable information
 POM     Project Object Model
+POP     Points of presence
 SCA     Shopping Cart Abandon
 SDI     State Disability Insurance (Short Term Insurance California only)
 SEM     Search Engine Marketing (SEM)
