@@ -98,7 +98,15 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ### Brew packages
 ```
-trash-cli
+brew install trash-cli
+brew install bat
+brew install prettyping
+brew install htop
+brew install fd
+brew install ncdu
+brew install tldr
+brew install jq
+
 # install latest java (10)
 brew cask install java
 # install latest java8
@@ -155,4 +163,6 @@ It will call the XCode installer for the command line developer tools. A window 
 ### Modify host file 
 sudo vim /private/etc/hosts
 
-
+### install pip
+sudo easy_install pip
+sudo pip install --upgrade pip
