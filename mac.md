@@ -106,6 +106,7 @@ brew install fd
 brew install ncdu
 brew install tldr
 brew install jq
+brew install coreutils  # for example, to use gshred
 
 # install latest java (10)
 brew cask install java
