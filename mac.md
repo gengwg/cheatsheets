@@ -156,3 +156,12 @@ It will call the XCode installer for the command line developer tools. A window 
 sudo vim /private/etc/hosts
 
 
+###  Bypass running only apps from App store
+
+> Your security preferences allow installation of only apps from the App Store and identified developers
+
+Typically for a MacOS app, you have an executable under "<your.app>/Contents/MacOS". For example:
+`/Applications/VNote.app/Contents/MacOS/VNote`
+
+Finally you may want to add in `~/.bash_aliases`:
+```alias vnote='/Applications/VNote.app/Contents/MacOS/VNote'```
