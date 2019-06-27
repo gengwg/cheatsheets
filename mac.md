@@ -72,12 +72,25 @@ $ sudo launchctl limit
 Note this does not endure a reboot. To keep config after reboot:  
 https://superuser.com/questions/836883/increasing-yosemite-maxfile-limit-for-application
 
-### To override security settings and open the app from unidentified developer anyway
+### To override security settings and open the app from unidentified developer
 
 1. In the Finder, locate the app you want to open. 
 2. Press the Control key, then click the app icon.
 3. Choose Open from the shortcut menu.
 4. Click Open.
+
+
+###  Bypass running only apps from App store
+
+> Your security preferences allow installation of only apps from the App Store and identified developers
+
+If above methold not work,
+
+Typically for a MacOS app, you have an executable under "<your.app>/Contents/MacOS". For example:
+`/Applications/VNote.app/Contents/MacOS/VNote`
+
+Finally you may want to add in `~/.bash_aliases`:  
+```alias vnote='/Applications/VNote.app/Contents/MacOS/VNote'```
 
 ### access usb disk
 cd /Volumes/SANDISK
@@ -155,13 +168,3 @@ It will call the XCode installer for the command line developer tools. A window 
 ### Modify host file 
 sudo vim /private/etc/hosts
 
-
-###  Bypass running only apps from App store
-
-> Your security preferences allow installation of only apps from the App Store and identified developers
-
-Typically for a MacOS app, you have an executable under "<your.app>/Contents/MacOS". For example:
-`/Applications/VNote.app/Contents/MacOS/VNote`
-
-Finally you may want to add in `~/.bash_aliases`:
-```alias vnote='/Applications/VNote.app/Contents/MacOS/VNote'```
