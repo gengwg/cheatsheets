@@ -168,3 +168,5 @@ It will call the XCode installer for the command line developer tools. A window 
 ### Modify host file 
 sudo vim /private/etc/hosts
 
+### Chinese Input
+Settings --> Keyboard --> Input Sources --> +
