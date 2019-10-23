@@ -24,4 +24,5 @@ Methods:
 1. `Alt/Cmd + 1, 2, 3`
 2. Click at the bottom left tabs
 
- 
+### Go to the previous/next week in Calendar
+`Cmd + Left/Right Arrow `
