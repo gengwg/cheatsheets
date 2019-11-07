@@ -1,16 +1,16 @@
 # Outlook
 
-### Reply to a message.
-CTRL+R
+## Shortcuts
 
-### Reply all to a message.
-CTRL+SHIFT+R
+| To do this                                   | Press           |
+|----------------------------------------------|-----------------|
+| Reply to a message                           | CMD + R         |
+| Reply to All                                 | CMD + SHIFT + R |
+| Delete selected item                         | DELETE          |
+| Move the selected item to a different folder | CMD + SHIFT + M |
 
-### Delete selected item.   
-DELETE
 
-### Move the selected item to a different folder
-Shift +  COMMAND + M
+## Calendar 
 
 use room finder to find a room
 
