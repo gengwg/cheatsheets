@@ -1,8 +1,9 @@
 
 ## plugins
-* AdBlock
+* uBlock Origin
 * Dark Reader
 * SmoothScroll
+* HTTPS Everywhere
 
 ## download pdf directly
 ### disable pdf viewer
