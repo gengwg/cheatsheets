@@ -1,8 +1,9 @@
 ### Keyboard shortcuts
 
-#### Save a Screenshot to the Clipboard
-
-Command + Control + Shift + 4
+|             Press             |                      Do This                      |
+|:-----------------------------:|:-------------------------------------------------:|
+|         cmd + ctrl + q        | lock screen                                       |
+| Command + Control + Shift + 4 | Save a Screenshot to the Clipboard                |
 
 #### Open Finder
 
