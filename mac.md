@@ -1,7 +1,7 @@
 ### Keyboard shortcuts
 
 |             Press             |                      Do This                      |
-|:-----------------------------:|:-------------------------------------------------:|
+|:-----------------------------:|:--------------------------------------------------|
 |         cmd + ctrl + q        | lock screen                                       |
 | Command + Control + Shift + 4 | Save a Screenshot to the Clipboard                |
 
