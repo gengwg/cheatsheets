@@ -2,6 +2,8 @@
 
 ## Shortcuts
 
+### Mail
+
 | To do this                                   | Press           |
 |----------------------------------------------|-----------------|
 | Reply to a message                           | CMD + R         |
@@ -10,7 +12,13 @@
 | Move the selected item to a different folder | CMD + SHIFT + M |
 
 
-## Calendar 
+### Calendar 
+
+| To do this                                   | Press           |
+|----------------------------------------------|-----------------|
+| Go to Today                                  | CMD + T         |
+| Go to previous/next week                     | CMD + <- / ->   |
+
 
 use room finder to find a room
 
