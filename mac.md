@@ -112,7 +112,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ### Brew packages
 ```
-trash-cli
+brew install watch
+brew install trash-cli
+
 # install latest java (10)
 brew cask install java
 # install latest java8
