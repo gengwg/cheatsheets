@@ -110,10 +110,17 @@ $ open myfile.pdf
 ### Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-### Brew packages
+### Brew Packages
 ```
 brew install watch
 brew install trash-cli
+brew install ansible
+brew install wget
+brew install nmap
+brew install git
+brew install mosh
+brew install telnet
+
 
 # install latest java (10)
 brew cask install java
