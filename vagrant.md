@@ -32,6 +32,128 @@ $ ssh -p 2222 training@127.0.0.1
 vagrant init centos/7; vagrant up --provider virtualbox
 ```
 
+### Mac install virtualbox errors
+
+```
+$ brew cask install virtualbox
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+qtkeychain
+
+==> Caveats
+To install and/or use virtualbox you may need to enable its kernel extension in:
+  System Preferences → Security & Privacy → General
+For more information refer to vendor documentation or this Apple Technical Note:
+  https://developer.apple.com/library/content/technotes/tn2459/_index.html
+
+==> Downloading https://download.virtualbox.org/virtualbox/6.1.0/VirtualBox-6.1.0-135406-OSX.dmg
+Already downloaded: /Users/gengwg/Library/Caches/Homebrew/downloads/d3700155a9ac5d3c28f736aebc70a1873313b30092a2213fd5dd48212e19ce08--VirtualBox-6.1.0-135406-OSX.dmg
+==> Verifying SHA-256 checksum for Cask 'virtualbox'.
+==> Installing Cask virtualbox
+==> Running installer for virtualbox; your password may be necessary.
+==> Package installers may write to any location; options such as --appdir are ignored.
+installer: Package name is Oracle VM VirtualBox
+installer: choices changes file '/var/folders/mt/zprv4tyn11s_crshd4n7s1000000gn/T/choices20191227-4488-45uibc.xml' applied
+installer: Upgrading at base path /
+installer: The upgrade failed. (The Installer encountered an error that caused the installation to fail. Contact the software manufacturer for assistance. An error occurred while running scripts from the package “VirtualBox.pkg”.)
+==> Purging files for version 6.1.0,135406 of Cask virtualbox
+Error: Failure while executing; `/usr/bin/sudo -E -- /usr/bin/env LOGNAME=gengwg USER=gengwg USERNAME=gengwg /usr/sbin/installer -pkg /usr/local/Caskroom/virtualbox/6.1.0,135406/VirtualBox.pkg -target / -applyChoiceChangesXML /var/folders/mt/zprv4tyn11s_crshd4n7s1000000gn/T/choices20191227-4488-45uibc.xml` exited with 1. Here's the output:
+installer: Package name is Oracle VM VirtualBox
+installer: choices changes file '/var/folders/mt/zprv4tyn11s_crshd4n7s1000000gn/T/choices20191227-4488-45uibc.xml' applied
+installer: Upgrading at base path /
+installer: The upgrade failed. (The Installer encountered an error that caused the installation to fail. Contact the software manufacturer for assistance. An error occurred while running scripts from the package “VirtualBox.pkg”.)
+Follow the instructions here:
+  https://github.com/Homebrew/homebrew-cask#reporting-bugs
+/usr/local/Homebrew/Library/Homebrew/system_command.rb:176:in `assert_success!'
+/usr/local/Homebrew/Library/Homebrew/system_command.rb:53:in `run!'
+/usr/local/Homebrew/Library/Homebrew/system_command.rb:29:in `run'
+/usr/local/Homebrew/Library/Homebrew/system_command.rb:33:in `run!'
+/usr/local/Homebrew/Library/Homebrew/cask/artifact/pkg.rb:59:in `block in run_installer'
+/usr/local/Homebrew/Library/Homebrew/cask/artifact/pkg.rb:70:in `block in with_choices_file'
+/usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/usr/local/Homebrew/Library/Homebrew/cask/artifact/pkg.rb:67:in `with_choices_file'
+/usr/local/Homebrew/Library/Homebrew/cask/artifact/pkg.rb:52:in `run_installer'
+/usr/local/Homebrew/Library/Homebrew/cask/artifact/pkg.rb:34:in `install_phase'
+/usr/local/Homebrew/Library/Homebrew/cask/installer.rb:218:in `block in install_artifacts'
+/usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/lib/ruby/2.6.0/set.rb:777:in `each'
+/usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/lib/ruby/2.6.0/set.rb:777:in `each'
+/usr/local/Homebrew/Library/Homebrew/cask/installer.rb:209:in `install_artifacts'
+/usr/local/Homebrew/Library/Homebrew/cask/installer.rb:101:in `install'
+/usr/local/Homebrew/Library/Homebrew/cask/cmd/install.rb:22:in `block in run'
+/usr/local/Homebrew/Library/Homebrew/cask/cmd/install.rb:16:in `each'
+/usr/local/Homebrew/Library/Homebrew/cask/cmd/install.rb:16:in `run'
+/usr/local/Homebrew/Library/Homebrew/cask/cmd/abstract_command.rb:36:in `run'
+/usr/local/Homebrew/Library/Homebrew/cask/cmd.rb:92:in `run_command'
+/usr/local/Homebrew/Library/Homebrew/cask/cmd.rb:158:in `run'
+/usr/local/Homebrew/Library/Homebrew/cask/cmd.rb:123:in `run'
+/usr/local/Homebrew/Library/Homebrew/cmd/cask.rb:9:in `cask'
+/usr/local/Homebrew/Library/Homebrew/brew.rb:102:in `<main>'
+```
+Go to: System Preferences → Security & Privacy → General . 
+Click on 'lock to make changes' and allow Oracle.
+
+![general](Screenshot_2019-12-27_20.16.47.png)
+
+Then run again:
+
+```
+$ brew cask install virtualbox
+==> Caveats
+To install and/or use virtualbox you may need to enable its kernel extension in:
+  System Preferences → Security & Privacy → General
+For more information refer to vendor documentation or this Apple Technical Note:
+  https://developer.apple.com/library/content/technotes/tn2459/_index.html
+
+==> Downloading https://download.virtualbox.org/virtualbox/6.1.0/VirtualBox-6.1.0-135406-OSX.dmg
+Already downloaded: /Users/gengwg/Library/Caches/Homebrew/downloads/d3700155a9ac5d3c28f736aebc70a1873313b30092a2213fd5dd48212e19ce08--VirtualBox-6.1.0-135406-OSX.dmg
+==> Verifying SHA-256 checksum for Cask 'virtualbox'.
+==> Installing Cask virtualbox
+==> Running installer for virtualbox; your password may be necessary.
+==> Package installers may write to any location; options such as --appdir are ignored.
+installer: Package name is Oracle VM VirtualBox
+installer: choices changes file '/var/folders/mt/zprv4tyn11s_crshd4n7s1000000gn/T/choices20191227-5893-guuzq7.xml' applied
+installer: Upgrading at base path /
+installer: The upgrade was successful.
+==> Changing ownership of paths required by virtualbox; your password may be necessary
+🍺  virtualbox was successfully installed!
+```
+
+```
+$ vagrant up
+The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant has detected that you have a version of VirtualBox installed
+that is not supported by this version of Vagrant. Please install one of
+the supported versions listed below to use Vagrant:
+
+4.0, 4.1, 4.2, 4.3, 5.0, 5.1, 5.2, 6.0
+
+A Vagrant update may also be available that adds support for the version
+you specified. Please check www.vagrantup.com/downloads.html to download
+the latest version.
+```
+
+===>
+
+For Mac users, `brew cask install virtualbox` recently changed to install Virtualbox 6.1 . If you still want to install Virtualbox 6.0 with homebrew for use with Vagrant, use the following command to install the most recent formula that still installed 6.0:
+
+```
+brew cask uninstall virtualbox
+brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/7e703e0466a463fe26ab4e253e28baa9c20d5f36/Casks/virtualbox.rb
+```
+
+Or download older version and install here:
+
+https://www.virtualbox.org/wiki/Download_Old_Builds_6_0
+
+This is due to Vagrant 2.2.6 doesn't work with VirtualBox 6.1.0 yet. Hopefully future release of Vagrant will fix this.
+
+https://github.com/hashicorp/vagrant/issues/11249
+
 ## Misc
 
 ```bash
