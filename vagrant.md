@@ -32,8 +32,9 @@ $ ssh -p 2222 training@127.0.0.1
 vagrant init centos/7; vagrant up --provider virtualbox
 ```
 
+## Misc
 
-```
+```bash
 There are errors in the configuration of this machine. Please fix
 the following errors and try again:
 
