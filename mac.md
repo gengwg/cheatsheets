@@ -121,6 +121,8 @@ brew install git
 brew install mosh
 brew install telnet
 brew install vlc
+(“VLC” can’t be opened because Apple cannot check it for malicious software.
+Go to Security and click on 'Open Anyway')
 
 # install latest java (10)
 brew cask install java
