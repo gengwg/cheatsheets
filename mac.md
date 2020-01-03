@@ -120,7 +120,7 @@ brew install nmap
 brew install git
 brew install mosh
 brew install telnet
-
+brew install vlc
 
 # install latest java (10)
 brew cask install java
