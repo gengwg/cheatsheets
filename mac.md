@@ -119,6 +119,7 @@ brew install wget
 brew install nmap
 brew install git
 brew install mosh
+brew install dict
 brew install telnet
 brew install vlc
 (“VLC” can’t be opened because Apple cannot check it for malicious software.
