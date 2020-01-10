@@ -3,7 +3,9 @@
 |             Press             |                      Do This                      |
 |:-----------------------------:|:--------------------------------------------------|
 |         cmd + ctrl + q        | lock screen                                       |
+| Command + Control + 4         | Save a Screenshot to local file                   |
 | Command + Control + Shift + 4 | Save a Screenshot to the Clipboard                |
+| Command + Shift + 5           | Screen recording                                  |
 
 #### Open Finder
 
