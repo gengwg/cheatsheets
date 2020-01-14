@@ -14,3 +14,5 @@
 * HTTPS Everywhere 
 * uBlock Origin
 * Privacy Badger
+* FoxyProxy
+* DarkReader
