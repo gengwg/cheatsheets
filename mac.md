@@ -1,3 +1,67 @@
+## MacOS First Time Setup
+
+### Install Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#### Install Cask
+brew tap homebrew/cask
+
+#### Brew Packages
+
+```
+brew cask install iterm2
+brew cask install keepassx
+brew cask install firefox
+
+brew install watch
+brew install trash-cli
+brew install ansible
+brew install wget
+brew install nmap
+brew install git
+brew install mosh
+brew install dict
+brew install telnet
+brew install vlc
+(“VLC” can’t be opened because Apple cannot check it for malicious software.
+Go to Security and click on 'Open Anyway')
+
+# install latest java (10)
+brew cask install java
+# install latest java8
+# To get a list of all older versions of java:  
+brew tap caskroom/versions 
+# then 
+brew cask search java
+brew cask install java8
+```
+
+### brew local install sshpass w/o access to sourceforge
+
+On some server that has access sourceforge:
+```
+%) wget http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz
+%) python -m SimpleHTTPServer 8000
+```
+
+On Mac:
+
+    wget  https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+
+Modify the url to the above server IP, where you set up a HTTP server.
+```
+  # url 'http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz'
+  url 'http://10.93.81.178:8000/sshpass-1.06.tar.gz'
+```
+
+Brew local install.
+```
+$ brew install ./sshpass.rb
+==> Downloading http://10.93.81.178:8000/sshpass-1.06.tar.gz
+...
+```
+
+
 ### Keyboard shortcuts
 
 |             Press             |                      Do This                      |
@@ -109,58 +173,6 @@ press left cmd button
 ### view pdf from terminal
 $ open myfile.pdf
 
-### Install Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-### Brew Packages
-```
-brew install watch
-brew install trash-cli
-brew install ansible
-brew install wget
-brew install nmap
-brew install git
-brew install mosh
-brew install dict
-brew install telnet
-brew install vlc
-(“VLC” can’t be opened because Apple cannot check it for malicious software.
-Go to Security and click on 'Open Anyway')
-
-# install latest java (10)
-brew cask install java
-# install latest java8
-# To get a list of all older versions of java:  
-brew tap caskroom/versions 
-# then 
-brew cask search java
-brew cask install java8
-```
-
-### brew local install sshpass w/o access to sourceforge
-
-On some server that has access sourceforge:
-```
-%) wget http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz
-%) python -m SimpleHTTPServer 8000
-```
-
-On Mac:
-
-    wget  https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
-
-Modify the url to the above server IP, where you set up a HTTP server.
-```
-  # url 'http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz'
-  url 'http://10.93.81.178:8000/sshpass-1.06.tar.gz'
-```
-
-Brew local install.
-```
-$ brew install ./sshpass.rb
-==> Downloading http://10.93.81.178:8000/sshpass-1.06.tar.gz
-...
-```
 
 ### connect to SMB (samba/CIFS) share
 https://users.wfu.edu/yipcw/atg/apple/smb/
