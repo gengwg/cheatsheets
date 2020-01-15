@@ -44,6 +44,9 @@ brew tap caskroom/versions
 brew cask search java
 brew cask install java8
 ```
+### Configure iTerm2
+
+Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 
 ### Set up Shell/Vim/SSH
 
