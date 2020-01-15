@@ -36,6 +36,12 @@ brew cask search java
 brew cask install java8
 ```
 
+### Set up Shell/Vim/SSH
+
+* Copy .bash_profile, .bashrc, .bash_aliases file to home dir.
+* Copy vimrc to .vimrc
+* Copy ssh_config
+
 ### brew local install sshpass w/o access to sourceforge
 
 On some server that has access sourceforge:
