@@ -66,6 +66,11 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 * 'System Preferences' --> 'Keyboard' --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
 * 'System Preferences' --> 'Keyboard': Touch Bar shows 'Extended Control Strip'
 
+
+### Add Chinese Input
+
+Settings --> Keyboard --> Input Sources --> + --> Choose 'Chinese' on the left --> Select 'Pinyin - Simplified', press 'Add'
+
 ### brew local install sshpass w/o access to sourceforge
 
 On some server that has access sourceforge:
@@ -225,5 +230,3 @@ It will call the XCode installer for the command line developer tools. A window 
 ### Modify host file 
 sudo vim /private/etc/hosts
 
-### Chinese Input
-Settings --> Keyboard --> Input Sources --> +
