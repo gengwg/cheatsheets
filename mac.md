@@ -9,7 +9,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ```
 
 #### Install Cask
+
+``
 brew tap homebrew/cask
+```
 
 #### Brew Install Packages
 
