@@ -67,9 +67,10 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 * 'System Preferences' --> 'Keyboard': Touch Bar shows 'Extended Control Strip'
 
 
-### Add Chinese Input
+### Add Chinese Input Method
 
-Settings --> Keyboard --> Input Sources --> + --> Choose 'Chinese' on the left --> Select 'Pinyin - Simplified', press 'Add'
+1. `System Preferences` --> Keyboard --> Input Sources --> + --> Choose `Chinese` on the left --> Select `Pinyin - Simplified`, press `Add`
+2. `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
 
 ### brew local install sshpass w/o access to sourceforge
 
