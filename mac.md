@@ -6,7 +6,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 #### Install Cask
 brew tap homebrew/cask
 
-#### Brew Packages
+#### Brew Install Packages
 
 ```
 brew cask install iterm2
