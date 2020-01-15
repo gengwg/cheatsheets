@@ -61,6 +61,11 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 * Click General.
 * Choose your web browser from the ”Default web browser” pop-up menu.
 
+### Modify Key Mapping
+
+* 'System Preferences' --> 'Keyboard' --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
+* 'System Preferences' --> 'Keyboard': Touch Bar shows 'Extended Control Strip'
+
 ### brew local install sshpass w/o access to sourceforge
 
 On some server that has access sourceforge:
