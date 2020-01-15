@@ -1,7 +1,12 @@
 ## MacOS First Time Setup
 
 ### Install Homebrew
+
+cmd + Tab search for 'terminal'
+
+```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 #### Install Cask
 brew tap homebrew/cask
