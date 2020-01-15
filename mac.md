@@ -21,6 +21,7 @@ brew cask install iterm2
 brew cask install keepassx
 brew cask install firefox
 brew cask install caffeine
+brew cask install docker
 
 brew install watch
 brew install trash-cli
@@ -53,6 +54,12 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 * Copy .bash_profile, .bashrc, .bash_aliases file to home dir.
 * Copy vimrc to .vimrc
 * Copy ssh_config
+
+### Change default web browser to Chrome
+
+* Choose System Preferences from the Apple () menu.
+* Click General.
+* Choose your web browser from the ”Default web browser” pop-up menu.
 
 ### brew local install sshpass w/o access to sourceforge
 
