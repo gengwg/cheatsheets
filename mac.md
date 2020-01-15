@@ -12,6 +12,7 @@ brew tap homebrew/cask
 brew cask install iterm2
 brew cask install keepassx
 brew cask install firefox
+brew cask install caffeine
 
 brew install watch
 brew install trash-cli
