@@ -70,7 +70,8 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 ### Add Chinese Input Method
 
 1. `System Preferences` --> Keyboard --> Input Sources --> + --> Choose `Chinese` on the left --> Select `Pinyin - Simplified`, press `Add`
-2. `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
+2. Set up shortcut for switching input method: 
+	* `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
 
 ### brew local install sshpass w/o access to sourceforge
 
