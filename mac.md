@@ -88,33 +88,7 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 
 copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` for auto login remote servers.
 
-### brew local install sshpass w/o access to sourceforge
-
-On some server that has access sourceforge:
-```
-%) wget http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz
-%) python -m SimpleHTTPServer 8000
-```
-
-On Mac:
-
-    wget  https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
-
-Modify the url to the above server IP, where you set up a HTTP server.
-```
-  # url 'http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz'
-  url 'http://10.93.81.178:8000/sshpass-1.06.tar.gz'
-```
-
-Brew local install.
-```
-$ brew install ./sshpass.rb
-==> Downloading http://10.93.81.178:8000/sshpass-1.06.tar.gz
-...
-```
-
-
-### Keyboard shortcuts
+## Keyboard shortcuts
 
 |             Press             |                      Do This                      |
 |:-----------------------------:|:--------------------------------------------------|
@@ -212,7 +186,8 @@ Finally you may want to add in `~/.bash_aliases`:
 ```alias vnote='/Applications/VNote.app/Contents/MacOS/VNote'```
 
 ### access usb disk
-cd /Volumes/SANDISK
+
+`cd /Volumes/SANDISK`
 
 ### kill a frozen program
 cmd + space -> search 'monitor'
@@ -247,3 +222,28 @@ It will call the XCode installer for the command line developer tools. A window 
 ### Modify host file 
 sudo vim /private/etc/hosts
 
+
+### brew local install sshpass w/o access to sourceforge
+
+On some server that has access sourceforge:
+```
+%) wget http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz
+%) python -m SimpleHTTPServer 8000
+```
+
+On Mac:
+
+    wget  https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+
+Modify the url to the above server IP, where you set up a HTTP server.
+```
+  # url 'http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz'
+  url 'http://10.93.81.178:8000/sshpass-1.06.tar.gz'
+```
+
+Brew local install.
+```
+$ brew install ./sshpass.rb
+==> Downloading http://10.93.81.178:8000/sshpass-1.06.tar.gz
+...
+```
