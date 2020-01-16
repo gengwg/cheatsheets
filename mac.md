@@ -84,6 +84,10 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 2. Set up shortcut for switching input method: 
 	* `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
 
+### Restore previous SSH Keys (optional)
+
+copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` for auto login remote servers.
+
 ### brew local install sshpass w/o access to sourceforge
 
 On some server that has access sourceforge:
