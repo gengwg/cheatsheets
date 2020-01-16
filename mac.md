@@ -22,7 +22,7 @@ brew cask install keepassx
 brew cask install firefox
 brew cask install caffeine
 brew cask install docker
-brew cask install pycharm
+brew cask install pycharm-ce
 
 brew install tree
 brew install watch
@@ -47,6 +47,11 @@ brew tap caskroom/versions
 brew cask search java
 brew cask install java8
 ```
+
+#### Brew uninstall packages
+
+`brew cask uninstall pycharm`
+
 ### Configure iTerm2
 
 Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
