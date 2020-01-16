@@ -61,11 +61,15 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 * Click General.
 * Choose your web browser from the ”Default web browser” pop-up menu.
 
-### Modify Key Mapping
+### Modify Keyboard/Mouse/Trackpad
 
-* 'System Preferences' --> 'Keyboard' --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
-* 'System Preferences' --> 'Keyboard': Touch Bar shows 'Extended Control Strip'
+(NOTE: may have to redo again separately for external keyboards/mouses, etc.)
 
+* `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
+* `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'
+
+* `System Preferences` --> `Mouse` --> uncheck `Scoll direction: Natural`
+* `System Preferences` --> `Trackpad` --> check `Tap to Click`
 
 ### Add Chinese Input Method
 
