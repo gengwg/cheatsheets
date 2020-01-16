@@ -22,7 +22,9 @@ brew cask install keepassx
 brew cask install firefox
 brew cask install caffeine
 brew cask install docker
+brew cask install pycharm
 
+brew install tree
 brew install watch
 brew install trash-cli
 brew install ansible
