@@ -103,6 +103,16 @@ copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` fo
 Then, `Cmd + Up`.  
 This will take you into your Home directory.
 
+#### copying and pasting to the pasteboard (the Clipboard) from command line
+
+```
+$ pbcopy < test.txt
+$ pbpaste
+This is a test.
+ABC
+This is a test2.
+```
+
 ### Fixing mac os yosemite issue "bash: fork: Resource temporarily unavailable"
 
 see the current limits:
