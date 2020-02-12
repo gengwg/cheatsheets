@@ -25,6 +25,7 @@ brew cask install docker
 brew cask install pycharm-ce
 
 brew install tree
+brew install ddgr
 brew install watch
 brew install trash-cli
 brew install ansible
