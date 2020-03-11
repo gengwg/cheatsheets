@@ -39,6 +39,9 @@ brew install vlc
 (“VLC” can’t be opened because Apple cannot check it for malicious software.
 Go to Security and click on 'Open Anyway')
 
+(optional)
+brew cask install chef/chef/chefdk
+
 # install latest java (10)
 brew cask install java
 # install latest java8
