@@ -261,3 +261,11 @@ $ brew install ./sshpass.rb
 ==> Downloading http://10.93.81.178:8000/sshpass-1.06.tar.gz
 ...
 ```
+
+### Play slideshow w/o music in Photos
+
+Select "Play Slideshow"  
+Select "Music"
+Uncheck thet song that's playing (usually Classic)  
+
+
