@@ -265,7 +265,7 @@ $ brew install ./sshpass.rb
 ### Play slideshow w/o music in Photos
 
 Select "Play Slideshow"  
-Select "Music"
-Uncheck thet song that's playing (usually Classic)  
+Select "Music"  
+Uncheck the song that's playing (usually Classic)  
 
 
