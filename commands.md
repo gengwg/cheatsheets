@@ -32,8 +32,8 @@ pastry < /var/chef/outputs/chef.last.out
 get username from userid
 
 ```
-# getent passwd 3251383
-gengwg:*:3251383:100:Weigang Geng:/home/gengwg:/bin/bash
+# getent passwd 3251333
+gengwg:*:3251333:100:Tom Geng:/home/gengwg:/bin/bash
 ```
 
 show all versions of rpm package:
