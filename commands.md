@@ -41,3 +41,9 @@ show all versions of rpm package:
 ```
 yum --showduplicates list git
 ```
+
+trim leading and trailing whitespace from each line of some output:
+
+    $ cat slurm19.txt | awk '{$1=$1;print}'
+    
+  
