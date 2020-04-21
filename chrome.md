@@ -4,6 +4,7 @@
 * Dark Reader
 * SmoothScroll
 * HTTPS Everywhere
+* Video Speed Controller
 
 ## download pdf directly
 ### disable pdf viewer
