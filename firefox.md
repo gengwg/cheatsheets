@@ -16,3 +16,10 @@
 * Privacy Badger
 * FoxyProxy
 * DarkReader
+
+## Tips 
+
+### Increase Facebook video play speed
+
+In Firefox, you can `Shift + Right Click` on the video(to bypass our custom right-click menu and get the native one) and there's a "Play Speed" option.
+
