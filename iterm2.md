@@ -28,6 +28,10 @@ Profile > Default > Text > Font
 
 ![](images/iterm2/font.png)
 
+General > Window > uncheck 'Ajust window when changing font size'
+
+![](images/iterm2/font2.png)
+
 ## Shortcuts
 
 `Cmd + ]` and `Cmd + [` navigates among split panes in order of use.
