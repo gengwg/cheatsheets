@@ -26,7 +26,7 @@ this is to ensure command + W not accidentally closes tab. which is the same as 
 
 Profile > Default > Text > Font
 
-![test](images/iterm2/font.png)
+![](images/iterm2/font.png)
 
 ## Shortcuts
 
