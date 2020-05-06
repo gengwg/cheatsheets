@@ -102,6 +102,10 @@ copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` fo
 | Command + Control + Shift + 4 | Save a Screenshot to the Clipboard                |
 | Command + Shift + 5           | Screen recording                                  |
 
+### Putting your computer to sleep
+
+![](images/mac/sleep.png)
+
 #### Open Finder
 
 `Cmd + Tab` and navigate to Finder.  
