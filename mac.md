@@ -72,6 +72,10 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 * Click General.
 * Choose your web browser from the ”Default web browser” pop-up menu.
 
+### Install Amphetamine
+
+App Store > Search 'Amphetamine'
+
 ### Modify Keyboard/Mouse/Trackpad
 
 (NOTE: may have to redo again separately for external keyboards/mouses, etc.)
