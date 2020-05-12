@@ -46,4 +46,8 @@ trim leading and trailing whitespace from each line of some output:
 
     $ cat slurm19.txt | awk '{$1=$1;print}'
     
-  
+Run command and output to stdout and file simultaneously.
+
+```
+sudo apt install mlnx-ofed-kernel-dkms mlnx-ofed-kernel-utils -y | tee ofed_update.log
+```
