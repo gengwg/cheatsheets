@@ -100,3 +100,23 @@ Memory Device
         Maximum Voltage: 1.2 V
         Configured Voltage: 1.2 V
 ```
+
+Check System Information:
+
+```
+$ sudo dmidecode -t1
+# dmidecode 3.0
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+        Manufacturer: NVIDIA
+        Product Name: DGX-1 with V100
+        Version: v1.0
+        Serial Number: QTFCOU73900E8
+        UUID: 91BD6617-DA9D-E711-AB21-A81E84C47E67
+        Wake-up Type: Power Switch
+        SKU Number: Default string
+        Family: Default string
+```
