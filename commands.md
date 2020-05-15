@@ -57,3 +57,46 @@ use cut to separate by multiple whitespace.
 ```
 cat file | tr -s ' ' | cut -d ' ' -f 8
 ```
+
+Check installed memory information
+
+```
+sudo dmidecode -t memory
+
+# dmidecode 3.0
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+
+Handle 0x0036, DMI type 16, 23 bytes
+Physical Memory Array
+        Location: System Board Or Motherboard
+        Use: System Memory
+        Error Correction Type: Single-bit ECC
+        Maximum Capacity: 512 GB
+        Error Information Handle: Not Provided
+        Number Of Devices: 4
+
+Handle 0x0038, DMI type 17, 40 bytes
+Memory Device
+        Array Handle: 0x0036
+        Error Information Handle: Not Provided
+        Total Width: 72 bits
+        Data Width: 64 bits
+        Size: 32 GB
+        Form Factor: DIMM
+        Set: None
+        Locator: DIMM_A0
+        Bank Locator: _Node0_Channel0_Dimm0
+        Type: DDR4
+        Type Detail: Synchronous
+        Speed: 2400 MHz
+        Manufacturer: Samsung
+        Serial Number: 3697D2DC
+        Asset Tag: DIMM_A0_AssetTag
+        Part Number: M393A4K40BB1-CRC
+        Rank: 2
+        Configured Clock Speed: 2133 MHz
+        Minimum Voltage: 1.2 V
+        Maximum Voltage: 1.2 V
+        Configured Voltage: 1.2 V
+```
