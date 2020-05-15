@@ -51,3 +51,9 @@ Run command and output to stdout and file simultaneously.
 ```
 sudo apt install mlnx-ofed-kernel-dkms mlnx-ofed-kernel-utils -y | tee ofed_update.log
 ```
+
+use cut to separate by multiple whitespace.
+
+```
+cat file | tr -s ' ' | cut -d ' ' -f 8
+```
