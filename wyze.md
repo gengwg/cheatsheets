@@ -16,3 +16,4 @@
 ## Notes
 
 * wyze only uses 2.4 G Hz
+* wyze motion sensor uses battery CR2450 3V
