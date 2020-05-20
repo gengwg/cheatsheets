@@ -124,5 +124,5 @@ System Information
 replace spaces in file names with underscore:
 
 ```
-for f in *\ *; do echo "$f" "${f// /_}"; done
+for f in *\ *; do mv "$f" "${f// /_}"; done
 ```
