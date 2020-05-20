@@ -126,3 +126,12 @@ replace spaces in file names with underscore:
 ```
 for f in *\ *; do mv "$f" "${f// /_}"; done
 ```
+
+format python script
+
+```
+$ black -v rename.py
+reformatted rename.py
+All done! ✨ 🍰 ✨
+1 file reformatted.
+```
