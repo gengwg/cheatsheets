@@ -120,3 +120,9 @@ System Information
         SKU Number: Default string
         Family: Default string
 ```
+
+replace spaces in file names with underscore:
+
+```
+for f in *\ *; do echo "$f" "${f// /_}"; done
+```
