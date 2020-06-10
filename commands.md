@@ -135,3 +135,13 @@ reformatted rename.py
 All done! ✨ 🍰 ✨
 1 file reformatted.
 ```
+
+copy paste on command line:
+
+```
+sudo apt install xclip
+date | xclip
+xclip -o
+
+date | xclip -selection clipboard
+```
