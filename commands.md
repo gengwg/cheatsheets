@@ -141,3 +141,12 @@ Grep show lines Both before and after the match
 ```
 <command> | grep -2 ecc
 ```
+Copy paste on command line:
+
+```
+sudo apt install xclip
+date | xclip
+xclip -o
+
+date | xclip -selection clipboard
+```
