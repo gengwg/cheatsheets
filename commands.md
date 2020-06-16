@@ -135,3 +135,9 @@ reformatted rename.py
 All done! ✨ 🍰 ✨
 1 file reformatted.
 ```
+
+Grep show lines Both before and after the match
+
+```
+<command> | grep -2 ecc
+```
