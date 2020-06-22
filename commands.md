@@ -141,6 +141,7 @@ Grep show lines Both before and after the match
 ```
 <command> | grep -2 ecc
 ```
+
 Copy paste on command line:
 
 ```
@@ -150,3 +151,12 @@ xclip -o
 
 date | xclip -selection clipboard
 ```
+
+convert whitespace to new line:
+
+
+```
+$ echo * | tr [:blank:] "\n"
+```
+
+
