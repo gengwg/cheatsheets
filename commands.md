@@ -159,4 +159,10 @@ convert whitespace to new line:
 $ echo * | tr [:blank:] "\n"
 ```
 
+Use similar Mac `open` command on linux
+
+```
+alias open='xdg-open'
+```
+
 
