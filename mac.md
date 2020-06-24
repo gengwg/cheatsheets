@@ -23,6 +23,7 @@ brew cask install firefox
 brew cask install caffeine
 brew cask install docker
 brew cask install pycharm-ce
+istat-menus
 
 brew install tree
 brew install ddgr
