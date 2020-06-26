@@ -165,4 +165,33 @@ Use similar Mac `open` command on linux
 alias open='xdg-open'
 ```
 
+Find Exact Installation Date And Time Of Your CentOS:
 
+```
+$ rpm -qi basesystem
+Name        : basesystem
+Version     : 11
+Release     : 5.el8
+Architecture: noarch
+Install Date: Sun 26 Apr 2020 11:03:28 PM PDT   <-------
+Group       : System Environment/Base
+Size        : 0
+License     : Public Domain
+Signature   : RSA/SHA256, Mon 01 Jul 2019 01:45:35 PM PDT, Key ID 05b555b38483c65d
+Source RPM  : basesystem-11-5.el8.src.rpm
+Build Date  : Fri 10 May 2019 05:19:04 PM PDT
+Build Host  : aarch64-02.mbox.centos.org
+Relocations : (not relocatable)
+Packager    : CentOS Buildsys <bugs@centos.org>
+Vendor      : CentOS
+Summary     : The skeleton package which defines a simple centos system
+Description :
+Basesystem defines the components of a basic centos system
+(for example, the package installation order to use during bootstrapping).
+Basesystem should be in every installation of a system, and it
+should never be removed.
+
+# Or display the installation date only
+$ rpm -qi basesystem | grep "Install Date"
+Install Date: Sun 26 Apr 2020 11:03:28 PM PDT
+```
