@@ -195,3 +195,9 @@ should never be removed.
 $ rpm -qi basesystem | grep "Install Date"
 Install Date: Sun 26 Apr 2020 11:03:28 PM PDT
 ```
+
+Launch a shell for as a nologin user:
+
+```
+sudo -u www-data bash
+```
