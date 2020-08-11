@@ -201,3 +201,50 @@ Launch a shell for as a nologin user:
 ```
 sudo -u www-data bash
 ```
+
+make gpg prompt for passphrase on CLI instead of using a GUI dialog box:
+
+```
+$ sudo apt install pinentry-tty
+
+# choose 3
+$ sudo update-alternatives --config pinentry
+There are 3 choices for the alternative pinentry (providing /usr/bin/pinentry).
+
+  Selection    Path                      Priority   Status
+------------------------------------------------------------
+* 0            /usr/bin/pinentry-gnome3   90        auto mode
+  1            /usr/bin/pinentry-curses   50        manual mode
+  2            /usr/bin/pinentry-gnome3   90        manual mode
+  3            /usr/bin/pinentry-tty      30        manual mode
+
+# restart gpg-agent
+$ gpgconf --kill gpg-agent
+```
+
+Find all files that have the SUID or SGID access mode set:
+
+```
+$ sudo find /usr/bin \( -perm -2000 -o -perm -4000 \) -type f -print
+```
+
+Delete large number of files:
+
+```
+$ rm *.jpg
+bash: /bin/rm: Argument list too long
+$ find . -maxdepth 1 -type f -name "*.jpg" -delete
+```
+
+`eval` executes its argument as a shell command:
+
+```
+$ cmd=date
+$ eval $cmd
+```
+
+Check SSH Key Fingerprint
+
+```
+ssh-keygen -l -E md5 -f /etc/ssh/ssh_host_rsa_key.pub
+```
