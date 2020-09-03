@@ -1,3 +1,5 @@
+// vim: noai:ts=2:sw=2
+
 remove `Icon?` files on mac
 
 ```
@@ -247,4 +249,49 @@ Check SSH Key Fingerprint
 
 ```
 ssh-keygen -l -E md5 -f /etc/ssh/ssh_host_rsa_key.pub
+```
+
+Delete a word on the left on command line:
+```
+Ctrl + w
+```
+
+Ubuntu install OpenGL
+
+```
+$ sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+$ sudo apt install mesa-utils
+# test install succeeds
+$ glxgears
+$ glxheads
+```
+
+Test Postfix/mailx config:
+
+```
+echo "Testing sending mail"  | mailx -v -s "Sending mail from "$(hostname -s)  gengwg@email.com
+```
+
+Find files newer than a certain file.
+Then create a backup on them.
+
+```
+$ touch backup_touch
+$ touch newerfile
+$ find . -newer backup_touch -print
+./newerfile
+$ find . -newer backup_touch -print |cpio -o > /tmp/backup1
+1 block
+$ rm newerfile
+# recover from backup
+$ cpio -im 'newerfile' </tmp/backup1
+1 block
+$ ls newerfile
+newerfile
+```
+
+Examing existing TCP connections:
+
+```
+lsof -i tcp
 ```
