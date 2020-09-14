@@ -95,3 +95,21 @@ uncomment
 
 In TV remote, 'Home' > 'Picture' > 'Aspect Ratio' > Choose 'Just Scan'.
 ```
+
+recover/reset forgotten Gnome Keyring Password
+
+```
+cd ~/.local/share/
+cp -rp keyrings keyrings.bak
+cd keyrings
+rm -f *
+```
+
+Next time you log in, it will ask to create a new keyring with new password.
+
+
+Add user
+
+```
+$ sudo adduser username
+```
