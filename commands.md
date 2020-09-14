@@ -238,6 +238,13 @@ bash: /bin/rm: Argument list too long
 $ find . -maxdepth 1 -type f -name "*.jpg" -delete
 ```
 
+Delete large number of directories:
+
+```
+
+$ sudo find . -maxdepth 1 -type d -name "tmp_dir.*" -exec rm -r "{}" \;
+```
+
 `eval` executes its argument as a shell command:
 
 ```
@@ -295,3 +302,23 @@ Examing existing TCP connections:
 ```
 lsof -i tcp
 ```
+
+Restart Network Interface
+
+```
+# ifdown eth0
+# ifup eth0
+```
+
+Debian / Ubuntu Linux restart network interface
+
+```
+sudo /etc/init.d/networking restart
+```
+
+Redhat (RHEL) / CentOS :
+
+```
+# /etc/init.d/network restart
+```
+
