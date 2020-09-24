@@ -2,6 +2,7 @@
 
 ```
 A       Active Segment
+ABI     Application Binary Interface
 B2B     busines to business
 B2C     busines to consumer
 B2E     busines to employee
@@ -9,11 +10,14 @@ BFD     big fast data
 BIS     Back-In-Stock
 CBB     Customer Backbone (Segmentr)
 CRR     Rating & Reviews
+COTS    Commercial off-the-shelf
 CTR     click through rate
 DKIM    DomainKeys Identified Mail
 DTC     Dare-2-Compare
 FC      Fulfillment Center
+FIRE    Financial Independence, Retire Early
 IAM     Identity and Access Management
+KDC     Key Distribution Center
 MIP     Management Incentive Program
 NBP     Post Purchase
 PB      Post Browse

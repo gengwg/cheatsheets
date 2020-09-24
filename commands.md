@@ -322,3 +322,14 @@ Redhat (RHEL) / CentOS :
 # /etc/init.d/network restart
 ```
 
+Determine all available network interfaces on my system:
+
+```
+netstat -ain
+```
+
+Empty a file:
+
+```
+> myfile.txt
+```
