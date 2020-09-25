@@ -333,3 +333,9 @@ Empty a file:
 ```
 > myfile.txt
 ```
+
+Obtain info about exported directories from NFS server:
+
+```
+showmount -e <hostname>
+```
