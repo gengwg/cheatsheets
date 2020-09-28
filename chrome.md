@@ -16,6 +16,11 @@
 ^e  search google
 ```
 
+Show/hide bookmarks bar:
+
+```
+Cmd + Shift + B
+```
 ## export bookmarks
 Go to:  
 chrome://bookmarks/  
