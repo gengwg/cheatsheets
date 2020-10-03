@@ -278,4 +278,8 @@ Select "Play Slideshow"
 Select "Music"  
 Uncheck the song that's playing (usually Classic)  
 
+### Check with process uses port 9090
 
+```
+lsof -i tcp:9090
+```
