@@ -1,5 +1,5 @@
 
-### Print Screen
+### Take Screenshot
 
 ```
 Prt Scrn to take a screenshot of the desktop.

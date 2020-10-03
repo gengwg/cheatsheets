@@ -1,3 +1,11 @@
+## Installation
+
+### Install on Fedora
+
+```
+sudo dnf install ruby
+```
+
 ### Install Ruby 2.4.0 on CentOS 6
 
 #### Step 1. Installing Requirements
@@ -37,3 +45,14 @@
 # ruby --version
 ```
 
+## Notes
+
+`select` method of `Arry` uses blocks to choose values that satisfy ocnditions from contents.
+
+```
+irb(main):014:1* ary = ary.select do |i|
+irb(main):015:1*   i%2 == 0
+irb(main):016:0> end
+irb(main):017:0> ary
+=> [2, 4]
+```

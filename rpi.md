@@ -113,3 +113,10 @@ Add user
 ```
 $ sudo adduser username
 ```
+
+### Install Pyradio
+
+```
+$ sudo apt-get install snapd
+$ sudo snap install pyradio
+```
