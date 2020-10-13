@@ -339,3 +339,11 @@ Obtain info about exported directories from NFS server:
 ```
 showmount -e <hostname>
 ```
+
+Get CentOS distribution:
+
+```
+$ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+$ echo $distribution
+centos7
+```
