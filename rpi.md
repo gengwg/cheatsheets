@@ -120,3 +120,13 @@ $ sudo adduser username
 $ sudo apt-get install snapd
 $ sudo snap install pyradio
 ```
+
+## Troubleshooting
+
+### Eth0 got 169.254.x.x IP
+
+That's the address it gets when it can not reach DHCP server. Just whitelist the MAC address of eth0.
+
+If you search the Internet, it usually says disabling zeroconf. Don't do that!
+
+
