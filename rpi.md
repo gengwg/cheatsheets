@@ -62,8 +62,8 @@ Record the Web Interface password at the end of instllation.
 Open firewall for UDP 53 for DNS service. (I also opened TCP).
 
 ```
-pi@raspberrypi:~$ sudo ufw allow from 192.168.0.0/24 to any port 53 proto udp
-pi@raspberrypi:~$ sudo ufw allow from 192.168.0.0/24 to any port 53 proto tcp
+raspberrypi:~$ sudo ufw allow from 192.168.0.0/24 to any port 53 proto udp
+raspberrypi:~$ sudo ufw allow from 192.168.0.0/24 to any port 53 proto tcp
 ```
 
 ### Configure Router.
