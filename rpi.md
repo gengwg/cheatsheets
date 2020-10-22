@@ -1,7 +1,7 @@
 ## Burn Raspbian to SD card
 
 ```
-root@elaine: pi $ unzip -p raspbian_latest | dd of=/dev/sdb bs=4M status=progress conv=fsync
+$ unzip -p raspbian_latest | dd of=/dev/sdb bs=4M status=progress conv=fsync
 4822335488 bytes (4.8 GB) copied, 526.777348 s, 9.2 MB/ss
 0+43165 records in
 0+43165 records out
@@ -28,7 +28,7 @@ http://unixetc.co.uk/2016/11/20/simple-nextcloud-installation-on-raspberry-pi/
 ### IP changes
 
 ```
-pi@raspberrypi:/var/www/html/nextcloud/config $ sudo vim config.php
+raspberrypi:/var/www/html/nextcloud/config $ sudo vim config.php
   array (
     0 => '192.168.1.76',
     1 => '162.228.89.113',
@@ -38,9 +38,59 @@ pi@raspberrypi:/var/www/html/nextcloud/config $ sudo vim config.php
   'overwrite.cli.url' => 'http://192.168.1.104/nextcloud', <---
 ```
 
-root@raspberrypi:/media/pi/Touro/nextcloud# mount --bind /media/pi/Touro/nextcloud/ /var/nextcloud/data/
+raspberrypi:/media/pi/Touro/nextcloud# mount --bind /media/pi/Touro/nextcloud/ /var/nextcloud/data/
 
-### motion change data directory
+## Install PiHole
+
+### Install
+
+```
+curl -sSL https://install.pi-hole.net | sudo bash
+```
+
+Record the Web Interface password at the end of instllation.
+
+```
+  [i] Web Interface password: ******
+  [i] This can be changed using 'pihole -a -p'
+
+  [i] View the web interface at http://pi.hole/admin or http://192.168.0.222/admin
+```
+
+### Open firewall for UDP 53 for DNS service. (I also opened TCP).
+
+```
+pi@raspberrypi:~$ sudo ufw allow from 192.168.0.0/24 to any port 53 proto udp
+pi@raspberrypi:~$ sudo ufw allow from 192.168.0.0/24 to any port 53 proto tcp
+```
+
+### Configure Router.
+
+Following is using TPLink Router.
+
+Go to:
+https://192.168.0.1/
+(DNS doesn't work now).
+
+'Advanced' > 'Network' > 'DHCP Server'
+
+Change both Primary and Secondary DNS to pihole IP address (e.g. 192.168.0.222):
+
+```
+Primary DNS: 192.168.0.222
+Secondary DNS: 192.168.0.222
+```
+Looks one must change both. If I only change primary, 
+it will put secondary automatically as 192.168.0.1, 
+which will bypass pihole as DNS server.
+
+### Log in to pihole admin page
+
+http://192.168.0.222/admin
+
+Use the password at the end of instllation.
+
+## motion change data directory
 
 ```
 sudo chown motion:adm /media/pi/Touro/motion/
@@ -48,24 +98,6 @@ sudo chmod 2750 /media/pi/Touro/motion/
 
 # To test permission:
 sudo -u motion touch /media/pi/Touro/motion/a
-```
-
-```
-pi@raspberrypi:~ $ chromium-browser
- --disable-quic --enable-tcp-fast-open --disable-gpu-compositing --ppapi-flash-path=/usr/lib/chromium-browser/libpepflashplayer.so --ppapi-flash-args=enable_stagevideo_auto=0 --ppapi-flash-version=
-[25247:25247:0829/154903.721881:ERROR:browser_main_loop.cc(670)] Failed to put Xlib into threaded mode.
-
-(chromium-browser:25247): Gtk-WARNING **: cannot open display:
-===>
-pi@raspberrypi:~ $ export DISPLAY=:0.0
-
-# install docker 
-curl -sSL https://get.docker.com | sh
-
-# install docker-compose
-sudo pip install docker-compose
-pi@raspberrypi:~$ docker-compose --version
-docker-compose version 1.23.2, build 1110ad0
 ```
 ------------------------------------------------------
 ### 给树莓派安装中文输入法Fcitx及Google拼音输入法
@@ -86,41 +118,6 @@ xserver-command=X -s 0 -dpms
 reboot
 ```
 
-### connect rpi to tv or monitor via hdmi. picture doesn't fill the enire size of the screen.
-```
-===>
-vim /boot/config.txt
-uncomment
-# disable_overscan = 1
-
-In TV remote, 'Home' > 'Picture' > 'Aspect Ratio' > Choose 'Just Scan'.
-```
-
-recover/reset forgotten Gnome Keyring Password
-
-```
-cd ~/.local/share/
-cp -rp keyrings keyrings.bak
-cd keyrings
-rm -f *
-```
-
-Next time you log in, it will ask to create a new keyring with new password.
-
-
-Add user
-
-```
-$ sudo adduser username
-```
-
-### Install Pyradio
-
-```
-$ sudo apt-get install snapd
-$ sudo snap install pyradio
-```
-
 ## Troubleshooting
 
 ### Eth0 got 169.254.x.x IP
@@ -129,4 +126,15 @@ That's the address it gets when it can not reach DHCP server. Just whitelist the
 
 If you search the Internet, it usually says disabling zeroconf. Don't do that!
 
+
+### connect rpi to tv or monitor via hdmi. picture doesn't fill the enire size of the screen.
+
+```
+===>
+vim /boot/config.txt
+uncomment
+# disable_overscan = 1
+
+In TV remote, 'Home' > 'Picture' > 'Aspect Ratio' > Choose 'Just Scan'.
+```
 
