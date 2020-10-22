@@ -40,7 +40,7 @@ raspberrypi:/var/www/html/nextcloud/config $ sudo vim config.php
 
 raspberrypi:/media/pi/Touro/nextcloud# mount --bind /media/pi/Touro/nextcloud/ /var/nextcloud/data/
 
-## Install PiHole
+## Install Pihole
 
 ### Install
 
@@ -57,7 +57,9 @@ Record the Web Interface password at the end of instllation.
   [i] View the web interface at http://pi.hole/admin or http://192.168.0.222/admin
 ```
 
-### Open firewall for UDP 53 for DNS service. (I also opened TCP).
+### Open firewall 
+
+Open firewall for UDP 53 for DNS service. (I also opened TCP).
 
 ```
 pi@raspberrypi:~$ sudo ufw allow from 192.168.0.0/24 to any port 53 proto udp
@@ -74,7 +76,7 @@ https://192.168.0.1/
 
 'Advanced' > 'Network' > 'DHCP Server'
 
-Change both Primary and Secondary DNS to pihole IP address (e.g. 192.168.0.222):
+Change **both** Primary and Secondary DNS to pihole IP address (e.g. 192.168.0.222):
 
 ```
 Primary DNS: 192.168.0.222
@@ -88,7 +90,7 @@ which will bypass pihole as DNS server.
 
 http://192.168.0.222/admin
 
-Use the password at the end of instllation.
+Use the password at the end of installation.
 
 ## motion change data directory
 
