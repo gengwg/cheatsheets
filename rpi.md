@@ -40,6 +40,20 @@ raspberrypi:/var/www/html/nextcloud/config $ sudo vim config.php
 
 raspberrypi:/media/pi/Touro/nextcloud# mount --bind /media/pi/Touro/nextcloud/ /var/nextcloud/data/
 
+### Storage disk changes
+
+1. Sync data from old disk to new disk.
+
+```
+sudo rsync -avzh /media/pi/Touro/nextcloud/ /media/pi/pidata/nextcloud/
+```
+
+2. Update data directory in `config.php`.
+
+```
+  'datadirectory' => '/media/pi/pidata/nextcloud/',
+```
+
 ## Install Pihole
 
 ### Install
