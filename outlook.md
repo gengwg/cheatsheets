@@ -20,6 +20,8 @@
 | Go to previous/next week                     | CMD + <- / ->   |
 
 
+## Tips
+
 use room finder to find a room
 
 ### import ics file to calendar
@@ -28,9 +30,15 @@ two methods:
 2. right click ics file in Finder and open with outlook
 
 ### Switch between inbox, calendar, contacts
+ 
 Methods:
 1. `Alt/Cmd + 1, 2, 3`
 2. Click at the bottom left tabs
 
 ### Go to the previous/next week in Calendar
 `Cmd + Left/Right Arrow `
+
+### Outlook Calendar Add 2nd Time Zone
+
+Click on 'Outlook' by the Apple logo, then go to: 'Preferences' > 'Calendar' > 'Time zones'.
+Check 'second time zone'. Optionally give it a nickname.
