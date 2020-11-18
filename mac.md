@@ -127,9 +127,8 @@ copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` fo
 
 ### Open Finder
 
-`Cmd + Tab` and navigate to Finder.  
-Then, `Cmd + Up`.  
-This will take you into your Home directory.
+1. `Cmd + Tab` and navigate to Finder.
+2. `Cmd + Up`. This will take you into your Home directory.
 
 ### Copying and pasting to the pasteboard (the Clipboard) from command line
 
