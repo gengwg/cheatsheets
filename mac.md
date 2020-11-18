@@ -93,6 +93,20 @@ App Store > Search 'Amphetamine'
 2. Set up shortcut for switching input method: 
 	* `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
 
+
+### Use bash as default login shell
+
+Add in `.zshrc`:
+
+```
+exec -l bash
+```
+
+### Restore previous SSH Keys (optional)
+
+Copy the old Mac ssh keys to `~/.ssh` folder (and ssh-add them to ssh-agent if necessary), so that don't have to redo `ssh-cop-id` for new keys to remote servers.
+
+
 ### Restore previous SSH Keys (optional)
 
 copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` for auto login remote servers.
