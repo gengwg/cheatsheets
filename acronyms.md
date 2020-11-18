@@ -13,6 +13,7 @@ CRR     Rating & Reviews
 COTS    Commercial off-the-shelf
 CTR     click through rate
 DKIM    DomainKeys Identified Mail
+DSA     Diversity Slate Approach
 DTC     Dare-2-Compare
 FC      Fulfillment Center
 FIRE    Financial Independence, Retire Early

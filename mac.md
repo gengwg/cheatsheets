@@ -125,21 +125,27 @@ copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` fo
 
 ![](images/mac/sleep.png)
 
-#### Open Finder
+### Open Finder
 
 `Cmd + Tab` and navigate to Finder.  
 Then, `Cmd + Up`.  
 This will take you into your Home directory.
 
-#### copying and pasting to the pasteboard (the Clipboard) from command line
+### Copying and pasting to the pasteboard (the Clipboard) from command line
 
 ```
 $ pbcopy < test.txt
 $ pbpaste
 This is a test.
-ABC
-This is a test2.
 ```
+
+### Check with process uses port 9090
+
+```
+lsof -i tcp:9090
+```
+
+## Notes
 
 ### Fixing mac os yosemite issue "bash: fork: Resource temporarily unavailable"
 
@@ -291,9 +297,3 @@ $ brew install ./sshpass.rb
 Select "Play Slideshow"  
 Select "Music"  
 Uncheck the song that's playing (usually Classic)  
-
-### Check with process uses port 9090
-
-```
-lsof -i tcp:9090
-```
