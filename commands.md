@@ -347,3 +347,19 @@ $ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 $ echo $distribution
 centos7
 ```
+Get user default login shell:
+
+```
+$ getent passwd $LOGNAME | cut -f 7 -d:
+/bin/bash
+```
+
+`/usr/local/bin` in `PATH` is from bash internals!
+Not from those environment scripts such as `/etc/profile`.
+
+```
+$ strings /bin/bash | grep /usr/local/bin
+/usr/local/bin:/usr/bin
+```
+
+
