@@ -362,4 +362,14 @@ $ strings /bin/bash | grep /usr/local/bin
 /usr/local/bin:/usr/bin
 ```
 
+It's hardcoded in `/bin/bash`.
+From `bash-4.4` in `config-top.h`:
+
+```
+ 63 /* The default value of the PATH variable. */
+ 64 #ifndef DEFAULT_PATH_VALUE
+ 65 #define DEFAULT_PATH_VALUE \
+ 66   "/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:."
+ 67 #endif
+```
 
