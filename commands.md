@@ -373,3 +373,15 @@ From `bash-4.4` in `config-top.h`:
  67 #endif
 ```
 
+Remove empty lines from file:
+
+```
+awk 'NF' file.txt
+```
+
+Remove last line from file:
+
+```
+sed -i '$ d' file.txt
+```
+
