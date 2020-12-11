@@ -24,7 +24,8 @@ NBP     Post Purchase
 PB      Post Browse
 PD      Price Drop
 PII     Personally identifiable information
-POM     Project Object Model
+POC     Point of Contact
+POC     Proof of Concept
 POP     Points of presence
 SCA     Shopping Cart Abandon
 SDI     State Disability Insurance (Short Term Insurance California only)
