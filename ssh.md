@@ -58,4 +58,26 @@ pi@raspberrypi:~$ echo $DISPLAY
 <empty>
 ```
 
+### Using SSH-Agent
 
+SSH askes pass phrase for private key:
+
+```
+user@host:~$ ssh server
+Enter passphrase for key '/home/user/.ssh/id_rsa':
+```
+
+```
+user@host:~$ eval `ssh-agent`
+Agent pid 1957614
+user@host:~$ ssh-add
+Enter passphrase for /home/user/.ssh/id_rsa:
+Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)
+user@host:~$ echo 'kill $SSH_AGENT_PID' >> .bash_logout
+```
+
+Now you can ssh to server w/o password:
+
+```
+user@host:~$ ssh server
+```
