@@ -39,7 +39,7 @@
 | FG      | Functional Groups                           |
 | FIRE    | Financial Independence, Retire Early        |
 | fps     | frames per second                           |
-| FWWIW   | For what it's worth                         |
+| FWIW    | For what it's worth                         |
 | GDCC    | Global Data Center Connectivity             |
 | GHE     | GitHub Enterprise                           |
 | GHS     | Global Human Survey                         |
