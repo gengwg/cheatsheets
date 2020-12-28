@@ -3,6 +3,7 @@
 * uBlock Origin
 * Dark Reader
 * SmoothScroll
+* Session Buddy
 * HTTPS Everywhere
 * Video Speed Controller
 

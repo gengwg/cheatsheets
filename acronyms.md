@@ -105,9 +105,11 @@
 | SOE     | Sourcing and Operations Engineering         |
 | SOP     | standard operating procedure                |
 | SOW     | Scope of Work                               |
+| SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
 | TBH     | to be honest                                |
+| TC      | The Candidate                               |
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
 | TNTE    | to new to evaluate                          |
