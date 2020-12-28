@@ -385,3 +385,9 @@ Remove last line from file:
 sed -i '$ d' file.txt
 ```
 
+
+`No bootable device Detected.` error.
+
+===>
+
+BIOS was set to Legacy Boot. Change to UEFI Boot instead.
