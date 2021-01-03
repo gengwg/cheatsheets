@@ -1,11 +1,7 @@
 ## Burn Raspbian to SD card
 
 ```
-$ unzip -p raspbian_latest | dd of=/dev/sdb bs=4M status=progress conv=fsync
-4822335488 bytes (4.8 GB) copied, 526.777348 s, 9.2 MB/ss
-0+43165 records in
-0+43165 records out
-4823449600 bytes (4.8 GB) copied, 614.552 s, 7.8 MB/s
+$ unzip -p 2020-12-02-raspios-buster-armhf-full.zip | sudo dd of=/dev/sdb bs=4M status=progress conv=fsync
 ```
 
 ## Configuration
