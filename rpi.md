@@ -1,7 +1,7 @@
 ## Burn Raspbian to SD card
 
 ```
-$ unzip -p 2020-12-02-raspios-buster-armhf-full.zip | sudo dd of=/dev/sdb bs=4M status=progress conv=fsync
+$ unzip -p 2020-12-02-raspios-buster-armhf-full.zip | sudo dd of=/dev/sdd bs=4M status=progress conv=fsync
 ```
 
 ## Configuration
