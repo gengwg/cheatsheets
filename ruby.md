@@ -56,3 +56,23 @@ irb(main):016:0> end
 irb(main):017:0> ary
 => [2, 4]
 ```
+
+### classes and methods
+
+```ruby
+class Animal
+  def legs
+    puts 4
+  end
+end
+
+class Dog<Animal
+  def bark
+    puts "bow!"
+  end
+end
+
+fred = Dog::new
+fred.legs
+fred.bark
+```
