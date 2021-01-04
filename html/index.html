@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Document Title</TITLE>
+        <!-- <style>  
+        body {
+                background-color: darkblue;
+        }
+          </style> -->
+
+    <!--
+        <META HTTP-EQUIV="refresh" CONTENT="15; URL=2.html">
+    -->
+
+        <script language="JavaScript">
+          <!--
+          function openWin(URL) {
+            aWindow=window.open(URL, "thewindow", "toolbar=no,width=350,height=400,status=no,scrollbars=yes,resize=no,menubar=no");
+          }
+          function changePages(leftURL, rightURL) {
+            parent.left.location.href=leftURL;
+            parent.right.location.href=rightURL;
+          }
+
+          //-->
+
+          function show()
+{
+  document.hidden.visibility = "visible";
+}
+
+        </script>
+
+        <META HTTP-EQUIV="refresh" CONTENT="30">
+        <META HTTP-EQUIV="content-type" CONTENT="text/html" charset=unicode>
+        <META HTTP-EQUIV="content-language" CONTENT="zh">
+        <META NAME="author" CONTENT="caoni ma">
+        <META NAME="description" CONTENT="caoni ma's web design">
+        <META NAME="keywords" CONTENT="caoni ma, web design">
+
+        <link rel="stylesheet" href="stylesheet.css" type="text/css"></link>
+    <!-- not working yet
+        <style>
+        @import (stylesheet.css);
+        </style>
+    -->
+
+    </HEAD>
+    <BODY BGCOLOR="darkolivegreen" TEXT="cyan" onload="counter = setInterval('motion()', 20)">
+    <!--
+    <BODY BGCOLOR="darkolivegreen" TEXT="red" BACKGROUND="https://shop.carpetmart.com/assets/images/products/Tile/misc/213978.jpg">
+    -->
+        <!-- this is a comment -->
+
+        <h1>Web Design in a Nutshell</h1>
+
+      <div id="animate">Moving text</div>
+      <span id="hidden">this is hident</span>
+
+      <a href=javascript:show()>click here to show.</a>
+
+        <p id="top">Contents of Document. &copy;</p> 
+
+        <p>This is <a href="#myanchor">anchor within a document</a> </p> 
+
+        <address>this is an address</address>
+
+        <p>This is <acronym title="abbcccc">acronym</acronym>.</p>
+
+        <p align=center>This is <b>bold</b>, aligned to center.</p>
+
+        <p>This is <big>bigger</big>.</p>
+
+        <p>
+        This is <code>code</code>:<br>
+        <code>
+            print("hello world!")<br>
+            import abc<br>
+        </code>
+        </p>
+
+        <p>
+        This is preformatted texts:
+        <pre>
+        import abc
+        def main():
+            print("hello world!")
+        main()
+        </pre>
+        pre is a block element. meaning it willl be preceded and followed by line break.
+        </p>
+
+        <p>This is <del>deleted texts</del>. This is <ins>inserted texts</ins>.</p>
+
+        <p>This is <s>strike-through texts</s>.</p>
+
+        <p>This is <em>emphasized text. usually rendered as italic</em>.</p>
+
+        <p>This is <q cite=https://baidu.com>short quotation. usually rendered with quotation marks</q>.</p>
+
+        <p>This is <sub>subscript texts</sub>. This is <sup>superscript texts</sup>.</p>
+
+        <p>This is <u>underlined texts</u>.</p>
+
+        <a name="myanchor">Anchor Test</a>
+
+        <h2 align=center>LISTS</h2>
+
+        <p>
+        <h3>This is definition list:</h3>
+        <dl>
+        <dt>Term1</dt>
+        <dd>This is definitions</dd>
+        <dt>2nd term</dt>
+        <dd>This is definition 2</dd>
+        </dl>
+        </p>
+
+        <p>
+        <h3>ordered list:</h3>
+        <ol start=5 type=I>
+            <li>list item1
+            </li>
+            <li>list item2</li>
+            <li>list item3</li>
+        </ol>
+        </p>
+
+        <b>unordered list:</b>
+        <ul type=square>
+            <li type=circle>list item1</li>
+            <li type=disc>list item2</li>
+            <li>list item3</li>
+        </ul>
+
+        <h3 id="nul">Nested unordered list:</h3>
+        <p>
+        Nested unordered list, browser displays different type of bullet for each level.
+        <ul type=disc>
+            <li>
+                list item1
+                <ul>
+                    <li>
+                        nested item1
+                        <ul>
+                            <li>item7</li>
+                            <li>item8</li>
+                        </ul>
+                    </li>
+                    <li>nested item2</li>
+                </ul>
+            </li>
+            <li type=disc>list item2</li>
+            <li>list item3</li>
+        </ul>
+        </p>
+
+        <h3>Nested ordered list:</h3>
+        <p>
+        Nested ordered list, browser can't automatically change numbering schemes.
+        You have to label each list manually with the type attribute.
+        <ol type=1>
+            <li>
+                list item1
+                <ol type=i>
+                    <li>
+                        nested item1
+                        <ol type=a>
+                            <li>item7</li>
+                            <li>item8</li>
+                        </ol>
+                    </li>
+                    <li>nested item2</li>
+                </ol>
+            </li>
+            <li type=disc>list item2</li>
+            <li>list item3</li>
+        </ol>
+        </p>
+
+        <hr>
+
+        <p>
+        This is a link: <a href="https://www.slickdeals.net" onMouseOver="window.status='Top of page'; return true;" target="_blank">Deals Website</a>
+        </p>
+        
+        <p>
+        This is a link that opens in new window: <a href="https://www.slickdeals.net" target="_blank">Deals Website</a>
+        </p>
+        
+        <p>
+        This is a link that opens in new window. and all subsequent clicks opens in the same 'display' window: <a href="https://www.slickdeals.net" target="display">Deals Website</a>
+        </p>
+        
+        <p>
+        This is an image link: <a href="https://gengwg.blogspot.com/"><img src="https://img.dog-learn.com/dog-breeds/beagle/beagle-i50-small.jpg"></a>
+        </p>
+        
+        <p>
+        This is a <a href="#top" onMouseOver="window.status='Top of page'; return true;">named anchor using id</a>
+        </p>
+        
+        <p>
+        This is a link to <a href="mailto:user@example.com?subject=Subject%20with%20spaces&cc=person1@mail.com&body=bddy">send email</a>
+        </p>
+        
+        <hr>
+        
+        <h2 align="center">Tables</h2>
+
+        <h3>table</h3>
+
+        <div align=center>
+        <table border=1 cellspacing=10 cellpadding=1>
+            <caption>table caption</caption>
+            <tr>
+                <td>cell 1</td> <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>cell 3</td> <td>cell 4</td>
+            </tr>
+        </table>
+        </div>
+
+        <div align=center>
+        <table border=1 cellspacing=1 cellpadding=10>
+            <caption>table caption</caption>
+            <tr>
+                <td>cell 1</td> <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>cell 3</td> <td>cell 4</td>
+            </tr>
+        </table>
+        </div>
+
+        <h3>table with colspan</h3>
+
+        <table border=5 cellspacing=1 cellpadding=10>
+            <tr>
+                <td colspan=2>cell 1</td>
+            </tr>
+            <tr>
+                <td>cell 3</td> <td>cell 4</td>
+            </tr>
+        </table>
+
+        <h3>table with rowspan</h3>
+
+        <table border=1>
+            <tr>
+                <td rowspan=2>cell 1</td> <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>cell 4</td>
+            </tr>
+        </table>
+
+        <h3>table with row and col groups</h3>
+
+        <table border=1 bgcolor="#CCCCCC">
+            <caption> table description</caption>
+            <colgroup width=200>
+                <col>
+                <col>
+            </colgroup>
+            <colgroup width=50>
+            </colgroup>
+            <thead valign="top">
+                <tr>
+                    <th>heading 1</th> <th>heading 2</th> <th>heading 3</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>footer 1</th> <th>footer 2</th> <th>footer 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr bgcolor="#999999">
+                    <th>cell data 1</th> <th>cell data 2</th> <th bgcolor="#333333">cell data 3</th>
+                </tr>
+                <tr>
+                    <td>cell data 4</td> <td>cell data 5</td> <td>cell data 6</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>table with column span problems</h3>
+
+        <table border=1 cellpadding=0 cellspacing=0 width=600 bgcolor="#FFFFFF">
+            <caption>failed attempt</caption>
+            <tr>
+                <td colspan=2></td>
+                <td align=center> text cell<br>(should be 200 pixels)</td>
+            </tr>
+            <tr>
+                <td align=center> text cell<br>(should be 200 pixels)</td>
+                <td colspan=2></td>
+            </tr>
+        </table>
+
+        <table border=1 cellpadding=0 cellspacing=0 width=600 bgcolor="#FFFFFF">
+            <caption>correct solution</caption>
+            <tr>
+                <td width=200 height=0></td>
+                <td width=200 height=0></td>
+                <td width=200 height=0></td>
+            </tr>
+            <tr>
+                <td colspan=2></td>
+                <td align=center> text cell<br>(should be 200 pixels)</td>
+            </tr>
+            <tr>
+                <td align=center> text cell<br>(should be 200 pixels)</td>
+                <td colspan=2></td>
+            </tr>
+        </table>
+
+        <p>although rowspan is set to 99, the table only contains the actual number of rows needed:</p>
+        <table border=1 bgcolor="#FFFF99">
+            <tr>
+                <td width=10 rowspan=99 bgcolor="#cc3333">&nbsp;</td>
+                <td>It</td>
+            </tr>
+            <tr>
+                <td>doesn't</td>
+            </tr>
+            <tr><td>matter</td></tr>
+            <tr><td>how</td></tr>
+            <tr><td>many</td></tr>
+            <tr><td>rows</td></tr>
+            <tr><td>are</td></tr>
+            <tr><td>here</td></tr>
+        </table>
+
+        <h3>table templates</h3>
+
+        <h4>anouncement box</h4>
+
+        <table border=2 bgcolor="#CCFF99" cellpadding=12 cellspacing=0>
+            <tr>
+                <td align=center valign= middle> headline or announcement!</td>
+            </tr>
+        </table>
+
+        <h4>center object in the browser window</h4>
+
+        <table width=100% height=100% border=10 cellpadding=0 cellspacing=0>
+            <tr>
+                <td align=center valign= middle>your object here</td>
+            </tr>
+        </table>
+
+        <h4>creating a vertical rule</h4>
+
+        <table border=0 cellpadding=0 cellspacing=10>
+            <tr align=left valign=top>
+                <td width=50></td>
+                <td width=1 bgcolor=darkred></td>
+                <td>
+                    <p>this</p>
+                    <p>is</p>
+                    <p>some</p>
+                    <p>content</p>
+                </td>
+            </tr>
+        </table>
+
+        <h4>two-column page layout</h4>
+
+        <h5>fixed-width columns</h5>
+
+        <table border=1 width=600>
+            <tr align=left valign=top>
+                <td valign=top width=150>left column</td>
+                <td valign=top width=450>right column</td>
+            </tr>
+        </table>
+
+        <h5>relative width columns</h5>
+
+        <table border=1 width=100%>
+            <tr align=left valign=top>
+                <td valign=top width=20%>left column</td>
+                <td valign=top width=80%>right column</td>
+            </tr>
+        </table>
+
+        <h5>combination</h5>
+
+        <table border=1 width=100%>
+            <tr align=left valign=top>
+                <td valign=top width=150>left column</td>
+                <td valign=top>right column</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2 align=center>Inline/Floating Frames</h2>
+
+        This is <iframe src="frameset.html" width=900 height=300 align=left hspace=12></iframe>
+        test for iframe.
+
+        <h2 align=center>Join the mailing list:</h2>
+
+        <form action="/cgi/bin/mail.pl" method=get enctype="multi-part/form-data">
+          <pre>
+          first name: <input type="text" name="first" maxlength=30 value='your first name?'>
+          last name: <input type="text" name="last" value="Last name?">
+          <input type="submit" value="buy it"> <input type="reset" value="start over">
+          </pre>
+
+          <p>what's your password?</p>
+          <input type="password" name="password" size=8 maxlength=10 value="sdfsa">
+          <input type="hidden" name="extra_info" value="important">
+
+          <p>what's your os?</p>
+          <input type="checkbox" name="os" value="unix" checked> Unix
+          <input type="checkbox" name="os" value="win"> Windows 98
+          <input type="checkbox" name="os" value="lin"> Linux
+          <input type="checkbox" name="os" value="mac" checked> Mac
+
+          <p>what's your favorite os?</p>
+          <input type="radio" name="os" value="unix" > Unix
+          <input type="radio" name="os" value="win"> Windows
+          <input type="radio" name="os" value="lin" checked> Linux
+          <input type="radio" name="os" value="mac"> Mac
+
+          <p>
+          <input type="image" src="https://img.dog-learn.com/dog-breeds/beagle/beagle-i50-small.jpg">
+          </p>
+
+          <p>send this file with my form data:</p>
+          <input type="file" size=30>
+
+          <p>what did you dream last night?</p>
+          <textarea name="dream" rows="4" cols="45">
+            tell us what your dream is in 100 words or less.
+          </textarea>
+
+          <p class="important">what is your favorite pet?</p>
+          <select name="pet" multiple>
+            <option>dog
+            <option>cat
+            <option selected>elephant
+            <option value="swirl">giant panda
+          </select>
+        </form>
+
+        <p id="idselector">Current date is <!--#echo var="DATE_LOCAL" --></p>
+
+        <h2>JavaScript</h2>
+
+        <p><a href="javascript:openWin('https://www.youtube.com/');">Youtube</a></p> 
+        <p><a href="javascript:openWin('https://www.bilibili.com/');">Bili</a></p> 
+        <p><a href="https://www.bilibili.com/" onMouseOver="window.status='asdfsdfds sdfd'; return true;">Bili</a></p> 
+
+        <p><a href="javascript:changePages('left.html', 'right.html');">Change Pages</a></p> 
+
+        <div>foo</div>
+        <script>
+          document.write('<div>Print this after the script tag</div>');
+          document.write(navigator.appName);
+          document.write("<br />");
+          document.write(navigator.appVersion);
+        </script>
+        <div>bar</div>
+
+        <h1 class="important">Style Sheet</h1>
+
+    <p>external stylesheet should not contain &lt;style&gt; tag any more.</p>
+
+    <p lang="zh" dir="rtl">test Chinese: 中文。你好！</p>
+
+    </BODY>
+</HTML>
