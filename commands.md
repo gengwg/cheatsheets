@@ -391,3 +391,22 @@ sed -i '$ d' file.txt
 ===>
 
 BIOS was set to Legacy Boot. Change to UEFI Boot instead.
+
+Set MTU;
+
+```
+sudo ip link set dev eth0 mtu 9000
+```
+
+Check swap status:
+
+```
+swapon -s
+```
+
+Check swappiness
+
+```
+$ sysctl vm.swappiness
+vm.swappiness = 60
+```
