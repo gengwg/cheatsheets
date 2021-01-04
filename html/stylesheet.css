@@ -1,0 +1,60 @@
+h1.important:first-letter {
+  font-size: 300%;
+  color: red;
+  margin-left: 20px;
+}
+
+.important { color: yellow; }
+
+H2 { color: darkblue; }
+
+P { font-size: 12pt;
+    font-face: Verdana, sans-serif;
+}
+
+#idselector {
+  font-size: 15pt;
+  color: yellow;
+}
+
+a:link { color: maroon;}
+
+p:first-letter{font-size: 200%}
+
+#animate {
+  position: absolute;
+  left: -80;
+  top: 10;
+  color: yellow;
+}
+
+var counter;
+
+function motion2()
+{
+  document.animate.left +=20
+  if (document.animate.left > 200)
+  {
+    clearTimeout(counter);
+  }
+}
+
+function motion()
+{
+  document.getElementById("animate").left +=20
+  if (document.getElementById("animate").left > 200)
+  {
+    clearTimeout(counter);
+  }
+}
+
+#hidden {
+  position: relative;
+  font: 12pt Times, serif;
+  visibility: hidden;
+}
+
+function show()
+{
+  document.all.hidden.style.visibility = "visible";
+}
