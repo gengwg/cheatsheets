@@ -108,6 +108,7 @@
 | SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
+| STE     | Short-term Employee                         |
 | TBH     | to be honest                                |
 | TC      | The Candidate                               |
 | TESS    | Tera-speed Storage System                   |
