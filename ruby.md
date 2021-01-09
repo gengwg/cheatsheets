@@ -76,3 +76,32 @@ fred = Dog::new
 fred.legs
 fred.bark
 ```
+
+### delimited string array
+
+you can construct arrays of strings using the shortcut notation, %w.
+
+```ruby
+irb(main):002:0> %w(foo bar baz)
+=> ["foo", "bar", "baz"
+```
+
+### determine whether an expression is defined
+
+```
+irb(main):001:0> foo = 42
+=> 42
+irb(main):002:0> defined? foo
+=> "local-variable"
+irb(main):003:0> defined? $_
+=> "global-variable"
+irb(main):004:0> defined? bar
+=> nil
+irb(main):006:0> defined? puts
+=> "method"
+irb(main):007:0> defined? puts(bar)
+=> nil
+irb(main):008:0> defined? unpack
+=> nil
+```
+
