@@ -64,3 +64,8 @@ Loaded plugins: fastestmirror
 Cleaning repos: fb-runtime fbit-centos-fasttrack fbit-centos-hpe-mcp fbit-centos-hpe-mcp-old fbit-centos-os fbit-centos-updates fbit-fb-runtime fbit-fbit fbit-fbit-runtime
 0 metadata files removed
 ```
+### Check package updates
+
+```
+sudo dnf check-update
+```
