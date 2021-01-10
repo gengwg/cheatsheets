@@ -105,3 +105,61 @@ irb(main):008:0> defined? unpack
 => nil
 ```
 
+### module functions
+
+```
+irb(main):011:0> Math.sin(1.0)
+=> 0.8414709848078965
+irb(main):012:0> sin(1.0)
+NoMethodError: undefined method `sin' for main:Object
+Did you mean?  using
+	from (irb):12
+	from /usr/bin/irb:11:in `<main>'
+irb(main):013:0> include Math
+=> Object
+irb(main):014:0> sin(1.0)
+=> 0.8414709848078965
+```
+
+### singleton methods
+
+```ruby
+irb(main):037:0> a = "foo"
+=> "foo"
+irb(main):038:0> def a.f
+irb(main):039:1>   printf "%s(%d)\n", self, self.size
+irb(main):040:1> end
+=> :f
+irb(main):041:0> a.f
+foo(3)
+=> nil
+```
+
+### Hook methods
+
+```ruby
+class Foo
+  def Foo::inherited(sub)
+    printf "you made subclass of Foo, named %s\n", sub.name
+  end
+end
+
+class Bar<Foo # you made subclass of Foo, named Bar
+end
+```
+
+### BEGIN / END statement
+
+executes when ruby interpreter starts/ends.
+
+```ruby
+BEGIN {
+  puts 'hello!'
+}
+
+# code
+
+END {
+  puts('bye!')
+}
+```
