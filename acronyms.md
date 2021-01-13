@@ -34,6 +34,7 @@
 | EKI     | Entity Key Index                            |
 | ENE     | Enterprise Network Engineer                 |
 | ENR     | Enterprise Network Reilability              |
+| ETR     | Estimated Time of Return/Repair             |
 | FC      | Fulfillment Center                          |
 | FDOB    | First Day Of Business                       |
 | FG      | Functional Groups                           |
@@ -56,10 +57,11 @@
 | IC      | Individual Contributor                      |
 | IDC     | Infra Data Center organization              |
 | IDN     | Infrastructure DNS and NTP                  |
-| IMOC    | Incident Manager On-Call                    |
 | IDO     | Identity Orchestrator                       |
+| IMOC    | Incident Manager On-Call                    |
 | IPC     | Instructions per Cycle                      |
 | IPT     | Infra Provisioning Tool                     |
+| ISL     | Inter-Switch Link                           |
 | KDC     | Key Distribution Center                     |
 | LCD     | Lowest common denominator                   |
 | LOE     | Level of effort                             |
