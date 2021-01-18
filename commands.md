@@ -412,3 +412,9 @@ vm.swappiness = 60
 ```
 
 Linux's network stack uses the NO CARRIER status for a network interface that is turned on ("up") but cannot be connected because the Physical Layer is not operating properly, e.g. because an ethernet cable is not plugged in.
+
+Find size 0 files in current directory and delete them:
+
+```
+find . -maxdepth 1 -size 0 -type f  -delete
+```
