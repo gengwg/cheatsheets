@@ -22,10 +22,12 @@
 | CERT    | Computer Emergency Response Team            |
 | CG      | Computer Graphics                           |
 | CIDS    | Core Interfaces & Data Services             |
+| corp    | corporate (network)                         |
 | CPE     | Client Platform Engineering                 |
 | CSLB    | core system load balancing                  |
 | CTR     | click through rate                          |
 | DBE     | Double-bit ECC error                        |
+| DDI     | DNS, DHCP, and IPAM                         |
 | DGW     | Distribution GateWay                        |
 | DKIM    | DomainKeys Identified Mail                  |
 | DSA     | Diversity Slate Approach                    |
@@ -72,6 +74,7 @@
 | MIP     | Management Incentive Program                |
 | MPI     | Message Passing Interfaced                  |
 | MPO     | Multi-fiber Push On                         |
+| MPOE    | Minimumu Point of Entry                     |
 | MSC     | Managed Software Center                     |
 | MSW     | Media Switch                                |
 | NBP     | Post Purchase                               |
@@ -89,6 +92,7 @@
 | POC     | Proof of Concept                            |
 | POP     | Points of presence                          |
 | PPS     | Proofpoint Protection Service               |
+| prod    | Production (network)                        |
 | PSC     | Performance Summary Cycle                   |
 | PWM     | Provisioning Workflow Manager               |
 | RDMA    | Remote Direct Memory Access                 |
