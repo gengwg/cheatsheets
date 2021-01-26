@@ -416,5 +416,26 @@ Linux's network stack uses the NO CARRIER status for a network interface that is
 Find size 0 files in current directory and delete them:
 
 ```
-find . -maxdepth 1 -size 0 -type f  -delete
+$ find -maxdepth 1 -size 0 -type f  -delete
+$ find -maxdepth 1 -type f -empty -delete
+```
+
+Find DHCP Server address:
+
+```
+sudo dhclient -d -nw <enoX>
+
+Internet Systems Consortium DHCP Client 4.4.2b1
+Copyright 2004-2019 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/eno1/<mac>
+Sending on   LPF/eno1/<mac>
+Sending on   Socket/fallback
+DHCPDISCOVER on eno1 to 255.255.255.255 port 67 interval 8 (xid=0xebb26f74)
+DHCPOFFER of 192.168.0.xxx from 192.168.0.1   # <--- DHCP Server address (usually your router)
+DHCPREQUEST for 192.168.0.xxx on eno1 to 255.255.255.255 port 67 (xid=0xebb26f74)
+DHCPACK of 192.168.0.xxx from 192.168.0.1 (xid=0xebb26f74)
+bound to 192.168.0.xxx -- renewal in 70890 seconds.
 ```
