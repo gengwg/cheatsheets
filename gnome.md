@@ -23,3 +23,14 @@ gnome-screenshot -w  -d 5
 ![](images/gnome/tweak-tool.png)
 ![](images/gnome/minimize.png)
 
+### Swap Caps Lock and ESC
+
+Useful for vim.
+In Tweaks tool:
+
+1. Select "Keyboard & Mouse" from the left-hand menu.
+2. Click "Additional Layout Options".
+3. Click "Caps Lock behavior"
+4. "Swap ESC and Caps Lock."
+
+![](images/gnome/swap_esc_caps.png)
