@@ -163,6 +163,7 @@ END {
   puts('bye!')
 }
 ```
+
 ### Word Array
 
 If you want to create an array where each entry is a single word, you can use the %w{} syntax.
@@ -185,4 +186,22 @@ irb(main):002:0> %w(foo bar)
 => ["foo", "bar"]
 irb(main):003:0> %w[foo bar]
 => ["foo", "bar"]
+```
+
+### Freeze Method
+
+```
+irb(main):001:0> CONST = "foo"
+=> "foo"
+irb(main):002:0> CONST << "bar"
+=> "foobar"
+irb(main):003:0> CONSTF = "foo".freeze
+=> "foo"
+irb(main):004:0> CONSTF << "bar"
+Traceback (most recent call last):
+        4: from /usr/bin/irb:23:in `<main>'
+        3: from /usr/bin/irb:23:in `load'
+        2: from /usr/share/gems/gems/irb-1.2.6/exe/irb:11:in `<top (required)>'
+        1: from (irb):4
+FrozenError (can't modify frozen String: "foo")
 ```
