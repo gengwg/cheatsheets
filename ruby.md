@@ -163,3 +163,26 @@ END {
   puts('bye!')
 }
 ```
+### Word Array
+
+If you want to create an array where each entry is a single word, you can use the %w{} syntax.
+the %w{} method lets you skip the quotes and the commas.
+
+```
+days = %w{Monday Tuesday Wednesday Thursday Friday Saturday Sunday}
+```
+
+This is equivalent to creating the array with square braces:
+
+```
+days =  ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+```
+
+```
+irb(main):001:0> %w{foo bar}
+=> ["foo", "bar"]
+irb(main):002:0> %w(foo bar)
+=> ["foo", "bar"]
+irb(main):003:0> %w[foo bar]
+=> ["foo", "bar"]
+```
