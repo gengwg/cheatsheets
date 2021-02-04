@@ -4,6 +4,8 @@
 docker build -t myimage .
 ```
 
+this will build a image with tag `myimage:latest`.
+
 ### Access localhost of host machine from within container
 
 Looks for different Docker versions, this is implemented differently.
