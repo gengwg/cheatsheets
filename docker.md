@@ -1,3 +1,9 @@
+### Build an image from a Dockerfile
+
+```
+docker build -t myimage .
+```
+
 ### Access localhost of host machine from within container
 
 Looks for different Docker versions, this is implemented differently.
