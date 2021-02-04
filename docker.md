@@ -6,6 +6,14 @@ docker build -t myimage .
 
 this will build a image with tag `myimage:latest`.
 
+### Push an image to remote repo/registry
+
+```
+docker tag myimage dtr.example.com/gengwg/myimage
+docker push dtr.example.com/gengwg/myimage
+```
+
+
 ### Access localhost of host machine from within container
 
 Looks for different Docker versions, this is implemented differently.
