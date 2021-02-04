@@ -16,20 +16,20 @@ docker push dtr.example.com/gengwg/myimage
 ### Passing multiple environment variable to docker container
 
 ```
-docker run -e ACCESS_TOKEN="abcdefg" -e ADDR="localhost:8080" -it dtr.example.com/gengwg/myimage
+docker run -e ACCESS_TOKEN="abcdefg" -e ADDR="0.0.0.0:8080" -p 8080:8080 -it dtr.example.com/gengwg/myimage
 ```
 
 Or use env file:
 
 ```
-docker run --env-file ./myenv.lst -it dtr.example.com/gengwg/myimage
+docker run --env-file ./myenv.lst -p 8080:8080 -it dtr.example.com/gengwg/myimage
 ```
 
 where myenv.list contains (remove the quotes):
 
 ```
 ACCESS_TOKEN=abcdefg
-ADDR=localhost:8080
+ADDR=0.0.0.0:8080
 ```
 
 ### Access localhost of host machine from within container
