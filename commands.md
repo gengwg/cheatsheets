@@ -439,3 +439,48 @@ DHCPREQUEST for 192.168.0.xxx on eno1 to 255.255.255.255 port 67 (xid=0xebb26f74
 DHCPACK of 192.168.0.xxx from 192.168.0.1 (xid=0xebb26f74)
 bound to 192.168.0.xxx -- renewal in 70890 seconds.
 ```
+
+Check missing nvme ssd disk:
+
+```
+[root@server ~]# dmesg | grep nvme9
+[    3.649794] nvme nvme9: pci function 0000:bc:00.0
+[11847942.588502] nvme nvme9: I/O 42 QID 50 timeout, aborting
+[11847972.533745] nvme nvme9: I/O 42 QID 50 timeout, reset controller
+[11847972.534445] nvme nvme9: Abort status: 0x7
+[11848032.989938] nvme nvme9: Device not ready; aborting initialisation
+[11848032.989967] nvme nvme9: Removing after probe failure status: -19
+[11848032.990132] nvme9n1: detected capacity change from 6401252745216 to 0
+[11848032.990381] blk_update_request: I/O error, dev nvme9n1, sector 6227719040
+```
+Convert dmesg time to human readable:
+
+```
+[root@server ~]# dmesg -T | grep nvme9
+[Mon Aug 17 09:08:40 2020] nvme nvme9: pci function 0000:bc:00.0
+[Fri Jan  1 11:14:19 2021] nvme nvme9: I/O 42 QID 50 timeout, aborting
+[Fri Jan  1 11:14:49 2021] nvme nvme9: I/O 42 QID 50 timeout, reset controller
+[Fri Jan  1 11:14:49 2021] nvme nvme9: Abort status: 0x7
+[Fri Jan  1 11:15:49 2021] nvme nvme9: Device not ready; aborting initialisation
+[Fri Jan  1 11:15:49 2021] nvme nvme9: Removing after probe failure status: -19
+[Fri Jan  1 11:15:49 2021] nvme9n1: detected capacity change from 6401252745216 to 0
+[Fri Jan  1 11:15:49 2021] blk_update_request: I/O error, dev nvme9n1, sector 6227719040
+```
+https://sleeplessbeastie.eu/2013/10/31/how-to-deal-with-dmesg-timestamps/
+
+Parse /proc/pid/cmdline:
+
+```
+$ cat /proc/self/cmdline | strings -1
+```
+
+```
+       /proc/[pid]/cmdline
+              This read-only file holds the complete command line for
+              the process, unless the process is a zombie.  In the
+              latter case, there is nothing in this file: that is, a
+              read on this file will return 0 characters.  The command-
+              line arguments appear in this file as a set of strings
+              separated by null bytes ('\0'), with a further null byte
+              after the last string.
+```
