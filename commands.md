@@ -484,3 +484,13 @@ $ cat /proc/self/cmdline | strings -1
               separated by null bytes ('\0'), with a further null byte
               after the last string.
 ```
+
+print a sequence of numbers with equal width by padding with leading zeroes:
+
+```
+$ seq -w 07 10
+07
+08
+09
+10
+```
