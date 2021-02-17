@@ -494,3 +494,12 @@ $ seq -w 07 10
 09
 10
 ```
+
+In some permission systems additional symbols in the `ls -l` display represent additional permission features:
+
+```
+    + (plus) suffix indicates an access control list that can control additional permissions.
+    . (dot) suffix indicates an SELinux context is present. Details may be listed with the command ls -Z.
+    @ suffix indicates extended file attributes are present.
+```
+
