@@ -2,6 +2,12 @@ IPMI is a protocol for interacting with the Baseboard Management Controller. It'
 
 You can directly connect to ipmi from the deploy server by specifying the hostname (or ip), the username, and password. IPMI should respond (by default) on UDP/623.
 
+### Install ipmitool
+
+```
+$ sudo dnf install ipmitool
+```
+
 ### query current power state
 
 ```
