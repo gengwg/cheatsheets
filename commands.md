@@ -503,3 +503,9 @@ In some permission systems additional symbols in the `ls -l` display represent a
     @ suffix indicates extended file attributes are present.
 ```
 
+Grep error log using bracket expessions:
+
+```
+$ sudo lsof -p `pidof -s apache2` | grep "err[^/]*log"
+apache2 14051 www-data    2w      REG  179,2      561  518214 /var/log/apache2/error.log
+```
