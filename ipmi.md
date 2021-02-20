@@ -129,3 +129,9 @@ Specify IPMI to Use only IPv4 (using `-4` option)!
 $ ipmitool -4 -I lanplus -H <oob> -U <oob user> -P <oob pass>  chassis power status
 Chassis Power is on
 ```
+### Check if  my system support IPMI
+
+```
+sudo dmidecode --type 38 # or
+sudo dmidecode | grep -A 6 -i ipmi
+```
