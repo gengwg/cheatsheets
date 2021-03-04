@@ -36,12 +36,15 @@
 | EKI     | Entity Key Index                            |
 | ENE     | Enterprise Network Engineer                 |
 | ENR     | Enterprise Network Reilability              |
+| ESW     | Edge Switch                                 |
 | ETR     | Estimated Time of Return/Repair             |
+| FacEng  | Facility Engineering                        |
 | FC      | Fulfillment Center                          |
 | FDOB    | First Day Of Business                       |
 | FG      | Functional Groups                           |
 | FIRE    | Financial Independence, Retire Early        |
 | fps     | frames per second                           |
+| FSW     | Fabric Switch                               |
 | FWIW    | For what it's worth                         |
 | GDCC    | Global Data Center Connectivity             |
 | GHE     | GitHub Enterprise                           |
@@ -66,6 +69,7 @@
 | ISL     | Inter-Switch Link                           |
 | KDC     | Key Distribution Center                     |
 | LCD     | Lowest common denominator                   |
+| LL      | Land Lord                                   |
 | LOE     | Level of effort                             |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
@@ -73,6 +77,7 @@
 | MIG     | Multi-Instance GPU                          |
 | MIP     | Management Incentive Program                |
 | MPI     | Message Passing Interfaced                  |
+| MPLS    | Multiprotocal Label Switching               |
 | MPO     | Multi-fiber Push On                         |
 | MPOE    | Minimumu Point of Entry                     |
 | MSC     | Managed Software Center                     |
@@ -108,12 +113,14 @@
 | SeRF    | Servers etc Repository Framework            |
 | SLAAC   | State-Less Automatic Address Configuration  |
 | SEL     | System Event Log                            |
+| SEV     | Site EVent                                  |
 | SOE     | Sourcing and Operations Engineering         |
 | SOP     | standard operating procedure                |
 | SOW     | Scope of Work                               |
 | SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
+| SSW     | Spine Switch                                |
 | STE     | Short-term Employee                         |
 | TBH     | to be honest                                |
 | TC      | The Candidate                               |
@@ -124,7 +131,10 @@
 | TSC     | Training Super Computer                     |
 | TTP     | Time to Provision                           |
 | VAR     | Value Added Reseller                        |
+| VDI     | Virtual Desktop Infrastructure              |
 | VWOP    | Vendor Worker Onboarding Portal             |
+| VRAM    | Video Random Access Memory                  |
+| VRF     | Virtual Routing and Forwarding              |
 | WGW     | WAN Gateways                                |
 | WLC     | Wireless Controllers                        |
 | XFN     | Cross Functional                            |
