@@ -26,6 +26,7 @@ brew cask install pycharm-ce
 istat-menus
 
 brew install tree
+brew install tty-clock
 brew install ddgr
 brew install watch
 brew install trash-cli

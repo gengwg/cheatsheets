@@ -1,7 +1,13 @@
 File > 'Auto Save'
 
-preview markdown
+### preview markdown
 
 ```
 cmd + k, v
+```
+
+### comment out lines
+
+```
+cmd + /
 ```

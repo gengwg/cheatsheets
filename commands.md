@@ -509,3 +509,10 @@ Grep error log using bracket expessions:
 $ sudo lsof -p `pidof -s apache2` | grep "err[^/]*log"
 apache2 14051 www-data    2w      REG  179,2      561  518214 /var/log/apache2/error.log
 ```
+
+Combine multiple pictures into a single PDF file:
+
+```
+$ sudo dnf install ImageMagick
+$ convert *.jpg outputfile.pdf
+```

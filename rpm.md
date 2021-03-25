@@ -67,5 +67,5 @@ Cleaning repos: fb-runtime fbit-centos-fasttrack fbit-centos-hpe-mcp fbit-centos
 ### Check package updates
 
 ```
-sudo dnf check-update
+[sudo] dnf check-update
 ```
