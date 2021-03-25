@@ -135,3 +135,35 @@ Chassis Power is on
 sudo dmidecode --type 38 # or
 sudo dmidecode | grep -A 6 -i ipmi
 ```
+
+### Check SDR Events
+
+```
+$ sudo ipmitool event "Temp_CPU0" list
+Finding sensor Temp_CPU0... ok
+Sensor States:
+  lnr : Lower Non-Recoverable
+  lcr : Lower Critical
+  lnc : Lower Non-Critical
+  unc : Upper Non-Critical
+  ucr : Upper Critical
+  unr : Upper Non-Recoverable
+$ sudo ipmitool event "Temp_CPU0" "lnc : Lower Non-Critical"
+Finding sensor Temp_CPU0... ok
+   0 |  Pre-Init  |0000000000| Temperature #0xaa | Lower Non-critical going low  | Asserted
+Platform Event Message command failed: Out of space
+```
+
+### Check Temperature Sensors
+
+```
+$ sudo ipmitool sdr type Temperature
+```
+
+### Check Detailed SDR Info
+
+```
+$ sudo ipmitool sdr elist full
+$ sudo ipmitool sdr -v > /tmp/ipmitool_sdr.txt
+```
+

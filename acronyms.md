@@ -32,6 +32,7 @@
 | DKIM    | DomainKeys Identified Mail                  |
 | DSA     | Diversity Slate Approach                    |
 | DTC     | Dare-2-Compare                              |
+| DTI     | Debt-To-Income Ratio                        |
 | ECS     | Enterprise Core Services                    |
 | EKI     | Entity Key Index                            |
 | ENE     | Enterprise Network Engineer                 |
@@ -48,6 +49,7 @@
 | FWIW    | For what it's worth                         |
 | GDCC    | Global Data Center Connectivity             |
 | GHE     | GitHub Enterprise                           |
+| GHEC    | GitHub Enterprise Cloud                     |
 | GHS     | Global Human Survey                         |
 | GFX     | Graphics                                    |
 | GLB     | Geo Load Balancing                          |
@@ -112,8 +114,10 @@
 | SEM     | Search Engine Marketing                     |
 | SeRF    | Servers etc Repository Framework            |
 | SLAAC   | State-Less Automatic Address Configuration  |
+| SDR     | Sensor Data Record                          |
 | SEL     | System Event Log                            |
 | SEV     | Site EVent                                  |
+| SLB     | Server/Software Load Balancer, proxygen     |
 | SOE     | Sourcing and Operations Engineering         |
 | SOP     | standard operating procedure                |
 | SOW     | Scope of Work                               |
