@@ -186,4 +186,16 @@ $ sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
 $ sudo reboot
 ```
 
+### Forbidden path outside the build context
 
+```
+COPY failed: forbidden path outside the build context: ../../lib/go ()
+```
+
+===>
+
+build from upper dir of Dockerfile dir:
+
+```
+docker build -t myimage -f parents/dir/Dockerfile .
+```
