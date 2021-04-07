@@ -234,11 +234,16 @@ Finally you may want to add in `~/.bash_aliases`:
 `cd /Volumes/SANDISK`
 
 ### kill a frozen program
+
 cmd + space -> search 'monitor'
 then choose Activity Monitor.
 find that process and kill it, or force quit.
 
+or press:
+cmd + option + esc
+
 ### get mouse out of vbox VM
+
 press left cmd button
 
 ### view pdf from terminal
