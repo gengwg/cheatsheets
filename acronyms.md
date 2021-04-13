@@ -85,10 +85,13 @@
 | MSC     | Managed Software Center                     |
 | MSW     | Media Switch                                |
 | NBP     | Post Purchase                               |
+| NGC     | Nvidia GPU Cloud                            |
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
+| OPM     | Operations Program Manager                  |
 | OUI     | organizationally unique identifier          |
 | PAR     | Python archive file                         |
+| PAT     | Personal Access Token                       |
 | PB      | Post Browse                                 |
 | PD      | Price Drop                                  |
 | PID     | Position ID (HR terminology)                |
@@ -132,6 +135,7 @@
 | TIL     | today I learned                             |
 | TNTE    | to new to evaluate                          |
 | TOV     | Tune of Voce (marketing)                    |
+| TPM     | Technical Program Manager                   |
 | TSC     | Training Super Computer                     |
 | TTP     | Time to Provision                           |
 | VAR     | Value Added Reseller                        |
