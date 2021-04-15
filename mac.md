@@ -1,10 +1,12 @@
 ## MacOS First Time Setup
 
-### Mouse and Touchpad
+### Mouse, Keyboard and Touchpad
 
 System Preferences > Mouse > Uncheck 'Scroll direction: Natural'
 
 System Preferences > Touchpad > Check 'Tap to click'
+
+System Preferences > Keyboard > Key Repeat: increase to 'Fast'
 
 ### Display for Large Monitor
 
