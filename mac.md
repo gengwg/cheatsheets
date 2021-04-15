@@ -1,5 +1,11 @@
 ## MacOS First Time Setup
 
+### Mouse and Touchpad
+
+System Preferences> Mouse > Uncheck 'Scroll direction: Natural'
+
+System Preferences> Touchpad > Check 'Tap to click'
+
 ### Install Homebrew
 
 cmd + Tab search for 'terminal'
