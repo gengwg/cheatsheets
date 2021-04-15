@@ -42,3 +42,9 @@ Methods:
 
 Click on 'Outlook' by the Apple logo, then go to: 'Preferences' > 'Calendar' > 'Time zones'.
 Check 'second time zone'. Optionally give it a nickname.
+
+### Disable notification sounds
+
+Outlook > Preferences > For new messages: uncheck 'display alert on my desktop'
+
+Sounds > Uncheck all
