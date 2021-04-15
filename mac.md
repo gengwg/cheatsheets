@@ -78,11 +78,17 @@ brew cask install java8
 
 Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 
-### Set up Shell/Vim/SSH
+### Configure Vim
+
+Follow [here](https://github.com/gengwg/cheatsheets/blob/master/vim.md).
+
+### Set up Configs for Shell/Vim/SSH
 
 * Copy .bash_profile, .bashrc, .bash_aliases file to home dir.
 * Copy vimrc to .vimrc
 * Copy ssh_config
+
+*or use hard/soft link if already have them in dropbox so updates will be synced.*
 
 ### Change default web browser to Chrome
 
