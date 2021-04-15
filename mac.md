@@ -2,9 +2,15 @@
 
 ### Mouse and Touchpad
 
-System Preferences> Mouse > Uncheck 'Scroll direction: Natural'
+System Preferences > Mouse > Uncheck 'Scroll direction: Natural'
 
-System Preferences> Touchpad > Check 'Tap to click'
+System Preferences > Touchpad > Check 'Tap to click'
+
+### Display for Large Monitor
+
+System Preferences > Display > Resolution: Scaled
+
+System Preferences > Bluetooth > Check 'Show bluetooth in menu bar'
 
 ### Install Homebrew
 
