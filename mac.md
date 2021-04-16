@@ -21,7 +21,9 @@ System Preferences > Bluetooth > Check 'Show bluetooth in menu bar'
 
 System Preferences > Users & Groups > 
 
-### Install Homebrew
+### Homebrew
+
+#### Install Homebrew
 
 cmd + Tab search for 'terminal'
 
@@ -40,13 +42,17 @@ brew tap homebrew/cask
 #### Brew Install Packages
 
 ```
+# GUI Applications
 # brew install --cask xxx
 brew cask install iterm2
 brew cask install keepassx
 brew cask install firefox
 brew cask install docker
 brew cask install pycharm-ce
+(optional)
+brew cask install chef/chef/chefdk
 
+# CLI Applications
 brew install mysql  # mysql client and server
 brew install tree
 brew install tty-clock
@@ -64,15 +70,10 @@ brew install vlc
 (“VLC” can’t be opened because Apple cannot check it for malicious software.
 Go to Security and click on 'Open Anyway')
 
-(optional)
-brew cask install chef/chef/chefdk
-
 # install latest java (10)
 brew cask install java
-# install latest java8
 # To get a list of all older versions of java:  
 brew tap caskroom/versions 
-# then 
 brew cask search java
 brew cask install java8
 ```
@@ -80,6 +81,12 @@ brew cask install java8
 #### Brew uninstall packages
 
 `brew cask uninstall pycharm`
+
+#### Brew update packages
+
+```
+brew update && brew upgrade
+```
 
 ### Configure iTerm2
 
