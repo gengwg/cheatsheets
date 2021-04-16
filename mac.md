@@ -11,8 +11,6 @@
 * `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
 * `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'
 
-# Mouse, Keyboard and Touchpad
-
 ### Display for Large Monitor
 
 System Preferences > Display > Resolution: Scaled
@@ -114,16 +112,6 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/vscode.md).
 App Store > Search 'Amphetamine'
 
 *This is optional. You can use finger prints.*
-
-### Configure Keyboard/Mouse/Trackpad
-
-(NOTE: may have to redo again separately for external keyboards/mouses, etc.)
-
-* `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
-* `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'
-
-* `System Preferences` --> `Mouse` --> uncheck `Scoll direction: Natural`
-* `System Preferences` --> `Trackpad` --> check `Tap to Click`
 
 ### Add Chinese Input Method
 
