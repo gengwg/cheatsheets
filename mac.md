@@ -1,18 +1,27 @@
 ## MacOS First Time Setup
 
-### Mouse, Keyboard and Touchpad
+### Configure Keyboard/Mouse/Trackpad
 
-System Preferences > Mouse > Uncheck 'Scroll direction: Natural'
+(NOTE: may have to redo again separately for external keyboards/mouses, etc.)
 
-System Preferences > Touchpad > Check 'Tap to click'
+* `System Preferences` --> `Mouse` --> uncheck `Scoll direction: Natural`
+* `System Preferences` --> `Trackpad` --> check `Tap to Click
 
-System Preferences > Keyboard > Key Repeat: increase to 'Fast'
+* System Preferences > Keyboard > Key Repeat: increase to 'Fast'
+* `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
+* `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'
+
+# Mouse, Keyboard and Touchpad
 
 ### Display for Large Monitor
 
 System Preferences > Display > Resolution: Scaled
 
 System Preferences > Bluetooth > Check 'Show bluetooth in menu bar'
+
+### Change Password
+
+System Preferences > Users & Groups > 
 
 ### Install Homebrew
 
@@ -33,14 +42,14 @@ brew tap homebrew/cask
 #### Brew Install Packages
 
 ```
+# brew install --cask xxx
 brew cask install iterm2
 brew cask install keepassx
 brew cask install firefox
-brew cask install caffeine
 brew cask install docker
 brew cask install pycharm-ce
-istat-menus
 
+brew install mysql  # mysql client and server
 brew install tree
 brew install tty-clock
 brew install ddgr
@@ -82,6 +91,10 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
 
 Follow [here](https://github.com/gengwg/cheatsheets/blob/master/vim.md).
 
+### Configure VS Code
+
+Follow [here](https://github.com/gengwg/cheatsheets/blob/master/vscode.md).
+
 ### Set up Configs for Shell/Vim/SSH
 
 * Copy .bash_profile, .bashrc, .bash_aliases file to home dir.
@@ -96,11 +109,13 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/vim.md).
 * Click General.
 * Choose your web browser from the ”Default web browser” pop-up menu.
 
-### Install Amphetamine
+### Install Amphetamine (Optional)
 
 App Store > Search 'Amphetamine'
 
-### Modify Keyboard/Mouse/Trackpad
+*This is optional. You can use finger prints.*
+
+### Configure Keyboard/Mouse/Trackpad
 
 (NOTE: may have to redo again separately for external keyboards/mouses, etc.)
 

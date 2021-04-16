@@ -1,3 +1,13 @@
+## Install
+
+### Mac
+
+```
+brew install --cask docker
+```
+
+Then cmd+space to find Docker app and start it.
+
 ### Build an image from a Dockerfile
 
 ```
