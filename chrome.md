@@ -1,7 +1,9 @@
 ## plugins
+
 * uBlock Origin
 * Dark Reader
 * SmoothScroll
+* Tab-Snap 
 * Session Buddy
 * HTTPS Everywhere
 * Video Speed Controller

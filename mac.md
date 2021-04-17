@@ -153,6 +153,7 @@ copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` fo
 | Command + Shift + 4 + Space   | Save a Screenshot of current window to local file |
 | Command + Control + Shift + 4 | Save a Screenshot to the Clipboard                |
 | Command + Shift + 5           | Screen recording                                  |
+| Ctrl + left/right arrow       | Switch between desktops                           |
 
 ### Putting your computer to sleep
 
