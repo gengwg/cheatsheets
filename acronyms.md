@@ -15,6 +15,7 @@
 | CDU     | Coolant districution unit                   |
 | CGW     | Core Gateways                               |
 | COB     | Close of Business                           |
+| CompTIA | Computing Technology Industry Association   |
 | COTS    | Commercial off-the-shelf                    |
 | CPI     | Cycles per Instruction                      |
 | CSW     | Cluster SWitch                              |
