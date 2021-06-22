@@ -523,3 +523,9 @@ Create a large file:
 $ dd if=/dev/zero of=file1.out bs=1M count=1024
 $ fallocate -l 1G file2.out   # fastest
 ```
+
+Follow logs:
+
+```
+journalctl -u kube-apiserver -f
+```
