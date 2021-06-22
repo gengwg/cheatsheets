@@ -46,6 +46,7 @@
 | FG      | Functional Groups                           |
 | FIRE    | Financial Independence, Retire Early        |
 | fps     | frames per second                           |
+| FSD     | Fully Self-Driving                          |
 | FSW     | Fabric Switch                               |
 | FWIW    | For what it's worth                         |
 | GDCC    | Global Data Center Connectivity             |
