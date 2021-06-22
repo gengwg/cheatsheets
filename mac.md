@@ -60,6 +60,7 @@ brew install ddgr
 brew install watch
 brew install trash-cli
 brew install ansible
+brew install jq
 brew install wget
 brew install nmap
 brew install git
