@@ -524,6 +524,12 @@ $ sudo dnf install ImageMagick
 $ convert *.jpg outputfile.pdf
 ```
 
+Merge multiple PDFs into a single PDF file:
+
+```
+$ pdfunite scan00*.pdf output.pdf
+```
+
 Create a large file:
 
 ```
