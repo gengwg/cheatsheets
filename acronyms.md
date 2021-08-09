@@ -1,6 +1,7 @@
 | Acronym |         Long Content                        |
 |:-------:|:--------------------------------------------|
 | ABI     | Application Binary Interface                |
+| ACH     | Automated Clearing House                    |
 | ARM     | ajustable-rate mortgate                     |
 | AHX     | Water-Air Heat exchanger                    |
 | ATR     | Asset Tag Report                            |
@@ -23,6 +24,7 @@
 | CERT    | Computer Emergency Response Team            |
 | CG      | Computer Graphics                           |
 | CIDS    | Core Interfaces & Data Services             |
+| CMA     | Comparative Market Analysis                 |
 | corp    | corporate (network)                         |
 | CPE     | Client Platform Engineering                 |
 | CSLB    | core system load balancing                  |
@@ -75,6 +77,7 @@
 | LCD     | Lowest common denominator                   |
 | LL      | Land Lord                                   |
 | LOE     | Level of effort                             |
+| LTM     | Local Traffic Managers (F5)                 |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
 | MES     | Manufacturing Execution System              |
@@ -109,6 +112,7 @@
 | PWM     | Provisioning Workflow Manager               |
 | RDMA    | Remote Direct Memory Access                 |
 | RMA     | Return Merchandise Authorization            |
+| RoCE    | RDMA over Converged Ethernet                |
 | RSE     | Remote Site Engineering team                |
 | RSW     | Rack SWitch                                 |
 | RTS     | Return to Service                           |
@@ -133,6 +137,7 @@
 | STE     | Short-term Employee                         |
 | TBH     | to be honest                                |
 | TC      | The Candidate                               |
+| TC      | Total Compensation                          |
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
 | TNTE    | to new to evaluate                          |
