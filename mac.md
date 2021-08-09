@@ -250,6 +250,8 @@ https://superuser.com/questions/836883/increasing-yosemite-maxfile-limit-for-app
 3. Choose Open from the shortcut menu.
 4. Click Open.
 
+Or Go to Security and click on 'Open Anyway'.
+Next time you open the app, it will show the 'Open' option.
 
 ###  Bypass running only apps from App store
 
