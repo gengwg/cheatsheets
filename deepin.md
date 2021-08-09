@@ -28,3 +28,11 @@ Swap Caps Lock and Esc:
     gsettings set com.deepin.dde.keyboard layout-options '["caps:swapescape"]'
 ```
 
+### Can not find boot device
+
+Enable Compatibility Support Module in BIOS:
+
+```
+F12 --> Startup --> CSM mode --> Choose 'Enable'
+```
+
