@@ -130,6 +130,25 @@ xserver-command=X -s 0 -dpms
 reboot
 ```
 
+### rpi make caps lock key another ctrl
+
+```
+$ sudo vi ~/.config/lxkeymap.cfg
+option = ctrl:nocaps
+```
+
+then
+
+```
+$ sudo reboot
+```
+
+if wants to swap the Ctrl and CapsLock keys, use:
+
+```
+option = ctrl:swapcaps
+```
+
 ## Troubleshooting
 
 ### Eth0 got 169.254.x.x IP
