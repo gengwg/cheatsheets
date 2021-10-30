@@ -4,6 +4,7 @@
 | ACH     | Automated Clearing House                    |
 | ARM     | ajustable-rate mortgate                     |
 | AHX     | Water-Air Heat exchanger                    |
+| ASC     | Ambulatory Surgery Centers                  |
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
 | BCP     | business continuity plan                    |
@@ -40,6 +41,7 @@
 | DTI     | Debt-To-Income Ratio                        |
 | ECS     | Enterprise Core Services                    |
 | EKI     | Entity Key Index                            |
+| EMP     | Electromagnetic Pulse                       |
 | ENE     | Enterprise Network Engineer                 |
 | ENR     | Enterprise Network Reilability              |
 | ESW     | Edge Switch                                 |
@@ -62,6 +64,7 @@
 | GMS     | Global Marketing Solutions                  |
 | HBM     | High Bandwitdh Memory                       |
 | HCO     | Henrico County, VA                          |
+| HELOC   | Home equity line of credit                  |
 | HMC     | Head-Mounted Capture                        |
 | HTL     | High Thread Location                        |
 | IAC     | Infrastructure as Code                      |
