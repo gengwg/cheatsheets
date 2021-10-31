@@ -9,8 +9,16 @@ Go to 'Extensions' and search.
 
 ### preview markdown
 
+Mac:
+
 ```
 cmd + k, v
+```
+
+Linux:
+
+```
+ctrl + shift+ v
 ```
 
 ### comment out lines
