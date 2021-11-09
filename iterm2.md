@@ -32,6 +32,12 @@ General > Window > uncheck 'Ajust window when changing font size'
 
 ![](images/iterm2/font2.png)
 
+### Disable the sound from iTerm2 in macOS
+
+In the Profiles section, go to the Terminal tab in the right panel of the settings, then go down to the Notifications section and click the Silence bell option.
+
+![](images/iterm2/bell.png)
+
 ## Shortcuts
 
 `Cmd + ]` and `Cmd + [` navigates among split panes in order of use.
