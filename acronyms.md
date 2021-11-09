@@ -36,6 +36,7 @@
 | DDI     | DNS, DHCP, and IPAM                         |
 | DGW     | Distribution GateWay                        |
 | DKIM    | DomainKeys Identified Mail                  |
+| DLP     | Data Loss Prevention												|
 | DSA     | Diversity Slate Approach                    |
 | DTC     | Dare-2-Compare                              |
 | DTI     | Debt-To-Income Ratio                        |
