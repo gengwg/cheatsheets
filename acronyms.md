@@ -9,6 +9,7 @@
 | BCI     | brain computer interface                    |
 | BCP     | business continuity plan                    |
 | BIS     | Back-In-Stock                               |
+| BIOS    | Basic Input/output services                 |
 | BLOB    | binary large objects                        |
 | BMC     | Baseboard Management Controller             |
 | BMS     | Building Management System                  |
@@ -34,6 +35,7 @@
 | CTR     | click through rate                          |
 | DBE     | Double-bit ECC error                        |
 | DDI     | DNS, DHCP, and IPAM                         |
+| DDR     | Double Data Rate                            |
 | DGW     | Distribution GateWay                        |
 | DKIM    | DomainKeys Identified Mail                  |
 | DSA     | Diversity Slate Approach                    |
@@ -78,6 +80,7 @@
 | IPC     | Instructions per Cycle                      |
 | IPT     | Infra Provisioning Tool                     |
 | ISL     | Inter-Switch Link                           |
+| ISM     | Industrial, Scientific, Medical             |
 | KDC     | Key Distribution Center                     |
 | LCD     | Lowest common denominator                   |
 | LL      | Land Lord                                   |
@@ -138,6 +141,7 @@
 | SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
+| SSID    | Service set identifier                      |
 | SSW     | Spine Switch                                |
 | STE     | Short-term Employee                         |
 | TBH     | to be honest                                |
@@ -150,11 +154,13 @@
 | TPM     | Technical Program Manager                   |
 | TSC     | Training Super Computer                     |
 | TTP     | Time to Provision                           |
+| UEFI    | Unified Extensible Firmware Interface       |
 | VAR     | Value Added Reseller                        |
 | VDI     | Virtual Desktop Infrastructure              |
 | VWOP    | Vendor Worker Onboarding Portal             |
 | VRAM    | Video Random Access Memory                  |
 | VRF     | Virtual Routing and Forwarding              |
+| WAP     | Wireless Access Points                      |
 | WGW     | WAN Gateways                                |
 | WLC     | Wireless Controllers                        |
 | XFN     | Cross Functional                            |
