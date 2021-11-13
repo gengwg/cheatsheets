@@ -23,3 +23,7 @@
 
 In Firefox, you can `Shift + Right Click` on the video(to bypass our custom right-click menu and get the native one) and there's a "Play Speed" option.
 
+### Opening web browser tabs next to current
+
+1. Go to `about:config`
+2. Toggle the “browser.tabls.insertAfterCurrent” switch to “true” (default is “false”)
