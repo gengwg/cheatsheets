@@ -7,6 +7,7 @@
 * Session Buddy
 * HTTPS Everywhere
 * Video Speed Controller
+* Open Tabs Next to Current
 
 ## download pdf directly
 
