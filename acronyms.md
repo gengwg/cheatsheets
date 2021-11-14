@@ -18,21 +18,22 @@
 | CARE    | Codec Avatar Research & Engineering         |
 | Caveat Emptor | the buyer alone is responsible for assessing the quality of a purchase before buying.|
 | CDU     | Coolant districution unit                   |
+| CG      | Computer Graphics                           |
+| CEA     | Capacity Engineering and Analysis           |
+| CERT    | Computer Emergency Response Team            |
 | CGW     | Core Gateways                               |
+| CIDS    | Core Interfaces & Data Services             |
 | COB     | Close of Business                           |
 | CompTIA | Computing Technology Industry Association   |
 | COTS    | Commercial off-the-shelf                    |
 | CPI     | Cycles per Instruction                      |
 | CSW     | Cluster SWitch                              |
-| CEA     | Capacity Engineering and Analysis           |
-| CERT    | Computer Emergency Response Team            |
-| CG      | Computer Graphics                           |
-| CIDS    | Core Interfaces & Data Services             |
 | CMA     | Comparative Market Analysis                 |
 | corp    | corporate (network)                         |
 | CPE     | Client Platform Engineering                 |
 | CSLB    | core system load balancing                  |
 | CTR     | click through rate                          |
+| CV      | Computer Vision                             |
 | DBE     | Double-bit ECC error                        |
 | DDI     | DNS, DHCP, and IPAM                         |
 | DDR     | Double Data Rate                            |
