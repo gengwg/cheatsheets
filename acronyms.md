@@ -137,6 +137,7 @@
 | SEL     | System Event Log                            |
 | SEV     | Site EVent                                  |
 | SLB     | Server/Software Load Balancer, proxygen     |
+| SMB     | Server Message Blocks                       |
 | SOE     | Sourcing and Operations Engineering         |
 | SOP     | standard operating procedure                |
 | SOW     | Scope of Work                               |
