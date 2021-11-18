@@ -127,6 +127,8 @@ App Store > Search 'Amphetamine'
 2. Set up shortcut for switching input method: 
 	* `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
 
+![](images/mac/input_source.png)
+
 
 ### Use bash as default login shell
 
