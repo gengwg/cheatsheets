@@ -340,3 +340,16 @@ $ brew install ./sshpass.rb
 Select "Play Slideshow"  
 Select "Music"  
 Uncheck the song that's playing (usually Classic)  
+
+### Retain Data When Replacing iPhone
+
+1. Backup Old iPhone to Mac
+
+Connect old iphone to Mac via USB. Open the Finder. Find your device, e.g. xxx's iPhone.
+
+Make sure to choose 2nd option 'back up data to Mac'. Default is 1st option to iCloud. Click on 'Back Up Now'.
+
+2. Restore Backup to New iPhone
+
+Disconnect old iPhone and connect new iPhone to Mac via USB. It will automatically ask if you want to restore from backup. Click continue. You will be prompted for the password used to encrypt the backup. It's your phone's password. Then it starts restroing from backup and reboot. Restore process takes about 30 minutes.
+
