@@ -42,6 +42,10 @@ brew tap homebrew/cask
 #### Brew Install Packages
 
 ```
+  sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
+```
+
+```
 # GUI Applications
 # brew install --cask xxx
 brew cask install iterm2
