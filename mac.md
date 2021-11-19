@@ -45,7 +45,8 @@ brew tap homebrew/cask
 # GUI Applications
 # brew install --cask xxx
 brew cask install iterm2
-brew cask install keepassx
+# brew cask install keepassx
+brew install --cask keepassxc
 brew cask install firefox
 brew cask install docker
 brew cask install pycharm-ce
