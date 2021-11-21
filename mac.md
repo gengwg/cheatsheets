@@ -42,10 +42,15 @@ brew tap homebrew/cask
 #### Brew Install Packages
 
 ```
+  sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
+```
+
+```
 # GUI Applications
 # brew install --cask xxx
 brew cask install iterm2
-brew cask install keepassx
+# brew cask install keepassx
+brew install --cask keepassxc
 brew cask install firefox
 brew cask install docker
 brew cask install pycharm-ce
@@ -124,8 +129,10 @@ App Store > Search 'Amphetamine'
 ### Add Chinese Input Method
 
 1. `System Preferences` --> Keyboard --> Input Sources --> + --> Choose `Chinese` on the left --> Select `Pinyin - Simplified`, press `Add`
-2. Set up shortcut for switching input method: 
+2. Set up shortcut (Control + Space) for switching input method: 
 	* `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
+
+![](images/mac/input_source.png)
 
 
 ### Use bash as default login shell
@@ -338,3 +345,18 @@ $ brew install ./sshpass.rb
 Select "Play Slideshow"  
 Select "Music"  
 Uncheck the song that's playing (usually Classic)  
+
+### Retain Data When Replacing iPhone
+
+1. Backup Old iPhone to Mac
+
+Connect old iphone to Mac via USB. Open the Finder. Find your device, e.g. xxx's iPhone.
+
+Make sure to choose 2nd option 'back up data to Mac'. Default is 1st option to iCloud. Click on 'Back Up Now'.
+
+![](images/mac/backup.png)
+
+2. Restore Backup to New iPhone
+
+Disconnect old iPhone and connect new iPhone to Mac via USB. It will automatically ask if you want to restore from backup. Click continue. You will be prompted for the password used to encrypt the backup. It's your phone's password. Then it starts restroing from backup and reboot. Restore process takes about 30 minutes.
+
