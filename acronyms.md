@@ -23,6 +23,8 @@
 | CERT    | Computer Emergency Response Team            |
 | CGW     | Core Gateways                               |
 | CIDS    | Core Interfaces & Data Services             |
+| CKA     | Certified Kubernetes Administrator          |
+| CNCF    | Cloud Native Computing Foundation           |
 | COB     | Close of Business                           |
 | CompTIA | Computing Technology Industry Association   |
 | COTS    | Commercial off-the-shelf                    |
@@ -108,6 +110,7 @@
 | PAR     | Python archive file                         |
 | PAT     | Personal Access Token                       |
 | PB      | Post Browse                                 |
+| PCI     | Payment Card Industry                       |
 | PD      | Price Drop                                  |
 | PID     | Position ID (HR terminology)                |
 | PII     | Personally identifiable information         |
@@ -152,6 +155,7 @@
 | TC      | Total Compensation                          |
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
+| Tm      | Trust me                                    |
 | TNTE    | to new to evaluate                          |
 | TOV     | Tune of Voce (marketing)                    |
 | TPM     | Technical Program Manager                   |
