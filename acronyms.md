@@ -172,6 +172,7 @@
 | WLC     | Wireless Controllers                        |
 | XFN     | Cross Functional                            |
 | XFWR    | Cross Functional Firewall Router            |
+| XR      | Extended Reality                            |
 | XRU     | XR Rendering Unit                           |
 | YOLO    | You only live once                          |
 
