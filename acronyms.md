@@ -106,12 +106,14 @@
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
 | OPM     | Operations Program Manager                  |
+| OSS     | Open Source Software                        |
 | OUI     | organizationally unique identifier          |
 | PAR     | Python archive file                         |
 | PAT     | Personal Access Token                       |
 | PB      | Post Browse                                 |
 | PCI     | Payment Card Industry                       |
 | PD      | Price Drop                                  |
+| PG      | Product Group                               |
 | PID     | Position ID (HR terminology)                |
 | PII     | Personally identifiable information         |
 | PLM     | Product Lifecycle Management                |
