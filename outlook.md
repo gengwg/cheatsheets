@@ -11,6 +11,7 @@
 | Delete selected item                         | DELETE          |
 | Move the selected item to a different folder | CMD + SHIFT + M |
 | Undo an action                               | CMD + Z         |
+| Search Current Mailbox                       | CMD + SHIFT + F |
 
 ### Calendar 
 
