@@ -47,6 +47,7 @@
 | DTI     | Debt-To-Income Ratio                        |
 | ECS     | Enterprise Core Services                    |
 | EKI     | Entity Key Index                            |
+| EMG     | Electromyography                            |
 | EMP     | Electromagnetic Pulse                       |
 | ENE     | Enterprise Network Engineer                 |
 | ENR     | Enterprise Network Reilability              |
