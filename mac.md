@@ -186,6 +186,12 @@ This is a test.
 lsof -i tcp:9090
 ```
 
+### Command line search using Spotlight
+
+```
+mdfind <key words>
+```
+
 ## Notes
 
 ### Fixing mac os yosemite issue "bash: fork: Resource temporarily unavailable"
