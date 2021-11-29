@@ -366,3 +366,13 @@ Make sure to choose 2nd option 'back up data to Mac'. Default is 1st option to i
 
 Disconnect old iPhone and connect new iPhone to Mac via USB. It will automatically ask if you want to restore from backup. Click continue. You will be prompted for the password used to encrypt the backup. It's your phone's password. Then it starts restroing from backup and reboot. Restore process takes about 30 minutes.
 
+### Intall VirtualBox
+
+Install virtualbox and the extension pack:
+
+```
+$ brew install --cask virtualbox
+$ brew install --cask virtualbox-extension-pack
+```
+
+Go to: System Preferences → Security & Privacy → General . Click on 'lock to make changes' and allow Oracle. It will ask to restart computer.
