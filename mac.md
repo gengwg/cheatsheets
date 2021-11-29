@@ -381,3 +381,4 @@ Go to: System Preferences → Security & Privacy → General . Click on 'lock to
 
 'Users & Groups' --> click on 'current user' --> click on 'Login items' --> check the box next to the items you want to disable, then click the '-' at the bottom.
 
+![](images/mac/login_items.png)
