@@ -376,3 +376,8 @@ $ brew install --cask virtualbox-extension-pack
 ```
 
 Go to: System Preferences → Security & Privacy → General . Click on 'lock to make changes' and allow Oracle. It will ask to restart computer.
+
+### Disable Auto Start Programs
+
+'Users & Groups' --> click on 'current user' --> click on 'Login items' --> check the box next to the items you want to disable, then click the '-' at the bottom.
+
