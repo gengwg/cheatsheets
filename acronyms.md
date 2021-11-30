@@ -123,6 +123,7 @@
 | POC     | Point of Contact                            |
 | POC     | Proof of Concept                            |
 | POP     | Points of presence                          |
+| POR     | Plan of Record                              |
 | PPS     | Proofpoint Protection Service               |
 | prod    | Production (network)                        |
 | PSC     | Performance Summary Cycle                   |
