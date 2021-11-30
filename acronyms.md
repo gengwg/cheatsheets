@@ -82,6 +82,7 @@
 | IDN     | Infrastructure DNS and NTP                  |
 | IDO     | Identity Orchestrator                       |
 | IMOC    | Incident Manager On-Call                    |
+| IP      | Ingress Protection Rating                   |
 | IPC     | Instructions per Cycle                      |
 | IPT     | Infra Provisioning Tool                     |
 | ISL     | Inter-Switch Link                           |
