@@ -85,6 +85,7 @@
 | IP      | Ingress Protection Rating                   |
 | IPC     | Instructions per Cycle                      |
 | IPT     | Infra Provisioning Tool                     |
+| IPVS    | IP Virtual Server      |
 | ISL     | Inter-Switch Link                           |
 | ISM     | Industrial, Scientific, Medical             |
 | KDC     | Key Distribution Center                     |
@@ -92,6 +93,7 @@
 | LL      | Land Lord                                   |
 | LOE     | Level of effort                             |
 | LTM     | Local Traffic Managers (F5)                 |
+| LVS     | Linux Virtual Serer                         |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
 | MES     | Manufacturing Execution System              |
