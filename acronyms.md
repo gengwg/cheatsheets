@@ -42,6 +42,7 @@
 | DGW     | Distribution GateWay                        |
 | DKIM    | DomainKeys Identified Mail                  |
 | DLP     | Data Loss Prevention												|
+| DRI     | Directly Responsible Individual             |
 | DSA     | Diversity Slate Approach                    |
 | DTC     | Dare-2-Compare                              |
 | DTI     | Debt-To-Income Ratio                        |
@@ -105,6 +106,7 @@
 | MSW     | Media Switch                                |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
+| OAM     | Operations, administration, and management  |
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
 | OPM     | Operations Program Manager                  |
