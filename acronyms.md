@@ -157,6 +157,7 @@
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
 | SSID    | Service set identifier                      |
+| SSR     | Server side rendering                       |
 | SSW     | Spine Switch                                |
 | STE     | Short-term Employee                         |
 | TBH     | to be honest                                |
