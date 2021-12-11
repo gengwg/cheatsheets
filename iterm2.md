@@ -38,6 +38,11 @@ In the Profiles section, go to the Terminal tab in the right panel of the settin
 
 ![](images/iterm2/bell.png)
 
+### Enable Unlimited History in Terminal
+
+![](images/iterm2/history.png)
+
+
 ## Shortcuts
 
 `Cmd + ]` and `Cmd + [` navigates among split panes in order of use.
