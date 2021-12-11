@@ -47,6 +47,6 @@ In the Profiles section, go to the Terminal tab in the right panel of the settin
 
 `Cmd + ]` and `Cmd + [` navigates among split panes in order of use.
 
-⌘+⌥+←/↑/→/↓ will let you navigate split panes in the direction of the arrow.
+`⌘+⌥+←/↑/→/↓` will let you navigate split panes in the direction of the arrow.
 
 `Cmd + <-` and `Cmd + ->` navigates among differnt tabs.
