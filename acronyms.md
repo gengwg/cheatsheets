@@ -165,6 +165,7 @@
 | TC      | Total Compensation                          |
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
+| TIN     | Taxpayer Identification Numbers             |
 | Tm      | Trust me                                    |
 | TNTE    | to new to evaluate                          |
 | TOV     | Tune of Voce (marketing)                    |
