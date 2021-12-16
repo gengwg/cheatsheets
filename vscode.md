@@ -16,6 +16,12 @@ Mac:
 cmd + k, v
 ```
 
+or separate tab:
+
+```
+cmd + shift+ v
+```
+
 Linux:
 
 ```
