@@ -48,6 +48,7 @@
 | DTI     | Debt-To-Income Ratio                        |
 | ECS     | Enterprise Core Services                    |
 | EKI     | Entity Key Index                            |
+| EMEA    | Europe, Middle East and Africa              |
 | EMG     | Electromyography                            |
 | EMP     | Electromagnetic Pulse                       |
 | ENE     | Enterprise Network Engineer                 |

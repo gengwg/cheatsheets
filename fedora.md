@@ -66,6 +66,16 @@ sudo dnf install trash-cli
 sudo dnf install golang
 ```
 
+### Install Golang
+
+```
+$ curl -L -o kubebuilder https://go.kubebuilder.io/dl/latest/$(go env GOOS)/$(go env GOARCH)
+$ chmod +x kubebuilder
+$ sudo mv kubebuilder /usr/local/bin/
+$ kubebuilder version
+Version: main.version{KubeBuilderVersion:"3.2.0", KubernetesVendor:"1.22.1", GitCommit:"b7a730c84495122a14a0faff95e9e9615fffbfc5", BuildDate:"2021-10-29T18:32:16Z", GoOs:"linux", GoArch:"amd64"}
+```
+
 ### Install Microsoft VS Code
 
 https://code.visualstudio.com/docs/setup/linux
