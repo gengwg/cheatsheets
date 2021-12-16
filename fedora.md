@@ -63,6 +63,7 @@ sudo dnf install ansible
 sudo dnf install ruby
 sudo dnf install lm_sensors
 sudo dnf install trash-cli
+sudo dnf install golang
 ```
 
 ### Install Microsoft VS Code
