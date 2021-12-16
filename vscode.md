@@ -2,9 +2,10 @@ File > 'Auto Save'
 
 ## Extensions
 
-Go to 'Extensions' and search.
+To install extensions, Go to 'Extensions' and search name.
 
 - Markdown All In One
+- Markdown Shortcuts
 
 
 ### preview markdown
