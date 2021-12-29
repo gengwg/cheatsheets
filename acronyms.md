@@ -141,6 +141,7 @@
 | RTS     | Return to Service                           |
 | RTS     | Redmond Technical Services                  |
 | RSC     | Research Super Computer                     |
+| SAN     | Subject Alternative Name                    |
 | SCA     | Shopping Cart Abandon                       |
 | SDI     | State Disability Insurance                  |
 | SEM     | Search Engine Marketing                     |
