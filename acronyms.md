@@ -115,6 +115,7 @@
 | OFED    | OpenFabrics Enterprise Distribution         |
 | OPM     | Operations Program Manager                  |
 | OSS     | Open Source Software                        |
+| OTOH    | On the other hand                           |
 | OUI     | organizationally unique identifier          |
 | PAR     | Python archive file                         |
 | PAT     | Personal Access Token                       |
