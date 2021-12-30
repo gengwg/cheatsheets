@@ -2,6 +2,7 @@
 |:-------:|:--------------------------------------------|
 | ABI     | Application Binary Interface                |
 | ACH     | Automated Clearing House                    |
+| AE      | Additional Equity                           |
 | ARM     | ajustable-rate mortgate                     |
 | AHX     | Water-Air Heat exchanger                    |
 | ASC     | Ambulatory Surgery Centers                  |
