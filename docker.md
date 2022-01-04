@@ -131,6 +131,28 @@ root@34c36bca5af4:/# cat /mnt/test/abc.txt
 test
 ```
 
+### List docker networks
+
+```
+$ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+41a5a09ff7de   bridge    bridge    local
+0692f8283ad7   host      host      local
+e6ef8b1bc81e   kind      bridge    local
+f5be8f7e54b9   none      null      local
+```
+
+`bridge` in docker network refers to `docker0` on the host.
+
+```
+# bridge
+6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default 
+    link/ether 02:42:4b:94:fe:c8 brd ff:ff:ff:ff:ff:ff
+ip link add docker0 type bridge
+```
+
+the bridge network is like an interface to the host, but like a SWITCH  to the namespaces or containers within the host.
+
 ## Notes
 
 The `–net=host` option means that containers inherit the IPs of their host machines, i.e. no network containerization is involved. A priori, no network containerization performs better than any network containerization.
