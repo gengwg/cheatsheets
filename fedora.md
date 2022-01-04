@@ -187,6 +187,13 @@ Try again:
 $ virtualbox
 Qt WARNING: QXcbConnection: XCB error: 5 (BadAtom), sequence: 1301, resource id: 0, major code: 20 (GetProperty), minor code: 0
 ```
+#### Install Vagrant
+
+```
+$ sudo dnf install vagrant
+$ vagrant --version
+Vagrant 2.2.16
+```
 
 ### (Optional) Install Deepin Desktop Environment (DDE)
 
