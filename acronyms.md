@@ -114,6 +114,7 @@
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
 | OPM     | Operations Program Manager                  |
+| OSFA    | One Size Fits All                           |
 | OSS     | Open Source Software                        |
 | OTOH    | On the other hand                           |
 | OUI     | organizationally unique identifier          |
