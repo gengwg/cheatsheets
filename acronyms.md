@@ -97,6 +97,7 @@
 | LOE     | Level of effort                             |
 | LTM     | Local Traffic Managers (F5)                 |
 | LVS     | Linux Virtual Serer                         |
+| MAB     | MAC Authentication Bypass                   |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
 | MES     | Manufacturing Execution System              |
