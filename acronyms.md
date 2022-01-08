@@ -5,6 +5,7 @@
 | AE      | Additional Equity                           |
 | ARM     | ajustable-rate mortgate                     |
 | AHX     | Water-Air Heat exchanger                    |
+| APT     | Advanced persistent threat                  |
 | ASC     | Ambulatory Surgery Centers                  |
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
