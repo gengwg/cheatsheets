@@ -10,6 +10,7 @@
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
 | BCP     | business continuity plan                    |
+| BGP     | Border Gateway Protocol                     |
 | BIS     | Back-In-Stock                               |
 | BIOS    | Basic Input/output services                 |
 | BLOB    | binary large objects                        |
@@ -48,6 +49,7 @@
 | DSA     | Diversity Slate Approach                    |
 | DTC     | Dare-2-Compare                              |
 | DTI     | Debt-To-Income Ratio                        |
+| eBGP    | Exterio Border Gateway Protocol             |
 | ECS     | Enterprise Core Services                    |
 | EKI     | Entity Key Index                            |
 | EMEA    | Europe, Middle East and Africa              |
@@ -80,6 +82,7 @@
 | HTL     | High Thread Location                        |
 | IAC     | Infrastructure as Code                      |
 | IAM     | Identity and Access Management              |
+| iBGP    | Innterior Border Gateway Protocol           |
 | IBOS    | Infrastructure Business Operations Support  |
 | IC      | Individual Contributor                      |
 | IDC     | Infra Data Center organization              |
