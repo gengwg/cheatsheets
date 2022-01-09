@@ -111,6 +111,7 @@
 | MPLS    | Multiprotocal Label Switching               |
 | MPO     | Multi-fiber Push On                         |
 | MPOE    | Minimumu Point of Entry                     |
+| MSB     | Main Switch Board                           |
 | MSC     | Managed Software Center                     |
 | MSW     | Media Switch                                |
 | NBP     | Post Purchase                               |

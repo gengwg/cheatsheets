@@ -542,3 +542,25 @@ Follow logs:
 ```
 journalctl -u kube-apiserver -f
 ```
+
+Check physical block size for a disk
+
+```
+$ cat /sys/block/sdc/queue/physical_block_size
+4096
+$ cat /sys/block/sda/queue/physical_block_size
+512
+```
+
+Check logical block size for a disk
+
+```
+$ cat /sys/block/sda/queue/logical_block_size
+512
+$ cat /sys/block/sdb/queue/logical_block_size
+512
+```
+
+理论上应该是 logical_block_size >= physical_block_size，但是有时候我们会看到 physical_block_size = 4K，logical_block_size = 512B 情况，其实这是因为磁盘上做了一层 512B 的仿真（emulation）
+
+
