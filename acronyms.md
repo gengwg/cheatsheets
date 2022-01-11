@@ -113,6 +113,7 @@
 | MPOE    | Minimumu Point of Entry                     |
 | MSB     | Main Switch Board                           |
 | MSC     | Managed Software Center                     |
+| MSP     | Managed Service Provider                    |
 | MSW     | Media Switch                                |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
