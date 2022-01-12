@@ -563,4 +563,13 @@ $ cat /sys/block/sdb/queue/logical_block_size
 
 理论上应该是 logical_block_size >= physical_block_size，但是有时候我们会看到 physical_block_size = 4K，logical_block_size = 512B 情况，其实这是因为磁盘上做了一层 512B 的仿真（emulation）
 
+Determine if filesystem or partition is mounted ReadOnly:
+
+```
+grep "[[:space:]]ro[[:space:],]" /proc/mounts 
+
+awk '$4 ~ /^ro/ { print $2 }' /proc/mounts
+# only check certain filesystem types
+awk '$3 ~ /ext[0-9]|xfs|btrfs/ && $4 ~ /^ro/ { print $2 }' /proc/mounts
+```
 
