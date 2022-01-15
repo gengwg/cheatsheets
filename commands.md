@@ -573,3 +573,9 @@ awk '$4 ~ /^ro/ { print $2 }' /proc/mounts
 awk '$3 ~ /ext[0-9]|xfs|btrfs/ && $4 ~ /^ro/ { print $2 }' /proc/mounts
 ```
 
+Generate a token:
+
+```
+head -c 16 /dev/urandom | od -An -t x | tr -d ' '
+```
+
