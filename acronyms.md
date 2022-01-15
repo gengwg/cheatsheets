@@ -153,6 +153,7 @@
 | RSC     | Research Super Computer                     |
 | SAN     | Subject Alternative Name                    |
 | SCA     | Shopping Cart Abandon                       |
+| SCADA   | Supervisory control and data acquisition    |
 | SDI     | State Disability Insurance                  |
 | SEM     | Search Engine Marketing                     |
 | SeRF    | Servers etc Repository Framework            |
