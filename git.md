@@ -15,6 +15,20 @@ echo "another/sub/tree" >> .git/info/sparse-checkout
 git pull origin master
 ```
 
+## Enable Git Tab Autocomplete for Bash
+
+```
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+```
+
+Add the following line to the `~/.bashrc` file:
+
+```
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+```
+
 ## Errors
 
 ```
