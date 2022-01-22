@@ -593,3 +593,18 @@ $ vmstat -w 1 5
    0    0      2709504      1110976       308724      3241816    0    0     0     0 10302 16535   6  35  58   0   0
 ```
 
+Find out which cpus allowed to run the process:
+
+```
+$ grep Cpus /proc/self/status
+Cpus_allowed:	f
+Cpus_allowed_list:	0-3
+```
+
+Find out total number of cpus:
+
+```
+$ nproc
+4
+```
+
