@@ -74,6 +74,8 @@
 | GHS     | Global Human Survey                         |
 | GFX     | Graphics                                    |
 | GLB     | Geo Load Balancing                          |
+| GLB     | Global Load Balancing                       |
+| GLBx    | External Geo Load Balancing                 |
 | GMS     | Global Marketing Solutions                  |
 | HBM     | High Bandwitdh Memory                       |
 | HCO     | Henrico County, VA                          |
