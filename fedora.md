@@ -226,6 +226,22 @@ Environment Group: Deepin Desktop
 $ sudo dnf group install "Deepin Desktop"
 ```
 
+## Install WPS Office
+
+Upgrade is same; just download latest rpm and install, it will overwrite older version.
+
+Download rpm here:
+
+https://www.wps.com/office/linux/
+
+Then install it:
+
+```
+$ sudo dnf install wps-office-11.1.0.10920.XA-1.x86_64.rpm
+```
+
+To check the version, after install open `wps`, and click on the settings button on the upper right, it will show 'About wps' with the version.
+
 ## Notes
 
 
