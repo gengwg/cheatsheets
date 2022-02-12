@@ -30,3 +30,9 @@ Replace tabs with spaces:
 ```
 :retab
 ```
+
+Delete all empty lines:
+
+```
+:g/^$/d
+```
