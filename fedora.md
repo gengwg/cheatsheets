@@ -242,6 +242,14 @@ $ sudo dnf install wps-office-11.1.0.10920.XA-1.x86_64.rpm
 
 To check the version, after install open `wps`, and click on the settings button on the upper right, it will show 'About wps' with the version.
 
+### Install Missing Fonts
+
+```
+$ git clone https://github.com/iamdh4/ttf-wps-fonts.git
+$ cd ttf-wps-fonts/
+$ sudo bash install.sh
+```
+
 ## Notes
 
 
