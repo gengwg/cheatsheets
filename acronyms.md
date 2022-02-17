@@ -171,6 +171,7 @@
 | SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
+| SSSD    | System Security Services Daemon             |
 | SSID    | Service set identifier                      |
 | SSR     | Server side rendering                       |
 | SSW     | Spine Switch                                |
