@@ -26,9 +26,12 @@
 use room finder to find a room
 
 ### import ics file to calendar
-two methods:  
+
+two methods:
+
 1. just drag it to calendar!
 2. right click ics file in Finder and open with outlook
+![](images/outlook/ics.png)
 
 ### Switch between inbox, calendar, contacts
  
