@@ -49,6 +49,7 @@
 | DSA     | Diversity Slate Approach                    |
 | DTC     | Dare-2-Compare                              |
 | DTI     | Debt-To-Income Ratio                        |
+| DVT     | Design Validation Testing                   |
 | eBGP    | Exterio Border Gateway Protocol             |
 | ECS     | Enterprise Core Services                    |
 | EKI     | Entity Key Index                            |
@@ -59,6 +60,7 @@
 | ENR     | Enterprise Network Reilability              |
 | ESW     | Edge Switch                                 |
 | ETR     | Estimated Time of Return/Repair             |
+| EVT     | Engineering Validation Testing              |
 | FacEng  | Facility Engineering                        |
 | FC      | Fulfillment Center                          |
 | FDOB    | First Day Of Business                       |
@@ -144,6 +146,7 @@
 | PPS     | Proofpoint Protection Service               |
 | prod    | Production (network)                        |
 | PSC     | Performance Summary Cycle                   |
+| PVT     | Production Validation Testing               |
 | PWM     | Provisioning Workflow Manager               |
 | RDMA    | Remote Direct Memory Access                 |
 | RMA     | Return Merchandise Authorization            |
