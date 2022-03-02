@@ -134,6 +134,7 @@
 | PB      | Post Browse                                 |
 | PCI     | Payment Card Industry                       |
 | PD      | Price Drop                                  |
+| PDD     | Promotion Driven Development                |
 | PG      | Product Group                               |
 | PID     | Position ID (HR terminology)                |
 | PII     | Personally identifiable information         |
@@ -151,6 +152,8 @@
 | RDMA    | Remote Direct Memory Access                 |
 | RMA     | Return Merchandise Authorization            |
 | RoCE    | RDMA over Converged Ethernet                |
+| RPG     | Role-playing game                           |
+| RPG     | Rocket-propelled grenade                    |
 | RSE     | Remote Site Engineering team                |
 | RSW     | Rack SWitch                                 |
 | RTS     | Return to Service                           |
