@@ -135,6 +135,7 @@
 | PCI     | Payment Card Industry                       |
 | PD      | Price Drop                                  |
 | PDD     | Promotion Driven Development                |
+| PDG     | Packet Data Gateway                         |
 | PG      | Product Group                               |
 | PID     | Position ID (HR terminology)                |
 | PII     | Personally identifiable information         |
