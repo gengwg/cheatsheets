@@ -382,3 +382,9 @@ Go to: System Preferences → Security & Privacy → General . Click on 'lock to
 'Users & Groups' --> click on 'current user' --> click on 'Login items' --> check the box next to the items you want to disable, then click the '-' at the bottom.
 
 ![](images/mac/login_items.png)
+
+### Disable Spelling Auto-correct (annoying)
+
+Go to: System Prefs -> Keyboard -> Text in macOS. Uncheck 'Correct spelling automatically'.
+
+![](images/mac/disable_auto_correction.png)
