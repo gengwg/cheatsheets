@@ -82,6 +82,9 @@ brew cask install java
 brew tap caskroom/versions 
 brew cask search java
 brew cask install java8
+
+# the ip tool included with iproute2 on Linux.
+brew install iproute2mac
 ```
 
 #### Brew uninstall packages
