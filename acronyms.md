@@ -186,6 +186,7 @@
 | TBH     | to be honest                                |
 | TC      | The Candidate                               |
 | TC      | Total Compensation                          |
+| TDP     | Thermal Design Power                        |
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
 | TIN     | Taxpayer Identification Numbers             |
