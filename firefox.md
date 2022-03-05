@@ -27,3 +27,9 @@ In Firefox, you can `Shift + Right Click` on the video(to bypass our custom righ
 
 1. Go to `about:config`
 2. Toggle the “browser.tabls.insertAfterCurrent” switch to “true” (default is “false”)
+
+### disable Sponsored shortcuts altogether.
+
+1. Click the `menu` Button and select `Settings`.
+2. Select the `Home` Panel.
+3. In the `Firefox Home Content` section, unselect `Sponsored shortcuts`.
