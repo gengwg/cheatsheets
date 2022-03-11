@@ -63,3 +63,12 @@ $ ip -6  a sh eth0 permanent
     inet6 fe80::xxxx/64 scope link
        valid_lft forever preferred_lft forever
 ```
+
+# TP Link
+
+## Enable IPv6
+
+Go to: Advanced > `Ipv6` tab on the left. Dropdown choose 'Dynamic IP'.
+
+![tplink enable ipv6](images/network/tplink-ipv6.png)
+
