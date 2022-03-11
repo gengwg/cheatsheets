@@ -35,7 +35,11 @@ nc: connectx to google.com port 6443 (tcp) failed: Operation timed out
 ## invoke telnet from  different interfaces
 
 ```
-telnet -b <sourceaddress> <destination>
+# linux
+telnet -b <sourceaddress> <destination> <port>
+
+# mac
+telnet -s <sourceaddress> <destination> <port>
 ```
 
 ## Check which device and IP to use to reach an IPv6 address
