@@ -48,3 +48,18 @@ ip -6 route list default
 default via 2620:10d:xxxxxxxx dev eth0 metric 1 pref medium
 default via fe80::200:xxxxxxx dev eth0 proto ra metric 1024 expires 466sec hoplimit 64 pref high
 ```
+
+## Ipv6 show only dynamic or permanent addresses of an interface
+
+```
+$ ip -6 a sh eth0 dynamic
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 xxxxxxxx/64 scope global mngtmpaddr dynamic
+       valid_lft 92sec preferred_lft 92sec
+$ ip -6  a sh eth0 permanent
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP qlen 1000
+    inet6 2620:xxxxxx/64 scope global
+       valid_lft forever preferred_lft forever
+    inet6 fe80::xxxx/64 scope link
+       valid_lft forever preferred_lft forever
+```
