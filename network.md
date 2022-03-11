@@ -32,6 +32,12 @@ nc: connectx to google.com port 6443 (tcp) failed: Operation timed out
 nc: connectx to google.com port 6443 (tcp) failed: Operation timed out
 ```
 
+## invoke telnet from  different interfaces
+
+```
+telnet -b <sourceaddress> <destination>
+```
+
 ## Check which device and IP to use to reach an IPv6 address
 
 ```
@@ -71,4 +77,6 @@ $ ip -6  a sh eth0 permanent
 Go to: Advanced > `Ipv6` tab on the left. Dropdown choose 'Dynamic IP'.
 
 ![tplink enable ipv6](images/network/tplink-ipv6.png)
+
+
 
