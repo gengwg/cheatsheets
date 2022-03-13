@@ -137,6 +137,7 @@
 | PD      | Price Drop                                  |
 | PDD     | Promotion Driven Development                |
 | PDG     | Packet Data Gateway                         |
+| PERT    | Psychiatric Emergency Response Team         |
 | PG      | Product Group                               |
 | PID     | Position ID (HR terminology)                |
 | PII     | Personally identifiable information         |
