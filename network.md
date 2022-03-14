@@ -74,10 +74,37 @@ $ ip -6  a sh eth0 permanent
        valid_lft forever preferred_lft forever
 ```
 
-## ping many hosts
+## Ping multiple hosts at the same time
 
 ```
 fping6 < myhosts.txt
+```
+
+## Ping IPv6 link-local address
+
+```
+$ ping -6 fe80::xxxxx
+ping: sendmsg: Invalid argument
+ping: sendmsg: Invalid argument
+2 packets transmitted, 0 received, 100% packet loss, time 1038ms
+```
+
+===>
+
+IPv6 link-local always requires an interface since there's one for every interface:
+
+```
+$ ping fe80::xxxxx%eth0
+```
+
+Or (need sudo):
+
+```
+$ ping6 -I eth0 fe80::xxxxx
+setsockopt(SO_BINDTODEVICE): Operation not permitted
+$ sudo !!
+sudo ping6 -I eth0 fe80::xxxxx
+ping6: Warning: source address might be selected on device other than eth0.
 ```
 
 # TP Link
