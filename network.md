@@ -74,6 +74,12 @@ $ ip -6  a sh eth0 permanent
        valid_lft forever preferred_lft forever
 ```
 
+## ping many hosts
+
+```
+fping6 < myhosts.txt
+```
+
 # TP Link
 
 ## Enable IPv6
