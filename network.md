@@ -107,6 +107,33 @@ sudo ping6 -I eth0 fe80::xxxxx
 ping6: Warning: source address might be selected on device other than eth0.
 ```
 
+## Check Ipv6 address
+
+```
+$ ip a sh eno1
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 44:39:xxxxxxxxxx brd ff:ff:ff:ff:ff:ff
+    altname enp0s25
+    inet 192.168.10.1xx/24 brd 192.168.10.255 scope global dynamic noprefixroute eno1
+       valid_lft 167523sec preferred_lft 167523sec
+    inet6 2601:641:xxxxxxxxxxxxxxxxxx/64 scope global dynamic noprefixroute
+       valid_lft 293sec preferred_lft 293sec
+    inet6 fe80::xxxxxxxxxxxxxxxxxx/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+```
+
+Go to   https://test-ipv6.com/
+
+```
+	Your IPv4 address on the public Internet appears to be x.x.x.x
+
+	Your IPv6 address on the public Internet appears to be 2601:641:xxxxxxxxxxxxxxxxx # Same as above
+
+	Your Internet Service Provider (ISP) appears to be XXXX
+
+	Your DNS server (possibly run by your ISP) appears to have IPv6 Internet access.
+```
+
 # TP Link
 
 ## Enable IPv6
