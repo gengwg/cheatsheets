@@ -134,6 +134,14 @@ Go to   https://test-ipv6.com/
 	Your DNS server (possibly run by your ISP) appears to have IPv6 Internet access.
 ```
 
+## Get my public IPs
+
+```
+# force IPv4 or IPv6
+$ curl -4 https://ifconfig.co
+$ curl -6 https://ifconfig.co
+```
+
 # TP Link
 
 ## Enable IPv6
