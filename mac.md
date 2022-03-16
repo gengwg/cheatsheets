@@ -97,6 +97,29 @@ brew install iproute2mac
 brew update && brew upgrade
 ```
 
+#### brew update permission denied
+
+```
+$ brew update
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Error: Fetching /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core failed!
+Fetching /usr/local/Homebrew failed!
+```
+
+===>
+
+Missing ssh key for github.
+
+```
+$ ssh-add ~/.ssh/id_rsa
+Enter passphrase for /Users/gengwg/.ssh/id_rsa:
+Identity added: /Users/gengwg/.ssh/id_rsa
+```
+
 ### Configure iTerm2
 
 Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
