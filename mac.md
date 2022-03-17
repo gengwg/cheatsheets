@@ -120,6 +120,12 @@ Enter passphrase for /Users/gengwg/.ssh/id_rsa:
 Identity added: /Users/gengwg/.ssh/id_rsa
 ```
 
+#### Ignore formula on brew upgrade
+
+```
+$ brew pin git
+```
+
 ### Configure iTerm2
 
 Follow [here](https://github.com/gengwg/cheatsheets/blob/master/iterm2.md).
