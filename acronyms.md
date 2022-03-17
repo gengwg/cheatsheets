@@ -84,6 +84,7 @@
 | HCO     | Henrico County, VA                          |
 | HELOC   | Home equity line of credit                  |
 | HMC     | Head-Mounted Capture                        |
+| HSM     | [Hardware security module](https://en.wikipedia.org/wiki/Hardware_security_module)       |
 | HTL     | High Thread Location                        |
 | IAC     | Infrastructure as Code                      |
 | IAM     | Identity and Access Management              |
