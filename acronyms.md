@@ -197,6 +197,7 @@
 | TNTE    | to new to evaluate                          |
 | TOV     | Tune of Voce (marketing)                    |
 | TPM     | Technical Program Manager                   |
+| TPM     | [Trusted Platform Module](https://en.wikipedia.org/wiki/Trusted_Platform_Module)                   |
 | TSC     | Training Super Computer                     |
 | TTP     | Time to Provision                           |
 | UEFI    | Unified Extensible Firmware Interface       |
