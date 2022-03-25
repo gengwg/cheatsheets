@@ -153,6 +153,7 @@
 | PSC     | Performance Summary Cycle                   |
 | PVT     | Production Validation Testing               |
 | PWM     | Provisioning Workflow Manager               |
+| R&B     | Rhythm & Blues                              |
 | RDMA    | Remote Direct Memory Access                 |
 | RMA     | Return Merchandise Authorization            |
 | RoCE    | RDMA over Converged Ethernet                |
