@@ -112,6 +112,7 @@
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
 | MES     | Manufacturing Execution System              |
+| MIA     | missing in action                           |
 | MIG     | Multi-Instance GPU                          |
 | MIP     | Management Incentive Program                |
 | MPI     | Message Passing Interfaced                  |
