@@ -59,6 +59,7 @@
 | EMP     | Electromagnetic Pulse                       |
 | ENE     | Enterprise Network Engineer                 |
 | ENR     | Enterprise Network Reilability              |
+| EPO     | Emergency Power Off                         |
 | ESW     | Edge Switch                                 |
 | ETR     | Estimated Time of Return/Repair             |
 | EVT     | Engineering Validation Testing              |
