@@ -150,6 +150,7 @@
 | POC     | Proof of Concept                            |
 | POP     | Points of presence                          |
 | POR     | Plan of Record                              |
+| PP      | [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) |
 | PPS     | Proofpoint Protection Service               |
 | prod    | Production (network)                        |
 | PSC     | Performance Summary Cycle                   |
