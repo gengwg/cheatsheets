@@ -154,6 +154,7 @@
 | PPS     | Proofpoint Protection Service               |
 | prod    | Production (network)                        |
 | PSC     | Performance Summary Cycle                   |
+| PSW     | [Peering Switch](https://en.wikipedia.org/wiki/Peering)  |
 | PVT     | Production Validation Testing               |
 | PWM     | Provisioning Workflow Manager               |
 | R&B     | Rhythm & Blues                              |
