@@ -179,6 +179,7 @@
 | SEL     | System Event Log                            |
 | SEV     | Site EVent                                  |
 | SLB     | Server/Software Load Balancer, proxygen     |
+| SNI     | [Server Name Indication](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) |
 | SMB     | Server Message Blocks                       |
 | SOE     | Sourcing and Operations Engineering         |
 | SOP     | standard operating procedure                |
