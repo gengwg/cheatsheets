@@ -50,6 +50,7 @@
 | DSA     | Diversity Slate Approach                    |
 | DTC     | Dare-2-Compare                              |
 | DTI     | Debt-To-Income Ratio                        |
+| DV      | [Domain-validated certificate](https://en.wikipedia.org/wiki/Domain-validated_certificate) |
 | DVT     | Design Validation Testing                   |
 | eBGP    | Exterio Border Gateway Protocol             |
 | ECS     | Enterprise Core Services                    |
