@@ -111,6 +111,7 @@
 | MAB     | MAC Authentication Bypass                   |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
+| MDU     | Multi-Dwelling Units                        |
 | MES     | Manufacturing Execution System              |
 | MIA     | missing in action                           |
 | MIG     | Multi-Instance GPU                          |
@@ -196,6 +197,7 @@
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
 | TIN     | Taxpayer Identification Numbers             |
+| TIP     | [Telecom Infra Project](https://en.wikipedia.org/wiki/Telecom_Infra_Project)             |
 | Tm      | Trust me                                    |
 | TNTE    | to new to evaluate                          |
 | TOV     | Tune of Voce (marketing)                    |
