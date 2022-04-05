@@ -3,10 +3,11 @@
 | ABI     | Application Binary Interface                |
 | ACH     | Automated Clearing House                    |
 | AE      | Additional Equity                           |
-| ARM     | ajustable-rate mortgate                     |
 | AHX     | Water-Air Heat exchanger                    |
 | APT     | Advanced persistent threat                  |
+| ARM     | ajustable-rate mortgate                     |
 | ASC     | Ambulatory Surgery Centers                  |
+| ASIC    | Application-Specific Integrated Circuit     |
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
 | BCP     | business continuity plan                    |
@@ -62,6 +63,7 @@
 | EPO     | Emergency Power Off                         |
 | ESW     | Edge Switch                                 |
 | ETR     | Estimated Time of Return/Repair             |
+| EV      | [Extended Validation Certificate](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)    |
 | EVT     | Engineering Validation Testing              |
 | FacEng  | Facility Engineering                        |
 | FC      | Fulfillment Center                          |
