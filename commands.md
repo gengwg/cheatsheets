@@ -608,3 +608,14 @@ $ nproc
 4
 ```
 
+keep environment variables when using sudo:
+
+```
+-E, --preserve-env
+
+$ export HTTP_PROXY=foof
+$ sudo -E bash -c 'echo $HTTP_PROXY'
+foof
+$ sudo -E echo $HTTP_PROXY
+foof
+```
