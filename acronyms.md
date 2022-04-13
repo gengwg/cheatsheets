@@ -111,6 +111,7 @@
 | LOE     | Level of effort                             |
 | LTM     | Local Traffic Managers (F5)                 |
 | LVS     | Linux Virtual Serer                         |
+| mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
 | MAB     | MAC Authentication Bypass                   |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
@@ -162,6 +163,7 @@
 | PSW     | [Peering Switch](https://en.wikipedia.org/wiki/Peering)  |
 | PVT     | Production Validation Testing               |
 | PWM     | Provisioning Workflow Manager               |
+| RA      | [Registration Authorigy](https://en.wikipedia.org/wiki/Public_key_infrastructure) |
 | R&B     | Rhythm & Blues                              |
 | RDMA    | Remote Direct Memory Access                 |
 | RMA     | Return Merchandise Authorization            |
