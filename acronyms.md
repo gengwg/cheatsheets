@@ -183,8 +183,10 @@
 | SeRF    | Servers etc Repository Framework            |
 | SLAAC   | State-Less Automatic Address Configuration  |
 | SDR     | Sensor Data Record                          |
+| SE      | [Secure Enclave](https://support.apple.com/guide/security/secure-enclave-sec59b0b31ff/web) |
 | SEL     | System Event Log                            |
 | SEV     | Site EVent                                  |
+| SKS     | [Secure Key Store](https://github.com/facebookincubator/sks) |
 | SLB     | Server/Software Load Balancer, proxygen     |
 | SNI     | [Server Name Indication](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) |
 | SMB     | Server Message Blocks                       |
