@@ -106,6 +106,7 @@
 | ISL     | Inter-Switch Link                           |
 | ISM     | Industrial, Scientific, Medical             |
 | KDC     | Key Distribution Center                     |
+| KPI     | Key Performance Indicator                   |
 | LCD     | Lowest common denominator                   |
 | LL      | Land Lord                                   |
 | LOE     | Level of effort                             |
@@ -165,6 +166,7 @@
 | PWM     | Provisioning Workflow Manager               |
 | RA      | [Registration Authorigy](https://en.wikipedia.org/wiki/Public_key_infrastructure) |
 | R&B     | Rhythm & Blues                              |
+| RBAC    | Role-Based Access Control                   |
 | RDMA    | Remote Direct Memory Access                 |
 | RMA     | Return Merchandise Authorization            |
 | RoCE    | RDMA over Converged Ethernet                |
