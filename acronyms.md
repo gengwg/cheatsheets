@@ -157,6 +157,7 @@
 | PP      | [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) |
 | PPS     | Proofpoint Protection Service               |
 | prod    | Production (network)                        |
+| preso   | [presentation](https://www.urbandictionary.com/define.php?term=preso) |
 | PSC     | Performance Summary Cycle                   |
 | PSW     | [Peering Switch](https://en.wikipedia.org/wiki/Peering)  |
 | PVT     | Production Validation Testing               |
