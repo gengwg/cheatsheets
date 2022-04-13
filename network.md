@@ -59,6 +59,71 @@ default via 2620:10d:xxxxxxxx dev eth0 metric 1 pref medium
 default via fe80::200:xxxxxxx dev eth0 proto ra metric 1024 expires 466sec hoplimit 64 pref high
 ```
 
+## create a virtual interface:
+
+```
+$ sudo ip tuntap add name tap0 mode tap
+$ ip link show tap0
+56: tap0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 02:dd:78:6b:4c:aa brd ff:ff:ff:ff:ff:ff
+```
+
+## Creating Veth Pairs
+
+```
+$ sudo ip link add ep1 type veth peer name ep2
+$ ip link show
+56: tap0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 02:dd:78:6b:4c:aa brd ff:ff:ff:ff:ff:ff
+57: ep2@ep1: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 82:9c:21:da:66:7a brd ff:ff:ff:ff:ff:ff
+58: ep1@ep2: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether aa:21:c3:5e:c5:47 brd ff:ff:ff:ff:ff:ff
+```
+
+It is also possible to add IP addresses to the interfaces, for example:
+
+```
+$ sudo ip addr add 10.0.0.10 dev ep1
+$ sudo ip addr add 10.0.0.11 dev ep2
+```
+
+```
+$ ip addr
+
+56: tap0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 02:dd:78:6b:4c:aa brd ff:ff:ff:ff:ff:ff
+57: ep2@ep1: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 82:9c:21:da:66:7a brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.11/32 scope global ep2
+       valid_lft forever preferred_lft forever
+58: ep1@ep2: <BROADCAST,MULTICAST,M-DOWN> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether aa:21:c3:5e:c5:47 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.10/32 scope global ep1
+       valid_lft forever preferred_lft forever
+```
+
+ping also works:
+
+```
+$ ping -I 10.0.0.10 -c1 10.0.0.11
+PING 10.0.0.11 (10.0.0.11) from 10.0.0.10 : 56(84) bytes of data.
+64 bytes from 10.0.0.11: icmp_seq=1 ttl=64 time=0.062 ms
+
+--- 10.0.0.11 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.062/0.062/0.062/0.000 ms
+
+
+$ ping -I 10.0.0.10 -c1 192.168.0.160
+PING 192.168.0.160 (192.168.0.160) from 10.0.0.10 : 56(84) bytes of data.
+64 bytes from 192.168.0.160: icmp_seq=1 ttl=64 time=0.067 ms
+
+--- 192.168.0.160 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.067/0.067/0.067/0.000 ms
+```
+
 ## Ipv6 show only dynamic or permanent addresses of an interface
 
 ```
