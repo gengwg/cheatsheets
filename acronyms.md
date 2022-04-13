@@ -4,6 +4,7 @@
 | ACH     | Automated Clearing House                    |
 | AE      | Additional Equity                           |
 | AHX     | Water-Air Heat exchanger                    |
+| AMS     | [Andorra, Monaco, San Marino](https://en.wikipedia.org/wiki/List_of_country_groupings) |
 | APT     | Advanced persistent threat                  |
 | ARM     | ajustable-rate mortgate                     |
 | ASC     | Ambulatory Surgery Centers                  |
