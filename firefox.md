@@ -38,4 +38,4 @@ In Firefox, you can `Shift + Right Click` on the video(to bypass our custom righ
 
 'Settings' --> 'Privacy & Security' --> 'Security' --> 'View Certificates' --> 'Authorities'
 
-~[](images/firefox/ca.png)
+![](images/firefox/ca.png)
