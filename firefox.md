@@ -37,3 +37,5 @@ In Firefox, you can `Shift + Right Click` on the video(to bypass our custom righ
 ### View Certificate Authorities' Certificates
 
 'Settings' --> 'Privacy & Security' --> 'Security' --> 'View Certificates' --> 'Authorities'
+
+~[](images/firefox/ca.png)
