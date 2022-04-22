@@ -114,6 +114,7 @@
 | LTM     | Local Traffic Managers (F5)                 |
 | LVS     | Linux Virtual Serer                         |
 | mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
+| MTRF    | [Monday, Tuesday, Thursday, Friday](https://www.urbandictionary.com/define.php?term=MTRF)|
 | MAB     | MAC Authentication Bypass                   |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
@@ -215,6 +216,7 @@
 | TIP     | [Telecom Infra Project](https://en.wikipedia.org/wiki/Telecom_Infra_Project)             |
 | Tm      | Trust me                                    |
 | TNTE    | to new to evaluate                          |
+| TOFU    | Trust On First Use                          |
 | TOV     | Tune of Voce (marketing)                    |
 | TPM     | Technical Program Manager                   |
 | TPM     | [Trusted Platform Module](https://en.wikipedia.org/wiki/Trusted_Platform_Module)                   |
