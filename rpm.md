@@ -69,3 +69,16 @@ Cleaning repos: fb-runtime fbit-centos-fasttrack fbit-centos-hpe-mcp fbit-centos
 ```
 [sudo] dnf check-update
 ```
+
+## DNF
+
+### Find what module provides a rpm package
+
+```
+# get module name
+$ dnf module provides podman | grep Module
+
+# search for the streams for the module
+$ dnf module list | grep container-tools
+```
+
