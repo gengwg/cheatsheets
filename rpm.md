@@ -82,3 +82,8 @@ $ dnf module provides podman | grep Module
 $ dnf module list | grep container-tools
 ```
 
+### Enable dnf modules
+
+```
+$ sudo dnf module enable container-tools:rhel8
+```
