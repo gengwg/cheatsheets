@@ -210,6 +210,7 @@
 | TC      | The Candidate                               |
 | TC      | Total Compensation                          |
 | TDP     | Thermal Design Power                        |
+| T&E     | Travel and Expense                          |
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
 | TIN     | Taxpayer Identification Numbers             |
