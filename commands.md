@@ -619,3 +619,9 @@ foof
 $ sudo -E echo $HTTP_PROXY
 foof
 ```
+
+exclude multiple directories in ncdu when scanning
+
+```
+ncdu / --exclude home --exclude media
+```
