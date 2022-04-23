@@ -20,7 +20,7 @@
 | BMS     | Building Management System                  |
 | BOE     | Back of the Envelope                        |
 | BOM     | Bill of Material                            |
-| CARE    | Codec Avatar Research & Engineering         |
+| CAT     | Crypto Auth Token                           |
 | Caveat Emptor | the buyer alone is responsible for assessing the quality of a purchase before buying.|
 | CDU     | Coolant districution unit                   |
 | CG      | Computer Graphics                           |
