@@ -221,7 +221,7 @@
 | TOV     | Tune of Voce (marketing)                    |
 | TPM     | Technical Program Manager                   |
 | TPM     | [Trusted Platform Module](https://en.wikipedia.org/wiki/Trusted_Platform_Module)                   |
-| TSC     | Training Super Computer                     |
+| TS      | Token Service                               |
 | TTP     | Time to Provision                           |
 | UEFI    | Unified Extensible Firmware Interface       |
 | VAR     | Value Added Reseller                        |
