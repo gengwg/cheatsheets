@@ -137,6 +137,7 @@
 | OAM     | Operations, administration, and management  |
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
+| OLAP    | [Online analytical processing](https://en.wikipedia.org/wiki/Online_analytical_processing) |
 | OPM     | Operations Program Manager                  |
 | OSFA    | One Size Fits All                           |
 | OSS     | Open Source Software                        |
