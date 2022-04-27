@@ -87,3 +87,9 @@ $ dnf module list | grep container-tools
 ```
 $ sudo dnf module enable container-tools:rhel8
 ```
+
+### List dependencies of a rpm package
+
+```
+dnf repoquery --requires <your package name>
+```
