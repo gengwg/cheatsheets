@@ -136,6 +136,7 @@
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
 | OAM     | Operations, administration, and management  |
+| OCD     | [Obsessive–compulsive disorder](https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) |
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
 | OLAP    | [Online analytical processing](https://en.wikipedia.org/wiki/Online_analytical_processing) |
