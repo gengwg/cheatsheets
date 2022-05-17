@@ -130,6 +130,7 @@
 | MSB     | Main Switch Board                           |
 | MSC     | Managed Software Center                     |
 | MSP     | Managed Service Provider                    |
+| MSR     | MicroSoft Research                          |
 | MSW     | Media Switch                                |
 | MV      | [Materialized view](https://en.wikipedia.org/wiki/Materialized_view)|
 | NBP     | Post Purchase                               |
@@ -219,7 +220,7 @@
 | TIP     | [Telecom Infra Project](https://en.wikipedia.org/wiki/Telecom_Infra_Project)             |
 | Tm      | Trust me                                    |
 | TNTE    | to new to evaluate                          |
-| TOFU    | Trust On First Use                          |
+| TOFU    | [Trust On First Use](https://en.wikipedia.org/wiki/Trust_on_first_use) |
 | TOV     | Tune of Voce (marketing)                    |
 | TPM     | Technical Program Manager                   |
 | TPM     | [Trusted Platform Module](https://en.wikipedia.org/wiki/Trusted_Platform_Module)                   |
