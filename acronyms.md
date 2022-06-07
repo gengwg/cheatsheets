@@ -105,7 +105,8 @@
 | IP      | Ingress Protection Rating                   |
 | IPC     | Instructions per Cycle                      |
 | IPT     | Infra Provisioning Tool                     |
-| IPVS    | IP Virtual Server      |
+| IPVS    | IP Virtual Server                           |
+| IRB     | Integrated Routing and Bridging Interface   |
 | ISL     | Inter-Switch Link                           |
 | ISM     | Industrial, Scientific, Medical             |
 | KDC     | Key Distribution Center                     |
@@ -204,6 +205,7 @@
 | SMT     | [Simultaneous multithreading](https://en.wikipedia.org/wiki/Simultaneous_multithreading) |
 | SOE     | Sourcing and Operations Engineering         |
 | SOP     | standard operating procedure                |
+| SOTA    | state of the art                            |
 | SOW     | Scope of Work                               |
 | SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
