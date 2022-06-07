@@ -55,6 +55,7 @@
 | DVT     | Design Validation Testing                   |
 | eBGP    | Exterio Border Gateway Protocol             |
 | ECS     | Enterprise Core Services                    |
+| EFS     | Amazon Elastic File System                  |
 | EHS     | Environmental Health Safety                 |
 | EKI     | Entity Key Index                            |
 | EMEA    | Europe, Middle East and Africa              |
