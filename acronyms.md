@@ -195,6 +195,7 @@
 | SEM     | Search Engine Marketing                     |
 | SeRF    | Servers etc Repository Framework            |
 | SLAAC   | State-Less Automatic Address Configuration  |
+| SLOC    | [Source lines of code](https://en.wikipedia.org/wiki/Source_lines_of_code) |
 | SDR     | Sensor Data Record                          |
 | SE      | [Secure Enclave](https://support.apple.com/guide/security/secure-enclave-sec59b0b31ff/web) |
 | SEL     | System Event Log                            |
