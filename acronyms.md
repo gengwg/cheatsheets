@@ -243,6 +243,7 @@
 | VRF     | Virtual Routing and Forwarding              |
 | WAP     | Wireless Access Points                      |
 | WGW     | WAN Gateways                                |
+| WITCH   | Wipro Infosys TCS Congizant HCL             |
 | WLC     | Wireless Controllers                        |
 | XFN     | Cross Functional                            |
 | XFWR    | Cross Functional Firewall Router            |
