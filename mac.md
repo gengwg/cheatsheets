@@ -420,3 +420,13 @@ Go to: System Preferences → Security & Privacy → General . Click on 'lock to
 Go to: System Prefs -> Keyboard -> Text in macOS. Uncheck 'Correct spelling automatically'.
 
 ![](images/mac/disable_auto_correction.png)
+
+### -bash: _filedir: command not found
+
+Seeing the error when doing kubectl auto complete.
+
+Add below to bashrc:
+
+```
+source $(brew --prefix)/etc/bash_completion
+```

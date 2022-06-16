@@ -35,6 +35,7 @@
 | COTS    | Commercial off-the-shelf                    |
 | CPI     | Cycles per Instruction                      |
 | CSW     | Cluster SWitch                              |
+| CRI     | [Container Runtime Interface](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/) |
 | CMA     | Comparative Market Analysis                 |
 | corp    | corporate (network)                         |
 | CPE     | Client Platform Engineering                 |
