@@ -56,3 +56,5 @@ Sounds > Uncheck all
 ### View raw email source
 
 Right click on the title for the email > 'View Source'
+
+Usage: Can be used to find links that are not clickable in the email.
