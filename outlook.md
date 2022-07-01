@@ -52,3 +52,7 @@ Check 'second time zone'. Optionally give it a nickname.
 Outlook > Preferences > For new messages: uncheck 'display alert on my desktop'
 
 Sounds > Uncheck all
+
+### View raw email source
+
+Right click on the title for the email > 'View Source'
