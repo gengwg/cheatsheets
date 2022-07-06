@@ -110,6 +110,15 @@ $ sudo sqlite3 /etc/pihole/gravity.db "INSERT INTO adlist (address, enabled, com
 $ pihole -g
 ```
 
+Add from local list:
+
+```
+$ sudo sqlite3 /etc/pihole/gravity.db "DELETE FROM adlist"
+$ sudo cat pihole.list | xargs -I {} sudo sqlite3 /etc/pihole/gravity.db "INSERT INTO adlist (Address) VALUES ('{}');"
+$ pihole -g
+
+```
+
 ## motion change data directory
 
 ```
