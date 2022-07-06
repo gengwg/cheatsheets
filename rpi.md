@@ -102,6 +102,14 @@ http://192.168.0.222/admin
 
 Use the password at the end of installation.
 
+### Add block list from command line
+
+```
+$ sudo apt install sqlite3
+$ sudo sqlite3 /etc/pihole/gravity.db "INSERT INTO adlist (address, enabled, comment) VALUES ('https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt', 1, 'roku block list');"
+$ pihole -g
+```
+
 ## motion change data directory
 
 ```
