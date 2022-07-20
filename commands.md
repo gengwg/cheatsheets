@@ -625,3 +625,9 @@ exclude multiple directories in ncdu when scanning
 ```
 ncdu / --exclude home --exclude media
 ```
+
+Convert markdown to html
+
+```
+pandoc -o output.html README.md
+```
