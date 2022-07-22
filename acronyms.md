@@ -100,6 +100,7 @@
 | iBGP    | Innterior Border Gateway Protocol           |
 | IBOS    | Infrastructure Business Operations Support  |
 | IC      | Individual Contributor                      |
+| ICYMI   | In case you missed it                       |
 | IDC     | Infra Data Center organization              |
 | IDN     | Infrastructure DNS and NTP                  |
 | IDO     | Identity Orchestrator                       |
