@@ -630,4 +630,5 @@ Convert markdown to html
 
 ```
 pandoc -o output.html README.md
+pandoc -t html java.md > /tmp/output.html
 ```
