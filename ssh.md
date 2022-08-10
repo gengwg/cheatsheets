@@ -33,6 +33,12 @@ Set up local forwarding:
 [local_host] $ ssh -L 8000:localhost:8000 -N remote_host
 ```
 
+To not use `.ssh/confg`:
+
+```
+[local_host] $ ssh -F none -L 8000:localhost:8000 -N remote_host
+```
+
 ### Remote Forward:
 
 ```sh
