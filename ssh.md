@@ -172,3 +172,21 @@ gengwg@local:~/ssh-ca$ ssh -i ./my-key-cert.pub raspberrypi.local
 gengwg@local:~/ssh-ca$ ssh -i ./my-key-cert.pub xyz@raspberrypi.local
 xyz@raspberrypi.local's password:
 ```
+
+### To remotely obtain ssh host certificate(s)
+
+```
+$ ssh-keyscan -c raspberrypi.local
+```
+
+### To only get the host key(s)
+
+```
+$ ssh-keyscan raspberrypi.local
+```
+
+### To extract the certificate details, including the Signing CA's public key
+
+```
+ssh-keygen -L -f <certfile>
+```
