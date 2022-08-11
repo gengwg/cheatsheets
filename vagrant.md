@@ -1,13 +1,42 @@
 Vagrant is a tool to “Create and configure lightweight, reproducible, and portable development environments.”
 
 ### install both virtualbox and extension pack
+
 https://www.virtualbox.org/wiki/Downloads
 
+On mac:
+
+```
+brew install --cask virtualbox
+brew install --cask virtualbox-extension-pack
+```
+
 ### install vagrant
+
 https://www.vagrantup.com/downloads.html
 
+On mac:
+
+```
+brew install vagrant --cask
+
+# test
+vagrant init hashicorp/bionic64
+vagrant up 
+vagrant ssh
+```
+
 ### list running vms
+
+```
 vagrant status
+```
+
+### Saving an existing Vagrant box
+
+```
+vagrant package --output ubuntu22godocker.box
+```
 
 ### ssh into a guest using NAT in VirtualBox
 
