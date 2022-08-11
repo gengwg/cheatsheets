@@ -231,3 +231,47 @@ build from upper dir of Dockerfile dir:
 ```
 docker build -t myimage -f parents/dir/Dockerfile .
 ```
+
+
+### You don't have enough free space in /var/cache/apt/archives/
+
+```
+#0 66.01 E: You don't have enough free space in /var/cache/apt/archives/.
+------
+Dockerfile:36
+--------------------
+  34 |     LABEL maintainer="Random Liu <lantaol@google.com>"
+  35 |
+  36 | >>> RUN clean-install util-linux libsystemd0 bash systemd
+  37 |
+  38 |     # Avoid symlink of /etc/localtime.
+--------------------
+error: failed to solve: process "/bin/sh -c clean-install util-linux libsystemd0 bash systemd" did not complete successfully: exit code: 100
+make: *** [Makefile:246: build-container] Error 1
+```
+
+This has nothing todo with build. It's docker issue. 
+
+You run out of docker volume:
+
+```
+vagrant@vagrant:~/go/src/k8s.io/node-problem-detector$ df -h /
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv   31G   29G   47M 100% /
+```
+
+To reclaim space:
+
+```
+vagrant@vagrant:~/go/src/k8s.io/node-problem-detector$ docker image prune -a  -f
+vagrant@vagrant:~/go/src/k8s.io/node-problem-detector$ docker system prune -a -f
+vagrant@vagrant:~/go/src/k8s.io/node-problem-detector$ docker volume prune -f
+```
+
+Now good:
+
+```
+vagrant@vagrant:~/go/src/k8s.io/node-problem-detector$ df -h /
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv   31G   18G   12G  62% /
+```
