@@ -72,6 +72,7 @@
 | EVT     | Engineering Validation Testing              |
 | FacEng  | Facility Engineering                        |
 | FC      | Fulfillment Center                          |
+| FDE     | [Fetch, Decode, Execute](https://en.wikipedia.org/wiki/Instruction_cycle)|
 | FDOB    | First Day Of Business                       |
 | FG      | Functional Groups                           |
 | FIRE    | Financial Independence, Retire Early        |
