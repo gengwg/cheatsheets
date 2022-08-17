@@ -632,3 +632,9 @@ Convert markdown to html
 pandoc -o output.html README.md
 pandoc -t html java.md > /tmp/output.html
 ```
+
+Sort file by 2nd column
+
+```
+sort -u -k2 myfile.txt
+```
