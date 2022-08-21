@@ -396,3 +396,26 @@ ref:
 https://github.com/aidanns/vagrant-reload/issues/4
 ======================================================
 ```
+
+## Troubleshooting
+
+### VBoxManage cannot create subnet
+
+```
+There was an error while executing `VBoxManage`, a CLI used by Vagrant
+for controlling VirtualBox. The command and stderr is shown below.
+
+Command: ["hostonlyif", "ipconfig", "vboxnet1", "--ip", "10.0.0.1", "--netmask", "255.255.255.0"]
+
+Stderr: VBoxManage: error: Code E_ACCESSDENIED (0x80070005) - Access denied (extended info not available)
+VBoxManage: error: Context: "EnableStaticIPConfig(Bstr(pszIp).raw(), Bstr(pszNetmask).raw())" at line 242 of file VBoxManageHostonly.cpp
+```
+
+===>
+
+create following file:
+
+```
+$ cat /etc/vbox/networks.conf
+* 0.0.0.0/0 ::/0
+```
