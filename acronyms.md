@@ -15,6 +15,7 @@
 | BGP     | Border Gateway Protocol                     |
 | BIS     | Back-In-Stock                               |
 | BIOS    | Basic Input/output services                 |
+| BKM     | Best Known Method                           |
 | BLOB    | binary large objects                        |
 | BMC     | Baseboard Management Controller             |
 | BMS     | Building Management System                  |
