@@ -102,6 +102,8 @@ dnf repoquery -l vim-enhanced
 
 ### List all RPM packages in a repo
 
+(RHEL 8 only.)
+
 ```
 dnf repo-pkgs epel list
 ```
