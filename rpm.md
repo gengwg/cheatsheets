@@ -100,6 +100,33 @@ dnf repoquery --requires <your package name>
 dnf repoquery -l vim-enhanced
 ```
 
+Or download and use rpm to query:
+
+```
+$ dnf download vim-enhanced
+vim-enhanced-8.0.1763-19.el8.4.x86_64.rpm                                                                                    16 MB/s | 1.4 MB     00:00
+$ rpm -qlp vim-enhanced-8.0.1763-19.el8.4.x86_64.rpm
+/etc/profile.d/vim.csh
+/etc/profile.d/vim.sh
+/usr/bin/rvim
+/usr/bin/vim
+/usr/bin/vimdiff
+....
+```
+
+If the package is installed, you can simply use: 
+
+```
+rpm -ql mypackage
+```
+
+You can also use --installed to query already installed packages using dnf repoquery:
+
+```
+$ dnf repoquery -l  mypackage --installed
+```
+
+
 ### List all RPM packages in a repo
 
 (RHEL 8 only.)
