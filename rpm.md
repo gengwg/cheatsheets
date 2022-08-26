@@ -93,3 +93,20 @@ $ sudo dnf module enable container-tools:rhel8
 ```
 dnf repoquery --requires <your package name>
 ```
+
+### List the package contents for a rpm
+
+```
+dnf repoquery -l vim-enhanced
+```
+
+### List all RPM packages in a repo
+
+```
+dnf repo-pkgs epel list
+```
+
+List  all RPM packages installed from a repo:
+```
+dnf repo-pkgs epel list installed
+```
