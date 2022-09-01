@@ -623,7 +623,7 @@ foof
 exclude multiple directories in ncdu when scanning
 
 ```
-ncdu / --exclude home --exclude media --exclude mnt --exclude var
+ncdu / --exclude home --exclude media --exclude mnt --exclude var --exclude proc
 ```
 
 Convert markdown to html
