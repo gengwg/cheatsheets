@@ -15,7 +15,13 @@ echo "another/sub/tree" >> .git/info/sparse-checkout
 git pull origin master
 ```
 
-## Enable Git Tab Autocomplete for Bash
+### Create a tag and push to remote
+
+```
+$ git tag -a v0.0.1 -m "release version 0.0.1"
+$ git push origin --tags
+```
+### Enable Git Tab Autocomplete for Bash
 
 ```
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
