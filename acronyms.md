@@ -174,6 +174,7 @@
 | POR     | Plan of Record                              |
 | PP      | [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) |
 | PPS     | Proofpoint Protection Service               |
+| potus   | President of the United States              |
 | prod    | Production (network)                        |
 | preso   | [presentation](https://www.urbandictionary.com/define.php?term=preso) |
 | PSC     | Performance Summary Cycle                   |
