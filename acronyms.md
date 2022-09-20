@@ -141,6 +141,7 @@
 | MSR     | MicroSoft Research                          |
 | MSW     | Media Switch                                |
 | MV      | [Materialized view](https://en.wikipedia.org/wiki/Materialized_view)|
+| NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
 | OAM     | Operations, administration, and management  |
