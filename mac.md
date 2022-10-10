@@ -426,7 +426,7 @@ Go to: System Prefs -> Keyboard -> Text in macOS. Uncheck 'Correct spelling auto
 
 Each time I connect to power it dims the screen. Just uncheck 'Low power mode'.
 
-![](images/mac/low-power-mode.png)
+![](images/mac/lower-power-mode.png)
 
 
 ### -bash: _filedir: command not found
