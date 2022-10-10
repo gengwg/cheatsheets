@@ -421,6 +421,14 @@ Go to: System Prefs -> Keyboard -> Text in macOS. Uncheck 'Correct spelling auto
 
 ![](images/mac/disable_auto_correction.png)
 
+
+### Disable low power mode (annoying)
+
+Each time I connect to power it dims the screen. Just uncheck 'Low power mode'.
+
+![](images/mac/low-power-mode.png)
+
+
 ### -bash: _filedir: command not found
 
 Seeing the error when doing kubectl auto complete.
