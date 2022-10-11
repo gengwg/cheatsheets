@@ -91,6 +91,7 @@
 | GLBx    | External Geo Load Balancing                 |
 | GMS     | Global Marketing Solutions                  |
 | HBM     | High Bandwitdh Memory                       |
+| HC      | Hiring Committee                            |
 | HCO     | Henrico County, VA                          |
 | HELOC   | Home equity line of credit                  |
 | HMC     | Head-Mounted Capture                        |
