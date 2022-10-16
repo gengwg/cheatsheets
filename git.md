@@ -62,6 +62,8 @@ git push --set-upstream origin  fix-foo
 ```
 
 This will create a pull request for you:
+
+```
 $ git push --set-upstream origin  fix-foo
 ....
 Enumerating objects: 9, done.
@@ -78,9 +80,6 @@ remote:
 To github.com:gengwg/myrepo.git
  * [new branch]      fix-foo -> fix-foo
 Branch 'fix-foo' set up to track remote branch 'fix-foo' from 'origin'.
-
-```
-
 ```
 
 ## Errors
