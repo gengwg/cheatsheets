@@ -438,3 +438,36 @@ Add below to bashrc:
 ```
 source $(brew --prefix)/etc/bash_completion
 ```
+
+### Dealing with spaces in ssh option
+
+Methold 1: quote it.
+
+```
+$ ssh  -o 'ControlPath="/Users/gengwg/Library/Application Support/mytunnel.sock"' my.server
+```
+
+Method 2: use symlink.
+
+```
+$ ln -s '/Users/gengwg/Library/Application Support/tunnel.sock' /tmp/my.sock
+$ ssh -o ControlPath=/tmp/my.sock my.server
+```
+
+Method 3: use ssh config
+
+```
+Host myserver
+    hostname my.server.example.com
+    user gengwg
+    ControlPersist yes
+    ControlPath="/Users/gengwg/Library/Application Support/mytunnel.sock"
+```
+
+The advantage of using ssh config is you can ssh to your devvm w/o typing anything:
+
+```
+$ sftp myserver
+Connected to server.
+sftp>
+```
