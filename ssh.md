@@ -196,3 +196,44 @@ $ ssh-keyscan raspberrypi.local
 ```
 ssh-keygen -L -f <certfile>
 ```
+
+
+### SSH connection sharing
+
+Place the ssh client into “master” mode for connection sharing.
+
+```
+$ ssh -Mf -o ControlPersist=yes -S /home/gengwg/.local/share/mytunnel.sock raspberrypi.local _
+```
+
+Now you can reuse the connection on multipe terminal!
+
+```
+$ ssh -o ControlPath=/home/gengwg/.local/share/mytunnel.sock raspberrypi.local
+
+$ sftp -o ControlPath=/home/gengwg/.local/share/mytunnel.sock raspberrypi.local
+Connected to raspberrypi.local.
+sftp>
+```
+
+To make it even easier, you add these to your `.ssh/config`:
+
+```
+Host rpi
+    HostName raspberrypi.local
+    User gengwg
+    ControlPersist yes
+    ControlPath="/home/gengwg/.local/share/mytunnel.sock"
+```
+
+Now you can ssh to your server w/o anything!
+
+```
+$ ssh rpi
+Last login: Sun Oct 16 12:35:15 2022 from xxxx
+
+$ sftp rpi
+Connected to rpi.
+sftp> ^D
+```
+
