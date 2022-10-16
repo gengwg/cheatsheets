@@ -35,6 +35,26 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 ```
 
+### Clone only the .git directory
+
+Clone to a different location:
+
+```
+$ git clone git@github.com:gengwg/cheatsheets.git /tmp/cheatsheets
+```
+
+Move the .git to current location:
+
+```
+$ mv /tmp/cheatsheets/.git .
+```
+
+Clean up:
+
+```
+$ rm -rf /tmp/cheatsheets/
+```
+
 ## Workflow for creating pull request
 
 check out repo and make changes
