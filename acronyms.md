@@ -46,6 +46,7 @@
 | DBE     | Double-bit ECC error                        |
 | DDI     | DNS, DHCP, and IPAM                         |
 | DDR     | Double Data Rate                            |
+| DEI     | Diversity, Equity, and Inclusion            |
 | DGW     | Distribution GateWay                        |
 | DKIM    | DomainKeys Identified Mail                  |
 | DLP     | Data Loss Prevention												|
