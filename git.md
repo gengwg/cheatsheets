@@ -63,6 +63,29 @@ Put in commmit message or PR:
 Fixes #88
 ```
 
+### Add deploy key to a github repo
+
+Generate the public and private rsa key pair.
+
+```
+$ ssh-keygen -t ed25519 -f .ssh/my-deploy-key -C "gengwg@example.com"
+```
+
+Copy the content of `.ssh/my-deploy-key.pub`.
+
+From your repository, click Settings.
+
+In the sidebar, click Deploy Keys, then click Add deploy key.
+
+Example:
+
+https://github.com/gengwg/cheatsheets/settings/keys
+
+Provide a title, paste in your public key `.ssh/my-deploy-key.pub`.
+
+Select Allow write access if you want this key to have write access to the repository. A deploy key with write access lets a deployment push to the repository.
+
+
 ## Workflow for creating pull request
 
 check out repo and make changes
