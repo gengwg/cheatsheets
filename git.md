@@ -55,6 +55,14 @@ Clean up:
 $ rm -rf /tmp/cheatsheets/
 ```
 
+### Fix issue after merge PR
+
+Put in commmit message or PR:
+
+```
+Fixes #88
+```
+
 ## Workflow for creating pull request
 
 check out repo and make changes
@@ -102,6 +110,8 @@ To github.com:gengwg/myrepo.git
 Branch 'fix-foo' set up to track remote branch 'fix-foo' from 'origin'.
 ```
 
+
+
 ## Errors
 
 ```
@@ -119,4 +129,5 @@ $ ssh-add /Users/gengwg/.ssh/id_rsa_ghe
 Enter passphrase for /Users/gengwg/.ssh/id_rsa_ghe:
 Identity added: /Users/gengwg/.ssh/id_rsa_ghe (ghe_ssh_key)
 ```
+
 
