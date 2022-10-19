@@ -122,3 +122,28 @@ NEXT LEFT LAST PASSED UNIT ACTIVATES
 0 timers listed.
 Pass --all to see loaded but inactive timers, too.
 ```
+
+To start the systemd service immediately (vs wait for the timer to start it):
+
+```
+$ systemctl --user start backup-k8s.service
+```
+
+To check the status of the service:
+
+```
+$ systemctl --user status backup-k8s.service
+● backup-k8s.service - Backup Kubernetes Clusters
+     Loaded: loaded (/home/gengwg/.config/systemd/user/backup-k8s.service; disabled; preset: enabled)
+     Active: active (running) since Tue 2022-10-18 13:38:51 PDT; 2s ago
+TriggeredBy: ● backup-k8s.timer # not sure why it still says triggered by timer
+   Main PID: 1320155 (bash)
+         IO: 1.8M read, 12.0K written
+      Tasks: 26
+     Memory: 22.1M
+        CPU: 981ms
+     CGroup: /user.slice/user-193433.slice/user@193433.service/app.slice/backup-k8s.service
+             ├─1320155 /bin/bash /home/gengwg/bin/backup-k8s.sh
+             ├─1320157 bash ./kube-dump all -d mybackup
+....
+```
