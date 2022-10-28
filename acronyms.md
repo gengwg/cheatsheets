@@ -21,6 +21,7 @@
 | BMS     | Building Management System                  |
 | BOE     | Back of the Envelope                        |
 | BOM     | Bill of Material                            |
+| CAPEX   | Capital Expenses                            |
 | CAT     | Crypto Auth Token                           |
 | Caveat Emptor | the buyer alone is responsible for assessing the quality of a purchase before buying.|
 | CDU     | Coolant districution unit                   |
@@ -46,6 +47,7 @@
 | DBE     | Double-bit ECC error                        |
 | DDI     | DNS, DHCP, and IPAM                         |
 | DDR     | Double Data Rate                            |
+| DEI     | Diversity, Equity, and Inclusion            |
 | DGW     | Distribution GateWay                        |
 | DKIM    | DomainKeys Identified Mail                  |
 | DLP     | Data Loss Prevention												|
