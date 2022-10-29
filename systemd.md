@@ -47,6 +47,7 @@ WantedBy=default.target
 Description=Test
 
 [Timer]
+# run every 5 minutes
 OnCalendar=*:0/5
 Persistent=true
 
@@ -146,4 +147,65 @@ TriggeredBy: ● backup-k8s.timer # not sure why it still says triggered by time
              ├─1320155 /bin/bash /home/gengwg/bin/backup-k8s.sh
              ├─1320157 bash ./kube-dump all -d mybackup
 ....
+```
+
+## Configuring systemd system timer
+
+Exactly the same xxx.service and xxx.timer files, but located in `/etc/systemd/system`.
+
+To enable it:
+
+```
+root@myserver:/etc/systemd/system# systemctl daemon-reload
+root@myserver:/etc/systemd/system# systemctl enable test.timer
+Created symlink /etc/systemd/system/timers.target.wants/test.timer → /etc/systemd/system/test.timer.
+root@myserver:/etc/systemd/system# systemctl start test.timer
+root@myserver:/etc/systemd/system# systemctl list-timers --all | grep test
+Sat 2022-10-29 11:20:00 PDT 46s left       n/a                         n/a          test.timer                      test.service
+```
+
+Wait unti it ran at least once:
+
+```
+root@myserver:/etc/systemd/system# systemctl list-timers --all | grep test
+Sat 2022-10-29 11:22:00 PDT 1min 34s left  Sat 2022-10-29 11:20:09 PDT 15s ago      test.timer                      test.service
+```
+
+Check it writes to the root dir (system managers runs as the root permission):
+
+```
+root@myserver:/etc/systemd/system# cat /mydate
+2022年 10月 29日 星期六 11:20:09 PDT
+```
+
+If you specify the Install location at:
+
+```
+[Install]
+WantedBy=multi-user.target
+```
+
+It will tell systemd to pull in the unit when starting the multi-user.target.
+
+```
+root@myserver:/etc/systemd/system# systemctl enable test.timer
+Created symlink /etc/systemd/system/multi-user.target.wants/test.timer → /etc/systemd/system/test.timer.
+```
+
+To stop the system timer:
+
+```
+root@myserver:/etc/systemd/system# systemctl disable test.timer
+Removed /etc/systemd/system/multi-user.target.wants/test.timer.
+Removed /etc/systemd/system/timers.target.wants/test.timer.
+root@myserver:/etc/systemd/system# systemctl list-timers --all | grep test
+Sat 2022-10-29 11:32:00 PDT 1min 8s left   Sat 2022-10-29 11:30:02 PDT 48s ago      test.timer                      test.service
+root@myserver:/etc/systemd/system# systemctl stop test.timer
+root@myserver:/etc/systemd/system# systemctl list-timers --all | grep test
+<nothing>
+
+# cleanup
+root@myserver:/etc/systemd/system# cat /mydate
+2022年 10月 29日 星期六 11:30:02 PDT
+root@myserver:/etc/systemd/system# rm /mydate
 ```
