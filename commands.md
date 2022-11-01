@@ -638,3 +638,23 @@ Sort file by 2nd column
 ```
 sort -u -k2 myfile.txt
 ```
+
+Append string to the end of each line in a file
+
+```
+$ cat myfile.txt
+host1
+host2
+host3
+# verify changes
+$ sed -e 's/$/.example.com/' myfile.txt
+host1.example.com
+host2.example.com
+host3.example.com
+# change in place
+$ sed -e 's/$/.example.com/' -i myfile.txt
+$ cat myfile.txt
+host1.example.com
+host2.example.com
+host3.example.com
+```
