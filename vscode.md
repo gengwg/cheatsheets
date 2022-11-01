@@ -6,6 +6,8 @@ To install extensions, Go to 'Extensions' and search name.
 
 - Markdown All In One
 - Markdown Shortcuts
+- Git Lens
+- Git History
 
 
 ### preview markdown
@@ -32,4 +34,10 @@ ctrl + shift+ v
 
 ```
 cmd + /
+```
+
+### Open current whole folder
+
+```
+code .
 ```
