@@ -17,6 +17,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 Then, Launch vim and run `:Plugin Install`
 
+Or Install from command line: `vim +PluginInstall +qall`
+
 ## Shortcuts
 
 Replace from current line till the end of file:
