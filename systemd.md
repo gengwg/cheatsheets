@@ -209,3 +209,9 @@ root@myserver:/etc/systemd/system# cat /mydate
 2022年 10月 29日 星期六 11:30:02 PDT
 root@myserver:/etc/systemd/system# rm /mydate
 ```
+
+## 
+
+systemd-cgls  provides a tree-style listing of the cgroups and processes that are running within them on the system.
+
+systemd-cgtop. This shows a live display of current resource usage,

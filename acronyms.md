@@ -125,8 +125,8 @@
 | LTM     | Local Traffic Managers (F5)                 |
 | LVS     | Linux Virtual Serer                         |
 | mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
-| MTRF    | [Monday, Tuesday, Thursday, Friday](https://www.urbandictionary.com/define.php?term=MTRF)|
 | MAB     | MAC Authentication Bypass                   |
+| MAU     | Monthly Active Users                        |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
 | MDU     | Multi-Dwelling Units                        |
@@ -143,6 +143,7 @@
 | MSP     | Managed Service Provider                    |
 | MSR     | MicroSoft Research                          |
 | MSW     | Media Switch                                |
+| MTRF    | [Monday, Tuesday, Thursday, Friday](https://www.urbandictionary.com/define.php?term=MTRF)|
 | MV      | [Materialized view](https://en.wikipedia.org/wiki/Materialized_view)|
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
