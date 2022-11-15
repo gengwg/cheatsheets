@@ -79,6 +79,7 @@
 | FDOB    | First Day Of Business                       |
 | FG      | Functional Groups                           |
 | FIRE    | Financial Independence, Retire Early        |
+| FoV     | field of view                               |
 | fps     | frames per second                           |
 | FSD     | Fully Self-Driving                          |
 | FSW     | Fabric Switch                               |
