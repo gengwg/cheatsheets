@@ -428,6 +428,17 @@ Each time I connect to power it dims the screen. Just uncheck 'Low power mode'.
 
 ![](images/mac/low-power-mode.png)
 
+### Disable dim display on battery
+
+Consistent brightness on battery and power adapter.
+
+![](images/mac/disable_dim_display.png)
+
+### Disable auto sleep when disaply is off
+
+This prevents SSH sessions from dropping, for example.
+
+![](images/mac/disable_auto_sleep.png)
 
 ### -bash: _filedir: command not found
 
