@@ -4,12 +4,15 @@
 
 (NOTE: may have to redo again separately for external keyboards/mouses, etc.)
 
-* `System Preferences` --> `Mouse` --> uncheck `Scoll direction: Natural`
-* `System Preferences` --> `Trackpad` --> check `Tap to Click
-
+* `System Preferences` --> `Trackpad` --> `Scroll & Zoom` --> uncheck `Scoll direction: Natural`
+* `System Preferences` --> `Trackpad` --> `Point & Click` --> check `Tap to Click`
 * System Preferences > Keyboard > Key Repeat: increase to 'Fast'
 * `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
 * `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'
+
+### Set up Touch ID
+
+Useful for corp machines that locks every few minutes
 
 ### Display for Large Monitor
 
@@ -28,7 +31,9 @@ System Preferences > Users & Groups >
 cmd + Tab search for 'terminal'
 
 ```
-xcode-select --install
+# seems not needed any more. it will update xcode automatically.
+# xcode-select --install
+
 # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
