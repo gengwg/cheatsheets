@@ -5,7 +5,9 @@
 (NOTE: may have to redo again separately for external keyboards/mouses, etc.)
 
 * `System Preferences` --> `Trackpad` --> `Scroll & Zoom` --> uncheck `Scoll direction: Natural`
+![](images/mac/disable_natural_scroll.png)
 * `System Preferences` --> `Trackpad` --> `Point & Click` --> check `Tap to Click`
+![](images/mac/tap_to_click.png)
 * System Preferences > Keyboard > Key Repeat: increase to 'Fast'
 * `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
 * `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'

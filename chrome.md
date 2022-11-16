@@ -43,6 +43,10 @@ cookie: <several long strings, which is the cookie>
 
 ## Disable Ctrl-Q
 
+![](images/chrome/warn_before_quit.png)
+
+### Opera
+
 Go to `opera://config` --> Shortcuts --> Hold Command-Q (or press it twice) to quit Opera
 
 ## Rearrange Tabs
