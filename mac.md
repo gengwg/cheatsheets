@@ -120,6 +120,20 @@ Enter passphrase for /Users/gengwg/.ssh/id_rsa:
 Identity added: /Users/gengwg/.ssh/id_rsa
 ```
 
+#### Permission Error on Zsh
+
+```
+Error: Failed to link all completions, docs and manpages:
+  Permission denied @ rb_file_s_symlink - (../../../Homebrew/completions/zsh/_brew, /usr/local/share/zsh/site-functions/_brew)
+Failed during: /usr/local/bin/brew update --force --quiet
+```
+
+fix:
+
+```
+sudo chown -R $(whoami): /usr/local/share/zsh
+```
+
 #### Ignore formula on brew upgrade
 
 ```
