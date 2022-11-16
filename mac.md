@@ -57,7 +57,6 @@ brew cask install iterm2
 # brew cask install keepassx
 brew install --cask keepassxc
 brew cask install firefox
-brew cask install docker
 brew cask install pycharm-ce
 (optional)
 brew cask install chef/chef/chefdk
@@ -80,6 +79,14 @@ brew install telnet
 brew install vlc
 (“VLC” can’t be opened because Apple cannot check it for malicious software.
 Go to Security and click on 'Open Anyway')
+
+brew install awscli
+brew install awsume
+brew install kubectl
+brew install helm
+# k8s api build tools
+brew install kubebuilder
+brew install tilt
 
 # install latest java (10)
 brew cask install java
@@ -123,6 +130,45 @@ Missing ssh key for github.
 $ ssh-add ~/.ssh/id_rsa
 Enter passphrase for /Users/gengwg/.ssh/id_rsa:
 Identity added: /Users/gengwg/.ssh/id_rsa
+```
+
+#### Permission Error on Zsh
+
+```
+Error: Failed to link all completions, docs and manpages:
+  Permission denied @ rb_file_s_symlink - (../../../Homebrew/completions/zsh/_brew, /usr/local/share/zsh/site-functions/_brew)
+Failed during: /usr/local/bin/brew update --force --quiet
+```
+
+fix:
+
+```
+sudo chown -R $(whoami): /usr/local/share/zsh
+```
+
+#### Install Docker
+
+```
+$ brew install --cask docker
+....
+==> Moving App 'Docker.app' to '/Applications/Docker.app'
+🍺  docker was successfully installed!
+```
+
+After that `docker` command is still not available:
+
+```
+$ docker info
+bash: docker: command not found
+$ type docker
+bash: type: docker: not found
+```
+
+This is because docker needs permission to install binaries. CMD + space. Seach docker. It will pop up a window asking sudo password. After that you should be able use docker on command line.
+
+```
+$ type docker
+docker is /usr/local/bin/docker
 ```
 
 #### Ignore formula on brew upgrade
