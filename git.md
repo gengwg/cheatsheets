@@ -133,7 +133,76 @@ To github.com:gengwg/myrepo.git
 Branch 'fix-foo' set up to track remote branch 'fix-foo' from 'origin'.
 ```
 
+### Add SSH Keys to GitHub
 
+Without SSH Keys, one can not clone repo using git:
+
+```
+gengwg-mbp:~ gengwg$ git clone git@github.com:gengwg/cheatsheets.git
+Cloning into 'cheatsheets'...
+The authenticity of host 'github.com (64:ff9b::c01e:ff70)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+```
+
+Steps:
+
+1. Generate SSH Keys:
+
+```
+gengwg-mbp:~ gengwg$ ssh-keygen -f id_rsa_github_fb
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in id_rsa_github_fb
+Your public key has been saved in id_rsa_github_fb.pub
+The key fingerprint is:
+The key's randomart image is:
+```
+
+Copy the *public* key:
+
+```
+gengwg-mbp:~ gengwg$ pbcopy < id_rsa_github_fb.pub
+```
+
+And paste it here:
+
+https://github.com/settings/keys
+
+Move the keys to .ssh where the permission is more strict. A more secure way is to add those keys to a password manager, and delete them. Only retrieve them from keepass when needing access. After adding them to keychain, and delete the retrieved copy. This way no local copy exists on your disk, only in memory. But that seems overkill.
+
+```
+drwx------    6 gengwg  staff   192 Nov 16 10:56 .ssh
+gengwg-mbp:~ gengwg$ mv id_rsa_github_fb* .ssh/
+```
+
+Add *private* key to keychain:
+
+```
+gengwg-mbp:~ gengwg$ ssh-add .ssh/id_rsa_github_fb
+Enter passphrase for .ssh/id_rsa_github_fb:
+Identity added: .ssh/id_rsa_github_fb (gengwg@gengwg-mbp)
+```
+
+Now you can clone the repo using git:
+
+```
+gengwg-mbp:~ gengwg$ git clone git@github.com:gengwg/cheatsheets.git
+Cloning into 'cheatsheets'...
+remote: Enumerating objects: 1451, done.
+remote: Counting objects: 100% (268/268), done.
+remote: Compressing objects: 100% (135/135), done.
+remote: Total 1451 (delta 155), reused 228 (delta 132), pack-reused 1183
+Receiving objects: 100% (1451/1451), 5.07 MiB | 5.44 MiB/s, done.
+Resolving deltas: 100% (862/862), done.
+```
 
 ## Errors
 
