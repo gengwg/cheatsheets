@@ -134,6 +134,31 @@ fix:
 sudo chown -R $(whoami): /usr/local/share/zsh
 ```
 
+#### Install Docker
+
+```
+$ brew install --cask docker
+....
+==> Moving App 'Docker.app' to '/Applications/Docker.app'
+🍺  docker was successfully installed!
+```
+
+After that `docker` command is still not available:
+
+```
+$ docker info
+bash: docker: command not found
+$ type docker
+bash: type: docker: not found
+```
+
+This is because docker needs permission to install binaries. CMD + space. Seach docker. It will pop up a window asking sudo password. After that you should be able use docker on command line.
+
+```
+$ type docker
+docker is /usr/local/bin/docker
+```
+
 #### Ignore formula on brew upgrade
 
 ```
