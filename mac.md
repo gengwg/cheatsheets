@@ -52,7 +52,6 @@ brew cask install iterm2
 # brew cask install keepassx
 brew install --cask keepassxc
 brew cask install firefox
-brew cask install docker
 brew cask install pycharm-ce
 (optional)
 brew cask install chef/chef/chefdk
@@ -75,6 +74,14 @@ brew install telnet
 brew install vlc
 (“VLC” can’t be opened because Apple cannot check it for malicious software.
 Go to Security and click on 'Open Anyway')
+
+brew install awscli
+brew install awsume
+brew install kubectl
+brew install helm
+# k8s api build tools
+brew install kubebuilder
+brew install tilt
 
 # install latest java (10)
 brew cask install java
