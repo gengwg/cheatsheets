@@ -52,18 +52,15 @@ brew tap homebrew/cask
   sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
 ```
 
-```
-# GUI Applications
-# brew install --cask xxx
-brew cask install iterm2
-# brew cask install keepassx
-brew install --cask keepassxc
-brew cask install firefox
-brew cask install pycharm-ce
-(optional)
-brew cask install chef/chef/chefdk
+Can copy below in a script and run it.
 
-# CLI Applications
+```
+gengwg@gengwg-mbp:~$ vim /tmp/mybrew.sh
+gengwg@gengwg-mbp:~$ bash /tmp/mybrew.sh
+```
+
+```
+## CLI Applications
 brew install mysql  # mysql client and server
 brew install tree
 brew install tty-clock
@@ -78,10 +75,11 @@ brew install git
 brew install mosh
 brew install dict
 brew install telnet
-brew install vlc
-(“VLC” can’t be opened because Apple cannot check it for malicious software.
-Go to Security and click on 'Open Anyway')
 
+# the ip tool included with iproute2 on Linux.
+brew install iproute2mac
+
+# k8s tools
 brew install awscli
 brew install awsume
 brew install kubectl
@@ -90,15 +88,26 @@ brew install helm
 brew install kubebuilder
 brew install tilt
 
+# GUI Applications
+# brew install --cask xxx
+brew cask install iterm2
+# brew cask install keepassx
+brew install --cask keepassxc
+brew cask install firefox
+brew cask install pycharm-ce
+(optional)
+brew cask install chef/chef/chefdk
+
+brew install vlc
+(“VLC” can’t be opened because Apple cannot check it for malicious software.
+Go to Security and click on 'Open Anyway')
+
 # install latest java (10)
 brew cask install java
 # To get a list of all older versions of java:  
 brew tap caskroom/versions 
 brew cask search java
 brew cask install java8
-
-# the ip tool included with iproute2 on Linux.
-brew install iproute2mac
 ```
 
 #### Brew uninstall packages
