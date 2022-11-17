@@ -79,14 +79,31 @@ brew install telnet
 # the ip tool included with iproute2 on Linux.
 brew install iproute2mac
 
-# k8s tools
+## k8s tools
+
 brew install awscli
 brew install awsume
 brew install kubectl
 brew install helm
-# k8s api build tools
+brew install kubectx
+brew install octant
+brew install kustomize
+
+# k8s test env
+brew install kind
+brew install minikube
+
+# k8s operator api build tools
 brew install kubebuilder
 brew install tilt
+
+brew install k9s
+brew install kubeval
+
+# krew
+brew install krew
+kubectl krew update
+kubectl krew install access-matrix
 
 # GUI Applications
 # brew install --cask xxx
