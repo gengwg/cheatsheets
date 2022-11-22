@@ -73,6 +73,7 @@
 | ETR     | Estimated Time of Return/Repair             |
 | EV      | [Extended Validation Certificate](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)    |
 | EVT     | Engineering Validation Testing              |
+| f/u     | follow up                                   |
 | FacEng  | Facility Engineering                        |
 | FC      | Fulfillment Center                          |
 | FDE     | [Fetch, Decode, Execute](https://en.wikipedia.org/wiki/Instruction_cycle)|
@@ -165,6 +166,7 @@
 | PB      | Post Browse                                 |
 | PCI     | Payment Card Industry                       |
 | PD      | Price Drop                                  |
+| PDB     | Power Distribution Board                    |
 | PDD     | Promotion Driven Development                |
 | PDG     | Packet Data Gateway                         |
 | PERT    | Psychiatric Emergency Response Team         |
