@@ -218,6 +218,7 @@
 | SLB     | Server/Software Load Balancer, proxygen     |
 | SNI     | [Server Name Indication](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) |
 | SMB     | Server Message Blocks                       |
+| SME     | Subject Matter Expert                       |
 | SMH     | Shake My Head                               |
 | SMT     | [Simultaneous multithreading](https://en.wikipedia.org/wiki/Simultaneous_multithreading) |
 | SOE     | Sourcing and Operations Engineering         |
