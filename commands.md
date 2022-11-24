@@ -658,3 +658,34 @@ host1.example.com
 host2.example.com
 host3.example.com
 ```
+
+One way to check vm vs. pm:
+
+vm:
+
+```
+# hostnamectl
+   Static hostname: myhost
+         Icon name: computer-vm
+           Chassis: vm # <------------------------------
+        Machine ID: xxxxxx
+           Boot ID: xxxxxx
+    Virtualization: vmware # <------------------------------
+  Operating System: CentOS Linux 7 (Core)
+            Kernel: Linux 3.10.0-1160.62.1.el7.x86_64
+      Architecture: x86-64
+```
+
+pm:
+
+```
+$ hostnamectl
+   Static hostname: myserver
+         Icon name: computer-server
+           Chassis: server # <------------------------------
+        Machine ID: xxxxx
+           Boot ID: xxxxx
+  Operating System: CentOS Linux 7 (Core)
+            Kernel: Linux 3.10.0-1127.el7.x86_64
+      Architecture: x86-64
+```
