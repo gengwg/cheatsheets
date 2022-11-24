@@ -49,6 +49,7 @@
 | DDR     | Double Data Rate                            |
 | DEI     | Diversity, Equity, and Inclusion            |
 | DGW     | Distribution GateWay                        |
+| DJ      | Disc Jockey                                 |
 | DKIM    | DomainKeys Identified Mail                  |
 | DLP     | Data Loss Prevention												|
 | DRI     | Directly Responsible Individual             |
