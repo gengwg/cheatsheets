@@ -148,6 +148,7 @@
 | MSW     | Media Switch                                |
 | MTRF    | [Monday, Tuesday, Thursday, Friday](https://www.urbandictionary.com/define.php?term=MTRF)|
 | MV      | [Materialized view](https://en.wikipedia.org/wiki/Materialized_view)|
+| MVCC    | Multi-Version Concurrency Control           |
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
@@ -257,6 +258,7 @@
 | VWOP    | Vendor Worker Onboarding Portal             |
 | VRAM    | Video Random Access Memory                  |
 | VRF     | Virtual Routing and Forwarding              |
+| WAL     | [Write-Ahead Logging](https://en.wikipedia.org/wiki/Write-ahead_logging) |
 | WAP     | Wireless Access Points                      |
 | WGW     | WAN Gateways                                |
 | WITCH   | Wipro Infosys TCS Congizant HCL             |
