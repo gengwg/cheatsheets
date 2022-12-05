@@ -156,6 +156,7 @@
 | OCD     | [Obsessive–compulsive disorder](https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) |
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
+| OG      | Original Ganster                            |
 | OKR     | Objectives and Key Results                  |
 | OLAP    | [Online analytical processing](https://en.wikipedia.org/wiki/Online_analytical_processing) |
 | OPM     | Operations Program Manager                  |
