@@ -689,3 +689,9 @@ $ hostnamectl
             Kernel: Linux 3.10.0-1127.el7.x86_64
       Architecture: x86-64
 ```
+
+Find non-empty binary files and move them to another directory:
+
+```
+find . -type f ! -size 0 -exec grep -IL . "{}" \; | xargs -I '{}' mv {} /tmp/
+```
