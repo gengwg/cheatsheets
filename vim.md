@@ -15,7 +15,7 @@ Delete the Plug line(s) from your .vimrc, source the .vimrc and call :PlugClean
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-Then, Launch vim and run `:Plugin Install`
+Then, Launch vim and run `:PluginInstall`
 
 Or Install from command line: `vim +PluginInstall +qall`
 
