@@ -1,7 +1,7 @@
 # Fedora Setup
 
 ```
-$ cat /etc/fedora-release 
+$ cat /etc/fedora-release
 Fedora release 32 (Thirty Two)
 ```
 
@@ -59,11 +59,13 @@ Now your Wifi dongle should work and you can use it to connect to your wifi netw
 sudo dnf groupinstall "Development Tools"
 sudo dnf install gnome-tweaks
 sudo dnf install keepassx
+sudo dnf install keepassxc
 sudo dnf install ansible
 sudo dnf install ruby
 sudo dnf install lm_sensors
 sudo dnf install trash-cli
 sudo dnf install golang
+sudo dnf install powerline
 ```
 
 ### Install Golang
@@ -79,7 +81,6 @@ Version: main.version{KubeBuilderVersion:"3.2.0", KubernetesVendor:"1.22.1", Git
 ### Install Microsoft VS Code
 
 https://code.visualstudio.com/docs/setup/linux
-
 
 ### Install Docker
 
@@ -228,8 +229,6 @@ $ sudo dnf group install "Deepin Desktop"
 
 ## Install WPS Office
 
-Upgrade is same; just download latest rpm and install, it will overwrite older version.
-
 Download rpm here:
 
 https://www.wps.com/office/linux/
@@ -242,6 +241,8 @@ $ sudo dnf install wps-office-11.1.0.10920.XA-1.x86_64.rpm
 
 To check the version, after install open `wps`, and click on the settings button on the upper right, it will show 'About wps' with the version.
 
+Upgrade: same; just download latest rpm and install, it will overwrite older version.
+
 ### Install Missing Fonts
 
 ```
@@ -252,11 +253,9 @@ $ sudo bash install.sh
 
 ## Notes
 
-
-
 ### Fix “Dummy Output” on audio
 
-This sometimes happens after Suspending after upgrading fedora. 
+This sometimes happens after Suspending after upgrading fedora.
 restarted pulseaudio helped:
 
 ```
