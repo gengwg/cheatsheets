@@ -36,6 +36,7 @@
 | CompTIA | Computing Technology Industry Association   |
 | COTS    | Commercial off-the-shelf                    |
 | CPI     | Cycles per Instruction                      |
+| CRD     | Custom Resource Definition                  |
 | CSW     | Cluster SWitch                              |
 | CRI     | [Container Runtime Interface](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/) |
 | CMA     | Comparative Market Analysis                 |
