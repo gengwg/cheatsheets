@@ -35,6 +35,7 @@
 | COB     | Close of Business                           |
 | CompTIA | Computing Technology Industry Association   |
 | COTS    | Commercial off-the-shelf                    |
+| COW     | Copy on Write                               |
 | CPI     | Cycles per Instruction                      |
 | CRD     | Custom Resource Definition                  |
 | CSW     | Cluster SWitch                              |
@@ -142,6 +143,7 @@
 | MPLS    | Multiprotocal Label Switching               |
 | MPO     | Multi-fiber Push On                         |
 | MPOE    | Minimumu Point of Entry                     |
+| MRP     | market reference point                      |
 | MSB     | Main Switch Board                           |
 | MSC     | Managed Software Center                     |
 | MSP     | Managed Service Provider                    |
