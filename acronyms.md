@@ -257,6 +257,7 @@
 | TS      | Token Service                               |
 | TTP     | Time to Provision                           |
 | UEFI    | Unified Extensible Firmware Interface       |
+| URA     | Unregretted Attrition                       |
 | VAR     | Value Added Reseller                        |
 | VDI     | Virtual Desktop Infrastructure              |
 | VWOP    | Vendor Worker Onboarding Portal             |
