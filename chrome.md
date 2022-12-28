@@ -45,6 +45,17 @@ cookie: <several long strings, which is the cookie>
 
 ![](images/chrome/warn_before_quit.png)
 
+## Deleting a specific URL suggestion in Chrome
+
+https://superuser.com/questions/398385/deleting-a-specific-url-suggestion-in-chrome
+
+To delete a single autosuggested URL, start typing the address as you normally would. Then, when the unwanted autocomplete suggestion appears, use your keyboard's arrow keys to highlight the suggestion in the drop-down menu below the address bar.
+
+Finally, press `Shift+Delete` and poof! The suggestion disappears.
+
+On a Mac, you may have to press `Shift+Fn+Delete`.
+(Fn is at left bottom corner on laptop keyboard).
+
 ### Opera
 
 Go to `opera://config` --> Shortcuts --> Hold Command-Q (or press it twice) to quit Opera
