@@ -220,6 +220,24 @@ Go to   https://test-ipv6.com/
 ......
 ```
 
+## List network namespaces
+
+```
+$ ip netns list
+cni-7cb55f43-1c63-759d-6a74-2b063909623a (id: 4)
+cni-a8b296f3-7d18-33d6-20be-ddb8589154aa (id: 3)
+cni-7b26fabe-2741-9284-62a1-2db46298b996 (id: 2)
+cni-efc9c74d-aa80-5c3f-e91c-b208f3c9cf1b (id: 1)
+cni-8020e381-a5f5-4a69-ab79-0f57c429a391 (id: 0)
+```
+
+It's the same as here:
+
+```
+$ ls /var/run/netns/
+cni-7b26fabe-2741-9284-62a1-2db46298b996  cni-7cb55f43-1c63-759d-6a74-2b063909623a  cni-8020e381-a5f5-4a69-ab79-0f57c429a391  cni-a8b296f3-7d18-33d6-20be-ddb8589154aa  cni-efc9c74d-aa80-5c3f-e91c-b208f3c9cf1b
+```
+
 ## Get my public IPs
 
 ```
