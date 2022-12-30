@@ -120,6 +120,7 @@
 | IPT     | Infra Provisioning Tool                     |
 | IPVS    | IP Virtual Server                           |
 | IRB     | Integrated Routing and Bridging Interface   |
+| IRL     | In real life                                |
 | ISL     | Inter-Switch Link                           |
 | ISM     | Industrial, Scientific, Medical             |
 | KDC     | Key Distribution Center                     |
@@ -200,6 +201,7 @@
 | RBAC    | Role-Based Access Control                   |
 | RDMA    | Remote Direct Memory Access                 |
 | RMA     | Return Merchandise Authorization            |
+| ROI     | Return on investment                        |
 | RoCE    | RDMA over Converged Ethernet                |
 | RPG     | Role-playing game                           |
 | RPG     | Rocket-propelled grenade                    |
