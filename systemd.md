@@ -210,8 +210,14 @@ root@myserver:/etc/systemd/system# cat /mydate
 root@myserver:/etc/systemd/system# rm /mydate
 ```
 
-## 
+## Commands
 
 systemd-cgls  provides a tree-style listing of the cgroups and processes that are running within them on the system.
 
 systemd-cgtop. This shows a live display of current resource usage,
+
+Cat a service config:
+
+```
+sudo systemctl cat kube-apiserver
+```
