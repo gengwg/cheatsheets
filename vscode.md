@@ -1,5 +1,3 @@
-File > 'Auto Save'
-
 ## Extensions
 
 To install extensions, Go to 'Extensions' and search name.
@@ -41,3 +39,8 @@ cmd + /
 ```
 code .
 ```
+
+### Enable Auto Save
+
+Go to 'File' > Clike on 'Auto Save'
+
