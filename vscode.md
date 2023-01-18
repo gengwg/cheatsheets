@@ -44,3 +44,14 @@ code .
 
 Go to 'File' > Clike on 'Auto Save'
 
+### Find
+
+- Mac: cmd + F
+- Linux: Ctrl + F
+
+### Find and Replace
+
+- Mac: cmd + alt + F
+- Linux: Ctrl + H
+
+
