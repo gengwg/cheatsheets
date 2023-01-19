@@ -205,6 +205,7 @@
 | RoCE    | RDMA over Converged Ethernet                |
 | RPG     | Role-playing game                           |
 | RPG     | Rocket-propelled grenade                    |
+| RPM     | Redhat Package Manager                      |
 | RSE     | Remote Site Engineering team                |
 | RSW     | Rack SWitch                                 |
 | RTS     | Return to Service                           |
