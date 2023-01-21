@@ -139,3 +139,19 @@ List  all RPM packages installed from a repo:
 ```
 dnf repo-pkgs epel list installed
 ```
+
+### List all software repositories ids and names
+
+```
+$ dnf repolist --all
+```
+
+### Mirror remote repo
+
+Find repo id from above command, then:
+
+```
+dnf reposync --repoid=<repo id> --download-metadata -p <download path>
+```
+
+[Example](https://gist.github.com/gengwg/9eece444ca1757be307a7a7a32573279)
