@@ -204,6 +204,56 @@ Receiving objects: 100% (1451/1451), 5.07 MiB | 5.44 MiB/s, done.
 Resolving deltas: 100% (862/862), done.
 ```
 
+### Generate a Git patch for a commit
+
+```
+git format-patch -1 <sha>
+```
+
+Example:
+
+```
+$ git format-patch -1 HEAD
+0001-Fix-slurmd-fails-to-autostart-by-systemd-on-boot.patch
+
+$ cat 0001-Fix-slurmd-fails-to-autostart-by-systemd-on-boot.patch
+From e4965bd270df3ac149ec14e31755693ab15d5608 Mon Sep 17 00:00:00 2001
+From: W Geng <gengwg@users.noreply.github.com>
+Date: Tue, 31 Jan 2023 23:55:48 -0800
+Subject: [PATCH] Fix slurmd fails to autostart by systemd on boot
+
+Slurm fails to autostart by systemd on CentOS 8 machines after reboot. Had to manually start the service.
+
+It seems some transient network or some other problems during the boot time caused slurmd to fail to start. However later it doesn't try restart after failing. This is to add a retry, so that slurmd can be started after some transient error.
+---
+ etc/slurmd.service.in | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/etc/slurmd.service.in b/etc/slurmd.service.in
+index 0a69d4cd63..250e2dce36 100644
+--- a/etc/slurmd.service.in
++++ b/etc/slurmd.service.in
+@@ -16,6 +16,8 @@ LimitMEMLOCK=infinity
+ LimitSTACK=infinity
+ Delegate=yes
+ @SYSTEMD_TASKSMAX_OPTION@
++Restart=on-failure
++RestartSec=5
+
+ # Uncomment the following lines to disable logging through journald.
+ # NOTE: It may be preferable to set these through an override file instead.
+--
+2.31.1
+```
+
+To generate n patches from the topmost commits:
+
+```
+$ git format-patch -2 HEAD
+0001-Fix-slurmd-fails-to-autostart-by-systemd-on-boot.patch
+0002-Fix-slurmd-fails-to-autostart-by-systemd-on-boot-on-.patch
+```
+
 ## Errors
 
 ```
