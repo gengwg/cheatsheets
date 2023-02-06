@@ -216,8 +216,15 @@ systemd-cgls  provides a tree-style listing of the cgroups and processes that ar
 
 systemd-cgtop. This shows a live display of current resource usage,
 
-Cat a service config:
+### Cat a service config:
 
 ```
 sudo systemctl cat kube-apiserver
 ```
+
+### Check journals disk usage
+
+```
+journalctl --disk-usage
+Archived and active journals take up 11.2M in the file system.
+````
