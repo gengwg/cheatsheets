@@ -155,3 +155,18 @@ dnf reposync --repoid=<repo id> --download-metadata -p <download path>
 ```
 
 [Example](https://gist.github.com/gengwg/9eece444ca1757be307a7a7a32573279)
+
+
+### Find which rpm package provides a specific file or library
+
+```
+# rpm -qf /etc/hosts
+setup-2.8.71-11.el7.noarch
+# rpm -q --whatprovides /etc/hosts
+setup-2.8.71-11.el7.noarch
+# yum whatprovides /etc/hosts
+setup-2.8.71-11.el7.noarch : A set of system configuration and setup files
+Repo        : centos-os
+Matched from:
+Filename    : /etc/hosts
+```
