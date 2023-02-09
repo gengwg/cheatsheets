@@ -228,3 +228,11 @@ sudo systemctl cat kube-apiserver
 journalctl --disk-usage
 Archived and active journals take up 11.2M in the file system.
 ````
+
+### =- (equals minus) in systemd unit files
+
+```
+EnvironmentFile=-/run/sysconfig/mdadm
+```
+
+> The argument passed should be an absolute filename or wildcard expression, optionally prefixed with "-", which indicates that if the file does not exist, it will not be read and no error or warning message is logged.
