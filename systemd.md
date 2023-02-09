@@ -258,3 +258,17 @@ EnvironmentFile=-/run/sysconfig/mdadm
 ```
 $ systemctl --failed
 ```
+
+### Service does not start on reboot even if enabled
+
+Add Restart=on-failure to your systemd unit file. e.g.:
+
+```
+[Service]
+Restart=on-failure
+RestartSec=5
+```
+
+> Restart=
+
+> If set to on-failure, the service will be restarted when the process exits with a non-zero exit code
