@@ -4,6 +4,14 @@ Each association can have a fair-share allocation of resources and a multitude o
 Always upgrade slurmdbd first. slurmdbd can communicate with SLURM commands and daemons at the same
 or recent earlier versions. e.g. slurm 2.4 can not communicate with 2.5 RPCs.
 
+## Commands
+
+### Check the state of the host in Slurm
+
+'''
+sinfo -N | grep $(hostname -s)
+'''
+
 
 ## Troubleshooting
 
