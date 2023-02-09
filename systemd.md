@@ -1,3 +1,9 @@
+## Notes
+
+After= only tells Systemd what order it should start and stop services in. It doesn't tell it to automatically start the service. You should add Requires=google-startup-scripts.service to the redis unit file and then enable it. It will automatically run the google-startup-scripts first. If google-startup-scripts fails, then so will the redis service.
+
+
+
 ## Configuring systemd user timer
 
 https://www.xf.is/2020/06/27/configuring-systemd-user-timer/
