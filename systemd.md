@@ -2,7 +2,17 @@
 
 After= only tells Systemd what order it should start and stop services in. It doesn't tell it to automatically start the service. You should add Requires=google-startup-scripts.service to the redis unit file and then enable it. It will automatically run the google-startup-scripts first. If google-startup-scripts fails, then so will the redis service.
 
+### Enabled vs Running
 
+`systemctl list-unit-files | grep enabled` will list all enabled ones.
+
+If you want which ones are currently running, you need `systemctl | grep running`.
+
+Use the one you're looking for. Enabled, doesn't mean it's running. And running doesn't mean it's enabled. They are two different things.
+
+`Enabled` means the system will run the service on the next boot. So if you enable a service, you still need to manually start it, or reboot and it will start.
+
+`Running` means it's actually running right now, but if it's not enabled, it won't restart when you reboot.
 
 ## Configuring systemd user timer
 
