@@ -236,3 +236,9 @@ EnvironmentFile=-/run/sysconfig/mdadm
 ```
 
 > The argument passed should be an absolute filename or wildcard expression, optionally prefixed with "-", which indicates that if the file does not exist, it will not be read and no error or warning message is logged.
+
+### To list failed units/services
+
+```
+$ systemctl --failed
+```
