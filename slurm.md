@@ -8,9 +8,9 @@ or recent earlier versions. e.g. slurm 2.4 can not communicate with 2.5 RPCs.
 
 ### Check the state of the host in Slurm
 
-'''
+```
 sinfo -N | grep $(hostname -s)
-'''
+``` 
 
 
 ## Troubleshooting
