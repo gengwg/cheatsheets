@@ -272,3 +272,13 @@ RestartSec=5
 > Restart=
 
 > If set to on-failure, the service will be restarted when the process exits with a non-zero exit code
+
+### See all runtime drop-in changes for system units
+
+```
+$ systemd-delta --type=extended
+[EXTENDED]   /usr/lib/systemd/system/kubelet.service → /usr/lib/systemd/system/kubelet.service.d/10-kubeadm.conf
+[EXTENDED]   /usr/lib/systemd/system/systemd-hostnamed.service → /usr/lib/systemd/system/systemd-hostnamed.service.d/disable-privatedevices.conf
+[EXTENDED]   /usr/lib/systemd/system/systemd-logind.service → /usr/lib/systemd/system/systemd-logind.service.d/10-grub2-logind-service.conf
+[EXTENDED]   /usr/lib/systemd/system/systemd-udev-trigger.service → /usr/lib/systemd/system/systemd-udev-trigger.service.d/systemd-udev-trigger-no-reload.conf
+```
