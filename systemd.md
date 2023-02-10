@@ -14,6 +14,14 @@ Use the one you're looking for. Enabled, doesn't mean it's running. And running 
 
 `Running` means it's actually running right now, but if it's not enabled, it won't restart when you reboot.
 
+### Using systemd drop-in units
+
+There are two methods of overriding default Container Linux settings in unit files: 
+
+- copying the unit file from /usr/lib64/systemd/system to /etc/systemd/system and modifying the chosen settings. 
+- Alternatively, one can create a directory named unit.d within /etc/systemd/system and place a drop-in file overwrite.conf there that only changes the specific settings one is interested in. 
+    * Note that multiple such drop-in files are read if present.
+
 ## Configuring systemd user timer
 
 https://www.xf.is/2020/06/27/configuring-systemd-user-timer/
