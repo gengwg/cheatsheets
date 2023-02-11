@@ -97,6 +97,7 @@
 | GLB     | Global Load Balancing                       |
 | GLBx    | External Geo Load Balancing                 |
 | GMS     | Global Marketing Solutions                  |
+| GPT     | Generative Pre-trained Transformer          |
 | HBM     | High Bandwitdh Memory                       |
 | HC      | Hiring Committee                            |
 | HCO     | Henrico County, VA                          |
