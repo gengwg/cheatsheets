@@ -38,3 +38,9 @@ Delete all empty lines:
 ```
 :g/^$/d
 ```
+
+Replace , with newline:
+
+```
+:%s/,/\r/gc
+```
