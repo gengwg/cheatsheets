@@ -83,7 +83,7 @@ node5
 
 ## Troubleshooting
 
-### Invalid node state specified
+### Invalid node state specified when trying to undrain a node
 
 Unable to undrain some nodes:
 
@@ -98,4 +98,17 @@ This is due to all the nodes are in 'draining' state:
 [root@sea112-dgx1052 ~]# sinfo --node node1 -p MyTeam
 PARTITION    AVAIL  TIMELIMIT  NODES  STATE NODELIST
 MyTeam     up   infinite      1   drng node1
+```
+
+### Job in RH state with JobHoldMaxRequeue reason
+
+```
+RH       0:00     12 (JobHoldMaxRequeue)
+```
+
+Launch failed requeued held. Job launch failed for some reason. This is normally due to a faulty node. After requeuing 5 times (the default max requeue times), it gave up. Try schedule with fewer nodes.
+
+```
+RH REQUEUE_HOLD
+Held job is being requeued.
 ```
