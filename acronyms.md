@@ -193,6 +193,7 @@
 | potus   | President of the United States              |
 | prod    | Production (network)                        |
 | preso   | [presentation](https://www.urbandictionary.com/define.php?term=preso) |
+| PS      | Parameter Server (TensorFlow)               |
 | PSC     | Performance Summary Cycle                   |
 | PSW     | [Peering Switch](https://en.wikipedia.org/wiki/Peering)  |
 | PVT     | Production Validation Testing               |
