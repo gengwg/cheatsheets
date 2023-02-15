@@ -6,11 +6,17 @@ or recent earlier versions. e.g. slurm 2.4 can not communicate with 2.5 RPCs.
 
 ## Commands
 
-### Check the state of the host in Slurm
+### Check the state of a host in Slurm
 
 ```
 sinfo -N | grep $(hostname -s)
-``` 
+```
+
+Check multiple hosts states
+
+```
+sinfo -N | grep -E 'node[1-5]'
+```
 
 ### Specify a batch script by filename on the command line
 
