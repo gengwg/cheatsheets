@@ -100,6 +100,12 @@ node5
 #SBATCH --exclude=node5
 ```
 
+### Run a command on N hosts
+
+```
+$ srun -p MyPartition -N3  hostname
+````
+
 ## Troubleshooting
 
 ### Invalid node state specified when trying to undrain a node
