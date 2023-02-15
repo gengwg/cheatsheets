@@ -18,6 +18,13 @@ Check multiple hosts states
 sinfo -N | grep -E 'node[1-5]'
 ```
 
+### Check which scheduler is used by Slurm
+
+```
+$ scontrol show config | grep -i SchedulerType
+SchedulerType           = sched/backfill
+```
+
 ### Specify a batch script by filename on the command line
 
 The batch script specifies a 1 minute time limit for the job. And on partition RTX, with specified format for job outputs.
