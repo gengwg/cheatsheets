@@ -94,6 +94,12 @@ node4
 node5
 ```
 
+### Exclude nodes from sbatch
+
+```
+#SBATCH --exclude=node5
+```
+
 ## Troubleshooting
 
 ### Invalid node state specified when trying to undrain a node
