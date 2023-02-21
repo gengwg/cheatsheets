@@ -154,18 +154,18 @@ Installation of the NVIDIA Accelerated Graphics Driver for Linux-x86_64 (version
 
 Reboot.
 
-Got driver/library version mismatch error:
+### Got driver/library version mismatch error:
 
 ```
 $ nvidia-smi
 Failed to initialize NVML: Driver/library version mismatch
 ```
 
-Folow [here](https://stackoverflow.com/questions/70276412/how-to-fix-nvrm-api-mismatch-between-client-version-and-kernel-module-version)
+Root cause: The kernel modules were being embedded inside the compressed kernel image, then being loaded early in the boot process. These embedded, but outdated modules, would then prevent the correct, and newly installed/compiled standalone module files from being loaded. 
 
-The kernel modules were being embedded inside the compressed kernel image, then being loaded early in the boot process. These embedded, but outdated modules, would then prevent the correct, and newly installed/compiled standalone module files from being loaded. You can confirm this by the following.
+Folow [here](https://stackoverflow.com/questions/70276412/how-to-fix-nvrm-api-mismatch-between-client-version-and-kernel-module-version) to fix it.
  
-Looks it's still loaded the 470.103 driver:
+You can confirm this by the following. Looks it's still loaded the 470.103 driver:
 
 ```
 # cat /proc/driver/nvidia/version
@@ -182,7 +182,7 @@ dkms shows the correct kernel modules are available (470.063):
 nvidia/470.63.01, 3.10.0-1160.83.1.el7.x86_64, x86_64: installed
 ```
 
-The fix involves regenerating the kernel images. Run this for Centos 7:
+The fix simply involves regenerating the kernel images. Run this for Centos 7:
 
 ```
 # dracut --regenerate-all --force
