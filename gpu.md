@@ -161,7 +161,11 @@ $ nvidia-smi
 Failed to initialize NVML: Driver/library version mismatch
 ```
 
-Looks it's still showing 470.103 driver:
+Folow [here](https://stackoverflow.com/questions/70276412/how-to-fix-nvrm-api-mismatch-between-client-version-and-kernel-module-version)
+
+The kernel modules were being embedded inside the compressed kernel image, then being loaded early in the boot process. These embedded, but outdated modules, would then prevent the correct, and newly installed/compiled standalone module files from being loaded. You can confirm this by the following.
+ 
+Looks it's still loaded the 470.103 driver:
 
 ```
 # cat /proc/driver/nvidia/version
@@ -171,18 +175,32 @@ GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC)
 470.103.01
 ```
 
-While dkms shows ok 470.063
+dkms shows the correct kernel modules are available (470.063):
 
 ```
 # dkms status
 nvidia/470.63.01, 3.10.0-1160.83.1.el7.x86_64, x86_64: installed
 ```
 
-Run this:
+The fix involves regenerating the kernel images. Run this for Centos 7:
 
 ```
 # dracut --regenerate-all --force
 ```
+
+Now all of them agrees:
+
+```
+$ cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  470.63.01  Tue Aug  3 20:44:16 UTC 2021
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC)
+$ cat /sys/module/nvidia/version
+470.63.01
+$ dkms status
+nvidia/470.63.01, 3.10.0-1160.83.1.el7.x86_64, x86_64: installed
+```
+
+Then reboot. 
 
 Now works:
 
@@ -246,4 +264,4 @@ Mon Feb  6 15:15:56 2023
 +-----------------------------------------------------------------------------+
 ```
 
-
+You can also fix the problem temporarily, by manually removing (unloading) the NVIDIA module using rmmod or modprobe, then reloading them. When you do modprobe will use the standalone kernel module which should match your installed driver version.
