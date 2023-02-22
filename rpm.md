@@ -63,6 +63,8 @@ Or save it to some dir:
 
 ```
 [root@myhost ]# rpm --rebuilddb
+# db_verify /var/lib/rpm/Packages
+BDB5105 Verification of /var/lib/rpm/Packages succeeded.
 ```
 
 4. Now `yum` should bed able to run.
