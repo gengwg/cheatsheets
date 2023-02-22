@@ -75,6 +75,9 @@ Cache was expired
 0 files removed
 ```
 
+[Ref](https://unix.stackexchange.com/questions/198703/yum-errorrpmdb-open-failed).
+
+
 ### Check package updates
 
 ```
