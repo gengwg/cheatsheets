@@ -15,15 +15,16 @@ List content of a single file from RPM (NOTE the dot infront of path):
 In general config files should be marked `%config(noreplace)`, unless the change being implimented is sufficiently major that a config file derived from a previous install is simpy not going to work. Even then it seens questionalble to me if installing a new 'default' configuration files is better or worse than leaving behind an edited one that may not work. 
 
 
-## RPM or yum processes hang
+## RPM or yum or dnf processes hang
 
-Occasionally, the RPM database on a CloudLinux machine can become corrupted. It can happen when an RPM transaction is interrupted at a critical time. 
+Occasionally, the RPM database on a machine can become corrupted. It can happen when an RPM transaction is interrupted at a critical time. 
 
 1. Kill all RPM and yum processes
 
 ```
 ps -axwww | grep rpm
 ps -axwww | grep yum
+ps -axwww | grep dnf
 ```
 
 In the list of processes, the first number on each line is the PID. 
@@ -50,20 +51,28 @@ rm: remove regular file ‘/var/lib/rpm/__db.002’? y
 rm: remove regular file ‘/var/lib/rpm/__db.003’? y
 ```
 
+Or save it to some dir:
+
+```
+# mkdir rpm
+# cd rpm
+# mv /var/lib/rpm/__db* .
+```
+
 3. Rebuild the RPM database:
 
 ```
 [root@myhost ]# rpm --rebuilddb
 ```
 
-Now `yum` should bed able to run.
+4. Now `yum` should bed able to run.
 
 ```
-[root@myhost ]# yum clean expire-cache
-Loaded plugins: fastestmirror
-Cleaning repos: fb-runtime fbit-centos-fasttrack fbit-centos-hpe-mcp fbit-centos-hpe-mcp-old fbit-centos-os fbit-centos-updates fbit-fb-runtime fbit-fbit fbit-fbit-runtime
-0 metadata files removed
+[root@myhost ]# # yum clean expire-cache
+Cache was expired
+0 files removed
 ```
+
 ### Check package updates
 
 ```
