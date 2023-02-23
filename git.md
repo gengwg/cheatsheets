@@ -254,7 +254,9 @@ $ git format-patch -2 HEAD
 0002-Fix-slurmd-fails-to-autostart-by-systemd-on-boot-on-.patch
 ```
 
-### Revert a commit
+### Revert a commit already pushed
+
+Reverting a commit means to create a new commit that undoes all changes that were made in the bad commit. Just like above, the bad commit remains there, but it no longer affects the the current master and any future commits on top of it.
 
 Find the commit by:
 
