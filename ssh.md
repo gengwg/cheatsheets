@@ -237,3 +237,46 @@ Connected to rpi.
 sftp> ^D
 ```
 
+### Use the legacy SCP protocol
+
+> I am used to pushing entire directories between machines with scp -r. Attempting to do it today resulted in an odd error that I have never seen before.
+
+```
+$ scp -r volcano/ dev:
+scp: realpath ./volcano: No such file
+scp: upload "./volcano": path canonicalization failed
+scp: failed to upload directory volcano/ to .
+```
+
+> It happened for me when using a newish scp/ssh client (openssh 9.0) with an older RHEL/CentOS 8 ssh server (openssh 8.0).
+> What fixed it for me was to force the scp into legacy mode with the -O flag, i.e.
+
+```
+gengwg@gengwg-mbp:~$ scp -r -O volcano/ dev:
+```
+
+Confirmed this is the case.
+
+On client:
+
+```
+gengwg@gengwg-mbp:~$ ssh -V
+OpenSSH_9.0p1, LibreSSL 3.3.6
+```
+
+On server:
+
+```
+$ sshd -V
+unknown option -- V
+OpenSSH_8.0p1, OpenSSL 1.1.1k  FIPS 25 Mar 2021
+```
+
+Man:
+
+```
+gengwg@gengwg-mbp:~$ man 1 scp
+
+     -O      Use the legacy SCP protocol for file transfers instead of the SFTP protocol.  Forcing the use of the SCP protocol may be necessary for servers that do not implement SFTP, for backwards-compatibility for particular filename wildcard patterns and for expanding
+             paths with a ‘~’ prefix for older SFTP servers.
+```
