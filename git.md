@@ -254,6 +254,32 @@ $ git format-patch -2 HEAD
 0002-Fix-slurmd-fails-to-autostart-by-systemd-on-boot-on-.patch
 ```
 
+### Revert a commit
+
+Find the commit by:
+
+```
+$ git log
+```
+
+Revert it:
+
+```
+$ git revert 8c6f4c6b903851e6c37a70f87438e3a08183a434
+[master e310ff9] Revert "Fix error rejected connection from EOF ServerName xxx"
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+```
+
+Push to remote:
+
+```
+$ git push
+```
+
 ## Errors
 
 ```
