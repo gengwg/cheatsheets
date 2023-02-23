@@ -43,6 +43,7 @@
 | CMA     | Comparative Market Analysis                 |
 | corp    | corporate (network)                         |
 | CPE     | Client Platform Engineering                 |
+| CPLD    | Complex Programmable Logic Device           |
 | CSLB    | core system load balancing                  |
 | CTR     | click through rate                          |
 | CV      | Computer Vision                             |
