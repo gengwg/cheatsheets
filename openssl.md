@@ -40,3 +40,11 @@ NLwZi66cUee3frVTsTMi5W3PcDwa+uKbZ7aD9I2lr2JMTeBYrGQ0EgP4to2UYySk
 cQIDAQAB
 -----END PUBLIC KEY-----
 ```
+
+Check SANs:
+
+```
+$ openssl x509 -noout -ext subjectAltName -in /var/lib/kubernetes/etcd.pem
+X509v3 Subject Alternative Name:
+    DNS:kubernetes.default, DNS:api01.example.com, DNS:ctrlplane003.example.com, DNS:api01.glb.example.com, IP Address:2620:XXX, IP Address:FDF5:XXXX, IP Address:FDF5:XXXX
+```
