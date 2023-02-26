@@ -695,3 +695,11 @@ Find non-empty binary files and move them to another directory:
 ```
 find . -type f ! -size 0 -exec grep -IL . "{}" \; | xargs -I '{}' mv {} /tmp/
 ```
+
+Extract password protected zip in Linux:
+
+```
+$ sudo dnf install p7zip
+$ 7za x wechat-file.part0.zip -pmypass
+```
+
