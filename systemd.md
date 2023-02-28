@@ -290,3 +290,19 @@ $ systemd-delta --type=extended
 [EXTENDED]   /usr/lib/systemd/system/systemd-logind.service → /usr/lib/systemd/system/systemd-logind.service.d/10-grub2-logind-service.conf
 [EXTENDED]   /usr/lib/systemd/system/systemd-udev-trigger.service → /usr/lib/systemd/system/systemd-udev-trigger.service.d/systemd-udev-trigger-no-reload.conf
 ```
+
+### Redirect log to different location
+
+By default some logs are located in syslog, where they are polluted together with various other types of logs. You may want to move them to their separate location for easier management. To do that use this systemd drop-in file, e.g. '/etc/systemd/system/kubelet.service.d/10-redirect_log.conf':
+
+```
+[Service]
+StandardOutput=append:/var/log/kubernetes/kubelet.log
+StandardError=append:/var/log/kubernetes/kubelet.err
+```
+
+It's important to note that this feature [requires systemd version 236](https://github.com/systemd/systemd/pull/7198) or later. Therefore, you may consider restricting it to CentOS 8+ , which meets this requirement.
+
+As this is a directory change, it is important to ensure that downstream consumers of the logs are made aware of this change and can adjust accordingly. However, I believe that this change will make it easier for them to filter the logs, as they will no longer need to use pattern matching in system logs. Instead, they will be able to work with pure Kubernetes logs, which should simplify the process.
+
+
