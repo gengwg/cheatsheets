@@ -303,6 +303,70 @@ The PR will include those commits:
 
 https://github.com/volcano-sh/volcano/pull/2714/commits
 
+### How to Squash multiple commits into one
+
+I followed the instructions [here](https://gist.github.com/lpranam/4ae996b0a4bc37448dc80356efbca7fa).
+
+```
+$ git rebase -i HEAD~3
+[detached HEAD ada51107c] Fix MPI example not working in IPv6
+ Author: Weigang Geng <gengwg@meta.com>
+ Date: Mon Feb 27 19:35:17 2023 -0800
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Successfully rebased and updated refs/heads/master.
+```
+
+You will see an output like this:
+
+```
+pick e3485e314 Fix MPI example not working in IPv6
+pick f2a402e39 Update image to 22.04
+pick c900b071e remove --mca option
+```
+
+Change it to like this. Note we can only squash newer commits into older commits.
+
+```
+pick e3485e314 Fix MPI example not working in IPv6
+s f2a402e39 Update image to 22.04
+s c900b071e remove --mca option
+```
+
+Here we will squash commit 2 and 3 into commit 1.
+
+Verify by git log:
+
+```
+$ git log
+commit ada51107c6717287d23c8cc1571bfb0f731fe595 (HEAD -> master)
+Author: 
+Date:   Mon Feb 27 19:35:17 2023 -0800
+
+    Fix MPI example not working in IPv6
+
+commit ada51107c6717287d23c8cc1571bfb0f731fe595 (HEAD -> master)
+Author:
+Date:   Mon Feb 27 19:35:17 2023 -0800
+
+    Fix MPI example not working in IPv6
+
+    Signed-off-by: gengwg <genwg@users.noreply.github.com>
+
+    Update image to 22.04
+
+    Signed-off-by: gengwg <genwg@users.noreply.github.com>
+
+    remove --mca option
+
+    Signed-off-by: gengwg <genwg@users.noreply.github.com>
+```
+
+Now to anytime after squashing if we want to push this changes into our origin/remote repository we need to push forcefully as we have rewritten the history.
+
+```
+$ git push -f
+```
+
 ## Errors
 
 ```
