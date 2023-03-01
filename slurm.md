@@ -137,3 +137,9 @@ Launch failed requeued held. Job launch failed for some reason. This is normally
 RH REQUEUE_HOLD
 Held job is being requeued.
 ```
+
+### Add a node to another partition
+
+```
+scontrol update Partition=Team1 Nodes=<existing nodes>,<new node>
+```
