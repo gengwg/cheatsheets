@@ -3,6 +3,7 @@
 | ABI     | Application Binary Interface                |
 | ACH     | Automated Clearing House                    |
 | AE      | Additional Equity                           |
+| AGI     | [Artificial general intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence) |
 | AHX     | Water-Air Heat exchanger                    |
 | AMS     | [Andorra, Monaco, San Marino](https://en.wikipedia.org/wiki/List_of_country_groupings) |
 | APT     | Advanced persistent threat                  |
