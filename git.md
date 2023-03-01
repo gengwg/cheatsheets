@@ -310,7 +310,7 @@ I followed the instructions [here](https://gist.github.com/lpranam/4ae996b0a4bc3
 ```
 $ git rebase -i HEAD~3
 [detached HEAD ada51107c] Fix MPI example not working in IPv6
- Author: Weigang Geng <gengwg@meta.com>
+ Author:
  Date: Mon Feb 27 19:35:17 2023 -0800
  1 file changed, 2 insertions(+), 2 deletions(-)
 Successfully rebased and updated refs/heads/master.
@@ -365,6 +365,24 @@ Now to anytime after squashing if we want to push this changes into our origin/r
 
 ```
 $ git push -f
+```
+
+### Append sign off messages to commits
+
+```
+$ git rebase HEAD~3 --signoff
+Current branch master is up to date, rebase forced.
+Successfully rebased and updated refs/heads/master.
+$ git push --force-with-lease origin master
+# verify
+$ git log
+commit c900b071eaab86f3fc893c176828b11738ed4803 (HEAD -> master, origin/master, origin/HEAD)
+Author: gengwg <genwg@users.noreply.github.com>
+Date:   Tue Feb 28 23:26:18 2023 -0800
+
+    remove --mca option
+
+    Signed-off-by: gengwg <genwg@users.noreply.github.com>
 ```
 
 ## Errors
