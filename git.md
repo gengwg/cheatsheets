@@ -282,6 +282,27 @@ Push to remote:
 $ git push
 ```
 
+### Update pull request in github
+
+Just push more commits into the repo the request is for. The pull request will pick this up.
+
+Example: 
+
+```
+$ git remote  -v
+origin	git@github.com:gengwg/volcano.git (fetch)
+origin	git@github.com:gengwg/volcano.git (push)
+$ git add example/integrations/mpi/Dockerfile
+$ git commit -m 'Update image to 22.04'
+[master fb86b3476] Update image to 22.04
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git push
+```
+
+The PR will include those commits:
+
+https://github.com/volcano-sh/volcano/pull/2714/commits
+
 ## Errors
 
 ```
