@@ -303,6 +303,36 @@ StandardError=append:/var/log/kubernetes/kubelet.err
 
 It's important to note that this feature [requires systemd version 236](https://github.com/systemd/systemd/pull/7198) or later. Therefore, you may consider restricting it to CentOS 8+ , which meets this requirement.
 
+I should also note that I intentionally chose not to use the '--log-dir' etc. option, as it will be [deprecated](https://github.com/kubernetes/enhancements/tree/master/keps/sig-instrumentation/2845-deprecate-klog-specific-flags-in-k8s-components) in the next version of Kubernetes (v1.23). If we were to use this option, it could potentially cause issues during our next upgrade.
+
 As this is a directory change, it is important to ensure that downstream consumers of the logs are made aware of this change and can adjust accordingly. However, I believe that this change will make it easier for them to filter the logs, as they will no longer need to use pattern matching in system logs. Instead, they will be able to work with pure Kubernetes logs, which should simplify the process.
 
+A chef resource to implement above is:
+
+```
+kube_log_dir = node['mykube']['kube-log-dir']
+directory kube_log_dir do
+  owner  'root'
+  group  'root'
+  mode   '0755'
+end
+
+if node.centos8?
+  kubelet_systemd_dir = '/etc/systemd/system/kubelet.service.d/'
+  directory kubelet_systemd_dir do
+    owner  'root'
+    group  'root'
+    mode   '0755'
+  end
+  template "#{kubelet_systemd_dir}/10-redirect_log.conf" do
+    source '10-redirect_log.conf.erb'
+    owner  'root'
+    group  'root'
+    mode   '0644'
+    action :create
+    notifies :run, 'systemd_reload[system instance]', :immediately
+    notifies :restart, 'service[kubelet]', :delayed
+  end
+end
+```
 
