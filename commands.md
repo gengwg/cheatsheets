@@ -60,7 +60,7 @@ use cut to separate by multiple whitespace.
 cat file | tr -s ' ' | cut -d ' ' -f 8
 ```
 
-Check installed memory information
+Check installed memory information:
 
 ```
 sudo dmidecode -t memory
@@ -101,6 +101,14 @@ Memory Device
         Minimum Voltage: 1.2 V
         Maximum Voltage: 1.2 V
         Configured Voltage: 1.2 V
+```
+
+Similar commands:
+
+```
+dmidecode -t memory
+dmidecode -t 16
+lshw -class memory
 ```
 
 Check System Information:
