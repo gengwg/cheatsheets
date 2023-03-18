@@ -107,6 +107,7 @@
 | HMC     | Head-Mounted Capture                        |
 | HRBP    | HR business partner                         |
 | HSM     | [Hardware security module](https://en.wikipedia.org/wiki/Hardware_security_module)       |
+| HTH     | Hope That Helps                             |
 | HTL     | High Thread Location                        |
 | IAC     | Infrastructure as Code                      |
 | IAM     | Identity and Access Management              |
