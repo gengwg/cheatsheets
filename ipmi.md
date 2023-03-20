@@ -167,3 +167,47 @@ $ sudo ipmitool sdr elist full
 $ sudo ipmitool sdr -v > /tmp/ipmitool_sdr.txt
 ```
 
+### Check chassis version
+
+```
+# sudo dmidecode -t chassis
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.2.0 present.
+
+Handle 0x0003, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: NVIDIA
+	Type: Rack Mount Chassis
+	Lock: Not Present
+	Version: 920-23687-2530-000
+	Serial Number: 1574120000827
+	Asset Tag: 00000000000000000000000000000000
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: Default string
+
+[root@ash6-hpccdgx-node0011 ~]# sudo dmidecode -t chassis | grep Version
+	Version: 920-23687-2530-000
+   
+[root@ash6-hpccdgx-node0011 ~]# ipmitool fru print 0
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : 920-23687-2530-000
+ Board Mfg Date        : Mon Dec  5 00:42:00 2022
+ Board Mfg             : NVIDIA
+ Board Product         : DGXA100
+ Board Serial          : 5550690100092378AB
+ Board Part Number     : 555.06901.0009
+ Board Extra           : 01
+ Product Manufacturer  : NVIDIA
+ Product Name          : DGXA100
+ Product Part Number   : 920-23687-2530-000
+ Product Version       : v1.0
+ Product Serial        : 1664421900024
+```
