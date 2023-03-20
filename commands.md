@@ -111,6 +111,14 @@ dmidecode -t 16
 lshw -class memory
 ```
 
+Check which memory slots are empty:
+
+```
+# lshw -class memory | grep empty -B 1
+# dmidecode -t memory | grep "No Module Installed" -A 3
+```
+
+
 Check System Information:
 
 ```
