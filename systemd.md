@@ -336,3 +336,16 @@ if node.centos8?
 end
 ```
 
+Verify you can tail log from the new location:
+
+```
+# tail -f /var/log/kubernetes/kubelet.log
+<long logs omitted>
+```
+
+And it's not in syslog any more! 
+
+```
+[root@pit103-hpcc-kubenode113 kubernetes]# tail -f /var/log/messages | grep kubelet
+^C
+```
