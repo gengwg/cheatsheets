@@ -719,3 +719,19 @@ $ sudo dnf install p7zip
 $ 7za x wechat-file.part0.zip -pmypass
 ```
 
+A few useful commands to use when debugging a Linux server:
+
+```
+uptime
+dmesg | tail
+vmstat 1
+mpstat -P ALL 1
+pidstat 1
+iostat -xz 1
+free -m
+sar -n DEV 1
+sar -n TCP,ETCP 1
+top
+```
+
+https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
