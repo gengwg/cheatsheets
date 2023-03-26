@@ -736,6 +736,8 @@ top
 
 https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
 
+The NUMA node is a hardware node in a computer that consists of a local memory and a set of processors, and is used to improve performance by reducing latency when accessing local memory.
+
 How to check the CPU to NUMA node mapping:
 
 ```
