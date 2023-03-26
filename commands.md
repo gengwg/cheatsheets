@@ -777,5 +777,16 @@ $ cat /sys/devices/system/node/node1/cpulist
 64-127,192-255
 $ cat /sys/devices/system/node/node1/cpumap
 ffffffff,ffffffff,00000000,00000000,ffffffff,ffffffff,00000000,00000000
+
+## Example of NUMA for a VMware VM 
+## These usually just contain 1 default numa node0
+
+$ lscpu | grep NUMA
+NUMA node(s):        1
+NUMA node0 CPU(s):   0-3
+$ cat /sys/devices/system/node/node0/cpulist
+0-3
+$ cat /sys/devices/system/node/node0/cpumap
+f
 ```
 
