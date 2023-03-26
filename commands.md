@@ -735,3 +735,47 @@ top
 ```
 
 https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
+
+How to check the CPU to NUMA node mapping:
+
+```
+$ lscpu | grep NUMA
+NUMA node(s):        8
+NUMA node0 CPU(s):   0-15,128-143
+NUMA node1 CPU(s):   16-31,144-159
+NUMA node2 CPU(s):   32-47,160-175
+NUMA node3 CPU(s):   48-63,176-191
+NUMA node4 CPU(s):   64-79,192-207
+NUMA node5 CPU(s):   80-95,208-223
+NUMA node6 CPU(s):   96-111,224-239
+NUMA node7 CPU(s):   112-127,240-255
+
+$ cat /sys/devices/system/node/node0/cpulist
+0-15,128-143
+$ cat /sys/devices/system/node/node0/cpumap
+00000000,00000000,00000000,0000ffff,00000000,00000000,00000000,0000ffff
+$ cat /sys/devices/system/node/node3/cpulist
+48-63,176-191
+$ cat /sys/devices/system/node/node3/cpumap
+00000000,00000000,ffff0000,00000000,00000000,00000000,ffff0000,00000000
+
+# It is important to note that little-endian byte ordering is being used, 
+# meaning that the least significant bytes are stored before the more significant bytes. 
+# As a result, this indicates that CPUs 48-63 and 176-191 are present on NUMA node 0.
+
+$ lscpu | grep Byte
+Byte Order:          Little Endian
+
+## Another example from a 2-numa node system
+
+$ cat /sys/devices/system/node/node0/cpulist
+0-63,128-191
+$ cat /sys/devices/system/node/node0/cpumap
+00000000,00000000,ffffffff,ffffffff,00000000,00000000,ffffffff,ffffffff
+
+$ cat /sys/devices/system/node/node1/cpulist
+64-127,192-255
+$ cat /sys/devices/system/node/node1/cpumap
+ffffffff,ffffffff,00000000,00000000,ffffffff,ffffffff,00000000,00000000
+```
+
