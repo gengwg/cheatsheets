@@ -102,6 +102,7 @@
 | GPT     | Generative Pre-trained Transformer          |
 | HBM     | High Bandwitdh Memory                       |
 | HC      | Hiring Committee                            |
+| HCA     | Host channel adapter                        |
 | HCO     | Henrico County, VA                          |
 | HELOC   | Home equity line of credit                  |
 | HMC     | Head-Mounted Capture                        |
