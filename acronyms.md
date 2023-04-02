@@ -99,8 +99,9 @@
 | GLB     | Global Load Balancing                       |
 | GLBx    | External Geo Load Balancing                 |
 | GMS     | Global Marketing Solutions                  |
+| GPC     | Graphics Processing Cluster                 |
 | GPT     | Generative Pre-trained Transformer          |
-| HBM     | High Bandwitdh Memory                       |
+| HBM     | [High Bandwith Memory](https://en.wikipedia.org/wiki/High_Bandwidth_Memory) |
 | HC      | Hiring Committee                            |
 | HCA     | Host channel adapter                        |
 | HCO     | Henrico County, VA                          |
@@ -232,6 +233,7 @@
 | SKS     | [Secure Key Store](https://github.com/facebookincubator/sks) |
 | SLB     | Server/Software Load Balancer, proxygen     |
 | SNI     | [Server Name Indication](https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%90%8D%E7%A7%B0%E6%8C%87%E7%A4%BA) |
+| SM      | Streaming Multiprocessor                    |
 | SMB     | Server Message Blocks                       |
 | SME     | Subject Matter Expert                       |
 | SMH     | Shake My Head                               |
@@ -248,6 +250,7 @@
 | SSR     | Server side rendering                       |
 | SSW     | Spine Switch                                |
 | STE     | Short-term Employee                         |
+| SXM     | Server eXternal Module                      |
 | TBH     | to be honest                                |
 | TC      | The Candidate                               |
 | TC      | Total Compensation                          |
