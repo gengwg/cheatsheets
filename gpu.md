@@ -342,3 +342,120 @@ Legend:
   PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
   PIX  = Connection traversing at most a single PCIe bridge
 ```
+
+### Check GPU server chassis version 
+
+```
+## DGX A100
+
+$ sudo dmidecode -t 1
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.2.0 present.
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: NVIDIA
+	Product Name: DGXA100 920-23687-2531-001
+	Version: v1.0
+	Serial Number: 1571620610013
+	UUID: 9f9ffb35-ff5c-03d3-1000-bfde6aa63a00
+	Wake-up Type: Power Switch
+	SKU Number: Default string
+	Family: DGXA100
+	
+# dmidecode  -t 3
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 3.2.0 present.
+
+Handle 0x0003, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: NVIDIA
+	Type: Rack Mount Chassis
+	Lock: Not Present
+	Version: 920-23687-2531-001 # <--------------
+	Serial Number: 1574220000007
+	Asset Tag: 00000000000000000000000000000000
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: Default string
+	
+or 
+
+# sudo ipmitool fru print 0
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : 920-23687-2531-001
+ Board Mfg Date        : Mon Aug  8 05:13:00 2022
+ Board Mfg             : NVIDIA
+ Board Product         : DGXA100
+ Board Serial          : 5550690100092246NA
+ Board Part Number     : 555.06901.0009
+ Board Extra           : 01
+ Product Manufacturer  : NVIDIA
+ Product Name          : DGXA100
+ Product Part Number   : 920-23687-2531-001
+ Product Version       : v1.0
+ Product Serial        : 1571620610013
+
+## PowerEdge T-XE8545
+
+Looks it doesn't have chassis version?
+
+# dmidecode decode -t 1
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+
+Handle 0x0100, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Dell Inc.
+	Product Name: PowerEdge T-XE8545
+	Version: Not Specified 
+	Serial Number: DW4SFT3
+	UUID: 4c4c4544-0057-3410-8053-c4c04f465433
+	Wake-up Type: Power Switch
+	SKU Number: SKU=0A2D;ModelName=PowerEdge T-XE8545
+	Family: PowerEdge
+	
+# dmidecode decode  -t 3
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+
+Handle 0x0300, DMI type 3, 22 bytes
+Chassis Information
+	Manufacturer: Dell Inc.
+	Type: Rack Mount Chassis
+	Lock: Present
+	Version: Not Specified	# <------
+	Serial Number: DW4SFT3
+	Asset Tag: Not Specified
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: Unknown
+	OEM Information: 0x00000000
+	Height: 4 U
+	Number Of Power Cords: Unspecified
+	Contained Elements: 0
+	SKU Number: Not Specified
+	
+# sudo ipmitool fru print 0
+ Board Mfg Date        : Mon Jun  6 13:38:00 2022
+ Board Mfg             : DELL
+ Board Product         : PowerEdge T-XE8545
+ Board Serial          : MXWSJ00263003M
+ Board Part Number     : 0446PMA01
+ Product Manufacturer  : DELL
+ Product Name          : PowerEdge T-XE8545
+ Product Version       : 01
+ Product Serial        : DW4SFT3
+ Product Asset Tag     :
+```
