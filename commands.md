@@ -792,3 +792,8 @@ $ cat /sys/devices/system/node/node0/cpumap
 f
 ```
 
+Decode JWT token:
+
+```
+jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "<token_here>"
+```
