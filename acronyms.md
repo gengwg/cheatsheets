@@ -208,6 +208,7 @@
 | R&B     | Rhythm & Blues                              |
 | RBAC    | Role-Based Access Control                   |
 | RDMA    | Remote Direct Memory Access                 |
+| RDS     | Research Data Scientist                     |
 | RMA     | Return Merchandise Authorization            |
 | ROI     | Return on investment                        |
 | RoCE    | RDMA over Converged Ethernet                |
