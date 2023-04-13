@@ -283,6 +283,7 @@
 | WLC     | Wireless Controllers                        |
 | XFN     | Cross Functional                            |
 | XFWR    | Cross Functional Firewall Router            |
+| XI      | Cross Integrity = CI + BI                   |
 | XR      | Extended Reality                            |
 | XRU     | XR Rendering Unit                           |
 | YOLO    | You only live once                          |
