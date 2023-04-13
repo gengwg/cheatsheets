@@ -143,3 +143,17 @@ Held job is being requeued.
 ```
 scontrol update Partition=Team1 Nodes=<existing nodes>,<new node>
 ```
+
+### Kill task failed 
+
+```
+# sinfo -R
+REASON               USER      TIMESTAMP           NODELIST
+Kill task failed     root      2023-04-11T11:42:06 node102
+```
+
+It seems simply undraining fixed it. I'm not sure about the root cause yet.
+
+```
+# scontrol update NodeName=node102 State=IDLE
+```
