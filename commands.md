@@ -797,3 +797,20 @@ Decode JWT token:
 ```
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "<token_here>"
 ```
+
+
+Command to resolve name using hosts file:
+
+```
+## ping
+$ ping google.com
+PING google.com(google.com (2401:db00:25ff:c83::)) 56 data bytes
+^C
+--- google.com ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1061ms
+
+## getent
+
+$ getent hosts google.com
+2401:db00:25ff:c83:: google.com
+```
