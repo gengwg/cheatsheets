@@ -122,6 +122,7 @@
 | IDN     | Infrastructure DNS and NTP                  |
 | IDO     | Identity Orchestrator                       |
 | IMOC    | Incident Manager On-Call                    |
+| IoU     | [Intersection over Union](https://zhuanlan.zhihu.com/p/373658488) |
 | IP      | Ingress Protection Rating                   |
 | IPC     | Instructions per Cycle                      |
 | IPT     | Infra Provisioning Tool                     |
@@ -137,7 +138,6 @@
 | LOE     | Level of effort                             |
 | LTM     | Local Traffic Managers (F5)                 |
 | LVS     | Linux Virtual Serer                         |
-| mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
 | MAB     | MAC Authentication Bypass                   |
 | MAU     | Monthly Active Users                        |
 | MCO     | Manufacturing change order                  |
@@ -160,6 +160,8 @@
 | MTRF    | [Monday, Tuesday, Thursday, Friday](https://www.urbandictionary.com/define.php?term=MTRF)|
 | MV      | [Materialized view](https://en.wikipedia.org/wiki/Materialized_view)|
 | MVCC    | Multi-Version Concurrency Control           |
+| mIoU    | mean intersection-over-union                |
+| mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
