@@ -814,3 +814,10 @@ PING google.com(google.com (2401:db00:25ff:c83::)) 56 data bytes
 $ getent hosts google.com
 2401:db00:25ff:c83:: google.com
 ```
+
+Curl with timeout using the "-m" or "--max-time" option followed by the number of seconds.
+
+```
+$ curl -kL -m 5 https://myexample.com/
+curl: (28) Connection timed out after 5001 milliseconds
+```
