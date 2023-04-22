@@ -251,6 +251,7 @@
 | SRT     | Single Review Tool                          |
 | SSSD    | System Security Services Daemon             |
 | SSID    | Service set identifier                      |
+| SSL     | Self-supervised learning                    |
 | SSR     | Server side rendering                       |
 | SSW     | Spine Switch                                |
 | STE     | Short-term Employee                         |
@@ -276,6 +277,7 @@
 | URA     | Unregretted Attrition                       |
 | VAR     | Value Added Reseller                        |
 | VDI     | Virtual Desktop Infrastructure              |
+| ViT     | Vision Transformers                         |
 | VWOP    | Vendor Worker Onboarding Portal             |
 | VRAM    | Video Random Access Memory                  |
 | VRF     | Virtual Routing and Forwarding              |
