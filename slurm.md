@@ -157,3 +157,26 @@ It seems simply undraining fixed it. I'm not sure about the root cause yet.
 ```
 # scontrol update NodeName=node102 State=IDLE
 ```
+
+### srun errors all ports exhausted
+
+srun gives an error if ports in [min, max] are exhausted
+
+```
+srun: error: sock_bind_range all ports in range (60001, 63000) in use.
+```
+
+it has to do with many jobs being launched from that machine (e.g. there are ~1000 srun instances). Each Srun uses 3 ports at least. this will exhaust the port range.
+
+> A single srun opens 3 listening ports plus 2 more for every 48 hosts.
+
+There are two solutions.
+
+One is to not submit all jobs from same machine. e.g. launching from a different machine when it's approaching 1000 sruns.
+
+Another is to increase the SrunPortRange in slurm config:
+
+```
+$ scontrol show config|grep SrunPortRange
+SrunPortRange           = 50000-63000
+```
