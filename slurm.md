@@ -106,6 +106,16 @@ node5
 $ srun -p MyPartition -N3  hostname
 ````
 
+### Increase the character limit for a field in output
+
+To accommodate lengthy field outputs, increase the character limit for that field. e.g. NodeList is too long to fit, you can increase it to 60 characters.
+
+```
+sinfo --Format="partitionname,preemptmode,prioritytier,PriorityJobFactor,NodeList:.60"
+PARTITION           PREEMPT_MODE        PRIO_TIER           PRIO_JOB_FACTOR                                                         NODELIST
+XYZTeam             REQUEUE             2                   1                                                               <long node list>
+```
+
 ## Troubleshooting
 
 ### Invalid node state specified when trying to undrain a node
