@@ -180,3 +180,21 @@ Another is to increase the SrunPortRange in slurm config:
 $ scontrol show config|grep SrunPortRange
 SrunPortRange           = 50000-63000
 ```
+
+### failed kill job attempt by a user with insufficient permissions
+
+```
+$ grep 7654321 /var/log/slurmctld.log
+[2023-05-16T20:36:02.304] sched: _slurm_rpc_allocate_resources JobId=7654321 NodeList=slurm3024 usec=15304
+[2023-05-17T09:42:18.444] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=7654321 uid 12345678
+[2023-05-17T09:42:18.444] error: Security violation, REQUEST_KILL_JOB RPC for JobId=7654321 from uid 3316450
+[2023-05-17T09:42:18.444] _slurm_rpc_kill_job: job_str_signal() JobId=7654321 sig 9 returned Access/permission denied
+[2023-05-17T15:18:53.603] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=7654321 uid 0
+[2023-05-17T15:18:56.271] _slurm_rpc_complete_job_allocation: JobId=7654321 error Job/step already completing or completed
+```
+
+- At 09:42:18 on May 17th, a kill job request (REQUEST_KILL_JOB) was issued for JobId=7654321 by a user with uid 12345678.
+
+- However, the kill job request encountered a security violation error, indicating that the user with uid 12345678 did not have the necessary access or permission to kill JobId=7654321. The error message from job_str_signal() suggests that the signal 9 (SIGKILL) was attempted, but the access/permission was denied.
+
+- Later, at 15:18:53 on May 17th, another kill job request was made for JobId=8241531, but this time by a user with uid 0. The user with uid 0 typically represents the root user or a system administrator.
