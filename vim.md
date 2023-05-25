@@ -19,6 +19,14 @@ Then, Launch vim and run `:PluginInstall`
 
 Or Install from command line: `vim +PluginInstall +qall`
 
+## Link vimrc
+
+to use familiar shortcuts and plugins.
+
+```
+ln -s Dropbox/bash_conf/vim/.vimrc .
+```
+
 ## Shortcuts
 
 Replace from current line till the end of file:
