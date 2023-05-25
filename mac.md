@@ -49,7 +49,8 @@ brew tap homebrew/cask
 #### Brew Install Packages
 
 ```
-  sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
+sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
+sudo chown -R $(whoami) /opt/homebrew /opt/homebrew/bin
 ```
 
 Can copy below in a script and run it.
