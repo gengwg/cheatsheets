@@ -115,6 +115,11 @@ sinfo --Format="partitionname,preemptmode,prioritytier,PriorityJobFactor,NodeLis
 PARTITION           PREEMPT_MODE        PRIO_TIER           PRIO_JOB_FACTOR                                                         NODELIST
 XYZTeam             REQUEUE             2                   1                                                               <long node list>
 ```
+### Drain a node
+
+```
+scontrol update NodeName=mynode State=DRAIN Reason='my reason'
+```
 
 ## Troubleshooting
 
