@@ -89,6 +89,7 @@ brew install helm
 brew install kubectx
 brew install octant
 brew install kustomize
+brew install podman
 
 # k8s test env
 brew install kind
@@ -108,6 +109,10 @@ kubectl krew install access-matrix
 
 # GUI Applications
 # brew install --cask xxx
+
+# Docker Desktop
+brew install --cask docker
+
 brew cask install iterm2
 # brew cask install keepassx
 brew install --cask keepassxc
