@@ -111,6 +111,8 @@ kubectl krew install access-matrix
 # brew install --cask xxx
 
 # Docker Desktop
+# possibly need input password
+# example see: https://gist.github.com/gengwg/bd62be8b7bcf41210339e88fe2fa511a
 brew install --cask docker
 
 brew cask install iterm2
