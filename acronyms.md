@@ -130,6 +130,7 @@
 | IPVS    | IP Virtual Server                           |
 | IRB     | Integrated Routing and Bridging Interface   |
 | IRL     | In real life                                |
+| ISA     | [Instruction set architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture)  |
 | ISL     | Inter-Switch Link                           |
 | ISM     | Industrial, Scientific, Medical             |
 | KDC     | Key Distribution Center                     |

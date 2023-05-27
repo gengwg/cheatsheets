@@ -49,7 +49,8 @@ brew tap homebrew/cask
 #### Brew Install Packages
 
 ```
-  sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
+sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
+sudo chown -R $(whoami) /opt/homebrew /opt/homebrew/bin
 ```
 
 Can copy below in a script and run it.
@@ -88,6 +89,7 @@ brew install helm
 brew install kubectx
 brew install octant
 brew install kustomize
+brew install podman
 
 # k8s test env
 brew install kind
@@ -107,6 +109,12 @@ kubectl krew install access-matrix
 
 # GUI Applications
 # brew install --cask xxx
+
+# Docker Desktop
+# possibly need input password
+# example see: https://gist.github.com/gengwg/bd62be8b7bcf41210339e88fe2fa511a
+brew install --cask docker
+
 brew cask install iterm2
 # brew cask install keepassx
 brew install --cask keepassxc
