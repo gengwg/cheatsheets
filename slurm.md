@@ -106,6 +106,21 @@ node5
 $ srun -p MyPartition -N3  hostname
 ````
 
+### Increase the character limit for a field in output
+
+To accommodate lengthy field outputs, increase the character limit for that field. e.g. NodeList is too long to fit, you can increase it to 60 characters.
+
+```
+sinfo --Format="partitionname,preemptmode,prioritytier,PriorityJobFactor,NodeList:.60"
+PARTITION           PREEMPT_MODE        PRIO_TIER           PRIO_JOB_FACTOR                                                         NODELIST
+XYZTeam             REQUEUE             2                   1                                                               <long node list>
+```
+### Drain a node
+
+```
+scontrol update NodeName=mynode State=DRAIN Reason='my reason'
+```
+
 ## Troubleshooting
 
 ### Invalid node state specified when trying to undrain a node
@@ -157,3 +172,44 @@ It seems simply undraining fixed it. I'm not sure about the root cause yet.
 ```
 # scontrol update NodeName=node102 State=IDLE
 ```
+
+### srun errors all ports exhausted
+
+srun gives an error if ports in [min, max] are exhausted
+
+```
+srun: error: sock_bind_range all ports in range (60001, 63000) in use.
+```
+
+it has to do with many jobs being launched from that machine (e.g. there are ~1000 srun instances). Each Srun uses 3 ports at least. this will exhaust the port range.
+
+> A single srun opens 3 listening ports plus 2 more for every 48 hosts.
+
+There are two solutions.
+
+One is to not submit all jobs from same machine. e.g. launching from a different machine when it's approaching 1000 sruns.
+
+Another is to increase the SrunPortRange in slurm config:
+
+```
+$ scontrol show config|grep SrunPortRange
+SrunPortRange           = 50000-63000
+```
+
+### failed kill job attempt by a user with insufficient permissions
+
+```
+$ grep 7654321 /var/log/slurmctld.log
+[2023-05-16T20:36:02.304] sched: _slurm_rpc_allocate_resources JobId=7654321 NodeList=slurm3024 usec=15304
+[2023-05-17T09:42:18.444] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=7654321 uid 12345678
+[2023-05-17T09:42:18.444] error: Security violation, REQUEST_KILL_JOB RPC for JobId=7654321 from uid 3316450
+[2023-05-17T09:42:18.444] _slurm_rpc_kill_job: job_str_signal() JobId=7654321 sig 9 returned Access/permission denied
+[2023-05-17T15:18:53.603] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=7654321 uid 0
+[2023-05-17T15:18:56.271] _slurm_rpc_complete_job_allocation: JobId=7654321 error Job/step already completing or completed
+```
+
+- At 09:42:18 on May 17th, a kill job request (REQUEST_KILL_JOB) was issued for JobId=7654321 by a user with uid 12345678.
+
+- However, the kill job request encountered a security violation error, indicating that the user with uid 12345678 did not have the necessary access or permission to kill JobId=7654321. The error message from job_str_signal() suggests that the signal 9 (SIGKILL) was attempted, but the access/permission was denied.
+
+- Later, at 15:18:53 on May 17th, another kill job request was made for JobId=8241531, but this time by a user with uid 0. The user with uid 0 typically represents the root user or a system administrator.

@@ -7,6 +7,11 @@ $ brew install podman
 $ brew services restart podman
 $ podman machine init
 $ podman machine start
+
+# indicated by above output
+$ sudo /opt/homebrew/Cellar/podman/4.5.0/bin/podman-mac-helper install
+$ podman machine stop; podman machine start
+
 $ podman system connection list
 Name                         URI                                                         Identity                                   Default
 podman-machine-default       ssh://core@localhost:51838/run/user/501/podman/podman.sock  /Users/gengwg/.ssh/podman-machine-default  true
@@ -67,5 +72,13 @@ Copying blob sha256:c9b1b535fdd91a9855fb7f82348177e5f019329a58c53c47272962dd60f7
 Copying config sha256:fae2300b2a9f983471e43c15ae1d71b7409a4b872dea4259db3d55b1fe98fd3d
 Writing manifest to image destination
 Storing signatures
+hello world from kaniko
+```
+
+Note above may be specific to DTR. Harbor had no issue.
+
+```
+$ podman run --rm -it harbor.example.com/gengwg/kaniko-test
+WARNING: image platform (linux/amd64) does not match the expected platform (linux/arm64)
 hello world from kaniko
 ```
