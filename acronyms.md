@@ -73,8 +73,9 @@
 | EMP     | Electromagnetic Pulse                       |
 | ENE     | Enterprise Network Engineer                 |
 | ENR     | Enterprise Network Reilability              |
-| ERBP    | Employee Relations Business Partner         |
 | EPO     | Emergency Power Off                         |
+| ERBP    | Employee Relations Business Partner         |
+| ERP     | Enterprise Resource Planning                |
 | ESW     | Edge Switch                                 |
 | ETR     | Estimated Time of Return/Repair             |
 | EV      | [Extended Validation Certificate](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)    |
