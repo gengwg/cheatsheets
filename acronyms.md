@@ -84,6 +84,7 @@
 | FC      | Fulfillment Center                          |
 | FDE     | [Fetch, Decode, Execute](https://en.wikipedia.org/wiki/Instruction_cycle)|
 | FDOB    | First Day Of Business                       |
+| FDTD    | [Finite-difference time-domain](https://en.wikipedia.org/wiki/Finite-difference_time-domain_method) |
 | FG      | Functional Groups                           |
 | FIRE    | Financial Independence, Retire Early        |
 | FoV     | field of view                               |
@@ -243,6 +244,7 @@
 | SMH     | Shake My Head                               |
 | SMT     | [Simultaneous multithreading](https://en.wikipedia.org/wiki/Simultaneous_multithreading) |
 | SOE     | Sourcing and Operations Engineering         |
+| SOFA    | Spatially Oriented Format for Acoustics     |
 | SOP     | standard operating procedure                |
 | SOTA    | state of the art                            |
 | SOW     | Scope of Work                               |
