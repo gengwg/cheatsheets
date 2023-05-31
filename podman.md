@@ -82,3 +82,74 @@ $ podman run --rm -it harbor.example.com/gengwg/kaniko-test
 WARNING: image platform (linux/amd64) does not match the expected platform (linux/arm64)
 hello world from kaniko
 ```
+
+## Tagging and Pushing Docker Image to Harbor Using Podman
+
+## Step 1: Login
+
+To login to a container registry using Podman, use the following command:
+
+```bash
+podman login -u <username> <registry>
+```
+
+Example:
+
+```bash
+podman login -u gengwg harbor.example.com
+```
+
+This command will prompt you to enter your password. Upon successful login, you will see the message "Login Succeeded!"
+
+## Step 2: Build the Image
+
+To build a container image using Podman, use the `podman build` command followed by the necessary options and arguments.
+
+```bash
+podman build --platform=<platform> -t <image-name:tag> .
+```
+
+Example:
+
+```bash
+podman build --platform=linux/amd64 -t my-python-app:amd64 .
+```
+
+This command builds a container image using the Dockerfile located in the current directory (`.`). The `--platform` option specifies the target platform for the image, and the `-t` option tags the image with the specified name and tag.
+
+The output will display the progress of each step in the build process.
+
+## Step 3: Tag the Image
+
+After building the image, you can tag it using the `podman tag` command.
+
+```bash
+podman tag <source-image> <target-image>
+```
+
+Example:
+
+```bash
+podman tag my-python-app:amd64 harbor.example.com/gengwg/my-python-app:podman
+```
+
+This command creates a new tag for the specified image, allowing you to identify it with a different name or location.
+
+## Step 4: Push the Image
+
+To push the container image to the registry, use the `podman push` command.
+
+```bash
+podman push <image-name:tag>
+```
+
+Example:
+
+```bash
+podman push harbor.example.com/gengwg/my-python-app:podman
+```
+
+This command uploads the specified image to the container registry.
+
+Once the process is complete, you will see the progress of each step, including the successful push of the image to the registry.
+
