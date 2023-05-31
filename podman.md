@@ -85,7 +85,7 @@ hello world from kaniko
 
 ## Tagging and Pushing Docker Image to Harbor Using Podman
 
-## Step 1: Login
+### Step 1: Login
 
 To login to a container registry using Podman, use the following command:
 
@@ -101,7 +101,7 @@ podman login -u gengwg harbor.example.com
 
 This command will prompt you to enter your password. Upon successful login, you will see the message "Login Succeeded!"
 
-## Step 2: Build the Image
+### Step 2: Build the Image
 
 To build a container image using Podman, use the `podman build` command followed by the necessary options and arguments.
 
@@ -119,7 +119,7 @@ This command builds a container image using the Dockerfile located in the curren
 
 The output will display the progress of each step in the build process.
 
-## Step 3: Tag the Image
+### Step 3: Tag the Image
 
 After building the image, you can tag it using the `podman tag` command.
 
@@ -135,7 +135,7 @@ podman tag my-python-app:amd64 harbor.example.com/gengwg/my-python-app:podman
 
 This command creates a new tag for the specified image, allowing you to identify it with a different name or location.
 
-## Step 4: Push the Image
+### Step 4: Push the Image
 
 To push the container image to the registry, use the `podman push` command.
 
