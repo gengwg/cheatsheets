@@ -150,6 +150,7 @@
 | MIA     | missing in action                           |
 | MIG     | Multi-Instance GPU                          |
 | MIP     | Management Incentive Program                |
+| MITM    | Man-in-the-middle                           |
 | MPI     | Message Passing Interfaced                  |
 | MPLS    | Multiprotocal Label Switching               |
 | MPO     | Multi-fiber Push On                         |
