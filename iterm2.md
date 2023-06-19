@@ -42,6 +42,9 @@ In the Profiles section, go to the Terminal tab in the right panel of the settin
 
 ![](images/iterm2/history.png)
 
+### Integrate with password manager
+
+https://medium.com/@ratchada.jududom/how-to-ssh-iterm2-with-password-manager-576b0452b493
 
 ## Shortcuts
 
@@ -50,3 +53,4 @@ In the Profiles section, go to the Terminal tab in the right panel of the settin
 `⌘+⌥+←/↑/→/↓` will let you navigate split panes in the direction of the arrow.
 
 `Cmd + <-` and `Cmd + ->` navigates among differnt tabs.
+
