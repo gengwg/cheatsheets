@@ -275,3 +275,61 @@ vagrant@vagrant:~/go/src/k8s.io/node-problem-detector$ df -h /
 Filesystem                         Size  Used Avail Use% Mounted on
 /dev/mapper/ubuntu--vg-ubuntu--lv   31G   18G   12G  62% /
 ```
+
+### unknown option overlay2.override_kernel_check: overlay2
+
+```
+$ sudo /usr/bin/dockerd
+INFO[2023-06-18T20:20:37.183475780-07:00] Starting up
+INFO[2023-06-18T20:20:37.198218291-07:00] [graphdriver] trying configured driver: overlay2
+failed to start daemon: error initializing graphdriver: overlay2: unknown option overlay2.override_kernel_check: overlay2
+INFO[2023-06-18T20:20:37.198929033-07:00] stopping event stream following graceful shutdown  error="context canceled" module=libcontainerd namespace=plugins.moby
+```
+
+As part of the platform upgrade, the Docker was also upgraded to v24. In this version of Docker the support for the overlay2.override_kernel_check storage option was removed as noted in Docker documentation.
+
+```
+$ docker version
+Client: Docker Engine - Community
+ Version:           24.0.2
+ API version:       1.43
+ Go version:        go1.20.4
+ Git commit:        cb74dfc
+ Built:             Thu May 25 21:53:44 2023
+ OS/Arch:           linux/amd64
+ Context:           default
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+```
+
+This storage option must be removed from the Docker daemon configuration in /etc/docker/daemon.json file.
+
+Before:
+
+```
+$ cat daemon.json.bak
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2",
+  "storage-opts": [
+    "overlay2.override_kernel_check=true"
+  ]
+}
+```
+
+After:
+
+```
+$ cat daemon.json
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+```
