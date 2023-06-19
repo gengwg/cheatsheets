@@ -121,6 +121,13 @@ XYZTeam             REQUEUE             2                   1                   
 scontrol update NodeName=mynode State=DRAIN Reason='my reason'
 ```
 
+### Check/modify state save location
+
+```
+# scontrol show config | grep  StateSaveLocation
+StateSaveLocation       = /mnt/slurm/slurm02/slurm_state
+```
+
 ## Troubleshooting
 
 ### Invalid node state specified when trying to undrain a node
