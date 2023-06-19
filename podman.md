@@ -83,6 +83,31 @@ WARNING: image platform (linux/amd64) does not match the expected platform (linu
 hello world from kaniko
 ```
 
+### Verify podman
+
+```
+gengwg@gengwg-mbp:~$ podman login -u $USER harbor.my.com
+Password:
+Login Succeeded!
+gengwg@gengwg-mbp:~$ podman pull harbor.my.com/k8s/busybox
+gengwg@gengwg-mbp:~$ podman run -it harbor.my.com/k8s/busybox /bin/sh
+WARNING: image platform (linux/amd64) does not match the expected platform (linux/arm64)
+/ #
+gengwg@gengwg-mbp:~$ podman run -it harbor.my.com/k8s/busybox sh -c 'echo foo > /bar'
+WARNING: image platform (linux/amd64) does not match the expected platform (linux/arm64)
+gengwg@gengwg-mbp:~$ podman ps -a -q | tail -1
+e263c52d324d
+gengwg@gengwg-mbp:~$ podman container commit  $(podman ps -a -q | tail -1)
+97f6d7616b92f7add989eb0c65b07daac7a4f151a466a6bb4fb594d08f90b1b5
+gengwg@gengwg-mbp:~$ podman image ls -q | head -1
+97f6d7616b92
+gengwg@gengwg-mbp:~$ podman image tag $(podman image ls -q | head -1) harbor.my.com/$USER/busybox-exercise
+gengwg@gengwg-mbp:~$ podman run -it harbor.my.com/$USER/busybox-exercise sh -c 'cat /bar'
+WARNING: image platform (linux/amd64) does not match the expected platform (linux/arm64)
+foo
+gengwg@gengwg-mbp:~$ podman push harbor.my.com/$USER/busybox-exercise:latest
+```
+
 ## Tagging and Pushing Docker Image to Harbor Using Podman
 
 ### Step 1: Login
