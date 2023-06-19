@@ -42,6 +42,14 @@ In the Profiles section, go to the Terminal tab in the right panel of the settin
 
 ![](images/iterm2/history.png)
 
+### Install shell integration
+
+```
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+```
+
+https://gist.github.com/gengwg/71c1fe8cd9bb91752d87cd4cb7bd8656
+
 ### Integrate with password manager
 
 https://medium.com/@ratchada.jududom/how-to-ssh-iterm2-with-password-manager-576b0452b493
