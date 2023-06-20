@@ -333,3 +333,70 @@ $ cat daemon.json
   "storage-driver": "overlay2"
 }
 ```
+
+### Client.Timeout exceeded while awaiting headers
+
+```
+$ docker login harbor.my.com
+Username: user
+Password:
+Error response from daemon: Get "https://harbor.my.com/v2/": Get "https://harbor-msec-snc.my.com/service/token?account=user&client_id=docker&offline_token=true&service=harbor-registry": net/http: request canceled (Client.Timeout exceeded while awaiting headers) (Client.Timeout exceeded while awaiting headers)
+
+$ docker pull harbor.my.com/myns/blender3.0:v93
+Error response from daemon: Head "https://harbor.my.com/v2/frl_gemini/blender3.0_ex/manifests/v93": Get "https://harbor-msec-snc.my.com/service/token?account=user&scope=repository%3Afrl_gemini%2exlender3.0_ex%3Apull&service=harbor-registry": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+```
+
+This could be many reasons. YMMV. Try some of below see if any of them works:
+
+1. Increase Docker client time out
+
+```
+export DOCKER_CLIENT_TIMEOUT=600
+```
+
+Can you try run that first, then run the login command again.
+
+Or put them on the same line. either should work.
+
+```
+DOCKER_CLIENT_TIMEOUT=600 docker login harbor.my.com
+```
+
+2. Check if you happen to use any proxy
+
+check this:
+
+```
+gengwg@gengwg-mbp:~$ env | grep -i proxy
+```
+
+3. check your DNS setup
+
+```
+gengwg@gengwg-mbp:~$ cat /etc/resolv.conf  | grep -v \#
+```
+
+4. what happens when you curl the above endpoint? (unauthorized is expected).
+
+```
+gengwg@gengwg-mbp:~$ curl https://harbor.my.com/v2/
+{"errors":[{"code":"UNAUTHORIZED","message":"unauthorized: unauthorized"}]}
+```
+
+5. try login to the UI directly. 
+
+see if you still see the same issue.
+
+https://harbor.my.com/harbor/projects
+
+6. Try restart docker
+
+7. Try big hammer
+
+
+```
+docker network prune
+```
+
+Finally worked!!
+
