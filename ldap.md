@@ -28,3 +28,15 @@ Here's how the parameter expansion works in this case:
 So, in this case, the result is the same as if the value of `USER` was `johnadmin123`. The parameter expansion removes the `admin` suffix from the end of the string, leaving only `john`.
 
 This type of parameter expansion is often used in shell scripts to manipulate strings and extract substrings based on patterns.
+
+### Clean SSSD Cache
+
+* Must be root.
+
+```
+# getent group mygroup
+<user missing in group>
+# sss_cache -E
+# getent group mygroup
+<user showed up in group>
+```
