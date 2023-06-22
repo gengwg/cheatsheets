@@ -1,5 +1,11 @@
 // vim: noai:ts=2:sw=2
 
+Convert DOS file to UNIX format
+
+```
+dos2unix myfile.txt
+```
+
 remove `Icon?` files on mac
 
 ```
