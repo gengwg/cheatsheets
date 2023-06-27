@@ -117,6 +117,24 @@ $ sudo dnf module enable container-tools:rhel8
 dnf repoquery --requires <your package name>
 ```
 
+Example:
+
+```
+$ dnf repoquery --requires  python3-kubernetes
+Last metadata expiration check: 0:42:37 ago on Mon 26 Jun 2023 05:16:34 PM PDT.
+python(abi) = 3.6
+python3.6dist(certifi) >= 14.05.14
+python3.6dist(google-auth) >= 1.0.1
+python3.6dist(python-dateutil) >= 2.5.3
+python3.6dist(pyyaml) >= 3.12
+python3.6dist(requests)
+python3.6dist(requests-oauthlib)
+python3.6dist(setuptools) >= 21.0.0
+python3.6dist(six) >= 1.9.0
+python3.6dist(urllib3) >= 1.23
+python3.6dist(websocket-client) >= 0.32.0
+```
+
 ### List the package contents for a rpm
 
 ```
