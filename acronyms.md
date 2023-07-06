@@ -51,6 +51,7 @@
 | CVPR    | Computer Vision and Pattern Recognition     |
 | DBE     | Double-bit ECC error                        |
 | DDI     | DNS, DHCP, and IPAM                         |
+| DDP     | Distributed Data Paralle                    |
 | DDR     | Double Data Rate                            |
 | DEI     | Diversity, Equity, and Inclusion            |
 | DGW     | Distribution GateWay                        |
