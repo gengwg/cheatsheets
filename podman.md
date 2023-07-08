@@ -108,6 +108,27 @@ foo
 gengwg@gengwg-mbp:~$ podman push harbor.my.com/$USER/busybox-exercise:latest
 ```
 
+## Notes
+
+### Podman subuids
+
+Subuids are subordinate uids which belong to user. These are listed in the /etc/subuid file. The file looks like:
+
+```
+...
+myuser:1879048192:65536
+...
+```
+
+This indicates that 65536 uids starting at 1879048192 are subordinate to the user myuser.
+
+This is necessary for podman to setup user namespace correctly and map uids inside containers to real uids on the host.
+
+The 1879048192-1885601792 uid/gid range is reserved for podman users. This corresponds to 100 copies of length 65536. When the recipe runs, it compares users with subuids allocated in this range to the set of devserver owners. It then adds/removes entries based on the difference. If an owner being removed still has an active login for whatever reason, removal will fail, but the recipe will try again next time it is run.
+
+
+
+
 ## Tagging and Pushing Docker Image to Harbor Using Podman
 
 ### Step 1: Login
