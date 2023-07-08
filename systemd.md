@@ -349,3 +349,18 @@ And it's not in syslog any more!
 [root@pit103-hpcc-kubenode113 kubernetes]# tail -f /var/log/messages | grep kubelet
 ^C
 ```
+
+### Check systemd UID boundaries
+
+```
+$ pkg-config --variable=systemuidmax systemd
+999
+$ pkg-config --variable=dynamicuidmin systemd
+61184
+$ pkg-config --variable=dynamicuidmax systemd
+65519
+$ pkg-config --variable=containeruidbasemin systemd
+524288
+$ pkg-config --variable=containeruidbasemax systemd
+1878982656
+```
