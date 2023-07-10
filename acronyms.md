@@ -22,6 +22,7 @@
 | BMS     | Building Management System                  |
 | BOE     | Back of the Envelope                        |
 | BOM     | Bill of Material                            |
+| BRD     | Business Requirements Document              |
 | CAPEX   | Capital Expenses                            |
 | CAT     | Crypto Auth Token                           |
 | Caveat Emptor | the buyer alone is responsible for assessing the quality of a purchase before buying.|
