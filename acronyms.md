@@ -253,6 +253,7 @@
 | SOP     | standard operating procedure                |
 | SOTA    | state of the art                            |
 | SOW     | Scope of Work                               |
+| SPMD    | single program multiple data                |
 | SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
