@@ -364,3 +364,9 @@ $ pkg-config --variable=containeruidbasemin systemd
 $ pkg-config --variable=containeruidbasemax systemd
 1878982656
 ```
+
+### list all of the systemd targets 
+
+```
+systemctl list-units --type target
+```
