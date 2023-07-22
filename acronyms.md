@@ -291,6 +291,7 @@
 | VRF     | Virtual Routing and Forwarding              |
 | WAL     | [Write-Ahead Logging](https://en.wikipedia.org/wiki/Write-ahead_logging) |
 | WAP     | Wireless Access Points                      |
+| WG      | [Working Group](https://en.wikipedia.org/wiki/Working_group)  |
 | WGW     | WAN Gateways                                |
 | WITCH   | Wipro Infosys TCS Congizant HCL             |
 | WLC     | Wireless Controllers                        |
