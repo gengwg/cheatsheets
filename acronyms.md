@@ -168,6 +168,7 @@
 | MVCC    | Multi-Version Concurrency Control           |
 | mIoU    | mean intersection-over-union                |
 | mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
+| NB      | nota bene. Latin for "note well".           |
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
