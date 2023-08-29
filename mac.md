@@ -521,6 +521,10 @@ Consistent brightness on battery and power adapter.
 
 ![](images/mac/disable_dim_display.png)
 
+Note: On M1, it's located here:
+
+![](images/mac/disable_dim_display_m1.png)
+
 ### Disable auto sleep when disaply is off
 
 This prevents SSH sessions from dropping, for example.
