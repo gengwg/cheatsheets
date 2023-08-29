@@ -521,7 +521,7 @@ Consistent brightness on battery and power adapter.
 
 ![](images/mac/disable_dim_display.png)
 
-Note: On M1, it's located here:
+Note: On M1, it's located here: 'Displays' -> 'Advanced'. 
 
 ![](images/mac/disable_dim_display_m1.png)
 
