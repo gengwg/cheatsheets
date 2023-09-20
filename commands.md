@@ -827,3 +827,28 @@ Curl with timeout using the "-m" or "--max-time" option followed by the number o
 $ curl -kL -m 5 https://myexample.com/
 curl: (28) Connection timed out after 5001 milliseconds
 ```
+
+Check if a file is statically or dynamically compiled:
+
+```
+$ file /bin/ps
+/bin/ps: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=1b9bc86e2f74266d21817c934048e842d975628a, stripped
+```
+
+Check what external libraries are being used:
+```
+$ ldd /bin/ps
+	linux-vdso.so.1 (0x00007fffce573000)
+	libprocps.so.7 => /lib64/libprocps.so.7 (0x00007fc893600000)
+	libsystemd.so.0 => /lib64/libsystemd.so.0 (0x00007fc893200000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fc892e00000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fc892a00000)
+	libcap.so.2 => /lib64/libcap.so.2 (0x00007fc892600000)
+	libzstd.so.1 => /lib64/libzstd.so.1 (0x00007fc892200000)
+	liblz4.so.1 => /lib64/liblz4.so.1 (0x00007fc891e00000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fc891a00000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fc891600000)
+	liblzma.so.5 => /lib64/liblzma.so.5 (0x00007fc891200000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fc890e00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fc893e00000)
+```
