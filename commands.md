@@ -836,6 +836,7 @@ $ file /bin/ps
 ```
 
 Check what external libraries are being used:
+
 ```
 $ ldd /bin/ps
 	linux-vdso.so.1 (0x00007fffce573000)
@@ -851,4 +852,24 @@ $ ldd /bin/ps
 	liblzma.so.5 => /lib64/liblzma.so.5 (0x00007fc891200000)
 	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fc890e00000)
 	/lib64/ld-linux-x86-64.so.2 (0x00007fc893e00000)
+```
+
+Or 
+
+```
+$ sudo dnf install pax-utils
+$ lddtree /bin/ps
+ps => /bin/ps (interpreter => /lib64/ld-linux-x86-64.so.2)
+    libprocps.so.7 => /lib64/libprocps.so.7
+    libsystemd.so.0 => /lib64/libsystemd.so.0
+        libcap.so.2 => /lib64/libcap.so.2
+        libzstd.so.1 => /lib64/libzstd.so.1
+        liblz4.so.1 => /lib64/liblz4.so.1
+        libpthread.so.0 => /lib64/libpthread.so.0
+        librt.so.1 => /lib64/librt.so.1
+        liblzma.so.5 => /lib64/liblzma.so.5
+        libgcc_s.so.1 => /lib64/libgcc_s.so.1
+        ld-linux-x86-64.so.2 => /lib64/ld-linux-x86-64.so.2
+    libdl.so.2 => /lib64/libdl.so.2
+    libc.so.6 => /lib64/libc.so.6
 ```
