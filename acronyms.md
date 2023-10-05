@@ -268,6 +268,7 @@
 | TBH     | to be honest                                |
 | TC      | The Candidate                               |
 | TC      | Total Compensation                          |
+| TCAM    | Ternary Content Addressable Memory          |
 | TDP     | Thermal Design Power                        |
 | T&E     | Travel and Expense                          |
 | TESS    | Tera-speed Storage System                   |
