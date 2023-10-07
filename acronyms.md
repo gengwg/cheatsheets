@@ -274,7 +274,8 @@
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
 | TIN     | Taxpayer Identification Numbers             |
-| TIP     | [Telecom Infra Project](https://en.wikipedia.org/wiki/Telecom_Infra_Project)             |
+| TIP     | [Telecom Infra Project](https://en.wikipedia.org/wiki/Telecom_Infra_Project)               |
+| TLB     | [Translation lookaside buffer](https://en.wikipedia.org/wiki/Translation_lookaside_buffer) |
 | Tm      | Trust me                                    |
 | TNTE    | to new to evaluate                          |
 | TOFU    | [Trust On First Use](https://en.wikipedia.org/wiki/Trust_on_first_use) |
