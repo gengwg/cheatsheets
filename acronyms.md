@@ -194,6 +194,7 @@
 | PDD     | Promotion Driven Development                |
 | PDG     | Packet Data Gateway                         |
 | PERT    | Psychiatric Emergency Response Team         |
+| PFN     | Page Frame Number                           |
 | PG      | Product Group                               |
 | PID     | Position ID (HR terminology)                |
 | PII     | Personally identifiable information         |
