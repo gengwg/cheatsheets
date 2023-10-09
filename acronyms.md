@@ -94,6 +94,7 @@
 | fps     | frames per second                           |
 | FSD     | Fully Self-Driving                          |
 | FSW     | Fabric Switch                               |
+| FTE     | Full-time Employee                          |
 | FWIW    | For what it's worth                         |
 | GDCC    | Global Data Center Connectivity             |
 | GHE     | GitHub Enterprise                           |
