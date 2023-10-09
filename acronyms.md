@@ -213,6 +213,7 @@
 | PS      | Parameter Server (TensorFlow)               |
 | PSC     | Performance Summary Cycle                   |
 | PSW     | [Peering Switch](https://en.wikipedia.org/wiki/Peering)  |
+| PTE     | Page Table Entry                            |
 | PVT     | Production Validation Testing               |
 | PWM     | Provisioning Workflow Manager               |
 | RA      | [Registration Authorigy](https://en.wikipedia.org/wiki/Public_key_infrastructure) |
