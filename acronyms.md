@@ -49,6 +49,7 @@
 | CSLB    | core system load balancing                  |
 | CTR     | click through rate                          |
 | CV      | Computer Vision                             |
+| CVE     | Common Vulnerabilities and Exposures        |
 | CVPR    | Computer Vision and Pattern Recognition     |
 | DBE     | Double-bit ECC error                        |
 | DDI     | DNS, DHCP, and IPAM                         |
