@@ -9,6 +9,7 @@
 | APT     | Advanced persistent threat                  |
 | ARM     | ajustable-rate mortgate                     |
 | ASC     | Ambulatory Surgery Centers                  |
+| ASC     | Application Support Center                  |
 | ASIC    | Application-Specific Integrated Circuit     |
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
