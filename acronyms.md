@@ -290,6 +290,7 @@
 | TTP     | Time to Provision                           |
 | UEFI    | Unified Extensible Firmware Interface       |
 | URA     | Unregretted Attrition                       |
+| USCIS   | US Citizenship and Immigration Services     |
 | VAR     | Value Added Reseller                        |
 | VDI     | Virtual Desktop Infrastructure              |
 | ViT     | Vision Transformers                         |
