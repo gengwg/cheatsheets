@@ -123,6 +123,10 @@ brew cask install pycharm-ce
 (optional)
 brew cask install chef/chef/chefdk
 
+# Adobe PDF reader
+brew install adobe-acrobat-reader --cask
+brew install paintbrush --cask
+
 brew install vlc
 (“VLC” can’t be opened because Apple cannot check it for malicious software.
 Go to Security and click on 'Open Anyway')
