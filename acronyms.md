@@ -6,6 +6,7 @@
 | AGI     | [Artificial general intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence) |
 | AHX     | Water-Air Heat exchanger                    |
 | AMS     | [Andorra, Monaco, San Marino](https://en.wikipedia.org/wiki/List_of_country_groupings) |
+| AOS     | Adjustment of Status                        |
 | APT     | Advanced persistent threat                  |
 | ARM     | ajustable-rate mortgate                     |
 | ASC     | Ambulatory Surgery Centers                  |
