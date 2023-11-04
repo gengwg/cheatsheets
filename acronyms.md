@@ -239,6 +239,7 @@
 | SCA     | Shopping Cart Abandon                       |
 | SCADA   | Supervisory control and data acquisition    |
 | SDI     | State Disability Insurance                  |
+| SDK     | Software Development Kit                    |
 | SEM     | Search Engine Marketing                     |
 | SeRF    | Servers etc Repository Framework            |
 | SLAAC   | State-Less Automatic Address Configuration  |
