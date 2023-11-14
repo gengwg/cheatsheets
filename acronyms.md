@@ -256,6 +256,7 @@
 | SME     | Subject Matter Expert                       |
 | SMH     | Shake My Head                               |
 | SMT     | [Simultaneous multithreading](https://en.wikipedia.org/wiki/Simultaneous_multithreading) |
+| SOC     | [Standard Occupational Classification](https://www.bls.gov/soc/) |
 | SOE     | Sourcing and Operations Engineering         |
 | SOFA    | Spatially Oriented Format for Acoustics     |
 | SOP     | standard operating procedure                |
