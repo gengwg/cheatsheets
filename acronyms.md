@@ -8,7 +8,7 @@
 | AMS     | [Andorra, Monaco, San Marino](https://en.wikipedia.org/wiki/List_of_country_groupings) |
 | AOS     | Adjustment of Status                        |
 | APT     | Advanced persistent threat                  |
-| ARM     | ajustable-rate mortgate                     |
+| ARM     | ajustable-rate mortgage                     |
 | ASC     | Ambulatory Surgery Centers                  |
 | ASC     | Application Support Center                  |
 | ASIC    | Application-Specific Integrated Circuit     |
