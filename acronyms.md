@@ -196,6 +196,7 @@
 | PDB     | Power Distribution Board                    |
 | PDD     | Promotion Driven Development                |
 | PDG     | Packet Data Gateway                         |
+| PDP     | Product Development Process                 |
 | PERT    | Psychiatric Emergency Response Team         |
 | PFN     | Page Frame Number                           |
 | PG      | Product Group                               |
