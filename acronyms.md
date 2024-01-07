@@ -227,6 +227,7 @@
 | RDS     | Research Data Scientist                     |
 | RMA     | Return Merchandise Authorization            |
 | ROI     | Return on investment                        |
+| RoB     | Rhythm of Business                          | 
 | RoCE    | RDMA over Converged Ethernet                |
 | RPG     | Role-playing game                           |
 | RPG     | Rocket-propelled grenade                    |
