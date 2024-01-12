@@ -157,6 +157,7 @@
 | MIG     | Multi-Instance GPU                          |
 | MIP     | Management Incentive Program                |
 | MITM    | Man-in-the-middle                           |
+| MP      | Mass Production                             |
 | MPI     | Message Passing Interfaced                  |
 | MPLS    | Multiprotocal Label Switching               |
 | MPO     | Multi-fiber Push On                         |
@@ -212,6 +213,7 @@
 | PP      | [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) |
 | PPS     | Proofpoint Protection Service               |
 | potus   | President of the United States              |
+| PREQ    | Performance, Reliability, Efficiency, Quality |
 | prod    | Production (network)                        |
 | preso   | [presentation](https://www.urbandictionary.com/define.php?term=preso) |
 | PS      | Parameter Server (TensorFlow)               |
