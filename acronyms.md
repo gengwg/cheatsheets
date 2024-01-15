@@ -300,6 +300,7 @@
 | URA     | Unregretted Attrition                       |
 | USCIS   | US Citizenship and Immigration Services     |
 | VAR     | Value Added Reseller                        |
+| VAS     | Value-Added Services                        |
 | VDI     | Virtual Desktop Infrastructure              |
 | ViT     | Vision Transformers                         |
 | VWOP    | Vendor Worker Onboarding Portal             |
