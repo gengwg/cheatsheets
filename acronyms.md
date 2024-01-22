@@ -66,6 +66,7 @@
 | DSA     | Diversity Slate Approach                    |
 | DTC     | Dare-2-Compare                              |
 | DTI     | Debt-To-Income Ratio                        |
+| DUT     | [Device under test](https://en.wikipedia.org/wiki/Device_under_test)  |
 | DV      | [Domain-validated certificate](https://en.wikipedia.org/wiki/Domain-validated_certificate) |
 | DVT     | Design Validation Testing                   |
 | eBGP    | Exterio Border Gateway Protocol             |
@@ -177,6 +178,7 @@
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
+| NPI     | New Product Introduction                    |
 | OAM     | Operations, administration, and management  |
 | OCD     | [Obsessive–compulsive disorder](https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) |
 | ODM     | Original Design Manufacturer                |
