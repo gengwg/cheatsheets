@@ -152,6 +152,7 @@
 | LVS     | Linux Virtual Serer                         |
 | MAB     | MAC Authentication Bypass                   |
 | MAU     | Monthly Active Users                        |
+| MBSR    | mindfulness based stress reduction          |
 | MCO     | Manufacturing change order                  |
 | MDF     | Main distribution frame                     |
 | MDU     | Multi-Dwelling Units                        |
