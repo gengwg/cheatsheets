@@ -64,6 +64,7 @@
 | DLP     | Data Loss Prevention												|
 | DRI     | Directly Responsible Individual             |
 | DSA     | Diversity Slate Approach                    |
+| DSM     | Device State Manager                        |
 | DTC     | Dare-2-Compare                              |
 | DTI     | Debt-To-Income Ratio                        |
 | DUT     | [Device under test](https://en.wikipedia.org/wiki/Device_under_test)  |
@@ -128,6 +129,7 @@
 | IC      | Individual Contributor                      |
 | ICYMI   | In case you missed it                       |
 | IDC     | Infra Data Center organization              |
+| IDL     | Interface Description Language              |
 | IDN     | Infrastructure DNS and NTP                  |
 | IDO     | Identity Orchestrator                       |
 | IMOC    | Incident Manager On-Call                    |
