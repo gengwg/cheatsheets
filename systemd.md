@@ -90,10 +90,17 @@ and then you can enable the timer with
 ```
 $ systemctl --user enable test.timer --now
 Created symlink /home/gengwg/.config/systemd/user/timers.target.wants/test.timer → /home/gengwg/.config/systemd/user/test.timer.
+$ systemctl --user start test.timer
+```
+
+You may start the servcie to test the commands:
+
+```
+$ systemctl --user start test.service
+$ systemctl --user status test.service
 ```
 
 view the result with:
-
 
 ```
 $ systemctl --user list-timers
