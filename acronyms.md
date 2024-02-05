@@ -193,6 +193,7 @@
 | OPM     | Operations Program Manager                  |
 | OSFA    | One Size Fits All                           |
 | OSS     | Open Source Software                        |
+| OTA     | Over the air (sw/fw update over wifi/bt)    |
 | OTOH    | On the other hand                           |
 | OUI     | organizationally unique identifier          |
 | PAR     | Python archive file                         |
