@@ -7,6 +7,7 @@
 | AHX     | Water-Air Heat exchanger                    |
 | AMS     | [Andorra, Monaco, San Marino](https://en.wikipedia.org/wiki/List_of_country_groupings) |
 | AOS     | Adjustment of Status                        |
+| AOSP    | [Android Open Source Project](https://source.android.com/) |
 | APT     | Advanced persistent threat                  |
 | ARM     | ajustable-rate mortgage                     |
 | ASC     | Ambulatory Surgery Centers                  |
