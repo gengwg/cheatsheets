@@ -370,3 +370,9 @@ $ pkg-config --variable=containeruidbasemax systemd
 ```
 systemctl list-units --type target
 ```
+
+### list all of the systemd timers _for current user_
+
+```
+$ systemctl list-timers --user -a
+```
