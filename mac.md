@@ -6,8 +6,8 @@
 
 * `System Preferences` --> `Trackpad` --> `Scroll & Zoom` --> uncheck `Scoll direction: Natural`
 ![](images/mac/disable_natural_scroll.png)
-* `System Preferences` --> `Trackpad` --> `Point & Click` --> check `Tap to Click`
 ![](images/mac/tap_to_click.png)
+* `System Preferences` --> `Trackpad` --> `Point & Click` --> check `Tap to Click`
 * System Preferences > Keyboard > Key Repeat: increase to 'Fast'
 * `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
 * `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'
@@ -460,8 +460,8 @@ Modify the url to the above server IP, where you set up a HTTP server.
 ```
   # url 'http://sourceforge.net/projects/sshpass/files/sshpass/1.06/sshpass-1.06.tar.gz'
   url 'http://10.93.81.178:8000/sshpass-1.06.tar.gz'
-```
 
+```
 Brew local install.
 ```
 $ brew install ./sshpass.rb
@@ -576,4 +576,11 @@ The advantage of using ssh config is you can ssh to your devvm w/o typing anythi
 $ sftp myserver
 Connected to server.
 sftp>
+```
+
+### Prevent display from sleeping
+
+```
+$ caffeinate -d
+$ man caffeinate
 ```
