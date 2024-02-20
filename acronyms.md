@@ -1,5 +1,6 @@
 | Acronym |         Long Content                        |
 |:-------:|:--------------------------------------------|
+| 802.1X  | Port-based Network Access Control           |
 | ABI     | Application Binary Interface                |
 | ACH     | Automated Clearing House                    |
 | AE      | Additional Equity                           |
@@ -83,6 +84,7 @@
 | ENR     | Enterprise Network Reilability              |
 | EPO     | Emergency Power Off                         |
 | ERBP    | Employee Relations Business Partner         |
+| ERD     | Early Risk Detection                        |
 | ERP     | Enterprise Resource Planning                |
 | ESW     | Edge Switch                                 |
 | ETR     | Estimated Time of Return/Repair             |
@@ -325,4 +327,5 @@
 | XR      | Extended Reality                            |
 | XRU     | XR Rendering Unit                           |
 | YOLO    | You only live once                          |
+| ZTN     | Zero Trust Networking                       |
 
