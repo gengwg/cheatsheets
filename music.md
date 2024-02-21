@@ -10,6 +10,8 @@ https://music.youtube.com/watch?v=32Oc2d_3yEk&list=RDCLAK5uy_lWy02cQBnTVTlwuRaua
 
 ### Queen
 
+https://www.youtube.com/watch?v=CfymLdtaFOQ
+
 https://www.youtube.com/watch?v=j440-D5JhjI
 
 ## Work/Focus
