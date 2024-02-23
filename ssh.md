@@ -280,3 +280,58 @@ gengwg@gengwg-mbp:~$ man 1 scp
      -O      Use the legacy SCP protocol for file transfers instead of the SFTP protocol.  Forcing the use of the SCP protocol may be necessary for servers that do not implement SFTP, for backwards-compatibility for particular filename wildcard patterns and for expanding
              paths with a ‘~’ prefix for older SFTP servers.
 ```
+
+## Auto login to server w/o 2fa
+
+### Set up systemd timer to revert changes
+
+1. Create a service file `/etc/systemd/system/ssh_max_sessions.service`:
+
+```bash
+[Unit]
+Description=Increase SSH MaxSessions to 10
+[Service]
+ExecStart=/bin/bash -c "sed -i 's/MaxSessions 1/MaxSessions 10/g' /etc/ssh/sshd_config && systemctl restart sshd"
+```
+
+2. Create a timer file /etc/systemd/system/ssh_max_sessions.timer:
+
+```
+[Unit]
+Description=Run ssh_max_sessions.service every 5 minutes
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+[Install]
+WantedBy=timers.target
+```
+
+3. After creating or modifying the service and timer files, reload the systemd manager configuration, Enable and start the timer:
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable ssh_max_sessions.timer
+sudo systemctl start ssh_max_sessions.timer
+```
+
+### Set up ssh client connection sharing
+
+This is run on Macbook. This only need run once every day beginning at work.
+
+```
+gengwg@gengwg-mbp:~$ grep dtun .bash_aliases
+alias dtun='ssh -Mf -o ControlPersist=yes -S "/Users/gengwg/Library/Application Support/tunnel.sock" <SERVER NAME> echo -n'
+```
+
+### Update ssh config on Macbook
+
+```
+Host myserver
+    #ControlMaster auto
+    hostname <SERVER NAME>
+    user gengwg
+    ControlPersist yes
+    ControlPath="/Users/gengwg/Library/Application Support/tunnel.sock"
+```
+
+You should now have the ability to `ssh myserver` across multiple terminals without being asked for two-factor authentication!
