@@ -289,9 +289,9 @@ gengwg@gengwg-mbp:~$ man 1 scp
 
 ```bash
 [Unit]
-Description=Increase SSH MaxSessions to 10
+Description=Increase SSH MaxSessions to 8
 [Service]
-ExecStart=/bin/bash -c "sed -i 's/MaxSessions 1/MaxSessions 10/g' /etc/ssh/sshd_config && systemctl restart sshd"
+ExecStart=/bin/bash -c "sed -i 's/MaxSessions 1/MaxSessions 8/g' /etc/ssh/sshd_config && systemctl restart sshd"
 ```
 
 2. Create a timer file /etc/systemd/system/ssh_max_sessions.timer:
