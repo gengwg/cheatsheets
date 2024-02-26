@@ -45,6 +45,10 @@ cookie: <several long strings, which is the cookie>
 
 ![](images/chrome/warn_before_quit.png)
 
+### Opera
+
+Go to `opera://config` --> Shortcuts --> Hold Command-Q (or press it twice) to quit Opera
+
 ## Deleting a specific URL suggestion in Chrome
 
 https://superuser.com/questions/398385/deleting-a-specific-url-suggestion-in-chrome
@@ -56,10 +60,12 @@ Finally, press `Shift+Delete` and poof! The suggestion disappears.
 On a Mac, you may have to press `Shift+Fn+Delete`.
 (Fn is at left bottom corner on laptop keyboard).
 
-### Opera
+## Set Chrome to go to last used tab after tab is closed
 
-Go to `opera://config` --> Shortcuts --> Hold Command-Q (or press it twice) to quit Opera
+Use FLST Chrome Extension (Focus Last Selected Tab)
 
+https://chrome.google.com/webstore/detail/flst-chrome/ajnianifcggmdojhnmjichjmnjpplcha/details
+``
 ## Rearrange Tabs
 
 https://chrome.google.com/webstore/detail/rearrange-tabs/ccnnhhnmpoffieppjjkhdakcoejcpbga
