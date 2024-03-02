@@ -18,3 +18,8 @@ https://www.youtube.com/watch?v=j440-D5JhjI
 
 ## Chill
 
+## Epic
+
+### Thomas Bergersen
+
+https://music.youtube.com/channel/UCBfokvOnlLzpexblQoE__Ng?si=3MltRAMKxuCMDVmZ
