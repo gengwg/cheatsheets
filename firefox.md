@@ -39,3 +39,12 @@ In Firefox, you can `Shift + Right Click` on the video(to bypass our custom righ
 'Settings' --> 'Privacy & Security' --> 'Security' --> 'View Certificates' --> 'Authorities'
 
 ![](images/firefox/ca.png)
+
+### Only show Bookmarks Toolbar on new tab.
+
+2. Click on the three horizontal lines (menu) in the top right corner.
+3. Go to "Bookmarks" > "Show Bookmarks Toolbar". This will toggle the bookmarks bar to be always shown or hidden.
+4. Right-click on the bookmarks bar.
+5. Click on "Bookmarks Toolbar" is checked to keep it visible.
+6. Check "Only show on new tab".
+
