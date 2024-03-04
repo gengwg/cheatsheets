@@ -28,6 +28,8 @@ In Firefox, you can `Shift + Right Click` on the video(to bypass our custom righ
 1. Go to `about:config`
 2. Toggle the “browser.tabls.insertAfterCurrent” switch to “true” (default is “false”)
 
+Or use extension: [Open Tabs Next to Current](https://addons.mozilla.org/en-US/firefox/addon/open-tabs-next-to-current/)
+
 ### disable Sponsored shortcuts altogether.
 
 1. Click the `menu` Button and select `Settings`.
