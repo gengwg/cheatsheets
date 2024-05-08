@@ -26,6 +26,19 @@ Show/hide bookmarks bar:
 ```
 Cmd + Shift + B
 ```
+
+Open Chrome Developer Tools: 
+
+```
+Cmd + Option + I
+```
+
+Open the Command Console: 
+
+```
+Cmd + Shift + P
+```
+
 ## export bookmarks
 
 Go to:  
