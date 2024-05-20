@@ -279,6 +279,7 @@
 | SPP     | Samples per pixel                           |
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
+| SRX     | [Juniper SRX Series Firewalls](https://www.juniper.net/us/en/products/security/srx-series.html) |
 | SSSD    | System Security Services Daemon             |
 | SSID    | Service set identifier                      |
 | SSL     | Self-supervised learning                    |
