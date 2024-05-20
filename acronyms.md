@@ -184,6 +184,7 @@
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
+| NGFW    | (Palo Alto Networks) Next-Generation Firewall |
 | NPI     | New Product Introduction                    |
 | OAM     | Operations, administration, and management  |
 | OCD     | [Obsessive–compulsive disorder](https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) |
