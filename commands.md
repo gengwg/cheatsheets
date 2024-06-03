@@ -873,3 +873,14 @@ ps => /bin/ps (interpreter => /lib64/ld-linux-x86-64.so.2)
     libdl.so.2 => /lib64/libdl.so.2
     libc.so.6 => /lib64/libc.so.6
 ```
+
+
+## Modify the file creation timestamp
+
+For example, to test delete files older than certain time.
+
+```
+touch -t YYYYMMDDhhmm.ss /path/to/your/file
+
+touch -t 202110050000.00 /path/to/your/file
+```
