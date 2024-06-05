@@ -150,6 +150,7 @@
 | KPI     | Key Performance Indicator                   |
 | LCD     | Lowest common denominator                   |
 | LL      | Land Lord                                   |
+| LMT     | Labor Market Test                           |
 | LOE     | Level of effort                             |
 | LTM     | Local Traffic Managers (F5)                 |
 | LVS     | Linux Virtual Serer                         |
@@ -185,6 +186,7 @@
 | NBP     | Post Purchase                               |
 | NGC     | Nvidia GPU Cloud                            |
 | NGFW    | (Palo Alto Networks) Next-Generation Firewall |
+| NOID    | Notice of Intent to Deny                    |
 | NPI     | New Product Introduction                    |
 | OAM     | Operations, administration, and management  |
 | OCD     | [Obsessive–compulsive disorder](https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) |
