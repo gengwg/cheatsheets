@@ -115,6 +115,7 @@
 | GMS     | Global Marketing Solutions                  |
 | GPC     | Graphics Processing Cluster                 |
 | GPT     | Generative Pre-trained Transformer          |
+| GRC     | Governance, Risk, and Compliance            |
 | HBM     | [High Bandwith Memory](https://en.wikipedia.org/wiki/High_Bandwidth_Memory) |
 | HC      | Hiring Committee                            |
 | HCA     | Host channel adapter                        |
