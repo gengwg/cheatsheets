@@ -205,3 +205,28 @@ Traceback (most recent call last):
         1: from (irb):4
 FrozenError (can't modify frozen String: "foo")
 ```
+
+### Symbol Notation vs JSON-style
+
+```
+# Using symbols as hash keys
+my_hash = { :name => "John", :age => 30 }
+puts my_hash[:name]  # Output: John
+
+# JSON-style syntax (modern Ruby versions)
+my_hash = { name: "John", age: 30 }
+puts my_hash[:name]  # Output: John
+
+# :name is a symbol. It's a specific, immutable identifier used commonly as keys in hashes in Ruby.
+# name, without the colon, is interpreted as a local variable. Ruby looks for a variable named name in the current scope.
+
+irb(main):017:0> my_hash[name]
+Traceback (most recent call last):
+        4: from /usr/bin/irb:23:in `<main>'
+        3: from /usr/bin/irb:23:in `load'
+        2: from /Library/Ruby/Gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):17
+NameError (undefined local variable or method `name' for main:Object)
+irb(main):018:0> my_hash[:name]
+=> "John"
+```
