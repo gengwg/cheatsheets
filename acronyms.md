@@ -235,6 +235,7 @@
 | PTE     | Page Table Entry                            |
 | PVT     | Production Validation Testing               |
 | PWM     | Provisioning Workflow Manager               |
+| QBR     | Quarterly Business Review                   |
 | RA      | [Registration Authorigy](https://en.wikipedia.org/wiki/Public_key_infrastructure) |
 | R&B     | Rhythm & Blues                              |
 | RBAC    | Role-Based Access Control                   |
