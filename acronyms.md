@@ -121,6 +121,7 @@
 | HCA     | Host channel adapter                        |
 | HCO     | Henrico County, VA                          |
 | HELOC   | Home equity line of credit                  |
+| HLD     | High-Level Design                           |
 | HMC     | Head-Mounted Capture                        |
 | HRBP    | HR business partner                         |
 | HSM     | [Hardware security module](https://en.wikipedia.org/wiki/Hardware_security_module)       |
