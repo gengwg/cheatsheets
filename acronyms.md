@@ -181,6 +181,7 @@
 | MVCC    | Multi-Version Concurrency Control           |
 | mIoU    | mean intersection-over-union                |
 | mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
+| NAC     | Network Access Control                      |
 | NB      | nota bene. Latin for "note well".           |
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
@@ -237,6 +238,7 @@
 | RA      | [Registration Authorigy](https://en.wikipedia.org/wiki/Public_key_infrastructure) |
 | R&B     | Rhythm & Blues                              |
 | RBAC    | Role-Based Access Control                   |
+| RC      | Release Candidate                           |
 | RDMA    | Remote Direct Memory Access                 |
 | RDS     | Research Data Scientist                     |
 | RMA     | Return Merchandise Authorization            |
