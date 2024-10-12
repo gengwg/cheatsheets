@@ -211,3 +211,10 @@ Repo        : centos-os
 Matched from:
 Filename    : /etc/hosts
 ```
+
+
+### Check when a package was installed
+
+```
+dnf history <package name>
+```

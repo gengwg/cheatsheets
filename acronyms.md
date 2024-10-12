@@ -115,11 +115,13 @@
 | GMS     | Global Marketing Solutions                  |
 | GPC     | Graphics Processing Cluster                 |
 | GPT     | Generative Pre-trained Transformer          |
+| GRC     | Governance, Risk, and Compliance            |
 | HBM     | [High Bandwith Memory](https://en.wikipedia.org/wiki/High_Bandwidth_Memory) |
 | HC      | Hiring Committee                            |
 | HCA     | Host channel adapter                        |
 | HCO     | Henrico County, VA                          |
 | HELOC   | Home equity line of credit                  |
+| HLD     | High-Level Design                           |
 | HMC     | Head-Mounted Capture                        |
 | HRBP    | HR business partner                         |
 | HSM     | [Hardware security module](https://en.wikipedia.org/wiki/Hardware_security_module)       |
@@ -235,6 +237,7 @@
 | PTE     | Page Table Entry                            |
 | PVT     | Production Validation Testing               |
 | PWM     | Provisioning Workflow Manager               |
+| QBR     | Quarterly Business Review                   |
 | RA      | [Registration Authorigy](https://en.wikipedia.org/wiki/Public_key_infrastructure) |
 | R&B     | Rhythm & Blues                              |
 | RBAC    | Role-Based Access Control                   |
