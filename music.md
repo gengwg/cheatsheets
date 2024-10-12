@@ -23,3 +23,11 @@ https://www.youtube.com/watch?v=j440-D5JhjI
 ### Thomas Bergersen
 
 https://music.youtube.com/channel/UCBfokvOnlLzpexblQoE__Ng?si=3MltRAMKxuCMDVmZ
+
+## Kids
+
+https://open.spotify.com/track/5CpsnQeqmGKGwb27riJGUM?si=18d7da2b210e4540&nd=1&dlsi=9ab6c4e3e5944716
+
+
+
+
