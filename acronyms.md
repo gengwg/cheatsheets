@@ -299,11 +299,14 @@
 | TC      | The Candidate                               |
 | TC      | Total Compensation                          |
 | TCAM    | Ternary Content Addressable Memory          |
+| TDM     | Time from detection to mitigation           |
+
 | TDP     | Thermal Design Power                        |
 | T&E     | Travel and Expense                          |
 | TESS    | Tera-speed Storage System                   |
 | TIL     | today I learned                             |
 | TIN     | Taxpayer Identification Numbers             |
+| TTD     | Time to detect                              |
 | TIP     | [Telecom Infra Project](https://en.wikipedia.org/wiki/Telecom_Infra_Project)               |
 | TLB     | [Translation lookaside buffer](https://en.wikipedia.org/wiki/Translation_lookaside_buffer) |
 | Tm      | Trust me                                    |
