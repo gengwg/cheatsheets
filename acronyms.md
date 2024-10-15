@@ -14,6 +14,7 @@
 | ASC     | Ambulatory Surgery Centers                  |
 | ASC     | Application Support Center                  |
 | ASIC    | Application-Specific Integrated Circuit     |
+| ATN     | Altoona, Iowa                               |
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
 | BCP     | business continuity plan                    |
@@ -208,6 +209,7 @@
 | PAT     | Personal Access Token                       |
 | PB      | Post Browse                                 |
 | PCI     | Payment Card Industry                       |
+| PCI     | Polk County, Iowa                           |
 | PD      | Price Drop                                  |
 | PDB     | Power Distribution Board                    |
 | PDD     | Promotion Driven Development                |
