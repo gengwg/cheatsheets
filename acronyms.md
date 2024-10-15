@@ -188,6 +188,7 @@
 | NB      | nota bene. Latin for "note well".           |
 | NBD     | No Big Deal                                 |
 | NBP     | Post Purchase                               |
+| NCG     | Newton County, Georgia                      |
 | NGC     | Nvidia GPU Cloud                            |
 | NGFW    | (Palo Alto Networks) Next-Generation Firewall |
 | NOID    | Notice of Intent to Deny                    |
