@@ -216,6 +216,7 @@
 | PDD     | Promotion Driven Development                |
 | PDG     | Packet Data Gateway                         |
 | PDP     | Product Development Process                 |
+| PE      | [Processing Element](https://developer.arm.com/documentation/102404/0201/Common-architecture-terms#:~:text=PE%20Processing%20Element,and%20can%20execute%20a%20program.) |
 | PERT    | Psychiatric Emergency Response Team         |
 | PFN     | Page Frame Number                           |
 | PG      | Product Group                               |
