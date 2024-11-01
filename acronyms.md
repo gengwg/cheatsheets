@@ -53,6 +53,7 @@
 | CPLD    | Complex Programmable Logic Device           |
 | CSLB    | core system load balancing                  |
 | CTR     | click through rate                          |
+| CTS     | Android's Compatibility Test Suite          |
 | CV      | Computer Vision                             |
 | CVE     | Common Vulnerabilities and Exposures        |
 | CVPR    | Computer Vision and Pattern Recognition     |
