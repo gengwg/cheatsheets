@@ -199,3 +199,10 @@ This command uploads the specified image to the container registry.
 
 Once the process is complete, you will see the progress of each step, including the successful push of the image to the registry.
 
+## Temp
+
+```
+podman images --format "{{.Repository}}:{{.Tag}}" | sort | uniq
+harbor.example.com/ba/host-centos9:latest
+<none>:<none>
+```
