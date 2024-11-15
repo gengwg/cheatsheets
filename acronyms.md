@@ -307,7 +307,6 @@
 | TC      | Total Compensation                          |
 | TCAM    | Ternary Content Addressable Memory          |
 | TDM     | Time from detection to mitigation           |
-
 | TDP     | Thermal Design Power                        |
 | T&E     | Travel and Expense                          |
 | TESS    | Tera-speed Storage System                   |
