@@ -14,6 +14,7 @@
 | ASC     | Ambulatory Surgery Centers                  |
 | ASC     | Application Support Center                  |
 | ASIC    | Application-Specific Integrated Circuit     |
+| ASN     | advanced shipping notice                    |
 | ATN     | Altoona, Iowa                               |
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
@@ -76,6 +77,7 @@
 | DVT     | Design Validation Testing                   |
 | eBGP    | Exterio Border Gateway Protocol             |
 | ECS     | Enterprise Core Services                    |
+| EDI     | electonic data interchange                  |
 | EFS     | Amazon Elastic File System                  |
 | EHS     | Environmental Health Safety                 |
 | EKI     | Entity Key Index                            |
