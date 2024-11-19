@@ -71,3 +71,10 @@ Correct way to validate they are the same is:
 (stdin)= d41d8cd98f00b204e9800998ecf8427e
 ```
 
+### Inspect PEM with multiple certificates
+
+If your test.pem file contains multiple certificates, you can inspect all of them using the following method. Requires keytool is available.
+
+```
+keytool -printcert -file test.pem
+```
