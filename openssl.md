@@ -92,3 +92,15 @@ If your test.pem file contains multiple certificates, you can inspect all of the
 ```
 keytool -printcert -file test.pem
 ```
+
+## Resources
+
+[1] https://www.youtube.com/watch?v=qXLD2UHq2vk&t=10s
+Introduction to Digital certificate, this is generic understanding of Public Key Infrastructure, this can give you quick overview of domain we operate.
+[2][ https://youtu.be/GSIDS_lvRv4](https://youtu.be/GSIDS_lvRv4)
+[3] https://www.youtube.com/watch?v=wzbf9ldvBjM create privatkey, publickey, CSR and certificate
+[4] https://youtu.be/vsXMMT2CqqE
+[5] https://youtu.be/T4Df5_cojAs](https://youtu.be/T4Df5_cojAs)
+[6] https://youtu.be/NmM9HA2MQGI](https://youtu.be/NmM9HA2MQGI)
+[7] x509 Certificate Format https://www.youtube.com/watch?v=sYSO13LRfYA
+
