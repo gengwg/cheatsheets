@@ -1,3 +1,17 @@
+## Notes
+
+A digital certificate contains the public key and the identity information of the owner, such as their name, organization, and more, as issued by a trusted Certificate Authority (CA). It does not contain the private key, which is kept secret by the owner to ensure secure communication and authentication.
+
+A Certificate Authority (CA) binds an entity’s identity to a public key by issuing a digital certificate after verifying the entity’s credentials. The digital certificate can be trusted because it is part of a chain of trust anchored in the CA’s root certificate, which is widely recognized and trusted by operating systems and browsers.
+
+- SSL Certificates only provide encryption.
+- Trust comes from the CA.
+
+Without the CA’s validation, encryption alone wouldn’t guarantee trust because you wouldn’t know who is on the other side of the secure connection.
+
+
+## Commands 
+
 View and parse a certificate:
 
 ```
