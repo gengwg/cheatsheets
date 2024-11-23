@@ -103,5 +103,6 @@ Introduction to Digital certificate, this is generic understanding of Public Key
 5. https://youtu.be/T4Df5_cojAs](https://youtu.be/T4Df5_cojAs)
 6. https://youtu.be/NmM9HA2MQGI](https://youtu.be/NmM9HA2MQGI)
 7. x509 Certificate Format https://www.youtube.com/watch?v=sYSO13LRfYA
+8. Scaling backend authentication at Facebook: https://www.youtube.com/watch?v=kY-Bkv3qxMc
 
 
