@@ -8,6 +8,7 @@
 * HTTPS Everywhere
 * Video Speed Controller
 * Open Tabs Next to Current
+* Reader View
 
 ## download pdf directly
 
