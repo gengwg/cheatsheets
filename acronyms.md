@@ -123,6 +123,7 @@
 | HBM     | [High Bandwith Memory](https://en.wikipedia.org/wiki/High_Bandwidth_Memory) |
 | HC      | Hiring Committee                            |
 | HCA     | Host channel adapter                        |
+| HCCL    | [Habana Collective Communications Library](https://docs.habana.ai/en/latest/API_Reference_Guides/HCCL_APIs/index.html) |
 | HCO     | Henrico County, VA                          |
 | HELOC   | Home equity line of credit                  |
 | HLD     | High-Level Design                           |
