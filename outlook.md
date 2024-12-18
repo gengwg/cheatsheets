@@ -25,6 +25,7 @@ Outlook Web:
 | To do this                                   | Press           |
 |----------------------------------------------|-----------------|
 | Archive message                              | E               |
+| Delete message                               | DELETE          |
 
 ## Tips
 
