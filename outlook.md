@@ -13,13 +13,18 @@
 | Undo an action                               | CMD + Z         |
 | Search Current Mailbox                       | CMD + SHIFT + F |
 
+Outlook Web:
+
+| To do this                                   | Press           |
+|----------------------------------------------|-----------------|
+| Reply to a message                           | CMD + R         |
+
+
 ### Calendar 
 
 | To do this                                   | Press           |
 |----------------------------------------------|-----------------|
-| Go to Today                                  | CMD + T         |
-| Go to previous/next week                     | CMD + <- / ->   |
-
+| Archive message                              | E               |
 
 ## Tips
 
