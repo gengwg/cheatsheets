@@ -50,3 +50,13 @@ Or use extension: [Open Tabs Next to Current](https://addons.mozilla.org/en-US/f
 5. Click on "Bookmarks Toolbar" is checked to keep it visible.
 6. Check "Only show on new tab".
 
+### Restore address bar automatically select the top URL suggestion
+
+To restore Firefox's address bar behavior so it automatically selects the top URL suggestion without needing arrow keys, follow these steps:
+
+- Type `about:config` in the address bar and press **Enter**.
+- Search for `browser.urlbar.autoFill`.
+ * Ensure its value is **`true`** (double-click to toggle if needed).
+- Also verify these related settings:
+ * `browser.urlbar.suggest.history` → **`true`**
+ * `browser.urlbar.suggest.bookmarks` → **`true`**
