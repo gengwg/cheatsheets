@@ -252,9 +252,10 @@
 | RC      | Release Candidate                           |
 | RDMA    | Remote Direct Memory Access                 |
 | RDS     | Research Data Scientist                     |
+| RIF     | Reduction in Force                          |
 | RMA     | Return Merchandise Authorization            |
 | ROI     | Return on investment                        |
-| RoB     | Rhythm of Business                          | 
+| RoB     | Rhythm of Business                          |
 | RoCE    | RDMA over Converged Ethernet                |
 | RPG     | Role-playing game                           |
 | RPG     | Rocket-propelled grenade                    |
@@ -296,8 +297,10 @@
 | SRCR    | Security Risk and Compliance Review         |
 | SRT     | Single Review Tool                          |
 | SRX     | [Juniper SRX Series Firewalls](https://www.juniper.net/us/en/products/security/srx-series.html) |
-| SSSD    | System Security Services Daemon             |
+| SSA     | Social Security retirement                  |
+| SSDI    | Social Security Disability Insurance        |
 | SSID    | Service set identifier                      |
+| SSSD    | System Security Services Daemon             |
 | SSL     | Self-supervised learning                    |
 | SSR     | Server side rendering                       |
 | SSW     | Spine Switch                                |
