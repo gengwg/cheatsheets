@@ -265,6 +265,7 @@
 | RTS     | Return to Service                           |
 | RTS     | Redmond Technical Services                  |
 | RSC     | Research Super Computer                     |
+| SALT    | State And Local Tax                         |
 | SAN     | Subject Alternative Name                    |
 | SCA     | Shopping Cart Abandon                       |
 | SCADA   | Supervisory control and data acquisition    |
