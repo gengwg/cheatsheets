@@ -1,5 +1,9 @@
 ## Notes
 
+## Git ignore files
+
+https://github.com/github/gitignore
+
 ### clone only some directories from a git repository
 
 ```
