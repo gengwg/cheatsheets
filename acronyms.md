@@ -11,6 +11,7 @@
 | AOSP    | [Android Open Source Project](https://source.android.com/) |
 | APT     | Advanced persistent threat                  |
 | ARM     | ajustable-rate mortgage                     |
+| ARN     | Amazon Resource Names                       |
 | ASC     | Ambulatory Surgery Centers                  |
 | ASC     | Application Support Center                  |
 | ASIC    | Application-Specific Integrated Circuit     |
