@@ -1,3 +1,12 @@
+## Installation
+
+https://code.visualstudio.com/docs/setup/mac#_install-vs-code-on-macos
+
+Optional:
+
+https://code.visualstudio.com/docs/setup/mac#_launch-vs-code-from-the-command-line
+
+
 ## Extensions
 
 To install extensions, Go to 'Extensions' and search name.
