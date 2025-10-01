@@ -1,13 +1,13 @@
 ## plugins
 
 * uBlock Origin
+* New Adjacent Tab
+* Session Buddy
 * Dark Reader
 * SmoothScroll
 * Tab-Snap 
-* Session Buddy
 * HTTPS Everywhere
 * Video Speed Controller
-* Open Tabs Next to Current
 * Reader View
 
 ## download pdf directly
