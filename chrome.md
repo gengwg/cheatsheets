@@ -2,6 +2,7 @@
 
 * uBlock Origin
 * New Adjacent Tab
+* Previous Tab
 * Session Buddy
 * Dark Reader
 * SmoothScroll
