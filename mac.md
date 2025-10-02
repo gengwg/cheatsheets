@@ -92,6 +92,7 @@ brew install kubectx
 brew install octant
 brew install kustomize
 brew install podman
+brew install clusterctl
 
 # k8s test env
 brew install kind
