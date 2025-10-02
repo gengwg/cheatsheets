@@ -93,6 +93,8 @@ brew install octant
 brew install kustomize
 brew install podman
 brew install clusterctl
+brew install colima
+
 
 # k8s test env
 brew install kind
