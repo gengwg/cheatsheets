@@ -86,6 +86,7 @@ brew install iproute2mac
 
 brew install awscli
 brew install awsume
+
 brew install kubectl
 brew install helm
 brew install kubectx
@@ -95,6 +96,9 @@ brew install podman
 brew install clusterctl
 brew install colima
 
+
+brew tap common-fate/granted
+brew install granted
 
 # k8s test env
 brew install kind
