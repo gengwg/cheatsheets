@@ -76,6 +76,8 @@ brew install git
 brew install mosh
 brew install dict
 brew install telnet
+brew install tmux
+brew install MisterTea/et/et
 
 # the ip tool included with iproute2 on Linux.
 brew install iproute2mac
