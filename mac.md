@@ -111,6 +111,10 @@ brew install tilt
 brew install k9s
 brew install kubeval
 
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+
+
 # krew
 brew install krew
 kubectl krew update
