@@ -2,9 +2,17 @@
 
 https://code.visualstudio.com/docs/setup/mac#_install-vs-code-on-macos
 
-Optional:
+### Launch VS Code from the command line
 
 https://code.visualstudio.com/docs/setup/mac#_launch-vs-code-from-the-command-line
+
+1. Launch VS Code
+
+2. Open the Command Palette (Cmd+Shift+P), type 'shell command', and run the Shell Command: Install 'code' command in PATH command.
+
+3. Restart the terminal for the new $PATH value to take effect.
+
+You can now type 'code .' in any folder to start editing files in that folder.
 
 
 ## Extensions
