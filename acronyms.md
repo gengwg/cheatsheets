@@ -25,7 +25,7 @@
 | BIOS    | Basic Input/output services                 |
 | BKM     | Best Known Method                           |
 | BLOB    | binary large objects                        |
-| BMC     | Baseboard Management Controller             |
+| BMC     | Nvidia [Baseboard Management Controller](https://docs.nvidia.com/base-command-manager/index.html)     |
 | BMS     | Building Management System                  |
 | BOE     | Back of the Envelope                        |
 | BOM     | Bill of Material                            |
