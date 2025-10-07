@@ -254,6 +254,7 @@
 | RDMA    | Remote Direct Memory Access                 |
 | RDS     | Research Data Scientist                     |
 | RIF     | Reduction in Force                          |
+| RKE2    | [Rancher Kubernetes Engine v2](https://github.com/rancher/rke2), a.k.a. RKE Government |
 | RMA     | Return Merchandise Authorization            |
 | ROI     | Return on investment                        |
 | RoB     | Rhythm of Business                          |
