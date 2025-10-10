@@ -229,6 +229,7 @@
 | PII     | Personally identifiable information         |
 | PLM     | Product Lifecycle Management                |
 | PMI     | Process Management Interface                |
+| PMO     | Program Management Office                   |
 | PMP     | [Project Management Professional](https://en.wikipedia.org/wiki/Project_Management_Professional)|
 | POC     | Point of Contact                            |
 | POC     | Proof of Concept                            |
