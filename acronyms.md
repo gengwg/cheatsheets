@@ -14,6 +14,7 @@
 | ARN     | Amazon Resource Names                       |
 | ASC     | Ambulatory Surgery Centers                  |
 | ASC     | Application Support Center                  |
+| ASI     | [Artificial Superintelligence](https://www.ibm.com/think/topics/artificial-superintelligence)        |
 | ASIC    | Application-Specific Integrated Circuit     |
 | ASN     | advanced shipping notice                    |
 | ATN     | Altoona, Iowa                               |
