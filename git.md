@@ -389,6 +389,13 @@ Date:   Tue Feb 28 23:26:18 2023 -0800
     Signed-off-by: gengwg <genwg@users.noreply.github.com>
 ```
 
+### automatically set the upstream when pushing
+
+If you often create new branches, you can tell Git to automatically set the upstream when pushing the first time:
+
+git config --global push.autoSetupRemote true
+
+
 ## Errors
 
 ```
