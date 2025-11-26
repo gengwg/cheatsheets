@@ -10,6 +10,7 @@
 * HTTPS Everywhere
 * Video Speed Controller
 * Reader View
+* [YouTube NonStop](https://chromewebstore.google.com/detail/nlkaejimjacpillmajjnopmpbkbnocid?utm_source=item-share-cb)
 
 ## download pdf directly
 
