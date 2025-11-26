@@ -26,3 +26,10 @@ Pro Tip: First run `/jira connect` to set default Project and Issue Type.
 
 `cog wheel` next to profile --> `Work items` in `Jira admin settings` --> `Time tracking` in `Work item features`
 
+better put `1d = 6h`. there are a lot of interruptions and non work items.
+
+- for work, review PRs, meetings.
+- for personal, errands, doctor appointment, grocery shopping.
+
+
+/jira connect to connect to a channel.
