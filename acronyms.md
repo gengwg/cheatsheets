@@ -312,6 +312,7 @@
 | SSW     | Spine Switch                                |
 | STE     | Short-term Employee                         |
 | SXM     | Server eXternal Module                      |
+| TAM     | Technical Account Manager                   |
 | TBH     | to be honest                                |
 | TC      | The Candidate                               |
 | TC      | Total Compensation                          |
