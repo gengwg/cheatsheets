@@ -204,6 +204,7 @@
 | ODM     | Original Design Manufacturer                |
 | OFED    | OpenFabrics Enterprise Distribution         |
 | OG      | Original Ganster                            |
+| OIDC    | OpenID Connect                              |
 | OKR     | Objectives and Key Results                  |
 | OLAP    | [Online analytical processing](https://en.wikipedia.org/wiki/Online_analytical_processing) |
 | OPM     | Operations Program Manager                  |
