@@ -23,6 +23,17 @@ Pillars of Observability:
 Everything in your dashboard should be *Important*.
 but not all of it is equally important.
 
+check grafana version:
+
+```
+➜  ~ curl -s https://grafana.aws.lambdalabs.cloud/api/health | jq
+{
+  "database": "ok",
+  "version": "11.6.1",
+  "commit": "ae23ead4d959aa73a5a0ffada60e4147d679523c"
+}
+```
+
 ## Resources
 
 - [Getting started with Grafana dashboard design](https://watch.getcontrast.io/watch/grafana-labs-getting-started-with-grafana-dashboard-design-2)
