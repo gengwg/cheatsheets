@@ -45,4 +45,6 @@ How many words are there in your answer to this prompt?
 
 In 3 sentences, describe the color Blue to someone who's never been able to see.
 
+### Codex
 
+Explain the codebase to a newcomer. What is the general structure, what are the important things to know, and what are some pointers for things to learn next?
