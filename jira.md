@@ -15,6 +15,8 @@ Click on your user from top right corner --> Click on 'Jira/Your boards'
 
 TIP: VS Code has Atlassian plugin!
 
+Jira 'projects' are now called 'spaces'
+
 ### Slack Jira Bot
 
 
