@@ -34,6 +34,31 @@ check grafana version:
 }
 ```
 
+### SLO
+
+https://grafana.com/events/observabilitycon/2023/prioritize-critical-resources-with-slo-driven-irm/?pg=blog&plcmt=body-txt
+
+- SLI --> a well defined measure of reliability
+- SLO --> Specifies goals: SLI + target
+  - An internal goal for how well the system should operate
+- SLA --> a promise that is often contractually guaranteed
+  - SLA = (SLO + margin) + consequences
+
+Ratio = success metric / total metric
+
+detect, respond, learn all in IRM
+
+- Detect: 
+  - SLI&SLOs
+  - alerting 
+  - error budget burn alerts
+- Respond: 
+  - Oncall mgmt
+  - incident response runbooks 
+- Learn: 
+  - PIR (post-incident review)
+  - incident analytics
+
 ## Resources
 
 - [Getting started with Grafana dashboard design](https://watch.getcontrast.io/watch/grafana-labs-getting-started-with-grafana-dashboard-design-2)
