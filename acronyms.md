@@ -188,6 +188,7 @@
 | MTRF    | [Monday, Tuesday, Thursday, Friday](https://www.urbandictionary.com/define.php?term=MTRF)|
 | MV      | [Materialized view](https://en.wikipedia.org/wiki/Materialized_view)|
 | MVCC    | Multi-Version Concurrency Control           |
+| m/f/d   | male/female/diverse                         |
 | mIoU    | mean intersection-over-union                |
 | mTLS    | [Mutual TLS](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) |
 | NAC     | Network Access Control                      |
