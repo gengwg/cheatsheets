@@ -395,6 +395,15 @@ If you often create new branches, you can tell Git to automatically set the upst
 
 git config --global push.autoSetupRemote true
 
+### Delete all untracked files
+
+```
+# Delete all untracked files (including directories)
+git clean -fd
+
+# If you want to see what will be deleted first (dry run):
+git clean -fdn
+```
 
 ## Errors
 
@@ -413,5 +422,4 @@ $ ssh-add /Users/gengwg/.ssh/id_rsa_ghe
 Enter passphrase for /Users/gengwg/.ssh/id_rsa_ghe:
 Identity added: /Users/gengwg/.ssh/id_rsa_ghe (ghe_ssh_key)
 ```
-
 
