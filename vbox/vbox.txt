@@ -1,0 +1,38 @@
+need bridged network adapater to get correct IP address.
+
+when cloning VM check "Reinitiate MAC address for all network cards", otherwise it will have same MAC address  with the original VM.
+Another way if forget it: Settings --> Network --> Advanced --> Generate a random MAC address.
+
+------------------------------
+seagate gatway:
+10.30.16.1
+colomsfc.colo.seagate.com
+
+9/16/14
+
+VBoxManage controlvm logstashelk poweroff
+
+vboxmanage list vms
+
+gengwg@denver:~/Dropbox$ vboxmanage startvm fpm
+Waiting for VM "fpm" to power on...
+VM "fpm" has been successfully started.
+
+
+## resize a Virtual Drive
+
+# first clone the vm. vms with snapshots won't work.
+
+gengwg@boulder:~/VirtualBox VMs/centos6base_32G$ VBoxManage modifyhd centos6base_32G.vdi  --resize 32768
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+
+start vm,
+log in to it,
+./firstrun.sh
+
+Then follow centos_expand_partition.txt in centos/ to increase the LVM.
+
+
+when create new vm choose controller ide, not sata!
+
+

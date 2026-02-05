@@ -1,0 +1,33 @@
+gengwg@test:~$ sudo apt-get install puppet-common
+gengwg@test:~$ sudo apt-get install rubygems
+gengwg@test:~$ sudo gem install puppet-module
+
+
+gengwg@test:/etc/puppet/modules$ sudo puppet module install puppetlabs/stdlib
+gengwg@test:/etc/puppet/modules$ sudo puppet module install puppetlabs/vcsrepo
+gengwg@test:/etc/puppet/modules$ sudo puppet module install serverascode-saio
+
+gengwg@test:/etc/puppet/manifests$ cat nodes.pp 
+node 'test' {
+    class { 'saio':
+    }
+}
+
+gengwg@test:/etc/puppet/manifests$ cat site.pp 
+import 'nodes.pp'
+
+modify params.pp, change user and group to 'gengwg'.
+sudo vi saio/manifests/params.pp 
+
+for some reason need manually start rsync:
+gengwg@saio:~$ sudo /etc/init.d/rsync start
+
+sudo puppet apply /etc/puppet/manifests/site.pp 
+
+test swift install.
+
+  124  echo "swift is cool" > swift.txt
+  125  swift -A http://127.0.0.1:8080/auth/v1.0 -U test:tester -K testing upload swifty swift.txt
+  127  swift -A http://127.0.0.1:8080/auth/v1.0 -U test:tester -K testing list swifty 
+
+

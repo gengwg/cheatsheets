@@ -1,0 +1,37 @@
+clone vm;
+start cloned vm.
+
+./first-run.sh
+change to dhcp
+
+reboot;
+ssh to node.
+
+passwd --> dcouser
+
+# remove puppet modules?
+
+# clean up packages and headers
+yum remove puppet-server
+yum clean all
+cd /etc/yum.repos.d/
+rm puppetlabs.repo remi.repo ceph.repo -
+cd
+
+# privacy
+# rm all files in home directory.
+rm -rf ~/* 
+rm -rf /tmp/*
+rm -rf ~/.ssh/
+rm -rf ~/.bash_history
+rm -f /home/gengwg/.bash_history
+history -c
+
+shut down vm;
+export to ova format;
+upload to google drive.
+
+optional:
+delete cloned vm from vbox. since ova exits, no need to leave vm there.
+
+
