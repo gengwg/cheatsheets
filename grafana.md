@@ -26,7 +26,7 @@ but not all of it is equally important.
 check grafana version:
 
 ```
-➜  ~ curl -s https://grafana.aws.lambdalabs.cloud/api/health | jq
+➜  ~ curl -s https://<mygrafana>/api/health | jq
 {
   "database": "ok",
   "version": "11.6.1",
