@@ -4,6 +4,12 @@
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+Make zsh default shell:
+
+```
+chsh -s $(which zsh)
+```
+
 ### OMZ Plugins 
 
 ```zsh
