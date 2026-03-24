@@ -1,12 +1,7 @@
----------------------------------------------------
-mountng an external harddrive:
-# fdisk -l | grep NTFS
-# mkdir /media/TOURO
-# mount /dev/sdb1 /media/TOURO
-# umount /dev/sdb1
 
+## packages
 
-# packages
+```
 sudo apt install -y keepassxc
 sudo apt install -y git
 sudo apt install -y zsh
@@ -26,7 +21,24 @@ sudo apt install -y at
 sudo apt install -y parted
 sudo apt install imagemagick
 sudo apt install gimp
+```
 
+## Ubuntu 22.04 Chinese (simplified) pinyin input
+
+https://askubuntu.com/questions/1408873/ubuntu-22-04-chinese-simplified-pinyin-input-support
+
+    Open Settings, go to Region & Language -> Manage Installed Languages -> Install / Remove languages.
+    Select Chinese (Simplified). Make sure Keyboard Input method system has Ibus selected. Apply.
+    Reboot (please don't think "this isn't necessary", just do it or you will waste more precious time!)
+    Log back in, reopen Settings, go to Keyboard.
+    Click on the "+" sign under Input sources.
+    Select Chinese (China) and then Chinese (Intelligent Pinyin).
+
+
+If you see there is zh in the upper right in Ubuntu, input with that it is English.
+--> uninstall it and reinstall it. 
+Click on 'Chinese', now you will have the option to chose "Chinese (Intelligent pinyin)".
+You should get a "拼" rather than "zh".
 
 -----------------------
 Terminator shortcuts
