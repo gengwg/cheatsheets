@@ -26,7 +26,7 @@ In Firefox, you can `Shift + Right Click` on the video(to bypass our custom righ
 ### Opening web browser tabs next to current
 
 1. Go to `about:config`
-2. Toggle the “browser.tabls.insertAfterCurrent” switch to “true” (default is “false”)
+2. Toggle the “browser.tabs.insertAfterCurrent” switch to “true” (default is “false”)
 [stefanjudis](https://www.stefanjudis.com/notes/open-new-tabs-next-to-the-current-one-in-firefox/)
 3. (Optional) Make sure `browser.tabs.insertRelatedAfterCurrent` is also **true** so links you open in a new tab (e.g., middle‑click) appear next to the current tab as well. [ghacks](https://www.ghacks.net/2018/05/10/open-tabs-in-firefox-to-the-right-of-the-current-tab/)
 
