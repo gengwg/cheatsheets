@@ -1,5 +1,4 @@
-
-## packages
+## Packages
 
 ```
 sudo apt install -y keepassxc
@@ -12,8 +11,10 @@ sudo apt install -y tree
 sudo apt install -y tmux
 sudo apt install -y terminator
 sudo apt install -y curl
+sudo apt install -y gnome-tweaks
  
 # optional
+sudo apt install golang-go
 sudo apt install -y dnsutils
 sudo apt install -y moreutils
 sudo apt install -y file
@@ -21,6 +22,26 @@ sudo apt install -y at
 sudo apt install -y parted
 sudo apt install imagemagick
 sudo apt install gimp
+```
+
+### VS Code
+
+https://code.visualstudio.com/docs/setup/linux
+
+### Zoom
+
+https://zoom.us/download?os=linux
+
+### Syncthing
+
+https://gengwg.medium.com/set-up-syncthing-on-ubuntu-b3c78668a23e
+
+### Zsh
+
+```
+➜  ~ mv .zshrc .zshrc.orig
+➜  ~ ln -s ./Nextcloud/bash_conf/zshrc .zshrc
+➜  ~ ln -s ~/Nextcloud/bash_conf/aliases.zsh $ZSH_CUSTOM/aliases.zsh
 ```
 
 ## Ubuntu 22.04 Chinese (simplified) pinyin input
@@ -39,6 +60,20 @@ If you see there is zh in the upper right in Ubuntu, input with that it is Engli
 --> uninstall it and reinstall it. 
 Click on 'Chinese', now you will have the option to chose "Chinese (Intelligent pinyin)".
 You should get a "拼" rather than "zh".
+
+## Turn Caps into Ctrl in GNOME
+
+Install Tweaks:
+
+    sudo apt install gnome-tweaks
+
+    Open Tweaks → Keyboard.
+
+    Click Additional Layout Options.
+
+    Under Ctrl position, choose Caps Lock as Ctrl or Swap Ctrl and Caps Lock, depending on what you prefer.
+
+This applies each time you log in and is the easiest option on default Ubuntu with GNOME.
 
 -----------------------
 Terminator shortcuts
