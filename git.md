@@ -1,6 +1,17 @@
 ## Notes
 
-## Git ignore files
+### Generate and Add SSH key to Github
+
+```
+git config --global user.email "3356786+gengwg@users.noreply.github.com"
+➜  ~ ssh-keygen -t ed25519 -C "you@example.com"      
+```
+
+Display and copy the public key: cat ~/.ssh/id_ed25519.pub. Select and copy the entire output (starts with ssh-ed25519).
+
+Log into GitHub, go to Settings > SSH and GPG keys > New SSH key. Paste the key, add a title (e.g., "Linux Machine"), and click Add SSH Key.
+
+### Git ignore files
 
 https://github.com/github/gitignore
 
