@@ -83,7 +83,7 @@ brew install mosh
 brew install dict
 brew install telnet
 brew install tmux
-brew install MisterTea/et/et
+brew install nvim
 
 # the ip tool included with iproute2 on Linux.
 brew install iproute2mac
@@ -101,7 +101,8 @@ brew install kustomize
 brew install podman
 brew install clusterctl
 brew install colima
-
+brew install k9s
+brew install kubeval
 
 brew tap common-fate/granted
 brew install granted
@@ -114,48 +115,22 @@ brew install minikube
 brew install kubebuilder
 brew install tilt
 
-brew install k9s
-brew install kubeval
-
+# terraform
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
-
 
 # krew
 brew install krew
 kubectl krew update
 kubectl krew install access-matrix
 
-# GUI Applications
+### GUI Applications
 # brew install --cask xxx
+brew install --cask keepassxc
 
 # Docker Desktop
-# possibly need input password
 # example see: https://gist.github.com/gengwg/bd62be8b7bcf41210339e88fe2fa511a
 brew install --cask docker
-
-brew cask install iterm2
-# brew cask install keepassx
-brew install --cask keepassxc
-brew cask install firefox
-brew cask install pycharm-ce
-(optional)
-brew cask install chef/chef/chefdk
-
-# Adobe PDF reader
-brew install adobe-acrobat-reader --cask
-brew install paintbrush --cask
-
-brew install vlc
-(“VLC” can’t be opened because Apple cannot check it for malicious software.
-Go to Security and click on 'Open Anyway')
-
-# install latest java (10)
-brew cask install java
-# To get a list of all older versions of java:  
-brew tap caskroom/versions 
-brew cask search java
-brew cask install java8
 ```
 
 #### Brew uninstall packages
@@ -166,29 +141,6 @@ brew cask install java8
 
 ```
 brew update && brew upgrade
-```
-
-#### brew update permission denied
-
-```
-$ brew update
-git@github.com: Permission denied (publickey).
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-Error: Fetching /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core failed!
-Fetching /usr/local/Homebrew failed!
-```
-
-===>
-
-Missing ssh key for github.
-
-```
-$ ssh-add ~/.ssh/id_rsa
-Enter passphrase for /Users/gengwg/.ssh/id_rsa:
-Identity added: /Users/gengwg/.ssh/id_rsa
 ```
 
 #### Permission Error on Zsh
@@ -203,31 +155,6 @@ fix:
 
 ```
 sudo chown -R $(whoami): /usr/local/share/zsh
-```
-
-#### Install Docker
-
-```
-$ brew install --cask docker
-....
-==> Moving App 'Docker.app' to '/Applications/Docker.app'
-🍺  docker was successfully installed!
-```
-
-After that `docker` command is still not available:
-
-```
-$ docker info
-bash: docker: command not found
-$ type docker
-bash: type: docker: not found
-```
-
-This is because docker needs permission to install binaries. CMD + space. Seach docker. It will pop up a window asking sudo password. After that you should be able use docker on command line.
-
-```
-$ type docker
-docker is /usr/local/bin/docker
 ```
 
 #### Ignore formula on brew upgrade
@@ -262,28 +189,14 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/vscode.md).
 * Click General.
 * Choose your web browser from the ”Default web browser” pop-up menu.
 
-### Install Amphetamine (Optional)
+### Prevent display from sleeping
 
-App Store > Search 'Amphetamine'
+```
+$ caffeinate -d
+$ man caffeinate
+```
 
 *This is optional. You can use finger prints.*
-
-### Use bash as default login shell
-
-Add in `.zshrc`:
-
-```
-exec -l bash
-```
-
-### Restore previous SSH Keys (optional)
-
-Copy the old Mac ssh keys to `~/.ssh` folder (and ssh-add them to ssh-agent if necessary), so that don't have to redo `ssh-cop-id` for new keys to remote servers.
-
-
-### Restore previous SSH Keys (optional)
-
-copy the old Mac ssh keys to `~/.ssh` so that don't have to redo `ssh-cop-id` for auto login remote servers.
 
 ## Keyboard shortcuts
 
@@ -424,13 +337,8 @@ find that process and kill it, or force quit.
 or press:
 cmd + option + esc
 
-### get mouse out of vbox VM
-
-press left cmd button
-
 ### view pdf from terminal
 $ open myfile.pdf
-
 
 ### connect to SMB (samba/CIFS) share
 https://users.wfu.edu/yipcw/atg/apple/smb/
@@ -588,9 +496,4 @@ Connected to server.
 sftp>
 ```
 
-### Prevent display from sleeping
 
-```
-$ caffeinate -d
-$ man caffeinate
-```
