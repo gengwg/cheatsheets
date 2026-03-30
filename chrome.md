@@ -11,7 +11,11 @@
 * Video Speed Controller
 * Reader View
 * [YouTube NonStop](https://chromewebstore.google.com/detail/nlkaejimjacpillmajjnopmpbkbnocid?utm_source=item-share-cb)
+* [Rearrange Tabs](https://chrome.google.com/webstore/detail/rearrange-tabs/ccnnhhnmpoffieppjjkhdakcoejcpbga)
 
+To move selected tab(s) left:
+
+* Mac: Ctrl+Shift+Left
 ## download pdf directly
 
 ### disable pdf viewer
@@ -76,18 +80,5 @@ Finally, press `Shift+Delete` and poof! The suggestion disappears.
 On a Mac, you may have to press `Shift+Fn+Delete`.
 (Fn is at left bottom corner on laptop keyboard).
 
-## Set Chrome to go to last used tab after tab is closed
-
-Use FLST Chrome Extension (Focus Last Selected Tab)
-
-https://chrome.google.com/webstore/detail/flst-chrome/ajnianifcggmdojhnmjichjmnjpplcha/details
-``
-## Rearrange Tabs
-
-https://chrome.google.com/webstore/detail/rearrange-tabs/ccnnhhnmpoffieppjjkhdakcoejcpbga
-
-To move selected tab(s) left:
-
-* Mac: Ctrl+Shift+Left
 * Windows: Shift+Alt+Left
 
