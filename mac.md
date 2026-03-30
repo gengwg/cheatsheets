@@ -14,6 +14,16 @@ Optional:
 
 * `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
 
+### Add Chinese Input Method
+
+1. `System Preferences` --> Keyboard --> Input Sources --> + --> Choose `Chinese` on the left --> Select `Pinyin - Simplified`, press `Add`
+2. (Optional) Set up shortcut (Control + Space) for switching input method:
+	* `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
+ 	* This is optional now. Apple default uses 'fn' to do the switching
+
+![](images/mac/input_source.png)
+
+
 ### Set up Touch ID
 
 Useful for corp machines that locks every few minutes
@@ -257,15 +267,6 @@ Follow [here](https://github.com/gengwg/cheatsheets/blob/master/vscode.md).
 App Store > Search 'Amphetamine'
 
 *This is optional. You can use finger prints.*
-
-### Add Chinese Input Method
-
-1. `System Preferences` --> Keyboard --> Input Sources --> + --> Choose `Chinese` on the left --> Select `Pinyin - Simplified`, press `Add`
-2. Set up shortcut (Control + Space) for switching input method: 
-	* `System Preferences` --> `Keyboard` --> `Shortcuts` --> Check `Select previous input source`
-
-![](images/mac/input_source.png)
-
 
 ### Use bash as default login shell
 
