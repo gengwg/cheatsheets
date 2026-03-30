@@ -1,26 +1,22 @@
 ## MacOS First Time Setup
 
-### Configure Keyboard/Mouse/Trackpad
+### Configure Keyboard/Mouse/Trackpad, etc
 
 (NOTE: may have to redo again separately for external keyboards/mouses, etc.)
 
 * `System Preferences` --> `Trackpad` --> `Scroll & Zoom` --> uncheck `Scoll direction: Natural`
 ![](images/mac/disable_natural_scroll.png)
-![](images/mac/tap_to_click.png)
 * `System Preferences` --> `Trackpad` --> `Point & Click` --> check `Tap to Click`
-* System Preferences > Keyboard > Key Repeat: increase to 'Fast'
+![](images/mac/tap_to_click.png)
+* `System Preferences` > `Keyboard` > `Key Repeat`: increase to 'Fast'
+
+Optional:
+
 * `System Preferences` --> `Keyboard` --> 'Modify Keys' --> Change 'Caps Lock' to 'Control'
-* `System Preferences` --> `Keyboard` --> Touch Bar shows 'Extended Control Strip'
 
 ### Set up Touch ID
 
 Useful for corp machines that locks every few minutes
-
-### Display for Large Monitor
-
-System Preferences > Display > Resolution: Scaled
-
-System Preferences > Bluetooth > Check 'Show bluetooth in menu bar'
 
 ### Change Password
 
