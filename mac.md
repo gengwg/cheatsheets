@@ -28,9 +28,9 @@ Optional:
 
 Useful for corp machines that locks every few minutes
 
-### Change Password
+### Install Ray Cast
 
-System Preferences > Users & Groups > 
+https://verbena-tornado-269.notion.site/Nir-s-RayCast-Setup-9a3e5ebd47364633b9841191e55424a7
 
 ### Homebrew
 
