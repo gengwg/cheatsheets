@@ -84,7 +84,8 @@ brew install dict
 brew install telnet
 brew install tmux
 brew install nvim
-brew install zoxide
+brew install zoxide	# https://github.com/ajeetdsouza/zoxide
+
 
 # the ip tool included with iproute2 on Linux.
 brew install iproute2mac
