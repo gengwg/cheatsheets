@@ -3,6 +3,10 @@
 - llm has common sense, reasoning.
 - use deepseek generate ics calendar for study plans.
 
+- Use Claude create slide outline. Gemini create slide decks
+- Gemini is a good reviewer. I use it to review Claude's plans and code
+
+
 - **A system prompt** that tells them what task they are performing and what tone they should use
 - **A user prompt** -- the conversation starter that they should reply to
 
