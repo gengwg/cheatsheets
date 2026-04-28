@@ -3,6 +3,7 @@
 | 802.1X  | Port-based Network Access Control           |
 | ABI     | Application Binary Interface                |
 | ACH     | Automated Clearing House                    |
+| Actor-Learner     | Architecture separating rollout generation (actors/inference) from gradient updates (leaners/training)    |
 | AE      | Additional Equity                           |
 | AGI     | [Artificial general intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence) |
 | AHX     | Water-Air Heat exchanger                    |
@@ -122,6 +123,7 @@
 | GPC     | Graphics Processing Cluster                 |
 | GPT     | Generative Pre-trained Transformer          |
 | GRC     | Governance, Risk, and Compliance            |
+| GRPO    | Group Relative Policy Optimization: DeepSeek's innovation eliminating the critic model |
 | HBM     | [High Bandwith Memory](https://en.wikipedia.org/wiki/High_Bandwidth_Memory) |
 | HC      | Hiring Committee                            |
 | HCA     | Host channel adapter                        |
@@ -259,6 +261,7 @@
 | RDS     | Research Data Scientist                     |
 | RIF     | Reduction in Force                          |
 | RKE2    | [Rancher Kubernetes Engine v2](https://github.com/rancher/rke2), a.k.a. RKE Government |
+| RLVR    | RL with Verifiable Rewards: use code execution or math checkers as automated reward signal |
 | RMA     | Return Merchandise Authorization            |
 | ROI     | Return on investment                        |
 | RoB     | Rhythm of Business                          |
@@ -285,6 +288,7 @@
 | SE      | [Secure Enclave](https://support.apple.com/guide/security/secure-enclave-sec59b0b31ff/web) |
 | SEL     | System Event Log                            |
 | SEV     | Site EVent                                  |
+| SFT     | Supervised Fine-Tuning: adapting models with labeled instruction-response pairs |
 | SI      | [Superintelligence](https://en.wikipedia.org/wiki/Superintelligence) |
 | SKS     | [Secure Key Store](https://github.com/facebookincubator/sks) |
 | SLB     | Server/Software Load Balancer, proxygen     |
