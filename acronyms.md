@@ -141,6 +141,7 @@
 | iBGP    | Innterior Border Gateway Protocol           |
 | IBOS    | Infrastructure Business Operations Support  |
 | IC      | Individual Contributor                      |
+| ICP     | Ideal Customer Profile                      |
 | ICYMI   | In case you missed it                       |
 | IDC     | Infra Data Center organization              |
 | IDL     | Interface Description Language              |
