@@ -34,7 +34,9 @@ chunked prefill maximize resource efficiency.
 typical chunk sizes are 512-8192 tokens.
 chunk size is a tuning knob for priorizing the time to first token or the time per output token.
 
+A great video on PD segregation and more.
 
+https://www.youtube.com/watch?v=MQR8jyTR5QE&list=PLj6h78yzYM2MLSW4tUDO2gs2pR5UpiD0C&index=36
 
 
 
