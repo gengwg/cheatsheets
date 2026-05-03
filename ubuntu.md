@@ -15,6 +15,8 @@ sudo apt install -y gnome-tweaks
  
 # optional
 sudo apt install golang-go
+# later version of go
+sudo snap install go --classic
 sudo apt install -y dnsutils
 sudo apt install -y moreutils
 sudo apt install -y file
