@@ -38,10 +38,25 @@ A great video on PD segregation and more.
 
 https://www.youtube.com/watch?v=MQR8jyTR5QE&list=PLj6h78yzYM2MLSW4tUDO2gs2pR5UpiD0C&index=36
 
+## GQA/MLA/DSA
 
+https://www.youtube.com/watch?v=Y-o545eYjXM
+
+## Agent
+
+AI agent is composed of a World Model that is fineptuned for a specific use-case. It can include other components to perceive information (sensors), build memory, or take actions.
+
+two categories:
+
+- Assistant (purpose is support)
+- Characters (purpose is entertainment)
+
+## Glossary
+
+- HAI: Human-AI intelligence
 - MHA: Multi-head attention
 - MQA: Multi-query attention
 - GQA: Grouped-query attention
 - MLA: Multi-head Latent Attention (DeepSeek V2)
-
+- DSA: DeepSeek Sparse Attention (DeepSeek V3)
 
