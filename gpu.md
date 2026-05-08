@@ -459,3 +459,8 @@ Chassis Information
  Product Serial        : DW4SFT3
  Product Asset Tag     :
 ```
+
+
+## Neocloud
+
+For most AI teams, neo-cloud providers deliver 40–85% lower GPU compute costs than hyperscalers with comparable or better GPU availability.
