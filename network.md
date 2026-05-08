@@ -246,6 +246,17 @@ $ curl -4 https://ifconfig.co
 $ curl -6 https://ifconfig.co
 ```
 
+## DDOS prevention
+
+Use RTBH for massive volumetric attacks, XDP for sub-saturation filter.
+
+## Nvidia 3 tier networking hierarchy
+
+- Scale up: NVlink 6. intra rack GPU to GPU.
+- Scale out: Spectrum-X (RoCE). Inter-rack acros data center
+- Scale across: Spectrum-XGS. Inter-datacenter (geo-distributed). distance-aware congestion control.
+
+
 # TP Link
 
 ## Enable IPv6
@@ -253,10 +264,4 @@ $ curl -6 https://ifconfig.co
 Go to: Advanced > `Ipv6` tab on the left. Dropdown choose 'Dynamic IP'.
 
 ![tplink enable ipv6](images/network/tplink-ipv6.png)
-
-## Nvidia 3 tier networking hierarchy
-
-- Scale up: NVlink 6. intra rack GPU to GPU.
-- Scale out: Spectrum-X (RoCE). Inter-rack acros data center
-- Scale across: Spectrum-XGS. Inter-datacenter (geo-distributed). distance-aware congestion control.
 
