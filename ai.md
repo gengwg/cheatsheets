@@ -38,6 +38,13 @@ A great video on PD segregation and more.
 
 https://www.youtube.com/watch?v=MQR8jyTR5QE&list=PLj6h78yzYM2MLSW4tUDO2gs2pR5UpiD0C&index=36
 
+## Metrics:
+- TTFT
+- Throughput
+- E2E latency
+- QPS
+
+
 
 - MHA: Multi-head attention
 - MQA: Multi-query attention
