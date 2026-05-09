@@ -40,11 +40,11 @@ https://www.youtube.com/watch?v=MQR8jyTR5QE&list=PLj6h78yzYM2MLSW4tUDO2gs2pR5Upi
 
 ## Metrics:
 - TTFT
-- Throughput
 - E2E latency
-- QPS
+- Throughput (tokens/sec)
+- QPS (?)
 
-
+## Glossary
 
 - MHA: Multi-head attention
 - MQA: Multi-query attention
