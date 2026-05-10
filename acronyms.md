@@ -55,6 +55,7 @@
 | corp    | corporate (network)                         |
 | CPE     | Client Platform Engineering                 |
 | CPLD    | Complex Programmable Logic Device           |
+| CRIU    | Checkpoint and Restore In Userspace         |
 | CSLB    | core system load balancing                  |
 | CTR     | click through rate                          |
 | CTS     | Android's Compatibility Test Suite          |
@@ -67,6 +68,7 @@
 | DDR     | Double Data Rate                            |
 | DEI     | Diversity, Equity, and Inclusion            |
 | DGW     | Distribution GateWay                        |
+| DGX     | Deep GPU A(X)cceleration systems            |
 | DJ      | Disc Jockey                                 |
 | DKIM    | DomainKeys Identified Mail                  |
 | DLP     | Data Loss Prevention												|
@@ -104,6 +106,7 @@
 | FDOB    | First Day Of Business                       |
 | FDTD    | [Finite-difference time-domain](https://en.wikipedia.org/wiki/Finite-difference_time-domain_method) |
 | FG      | Functional Groups                           |
+| FFN     | Feed-Forward Network                        |
 | FIRE    | Financial Independence, Retire Early        |
 | FoV     | field of view                               |
 | fps     | frames per second                           |
@@ -130,6 +133,7 @@
 | HCCL    | [Habana Collective Communications Library](https://docs.habana.ai/en/latest/API_Reference_Guides/HCCL_APIs/index.html) |
 | HCO     | Henrico County, VA                          |
 | HELOC   | Home equity line of credit                  |
+| HGX     | Hyperscale GPU A(X)cceleration systems. 
 | HLD     | High-Level Design                           |
 | HMC     | Head-Mounted Capture                        |
 | HRBP    | HR business partner                         |
@@ -173,6 +177,7 @@
 | MDF     | Main distribution frame                     |
 | MDU     | Multi-Dwelling Units                        |
 | MES     | Manufacturing Execution System              |
+| MGX     | Modular GPU A(X)ccelerated Server design    |
 | MIA     | missing in action                           |
 | MIG     | Multi-Instance GPU                          |
 | MIP     | Management Incentive Program                |
@@ -203,6 +208,7 @@
 | NGFW    | (Palo Alto Networks) Next-Generation Firewall |
 | NOID    | Notice of Intent to Deny                    |
 | NPI     | New Product Introduction                    |
+| NVL72   | 72 GPU cluster in the same NVLink domain    |
 | OAM     | Operations, administration, and management  |
 | OCD     | [Obsessive–compulsive disorder](https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) |
 | ODM     | Original Design Manufacturer                |

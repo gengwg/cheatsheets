@@ -6,6 +6,8 @@ Why you cannot skip SFT: it establishes the model quality baseline and provides 
 - SFT: Hours to Days, 4-32 GPUs
 - RF: Days to weeks, 32-129 GPUs
 
+Inference is final mile of AI ROI.
+
 ## Prefill and Decode
 
 autoregressive: every new token is computed based on all proceeding tokens.
@@ -38,12 +40,11 @@ A great video on PD segregation and more.
 
 https://www.youtube.com/watch?v=MQR8jyTR5QE&list=PLj6h78yzYM2MLSW4tUDO2gs2pR5UpiD0C&index=36
 
+balance of performance/pricing/ease of use.
+
 ## GQA/MLA/DSA
 
 https://www.youtube.com/watch?v=Y-o545eYjXM
-
-balance of performance/pricing/ease of use.
-
 
 ## Agent
 
@@ -53,6 +54,20 @@ two categories:
 
 - Assistant (purpose is support)
 - Characters (purpose is entertainment)
+
+- Unified coordinated KV memory layer
+  - UM makes pulling a KV segement from a remote node nearly indistinguishable from reading it directly from local GPU memory.
+- Intelligent routing
+  - gateway continuously tracks KV cache state for every engine in the cluster and estimates the prefill cost for each request on each node.
+ 
+- Use cases: long-document retrieval, multi-turn conversations, agentic workflows 
+
+
+## Metrics:
+- TTFT
+- E2E latency
+- Throughput (tokens/sec)
+- QPS (?)
 
 ## Glossary
 
