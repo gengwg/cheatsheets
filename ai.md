@@ -8,6 +8,10 @@ Why you cannot skip SFT: it establishes the model quality baseline and provides 
 
 Inference is final mile of AI ROI.
 
+- KV Cache aware routing
+- Prefill/Decode Disaagregation
+- KV Cache offloading
+
 ## Prefill and Decode
 
 autoregressive: every new token is computed based on all proceeding tokens.
