@@ -464,3 +464,6 @@ Chassis Information
 ## Neocloud
 
 For most AI teams, neo-cloud providers deliver 40–85% lower GPU compute costs than hyperscalers with comparable or better GPU availability.
+
+HBM (High Bandwidth Memory) is a type of VRAM (Video Random Access Memory), specifically designed for high-performance applications, offering greater bandwidth and efficiency compared to traditional VRAM types like GDDR. However, not all VRAM is HBM; GDDR is another common type used in many graphics cards.
+
