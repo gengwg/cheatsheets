@@ -219,6 +219,7 @@
 | OUI     | organizationally unique identifier          |
 | PAR     | Python archive file                         |
 | PAT     | Personal Access Token                       |
+| PAYG    | Pay as you go                               |
 | PB      | Post Browse                                 |
 | PCI     | Payment Card Industry                       |
 | PCI     | Polk County, Iowa                           |

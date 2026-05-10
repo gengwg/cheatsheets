@@ -42,6 +42,9 @@ https://www.youtube.com/watch?v=MQR8jyTR5QE&list=PLj6h78yzYM2MLSW4tUDO2gs2pR5Upi
 
 https://www.youtube.com/watch?v=Y-o545eYjXM
 
+balance of performance/pricing/ease of use.
+
+
 ## Agent
 
 AI agent is composed of a World Model that is fineptuned for a specific use-case. It can include other components to perceive information (sensors), build memory, or take actions.
