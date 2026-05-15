@@ -1,3 +1,11 @@
+## Jensen Five Layer
+
+- Applications
+- Models
+- Infrastructure
+- Chips
+- Energy
+
 RL is not a replacement for SFT. it's next step. Most LLMs go through: Pre-training > SFT > RL for alignment.
 
 Why you cannot skip SFT: it establishes the model quality baseline and provides the KL-divergence reference point for stable RL optimization.
