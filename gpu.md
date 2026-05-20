@@ -472,3 +472,15 @@ fall off the bus: GPU becoming unresponsive to the PCIe bus
 
 NVL72 is a rack scale system that unifies 72 Blackwell GPUs and 36 Grece CPUs into a single NVlink domain.
 
+## A100
+
+diff between 'lan' and 'bmc' rj45:
+BMC is OOB. LAN is a 1G LOM port.
+
+Nvidia's idea is to use the CX-6 (200G Ethernet) for storage and for provisioning and management.
+
+You only connect the BMC to MSW. not LAN.
+
+We are not using the LAN/LOM port. there is little point. we have 4 100 G Ethernet connections that we can deploy/manage the host over as we don't have a dedicated storage network.
+
+
