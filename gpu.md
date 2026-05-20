@@ -467,3 +467,8 @@ For most AI teams, neo-cloud providers deliver 40–85% lower GPU compute costs 
 
 HBM (High Bandwidth Memory) is a type of VRAM (Video Random Access Memory), specifically designed for high-performance applications, offering greater bandwidth and efficiency compared to traditional VRAM types like GDDR. However, not all VRAM is HBM; GDDR is another common type used in many graphics cards.
 
+--------------
+fall off the bus: GPU becoming unresponsive to the PCIe bus
+
+NVL72 is a rack scale system that unifies 72 Blackwell GPUs and 36 Grece CPUs into a single NVlink domain.
+
