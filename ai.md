@@ -74,6 +74,7 @@ two categories:
  
 - Use cases: long-document retrieval, multi-turn conversations, agentic workflows 
 
+ml training is network, HBM and BF16/FP16/FP8 tensor core intensive.
 
 ## Metrics:
 - TTFT

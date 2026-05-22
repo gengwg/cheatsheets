@@ -483,4 +483,12 @@ You only connect the BMC to MSW. not LAN.
 
 We are not using the LAN/LOM port. there is little point. we have 4 100 G Ethernet connections that we can deploy/manage the host over as we don't have a dedicated storage network.
 
+Handling GPU failures during training
+https://www.youtube.com/watch?v=cnqwKadEsR4
 
+## AI Neocloud Ecosystem
+
+- Traditional Hyperscalers
+- Neocloud giants
+- Emerging Neoclouds
+- Neocloud Aggregators
