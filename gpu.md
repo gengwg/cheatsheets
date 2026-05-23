@@ -492,3 +492,9 @@ https://www.youtube.com/watch?v=cnqwKadEsR4
 - Neocloud giants
 - Emerging Neoclouds
 - Neocloud Aggregators
+
+total cost of ownership = capital cost of ownership + operating cost of ownership
+
+ODM: original design manufacturer
+NPV: Net present value
+
