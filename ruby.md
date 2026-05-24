@@ -45,9 +45,94 @@ sudo dnf install ruby
 # ruby --version
 ```
 
+## Basics
+
+```ruby
+# anything after # is a comment.
+
+# assigning a local variable:
+x = 1
+
+# basic arithmetic:
+1 + 2           # => 3
+2 * 7           # => 14
+5 / 2           # => 2   (integer division)
+5 / 2.0         # => 2.5
+1 + (2 * 3)     # => 7
+
+# strings
+'single quoted' # => "single quoted"
+"double quoted" # => "double quoted"
+'It\'s alive'   # => "It's alive"
+
+# string interpolation only with double quotes
+x = "Bob"
+"Hi, #{x}"      # => "Hi, Bob"
+'Hello, #{x}'   # => 'Hello, #{x}'
+
+# truthiness
+true; false; nil
+1 == 1          # => true
+1 == true       # => false
+
+# ! is not
+!true           # => false
+!nil            # => true
+1 != 2          # => true
+
+# !! converts to true/false
+!!nil           # => false
+!!0             # => true (zero is NOT false)
+
+# arrays
+x = ["a", "b", "c"]
+x[0]            # => "a"
+x.first         # => "a"
+x.last          # => "c"
+x + ["d"]       # => ["a", "b", "c", "d"] (x unchanged)
+
+# hashes
+h = { "first_name" => "Bob", "last_name" => "Jones" }
+h.keys              # => ["first_name", "last_name"]
+h["first_name"]     # => "Bob"
+h["age"] = 23
+
+# regex
+"I believe"  =~ /I/    # => 0
+"I am human" =~ /bacon/ # => nil
+"I am human" !~ /bacon/ # => true
+
+# if / elsif / else
+if false
+  # ...
+elsif nil
+  # ...
+else
+  # ...
+end
+
+# case
+case x
+when "fish"
+  # ...
+when "dog", "cat", "monkey"
+  # ...
+else
+  # ...
+end
+
+# methods
+def do_something(a, b)
+  puts "You gave me #{a} and #{b}"
+end
+
+do_something("apple", "banana")
+do_something 1, 2   # parens optional
+```
+
 ## Notes
 
-`select` method of `Arry` uses blocks to choose values that satisfy ocnditions from contents.
+`select` method of `Array` uses blocks to choose values that satisfy conditions from contents.
 
 ```
 irb(main):014:1* ary = ary.select do |i|

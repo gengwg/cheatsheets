@@ -117,3 +117,46 @@ Note: Super is a key with the windows logo right of left CTRL.
 ## install qwen coder
 
 https://github.com/QwenLM/qwen-code
+
+## Motion (webcam)
+
+Install:
+
+```
+sudo apt-get install motion
+```
+
+Edit `/etc/motion.conf`. Change:
+
+```
+target_dir /tmp/motion
+```
+
+to:
+
+```
+target_dir /var/www/motion
+```
+
+Organize files by date instead of all in one directory:
+
+```
+# Snapshots
+snapshot_filename %Y%m%d/camera-%t/snapshots/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-snapshot
+
+# Motion-triggered images
+jpeg_filename %Y%m%d/camera-%t/motions/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-%q-motion
+
+# Motion-triggered movies
+movie_filename %Y%m%d/camera-%t/movies/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-movie
+
+# Timelapse
+timelapse_filename %Y%m%d/camera-%t/timelapses/hour-%H/camera-%t-%Y%m%d-timelapse
+```
+
+Run:
+
+```
+sudo motion
+/etc/init.d/motion restart
+```
