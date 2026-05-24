@@ -1,3 +1,0 @@
-- thrift file: api/contract
-- thrift generate code stub for client/server
-- thrift provides na library for making remote calls
