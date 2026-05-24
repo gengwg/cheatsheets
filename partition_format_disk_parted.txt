@@ -1,0 +1,18 @@
+lsblk
+parted -l
+parted /dev/sdb mklabel gpt
+parted -a opt /dev/sdb mkpart primary ext4 0% 100%
+lsblk
+mkfs.ext4 -L fuji80g /dev/sdb1
+lsblk --fs
+mkdir /mnt/data
+mount -o defaults /dev/sdb1 /mnt/data
+df -h -x tmpfs -x devtmfs
+cd /mnt/data/
+ls
+echo "success" | sudo tee /mnt/data/test_file
+cat /mnt/data/test_file 
+df -h
+cd 
+umount /mnt/data
+

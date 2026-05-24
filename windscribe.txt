@@ -1,0 +1,42 @@
+1. Get a Windscribe Account
+
+Create a free account if you don't have one already.
+
+2. Download and install the repo as root
+
+wget https://repo.windscribe.com/centos/windscribe.repo -O /etc/yum.repos.d/windscribe.repo
+
+3. Update yum
+
+yum update
+
+4. Install epel-release
+
+yum install epel-release
+
+5. Install windscribe-cli
+
+yum install windscribe-cli
+
+6. Switch to non-root user
+
+exit
+
+7. Login to Windscribe
+
+windscribe login
+
+8. Connect to Windscribe
+
+windscribe connect
+
+Connecting to US West Seattle Hendrix (UDP:443)
+Firewall Enabled
+Connected to US West Seattle Hendrix
+Your IP changed from ***REMOVED*** to 104.218.62.40
+
+Need help?
+
+windscribe --help
+
+

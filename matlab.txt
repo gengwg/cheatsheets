@@ -1,0 +1,426 @@
+% create protected function code
+pcode(fun)
+
+% open a fig file
+open('something.fig')
+
+% list contents of .mat file
+>> whos -file baseline
+  Name             Size                 Bytes  Class     Attributes
+
+  baseline      4706x1636            30796064  single              
+
+>> whos -file data
+  Name      Size                 Bytes  Class     Attributes
+
+  data      1x1             1062479384  struct  
+
+The intuition behind K-means is an iterative procedure that starts by guess-
+ing the initial centroids, and then refines this guess by repeatedly assigning
+examples to their closest centroids and then recomputing the centroids based
+on the assignments.
+
+The K-means algorithm is as follows:
+% Initialize centroids
+centroids = kMeansInitCentroids(X, K);
+for iter = 1:iterations
+% Cluster assignment step: Assign each data point to the
+% closest centroid. idx(i) corresponds to cˆ(i), the index
+% of the centroid assigned to example i
+idx = findClosestCentroids(X, centroids);
+% Move centroid step: Compute means based on centroid
+% assignments
+centroids = computeMeans(X, idx, K);
+end
+
+In a straightforward 24-bit color representation of an image,1 each pixel is repre-
+sented as three 8-bit unsigned integers (ranging from 0 to 255) that specify
+the red, green and blue intensity values. This encoding is often refered to as
+the RGB encoding. 
+
+
+find
+% Find indices and values of nonzero elements
+Syntax
+
+ind = find(X)
+ind = find(X, k)
+ind = find(X, k, 'first')
+ind = find(X, k, 'last')
+[row,col] = find(X, ...)
+[row,col,v] = find(X, ...)
+
+
+--------------------------------------------
+Empty cluster created at iteration XXX
+
+--------------------------------------------
+ÊÇÒòÎªÔÚ·ÖÈºµÄ¹ý³ÌÖÐÓÐÄ³Ð©ÈºÂäÃ»ÓÐ·ÖÅäµœÈÎºÎµÄÊäÈëÍŒÑù
+×îÖ÷ÒªµÄÔ­ÒòÔÚÓÚž÷ÈºµÄ³õÊŒÉè¶š²»Ç¢µ±
+
+œšÒéžÄœøËã·š
+
+»òÕßÉèÖÃkmeansÓöµœ¿ÕÈºÊ±µÄ²ÎÊý
+Ä¬ÈÏ²ÎÊýÊÇ±šŽí ŸÍÊÇÂ¥Ö÷ÓöµœµÄ
+
+'emptyaction':'error'|'drop'|'singleton'
+
+ÉÏÃæÊÇ3žö¿ÉÑ¡²ÎÊý£¬·Ö±ð¶ÔÓŠ ±šŽí|¶ªÆú¿ÕÈº|ŽŽœšÐÂÈº
+
+ÈçÑ¡ÓÃµÚ2žö²ÎÊý¿ÉÒÔÕâÑùµ÷ÓÃ
+kmeans(X,2,'emptyaction','drop')
+--------------------------------------------
+
+Files with a .m extension contain MATLAB code, either in the form of a script or a function.
+
+Files with a .mat extension contain MATLAB formatted data, and data can be loaded from or written to these files using the functions LOAD and SAVE.
+
+% export the figure to color eps
+print -depsc c2.eps
+
+to run matlab commands in bash script, add 'exit' at the end of each *.m file, then
+matlab -nodisplay -nodesktop -r batch_madd_ALLC5_8to7
+matlab -nodisplay -nodesktop -r batch_madd_ALLC5_7to1
+
+addpath('/SECS/home/g/geng/matlabim');
+
+## cool plots
+octave:8> t = 0:.01:2*pi
+octave:9> polar(t,sin(2*t).^2)
+
+% This example plots a line in 3D. I created this code in an M-file.
+
+l=[-98.0556  ; 1187.074];       
+f=[ -33.5448 ; -240.402];       
+d=[ 1298     ; 1305.5]           
+plot3(l,f,d); grid on;
+
+
+% Creates a 3D plot using vectors x and y, and a matrix z. If x is n elements long, and y is m elements long, z must be an m by n matrix.
+
+octave:13> plot3(l,f,d); grid on;
+octave:14> x=[0:pi/90:2*pi]';
+octave:15> y=x';
+octave:16> z=sin(x*y);
+octave:17> mesh(x,y,z);
+octave:18> contour(x,y,z);
+octave:19> contourf(x,y,z);
+
+
+>> t = 0:pi/10:2*pi;
+>> [X,Y,Z]=cylinder(4*cos(t));
+>> subplot(2,2,1); surf(X); title('X');
+>> subplot(2,2,2); surf(Y); title('Y');
+>> subplot(2,2,3); surf(Z); title('Z');
+>> subplot(2,2,4); surf(X,Y,Z); title('X,Y,Z');
+
+----------------------------
+>> help elfun
+  Elementary math functions.
+ 
+  Trigonometric.
+    sin         - Sine.
+    sind        - Sine of argument in degrees.
+    sinh        - Hyperbolic sine.
+    asin        - Inverse sine.
+    asind       - Inverse sine, result in degrees.
+    asinh       - Inverse hyperbolic sine.
+    cos         - Cosine.
+    cosd        - Cosine of argument in degrees.
+    cosh        - Hyperbolic cosine.
+    acos        - Inverse cosine.
+    acosd       - Inverse cosine, result in degrees.
+    acosh       - Inverse hyperbolic cosine.
+    tan         - Tangent.
+    tand        - Tangent of argument in degrees.
+    tanh        - Hyperbolic tangent.
+    atan        - Inverse tangent.
+    atand       - Inverse tangent, result in degrees.
+    atan2       - Four quadrant inverse tangent.
+    atanh       - Inverse hyperbolic tangent.
+    sec         - Secant.
+    secd        - Secant of argument in degrees.
+    sech        - Hyperbolic secant.
+    asec        - Inverse secant.
+    asecd       - Inverse secant, result in degrees.
+    asech       - Inverse hyperbolic secant.
+    csc         - Cosecant.
+    cscd        - Cosecant of argument in degrees.
+    csch        - Hyperbolic cosecant.
+    acsc        - Inverse cosecant.
+    acscd       - Inverse cosecant, result in degrees.
+    acsch       - Inverse hyperbolic cosecant.
+    cot         - Cotangent.
+    cotd        - Cotangent of argument in degrees.
+    coth        - Hyperbolic cotangent.
+    acot        - Inverse cotangent.
+    acotd       - Inverse cotangent, result in degrees.
+    acoth       - Inverse hyperbolic cotangent.
+    hypot       - Square root of sum of squares.
+ 
+  Exponential.
+    exp         - Exponential.
+    expm1       - Compute exp(x)-1 accurately.
+    log         - Natural logarithm.
+    log1p       - Compute log(1+x) accurately.
+    log10       - Common (base 10) logarithm.
+    log2        - Base 2 logarithm and dissect floating point number.
+    pow2        - Base 2 power and scale floating point number.
+    realpow     - Power that will error out on complex result.
+    reallog     - Natural logarithm of real number.
+    realsqrt    - Square root of number greater than or equal to zero.
+    sqrt        - Square root.
+    nthroot     - Real n-th root of real numbers.
+    nextpow2    - Next higher power of 2.
+ 
+  Complex.
+    abs         - Absolute value.
+    angle       - Phase angle.
+    complex     - Construct complex data from real and imaginary parts.
+    conj        - Complex conjugate.
+    imag        - Complex imaginary part.
+    real        - Complex real part.
+    unwrap      - Unwrap phase angle.
+    isreal      - True for real array.
+    cplxpair    - Sort numbers into complex conjugate pairs.
+ 
+  Rounding and remainder.
+    fix         - Round towards zero.
+    floor       - Round towards minus infinity.
+    ceil        - Round towards plus infinity.
+    round       - Round towards nearest integer.
+    mod         - Modulus (signed remainder after division).
+    rem         - Remainder after division.
+    sign        - Signum.
+
+>> help specfun
+  Specialized math functions.
+ 
+  Specialized math functions.
+    airy        - Airy functions.
+    besselj     - Bessel function of the first kind.
+    bessely     - Bessel function of the second kind.
+    besselh     - Bessel functions of the third kind (Hankel function).
+    besseli     - Modified Bessel function of the first kind.
+    besselk     - Modified Bessel function of the second kind.
+    beta        - Beta function.
+    betainc     - Incomplete beta function.
+    betaincinv  - Inverse incomplete beta function.
+    betaln      - Logarithm of beta function.
+    ellipj      - Jacobi elliptic functions.
+    ellipke     - Complete elliptic integral.
+    erf         - Error function.
+    erfc        - Complementary error function.
+    erfcx       - Scaled complementary error function.
+    erfinv      - Inverse error function.
+    expint      - Exponential integral function.
+    gamma       - Gamma function.
+    gammainc    - Incomplete gamma function.
+    gammaincinv - Inverse incomplete gamma function. 
+    gammaln     - Logarithm of gamma function.
+    psi         - Psi (polygamma) function.
+    legendre    - Associated Legendre function.
+    cross       - Vector cross product.
+    dot         - Vector dot product.
+ 
+  Number theoretic functions.
+    factor      - Prime factors.
+    isprime     - True for prime numbers.
+    primes      - Generate list of prime numbers.
+    gcd         - Greatest common divisor.
+    lcm         - Least common multiple.
+    rat         - Rational approximation.
+    rats        - Rational output.
+    perms       - All possible permutations.
+    nchoosek    - All combinations of N elements taken K at a time.
+    factorial   - Factorial function.
+ 
+  Coordinate transforms.
+    cart2sph    - Transform Cartesian to spherical coordinates.
+    cart2pol    - Transform Cartesian to polar coordinates.
+    pol2cart    - Transform polar to Cartesian coordinates.
+    sph2cart    - Transform spherical to Cartesian coordinates.
+    hsv2rgb     - Convert hue-saturation-value colors to red-green-blue.
+    rgb2hsv     - Convert red-green-blue colors to hue-saturation-value.
+
+>> help elmat
+  Elementary matrices and matrix manipulation.
+ 
+  Elementary matrices.
+    zeros       - Zeros array.
+    ones        - Ones array.
+    eye         - Identity matrix.
+    repmat      - Replicate and tile array.
+    linspace    - Linearly spaced vector.
+    logspace    - Logarithmically spaced vector.
+    freqspace   - Frequency spacing for frequency response.
+    meshgrid    - X and Y arrays for 3-D plots.
+    accumarray  - Construct an array with accumulation.
+    :           - Regularly spaced vector and index into matrix.
+ 
+  Basic array information.
+    size        - Size of array.
+    length      - Length of vector.
+    ndims       - Number of dimensions.
+    numel       - Number of elements.
+    disp        - Display matrix or text.
+    isempty     - True for empty array.
+    isequal     - True if arrays are numerically equal.
+    isequaln    - True if arrays are numerically equal.
+    isequalwithequalnans - True if arrays are numerically equal.
+ 
+  Matrix manipulation.
+    cat         - Concatenate arrays.
+    reshape     - Reshape array.
+    diag        - Diagonal matrices and diagonals of matrix.
+    blkdiag     - Block diagonal concatenation.
+    tril        - Extract lower triangular part.
+    triu        - Extract upper triangular part.
+    fliplr      - Flip matrix in left/right direction.
+    flipud      - Flip matrix in up/down direction.
+    flipdim     - Flip matrix along specified dimension.
+    rot90       - Rotate matrix 90 degrees.
+    :           - Regularly spaced vector and index into matrix.
+    find        - Find indices of nonzero elements.
+    end         - Last index.
+    sub2ind     - Linear index from multiple subscripts.
+    ind2sub     - Multiple subscripts from linear index.
+    bsxfun      - Binary singleton expansion function.
+ 
+  Multi-dimensional array functions.
+    ndgrid      - Generate arrays for N-D functions and interpolation.
+    permute     - Permute array dimensions.
+    ipermute    - Inverse permute array dimensions.
+    shiftdim    - Shift dimensions.
+    circshift   - Shift array circularly.
+    squeeze     - Remove singleton dimensions.
+ 
+  Array utility functions.
+    isscalar    - True for scalar.
+    isvector    - True for vector.
+    isrow       - True for row vector.
+    iscolumn    - True for column vector.
+    ismatrix    - True for matrix.
+ 
+  Special variables and constants.
+    eps         - Floating point relative accuracy.
+    realmax     - Largest positive floating point number.
+    realmin     - Smallest positive floating point number.
+    intmax      - Largest positive integer value.
+    intmin      - Smallest integer value.
+    pi          - 3.1415926535897....
+    i           - Imaginary unit.
+    inf         - Infinity.
+    nan         - Not-a-Number.
+    isnan       - True for Not-a-Number.
+    isinf       - True for infinite elements.
+    isfinite    - True for finite elements.
+    j           - Imaginary unit.
+    why         - Succinct answer.
+ 
+  Specialized matrices.
+    compan      - Companion matrix.
+    gallery     - Test matrices.
+    hadamard    - Hadamard matrix.
+    hankel      - Hankel matrix.
+    hilb        - Hilbert matrix.
+    invhilb     - Inverse Hilbert matrix.
+    magic       - Magic square.
+    pascal      - Pascal matrix.
+    peaks       - A sample function of two variables.
+    rosser      - Classic symmetric eigenvalue test problem.
+    toeplitz    - Toeplitz matrix.
+    vander      - Vandermonde matrix.
+    wilkinson   - Wilkinson's eigenvalue test matrix.
+    
+>> help datafun 
+  Data analysis and Fourier transforms.
+ 
+  Basic operations.
+    max         - Largest component.
+    min         - Smallest component.
+    mean        - Average or mean value.
+    median      - Median value.
+    mode        - Mode, or most frequent value in a sample.
+    std         - Standard deviation.
+    var         - Variance.
+    sort        - Sort in ascending order. 
+    sortrows    - Sort rows in ascending order.
+    issorted    - TRUE for sorted vector and matrices.
+    sum         - Sum of elements.
+    prod        - Product of elements.
+    hist        - Histogram.
+    histc       - Histogram count.
+    trapz       - Trapezoidal numerical integration.
+    cumsum      - Cumulative sum of elements.
+    cumprod     - Cumulative product of elements.
+    cumtrapz    - Cumulative trapezoidal numerical integration.
+ 
+  Finite differences.
+    diff        - Difference and approximate derivative.
+    gradient    - Approximate gradient.
+    del2        - Discrete Laplacian.
+ 
+  Correlation.
+    corrcoef    - Correlation coefficients.
+    cov         - Covariance matrix.
+    subspace    - Angle between subspaces.
+ 
+  Filtering and convolution.
+    filter      - One-dimensional digital filter.
+    filter2     - Two-dimensional digital filter.
+    conv        - Convolution and polynomial multiplication.
+    conv2       - Two-dimensional convolution.
+    convn       - N-dimensional convolution.
+    deconv      - Deconvolution and polynomial division.
+    detrend     - Linear trend removal.
+ 
+  Fourier transforms.
+    fft         - Discrete Fourier transform.
+    fft2        - Two-dimensional discrete Fourier transform.
+    fftn        - N-dimensional discrete Fourier Transform.
+    ifft        - Inverse discrete Fourier transform.
+    ifft2       - Two-dimensional inverse discrete Fourier transform.
+    ifftn       - N-dimensional inverse discrete Fourier Transform.
+    fftshift    - Shift zero-frequency component to center of spectrum.
+    ifftshift   - Inverse FFTSHIFT.
+    fftw        - Interface to FFTW library run-time algorithm tuning control.
+
+
+>> p = perms([3 4 8])
+
+p =
+
+     8     4     3
+     8     3     4
+     4     8     3
+     4     3     8
+     3     4     8
+     3     8     4
+
+>> F = reshape(32:127, 6, 16)
+
+% printable characters in basic ASCII characters are represented by the integers 32:127.
+>> char(F)
+
+ans =
+
+ &,28>DJPV\bhntz
+!'-39?EKQW]ciou{
+"(.4:@FLRX^djpv|
+#)/5;AGMSY_ekqw}
+$*06<BHNTZ`flrx~
+%+17=CIOU[agms
+
+% printable characters in extended ASCII characters are represented by the integers 32:127 + 128.
+
+>> char(F+128)
+
+ans =
+
+ ¦¬²¸¾ÄÊÐÖÜâèîôú
+¡§­³¹¿ÅËÑ×Ýãéïõû
+¢¨®´ºÀÆÌÒØÞäêðöü
+£©¯µ»ÁÇÍÓÙßåëñ÷ý
+¤ª°¶¼ÂÈÎÔÚàæìòøþ
+¥«±·½ÃÉÏÕÛáçíóùÿ

@@ -1,0 +1,105 @@
+
+How to install R (for Debian Gnu/Linux only)
+
+On my machine, when I say:
+
+# apt-cache search '^r-'
+
+I get a list of the Debian packages of the R system. If you have disk space to waste, you could just install them all, e.g. by saying:
+
+# apt-cache search '^r-' | awk '{print $1}' | xargs apt-get --yes install 
+
+In practice, I actually use a variant of the above, where I prune out some packages that I don't use :
+
+apt-cache search '^r-' \
+    | egrep -v -i '(biology|genetic|map)' \
+    | egrep -v -i sql \
+    | awk '/^r\-/ {print $1}' \
+    | xargs apt-get install --yes
+
+Once this is done, you should be able to say 'R' and get to the prompt --
+
+$ R
+
+R : Copyright 2003, The R Foundation for Statistical Computing
+Version 1.8.1  (2003-11-21), ISBN 3-900051-00-3
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for a HTML browser interface to help.
+Type 'q()' to quit R.
+
+>
+
+At this point, you are up.
+CRAN packages
+
+There are many beautiful CRAN packages that you'll crave. Many, but not all, are available as Debian packages. For others, you should become root, run R, and then use the install.packages command. It is simply amazing:
+
+$ su
+# R
+> install.packages("fracdiff")
+
+trying URL `http://cran.r-project.org/src/contrib/PACKAGES'
+Content type `text/plain; charset=iso-8859-1' length 173154 bytes
+opened URL
+.......... .......... .......... .......... ..........
+.......... .......... .......... .......... ..........
+.......... .......... .......... .......... ..........
+.......... .........
+downloaded 169Kb
+
+trying URL
+`http://cran.r-project.org/src/contrib/fracdiff_1.1-1.tar.gz'
+Content type `application/x-tar' length 33644 bytes
+opened URL
+.......... .......... .......... ..
+downloaded 32Kb
+
+* Installing *source* package 'fracdiff' ...
+** libs
+g77 -mieee-fp  -fPIC  -g -O2 -c fdcore.f -o fdcore.o
+g77 -mieee-fp  -fPIC  -g -O2 -c fdgam.f -o fdgam.o
+g77 -mieee-fp  -fPIC  -g -O2 -c fdhess.f -o fdhess.o
+g77 -mieee-fp  -fPIC  -g -O2 -c fdmin.f -o fdmin.o
+g77 -mieee-fp  -fPIC  -g -O2 -c fdsim.f -o fdsim.o
+gcc -shared  -o fracdiff.so fdcore.o fdgam.o fdhess.o fdmin.o fdsim.o
+-lblas-3 -L/usr/lib/gcc-lib/i486-linux/3.3.3
+-L/usr/lib/gcc-lib/i486-linux/3.3.3/../../.. -lfrtbegin -lg2c -lm
+-lgcc_s -L/usr/lib/R/bin -lR
+** R
+** help
+ >>> Building/Updating help pages for package 'fracdiff'
+     Formats: text html latex example 
+  fracdiff                          text    html    latex   example
+  fracdiff.sim                      text    html    latex   example
+  fracdiff.var                      text    html    latex   example
+* DONE (fracdiff)
+
+Delete downloaded files (y/N)? y
+
+Warning message: 
+argument `lib' is missing: using /usr/local/lib/R/site-library in:
+install.packages("fracdiff") 
+
+(Dunno why that warning is appearing.)
+
+The problem with this approach is that unlike Debian packages, there is no handling of dependencies, the package database file gets wastefully downloaded every time and there is no "dist-upgrade". So use the Debian framework as much as you can, but there is actually a nice fallback.
+Installing from .tar.gz files
+
+Alternatively, wander in CRAN, bring down .tar.gz files, and say
+
+# R CMD INSTALL file1.tar.gz file2.tar.gz ...
+
+Return to R by example
+
+Ajay Shah
+ajayshah at mayin dot org
+

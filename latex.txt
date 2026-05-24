@@ -1,0 +1,31 @@
+to make text italic:
+	\emph{my word}
+	\textit{my sentences}
+to make text bold: 
+	\textbf{my sentences}
+
+# symbol of degree:
+$2.4^{\circ}$
+
+# Adding text to equations
+\begin{equation}
+ \text{apples}
+\end{equation}
+
+# Multiple figures on a page in Latex
+\documentclass[a4paper,12pt]{article}
+\usepackage{epsfig}
+\begin{document}
+
+\begin{figure}
+\centering
+\begin{tabular}{cc}
+\epsfig{file=figure1.eps,width=0.5\linewidth,clip=} &
+\epsfig{file=figure2.eps,width=0.5\linewidth,clip=} \\
+\epsfig{file=figure3.eps,width=0.5\linewidth,clip=} &
+\epsfig{file=figure4.eps,width=0.5\linewidth,clip=}
+\end{tabular}
+\end{figure}
+
+\end{document}
+

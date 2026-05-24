@@ -1,0 +1,146 @@
+# to compile a c++ program, and produce an executable output.
+
+g++ test.cpp -o test
+# some times one need C++11
+g++ --std=gnu++0x myvirtualfunction.cpp 
+g++ -std=c++0x source.cxx
+
+# Pointer Syntax
+int *p; // Defines pointer.
+p = &q; // Sets p to address of q.
+v = *p; // Sets v to value of q.
+Foo *f = new Foo(); // Initializes f.
+int k = f->x;   // Sets k equal to the value of f's member variable.
+
+# syntax for using try/catch 
+try
+{
+       // protected code
+}catch( ExceptionName e1 )
+{
+       // catch block
+}catch( ExceptionName e2 )
+{
+       // catch block
+}catch( ExceptionName eN )
+{
+       // catch block
+}
+
+# catch a type of exception
+try
+{
+       // protected code
+}catch( ExceptionName e )
+{
+      // code to handle ExceptionName exception
+}
+
+# catch block should handle any type of exception that is thrown in a try block
+try
+{
+       // protected code
+}catch(...)
+{
+      // code to handle any exception
+}
+
+# Function Template:
+template <class type> ret-type func-name(parameter list)
+{
+       // body of function
+} 
+
+# Class Template:
+template <class type> class class-name {
+    .
+    .
+    .
+};
+
+One of the key features of derived classes is that a pointer to a derived class is type-compatible with a pointer to its base class. Polymorphism is the art of taking advantage of this simple but powerful and versatile feature, that brings Object Oriented Methodologies to its full potential.
+
+That is the basic concept of object-oriented programming: Data and functions are both members of the object. We no longer use sets of global variables that we pass from one function to another as parameters, but instead we handle objects that have their own data and functions embedded as members.
+
+class <--> type
+object <--> variable
+
+==================================================
+// Class Syntax
+
+class MyClass {
+    private:
+    // private variables are neither accessible outside the class
+    // when it is a specific class
+    // nor are available to derived classes.
+    // Private data is inherited but can not be accessed directly by the class.
+        double var;
+
+    public:
+    // All functions and variables below this
+    // are accessible to the rest of the program. 
+    // 
+        MyClass(double v) {var = v;}	// constructor
+        ~MyClass() {};	// destructor
+        double Update(double v);
+    protected:
+    // protected variables are not accessible by functions and code outside the class,
+    // but derived classes inherit these functions and variables
+    // as part of their own class.
+        int myvar;
+};
+// Do not forget the trailing semi-colon.
+
+class MyNewClass : public MyClass{
+};
+
+// To define a function outside, 
+// put the name of the class after the return type and then two colons,
+// then the name of the function.
+// The two colons tells the compiler the function is part of class.
+double MyClass::Update(double v)
+{
+    var = v;
+    return v;
+}
+
+int main()
+{   
+    // To create an instance of the class, 
+    // simply treat it like a structure.
+    MyClass myclass;
+    
+    Class obj;  // Class is some class type
+    Class *ptr = &obj;
+    // member is a datamember of that class
+    ptr->member;    // fetches member from the object to which ptr points
+    obj.member;     // fetches member from the object named obj
+    // memfcn is a function member of that class
+    ptr->memfcn();  // runs memfcn on the object to which ptr points
+    obj.memfcn();   // runs memfcn on the object named obj
+}
+
+
+Declaring a member function with the const keyword specifies that the function is a "read-only" function that does not modify the object for which it is called.
+
+To declare a constant member function, place the const keyword after the closing parenthesis of the argument list. The const keyword is required in both the declaration and the definition. A constant member function cannot modify any data members or call any member functions that aren't constant.
+
+==================================================
+Access specifiers in the base class     private     protected   public
+private inheritance     The member is inaccessible.     The member is private.  The member is private.
+protected inheritance   The member is inaccessible.     The member is protected.    The member is protected.
+public inheritance  The member is inaccessible.     The member is protected.    The member is public.
+
+
+lookup and deletion/insertion are an O(log(n)) operation in a binary search tree.
+
+all heaps are binary trees.
+
+lookup is O(n) in linked list, O(1) in array. array locating the 6th character is O(1), bt locating character with value 'w' is O(n).
+
+definition refers to the place where the variable is created or assigned storage;
+declaraiton refers to places where the nature of the variable is stated but no stroage is allocated.
+
+
+
+

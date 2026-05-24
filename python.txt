@@ -1,0 +1,176 @@
+# centos 7 install pip
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+
+sudo python get-pip.py
+-----------------------------
+$ pip install virtualenv
+Traceback (most recent call last):
+  File "/usr/bin/pip", line 7, in <module>
+    from pip import main
+ImportError: No module named pip
+===>
+    ll /usr/lib/python2.7/site-packages/ | grep pip
+    drwxr-xr-x. 10 root root   4096 Nov 16 23:26 pip
+    drwxr-x---.  2 root root   4096 Nov 16 23:26 pip-7.1.2.dist-info
+
+    >>> import pip
+    >>> pip.__path__
+    ['/usr/lib/python2.7/site-packages/pip']
+
+    sudo chmod -R a+rx /usr/lib/python2.7/site-packages/pip/
+---------------------
+$ virtualenv venv
+New python executable in venv/bin/python
+Installing setuptools, pip, wheel...
+  Complete output from command /tmp/test/venv/bin/python -c "import sys, pip; sys...d\"] + sys.argv[1:]))" setuptools pip wheel:
+  Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: No module named pip
+===>
+$ virtualenv venv --no-setuptools
+New python executable in venv/bin/python
+----------------------
+(venv)gengwg@foster:/tmp/myproj$ pip install requests
+OSError: [Errno 13] Permission denied: '/usr/lib/python2.7/site-packages/requests-2.8.1.dist-info'
+===>
+sudo chown -R gengwg:gengwg /usr/lib/python2.7/site-packages/virtualenv* 
+---------------------------
+# repeatable installations
+(venv)gengwg@foster:/tmp/myproj$ pip freeze > requirements.txt
+(venv)gengwg@foster:/tmp/myproj$ cat requirements.txt 
+Django==1.8.6
+requests==2.8.1
+wheel==0.24.0
+
+(venv)gengwg@foster:/tmp/test$ cp ../myproj/requirements.txt .
+(venv)gengwg@foster:/tmp/test$ pip install -r requirements.txt 
+--------------
+import logging
+
+try:
+    pass
+except Error as e:
+    logging.error(e)
+    return 0
+
+any time an exception is raised inside the try block, the code in the except block will be executed.
+------------------------
+# Generate random integers between 0 and 9
+from random import randint
+print randint(0,9)
+or just
+print random.randrange(9)
+-----------------------
+some_func(*params)
+    This causes the function to receive each list item as a separate parameter. There's a description here: http://docs.python.org/tutorial/controlflow.html#unpacking-argument-lists
+
+------
+defaultdict means that if a key is not found in the dictionary, then instead of a KeyError being thrown, a new entry is created. The type of this new entry is given by the argument of defaultdict.
+
+For example:
+
+somedict = {}
+print(somedict[3]) # KeyError
+
+someddict = defaultdict(int)
+print(someddict[3]) # print int(), thus 0
+
+if you just want to return "bar": somedict = defaultdict(lambda:"bar")
+------
+# python.txt 
+# used for python notes
+
+sys.path is a list of directory names that constitue the current import search path.
+sys.path.append('/my/new/path')
+
+everything in python is an object.
+
+code blocks are defined by their indentation. this means whitespace is significant, and must be consistent. the fist line that is not indented is outside the function.
+
+python uses carriage returns to separate statemetns and a colon and indentation to separate code blocks.
+
+# regular expression
+^ matches the beginning of a string.
+$ matches the end of a string.
+\b matches a word boundary.
+\d matches any numeric digit.
+\D matches any non-numeric digit.
+x? matches an optional x character (an x zero or one times).
+x* matches x zero or more times.
+x+ matches x one or more times.
+x{n,m} matches an x character at least n times, but not more than m times.
+(a|b|c) matches either a or b or c.
+(x) is a remembered group. I can get the value of what matched by using the groups() method of the object returned by re.search().
+
+command + arguments = statement
+
+a string is printed as it is, but an expression is evaluated, or converted to its actual value.
+
+variables store data.
+
+raw_input() returns a string while input() returns a number.
+
+comma , at the end of a print statement keep is from swtiching to a new line.
+
+
+# reduce multiple whitespaces to one.
+>>> re.sub('\s+', ' ', ' hello    world    '.strip())
+'hello world'
+
+# substitute embedded variables with string representation of variable value.
+>>> '{name} has {n} messages'.format(name='guido', n=78)
+'guido has 78 messages'
+
+# print with separator and ending
+>>> row = ['acme', 78, 884.4]
+>>> print(*row)
+acme 78 884.4
+>>> print(*row, sep=':', end='!\n')
+acme:78:884.4!
+
+# print to file
+>>> with open('somefile.txt', 'wt') as f:
+...     print('hello word', file=f)
+
+
+$ py 283_move_zeros.py
+File "283_move_zeros.py", line 2
+SyntaxError: Non-ASCII character '\xe6' in file 283_move_zeros.py on line 2, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+===> python3
+
+class MyClass:
+    def __init__(self):
+        self.size = 0
+
+    def size(self):
+        return self.size
+
+o = MyClass()
+print o.size()
+
+TypeError: 'int' object is not callable
+===>
+change to a different size. i think python interprets self.size first, which is int at init time, then try to call it.
+
+### [[0]*n for _ in range(m)] VS [[0]*n]*m
+        
+>>> n = 3
+>>> m = 3
+>>> a = [[0]*n]*m
+>>> a
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> b = [[0] *n for _ in range(m)]
+>>> b
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> a == b
+True
+
+# for a it is a reference after *m
+# while for b it is all copy!
+>>> a[2][2] = 3
+>>> a
+[[0, 0, 3], [0, 0, 3], [0, 0, 3]]
+>>> b[2][2] = 3
+>>> b
+[[0, 0, 0], [0, 0, 0], [0, 0, 3]]
+

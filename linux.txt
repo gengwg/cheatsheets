@@ -1,0 +1,94 @@
+on linux each line in a text file neds with a newline character (ASCII 10).
+on windows, each line in a text file neds with two characters: 
+a carriage trturn (ASCII 13) followed by a newline character (ASCII 10).
+on Macintosh, a text file might end its lines with newlines or carriage returns alone.
+--------
+cut 
+extract columns from files.
+a column is defined by character offsets -c
+a column is defined by delimited fields  -f
+
+-dX     use X as the input delimiter chracter. default tab.
+-s      suppress lines that don't contain the delimiter character.
+
+$ cut -f2-5 -d' ' -s temp.txt
+--------
+paste is opposite of cut. it treats several files as vertical columns 
+and comines them on standard output.
+$ paste ll nn
+a   1
+b   2
+c   3
+d   4
+    5
+    6
+
+-s transpose rows and colomns of output:
+
+$ paste -s ll nn
+a  b   c   d
+1  2   3   4   5   6   
+
+\b  ^H == backspace
+\n  ^J == newline
+\r  ^M == return
+\t  ^I == tab
+\v  ^K == vertical tab
+-----------------------------
+tee copies standard input to stand output. simultaneously
+copies that same standard input to one or more files.
+tee is often found in middle of piplines, writing some intermediate data 
+to a file while also passing it to next command in pipline.
+
+-a  append instead of overwriting
+------------------
+diff
+    -b  don't consider whitespace
+    -B  don't consider blank lines
+    -i  ignore case
+    -r  when comparing directories, recurse into subdir
+-------------------
+a disk is a hardware device, which may be divided into partitions that act as independent storage devices.
+before a partition can hold files, it is 'formatted' by a program that writes a filesystem on it. a filesystem defines how files are represented.
+once a filesystem is created, you can make it available for use by mounting it on an empty directory.
+
+parted, fdisk, sfdisk
+    partition a hard drive
+mkfs
+    format a hard disk == create a new filesystem
+--------------------
+a running program comprises one or more processes
+
+once a minute, linux process cron wakes up, checks your crontable file, and executes any jobs that are due.
+----------------------
+traceroute 
+each host in the path is sent 3 probes and hte return times are reported. if 5 seconds pas with no response, traceroute prints an asterisk.
+----
+seq lower limit, increment, upper limit
+
+-w      print leading zeros, as necessary, to give all lines same width
+$ seq -w 8 10
+08
+09
+10
+
+-f format   format the outpt lines with a printf-like format string
+$ seq -f '--%g--' 3
+--1--
+--2--
+--3--
+
+-s string   use the given string as a separator between the numbers. default newline.
+$ seq -s ':' 6
+1:2:3:4:5:6
+--------------
+all values held in variables are strings, but if they are numeric, then shell will treat them as numbers when appropriate.
+
+when you refer to a variable's value in a shell script, it's a good idea to surround it with double quotes to prevent certain run time errors.
+
+if a vraible is evaluated adjacent to another string, surround it with curly braces to prevent unexpected behavior.
+---------
+./myscript and bash myscript runs in a subshell/child shell that can't alter the original shell.
+to make changes to yourcurrent shell: . myscript or source myscript
+
+

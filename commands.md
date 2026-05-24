@@ -722,7 +722,7 @@ Extract password protected zip in Linux:
 
 ```
 $ sudo dnf install p7zip
-$ 7za x wechat-file.part0.zip -pmypass
+$ 7za x wechat-file.part0.zip -pYOUR_PASSWORD
 ```
 
 A few useful commands to use when debugging a Linux server:

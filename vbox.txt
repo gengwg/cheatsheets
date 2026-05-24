@@ -1,0 +1,22 @@
+## ssh into a guest using NAT
+in VM Network panel, click on advanced, click on Port Forwarding button. In there set up a rule:
+
+Host IP: 127.0.0.1
+Host Port: 2222
+Guest IP: 10.0.2.15
+Guest Port: 22
+
+Then enable ssh in the guest, and connect from the host using:
+
+$ ssh -p 2222 training@127.0.0.1
+training@127.0.0.1's password: `training`
+
+Appliance:  Cloudera-Training-VM-4.1.1.c appliance 4.1
+Hostname: localhost.localdomain
+IP Address:
+
+[training@localhost ~]$
+
+
+# use centos 7 box from hashicorp
+vagrant init centos/7; vagrant up --provider virtualbox

@@ -1,12 +1,12 @@
 <?php
 $CONFIG = array (
   'instanceid' => 'ocmxltqhktqj',
-  'passwordsalt' => 'PaXkwVaBUZpoqrdbVSxm5NUZB9OyXo',
-  'secret' => 'zEZFWNo6JriqVNKtALmCNSWt27Jz8AfUrRReYj3G84/n37n7',
+  'passwordsalt' => 'REPLACE_WITH_SALT',
+  'secret' => 'REPLACE_WITH_SECRET',
   'trusted_domains' => 
   array (
     0 => '192.168.1.104',
-    1 => '***REMOVED***',
+     1 => 'YOUR_PUBLIC_IP',
     2 => 'rpi',
     3 => '192.168.1.76',
     4 => 'raspberrypi.local'
@@ -19,8 +19,8 @@ $CONFIG = array (
   'dbhost' => 'localhost',
   'dbport' => '',
   'dbtableprefix' => 'oc_',
-  'dbuser' => 'ncuser',
-  'dbpassword' => 'raindrop',
+  'dbuser' => 'YOUR_DB_USER',
+  'dbpassword' => 'YOUR_DB_PASSWORD',
   'installed' => true,
   'filelocking.enabled' => false,
 

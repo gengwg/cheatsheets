@@ -1,0 +1,23 @@
+1. sudo apt-get install motion
+
+2. sudo vi /etc/motion.conf 
+change "target_dir /tmp/motion"
+to "target_dir /var/www/motion"
+
+Organize the filesytem to save data by date, instead of all in one directory.
+
+# File path for snapshots (jpeg or ppm) relative to target_dir
+snapshot_filename %Y%m%d/camera-%t/snapshots/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-snapshot
+
+# File path for motion triggered images (jpeg or ppm) relative to target_dir
+jpeg_filename %Y%m%d/camera-%t/motions/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-%q-motion
+
+# File path for motion triggered ffmpeg films (mpeg) relative to target_dir
+movie_filename %Y%m%d/camera-%t/movies/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-movie
+
+# File path for timelapse mpegs relative to target_dir
+timelapse_filename %Y%m%d/camera-%t/timelapses/hour-%H/camera-%t-%Y%m%d-timelapse
+
+3. sudo motion
+
+4. /etc/init.d/motion restart 
