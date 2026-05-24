@@ -1,77 +1,168 @@
 # cheatsheets
 
-cheat sheets
+Personal collection of quick-reference cheatsheets for tools, languages,
+operating systems, and infrastructure I use. Each file is a single topic,
+optimized for fast lookup over long-form documentation.
 
-* [Bash](https://github.com/gengwg/bash)
-* [Chef](https://github.com/gengwg/chef)
-* [Python](https://github.com/gengwg/Python)
-* [Terminator](https://github.com/gengwg/terminator)
+## Index
 
----
+### Operating Systems
 
-## 📌 About
+[Debian](debian.md) ·
+[Ubuntu](ubuntu.md) ·
+[CentOS 7](centos7.md) ·
+[Fedora](fedora.md) ·
+[Deepin](deepin.md) ·
+[macOS](mac.md) ·
+[Raspberry Pi](rpi.md)
 
-This repository serves as a **hub for personal and curated cheatsheets**, with each topic maintained in its own repository. The goal is to provide quick, practical references for commonly used tools, languages, and environments.
+### System & Hardware
 
-Each linked repository contains focused notes, examples, and command references intended for fast lookup rather than long-form documentation.
+[systemd](systemd.md) ·
+[/proc](proc.txt) ·
+[ext4 / partitioning](ext4.md) ·
+[UEFI](uefi.md) ·
+[IPMI](ipmi.md) ·
+[RPM](rpm.md) ·
+[FPM (packaging)](fpm.md) ·
+[Linux misc](linux.txt) ·
+[Commands](commands.md) ·
+[Login vs non-login shells](login_non_login_shell.md)
 
-## 🚀 How to Use
+### Shells & Terminal
 
-### Browse Online
+[Bash](bash.md) ·
+[Zsh](zsh.md) ·
+[tmux](tmux.md) ·
+[iTerm2](iterm2.md) ·
+[PowerShell](powershell.md)
 
-Click any link above to view the cheatsheet directly on GitHub.
+### Editors & IDEs
 
-### Clone a Specific Cheatsheet
+[Vim](vim.md) ·
+[VS Code](vscode.md) ·
+[PyCharm](pycharm.md) ·
+[NetBeans](netbeans.md)
 
-You can clone only what you need, for example:
+### Programming Languages
+
+[Python](python.txt) ·
+[Ruby](ruby.md) ·
+[Go](learn_go.md) ·
+[Java](java.md) ·
+[C++](cpp.txt) ·
+[R](R.md) ·
+[MATLAB](matlab.txt) ·
+[SQL](sql.md) ·
+[YAML](yaml.md) ·
+[GraphQL](graphql.md) ·
+[LaTeX](latex.txt)
+
+### Version Control & Build
+
+[Git](git.md) ·
+[GitHub](github.md) ·
+[Maven](maven.md) ·
+[Buck](buck.md) ·
+[Jira](jira.md)
+
+### Containers, K8s & VMs
+
+[Docker](docker.md) ·
+[Podman](podman.md) ·
+[Kubernetes](k8s.md) ·
+[Harbor](harbor.md) ·
+[Slurm](slurm.md) ·
+[Vagrant](vagrant.md) ·
+[VirtualBox](vbox.txt)
+
+### Networking
+
+[Network](network.md) ·
+[DNS](dns.md) ·
+[SSH](ssh.md) ·
+[SSL](ssl.md) ·
+[OpenSSL](openssl.md) ·
+[InfiniBand](ib.md) ·
+[rsync](rsync.md) ·
+[Windscribe (VPN)](windscribe.txt)
+
+### Mail & Messaging
+
+[Postfix](postfix.md) ·
+[Outlook](outlook.md) ·
+[ProtonMail](protonmail.md) ·
+[Slack](slack.md)
+
+### AI / ML / GPU
+
+[AI](ai.md) ·
+[ChatGPT / LLM APIs](chatgpt.md) ·
+[GPU](gpu.md) ·
+[NVIDIA A100](a100.md) ·
+[PyTorch (2024)](pytorch2024.md)
+
+### Cloud
+
+[GCP](gcp.md)
+
+### Monitoring & Config Mgmt
+
+[Prometheus](prometheus.md) ·
+[Grafana](grafana.md) ·
+[Kibana](kibana.md) ·
+[Supervisor](supervisor.md) ·
+[Puppet](puppet.md) ·
+[LDAP](ldap.md) ·
+[DevOps](devops.md)
+
+### Browsers & Desktop Apps
+
+[Chrome](chrome.md) ·
+[Firefox](firefox.md) ·
+[GNOME](gnome.md) ·
+[Nextcloud](nextcloud.md) ·
+[Excel](excel.md) ·
+[Lucidchart](lucidchart.md) ·
+[Keeper](keeper.md) ·
+[mplayer](mplayer.md) ·
+[Music](music.md) ·
+[Wyze](wyze.md) ·
+[iPhone](iphone.md)
+
+### Reference
+
+[Acronyms](acronyms.md)
+
+## Related repositories
+
+Topics that grew large enough to live in their own repos:
+
+- [Bash](https://github.com/gengwg/bash)
+- [Chef](https://github.com/gengwg/chef)
+- [Python](https://github.com/gengwg/Python)
+- [Terminator](https://github.com/gengwg/terminator)
+
+## Usage
+
+All cheatsheets are plain Markdown. Browse on GitHub, or clone:
 
 ```bash
-git clone https://github.com/gengwg/bash.git
+git clone https://github.com/gengwg/cheatsheets.git
 ```
 
-### Local Viewing
+## Contributing
 
-All cheatsheets are written in Markdown and can be viewed using:
+Issues and pull requests welcome — typo fixes, new commands, formatting
+improvements, or new topics.
 
-* GitHub’s web UI
-* VS Code
-* Any Markdown viewer/editor
+## Style guidelines
 
----
+- Use clear section headers (`## Basics`, `## Common Commands`, etc.)
+- Prefer concise explanations
+- Include copy-paste-ready code blocks
+- Keep content practical and example-driven
 
-## 🤝 Contributing
+## License
 
-Contributions are welcome!
-
-You can help by:
-
-* Adding new commands or examples
-* Fixing typos or formatting
-* Improving clarity or organization
-* Proposing new cheatsheet repositories
-
-Feel free to open issues or submit pull requests in the relevant repository.
-
----
-
-## 📖 Style Guidelines (Recommended)
-
-For consistency across cheatsheets:
-
-* Use clear section headers (`## Basics`, `## Common Commands`, etc.)
-* Prefer concise explanations
-* Include copy-paste-ready code blocks
-* Keep content practical and example-driven
-
----
-
-## 📜 License
-
-Unless otherwise stated, content is licensed under the **Apache-2.0 License**.
-See the `LICENSE` file in each repository for details.
-
----
-
-## ⭐ Notes
-
-This is a living collection — expect updates, refinements, and new topics over time.
+Apache-2.0 unless otherwise stated. See `LICENSE`.
