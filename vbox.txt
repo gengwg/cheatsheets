@@ -8,15 +8,56 @@ Guest Port: 22
 
 Then enable ssh in the guest, and connect from the host using:
 
-$ ssh -p 2222 training@127.0.0.1
-training@127.0.0.1's password: `training`
-
-Appliance:  Cloudera-Training-VM-4.1.1.c appliance 4.1
-Hostname: localhost.localdomain
-IP Address:
-
-[training@localhost ~]$
+$ ssh -p 2222 user@127.0.0.1
 
 
 # use centos 7 box from hashicorp
 vagrant init centos/7; vagrant up --provider virtualbox
+
+
+## After cloning a VM
+
+When cloning a VM, check "Reinitialize MAC address for all network cards"
+(or Settings -> Network -> Advanced -> Generate a random MAC) so the clone
+doesn't share its MAC with the original.
+
+Inside the cloned guest, regenerate SSH host keys so it stops impersonating
+the source VM:
+
+```
+sudo rm -f /etc/ssh/ssh_host_*_key*
+sudo ssh-keygen -A           # regenerates all default host keys
+sudo systemctl restart sshd
+```
+
+(On older systems without `ssh-keygen -A`, generate each type explicitly:
+`ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''` etc.)
+
+Also set a fresh hostname (`/etc/hostname`, `/etc/hosts`) and reboot.
+
+
+## Resize a virtual disk
+
+Clone the VM first (VMs with snapshots can't be resized directly).
+With the VM powered off:
+
+```
+# size in MiB; 32768 = 32 GiB
+VBoxManage modifyhd /path/to/disk.vdi --resize 32768
+```
+
+Boot the VM, then expand the partition + filesystem inside the guest
+(e.g. `growpart` + `resize2fs` for ext4, or LVM `pvresize` + `lvextend` +
+`resize2fs/xfs_growfs`).
+
+
+## Common VBoxManage commands
+
+```
+VBoxManage list vms
+VBoxManage startvm <name>
+VBoxManage controlvm <name> poweroff
+```
+
+When creating a new VM, choose **IDE** controller, not SATA, for best
+compatibility with older guest OSes.
