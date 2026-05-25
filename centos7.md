@@ -177,6 +177,40 @@ gengwg@foster:~/Dropbox$ sudo systemctl suspend
 # CentOS 7 hibernate the system. sleep
 gengwg@foster:~/Dropbox$ sudo systemctl hibernate
 ------------------------------------------------
+
+## Rebuild GRUB2 from a live USB
+
+If `/boot/grub2/grub.cfg` is missing or corrupt and the system won't boot:
+
+1. Boot from a CentOS / Rocky / Alma live USB.
+2. Open the file manager and click your system disk so it gets mounted at
+   something like `/run/media/liveuser/<UUID>/` (you'll be prompted for the
+   LUKS passphrase if encrypted).
+3. From a root shell:
+
+   ```
+   # find the mountpoint
+   df -h | grep media
+
+   # if /boot/grub2/ doesn't exist on the target, create it
+   mkdir -p /run/media/liveuser/<UUID>/boot/grub2
+
+   # regenerate grub.cfg into the mounted target
+   grub2-mkconfig -o /run/media/liveuser/<UUID>/boot/grub2/grub.cfg
+   ```
+
+   If you also need to reinstall the bootloader stage1, chroot in first
+   (`mount --bind` /dev /proc /sys, `chroot /run/media/liveuser/<UUID>`,
+   then `grub2-install /dev/sdX`).
+
+Notes:
+- The `/etc/grub2.cfg` and `/etc/grub2-efi.cfg` are symlinks pointing at
+  `/boot/grub2/grub.cfg` and `/boot/efi/EFI/centos/grub.cfg` respectively.
+- If the system drops into emergency mode after boot, check `/etc/fstab` —
+  a common cause is an entry referencing a disk that's no longer attached.
+- `/dev/sda` vs `/dev/sdb` enumeration depends on which SATA cable each
+  drive is on, so don't hardcode device paths in `fstab` — use UUIDs.
+
 When you export/import a VM under CentOS, in VMWare or Hyper-V   environment, you can meet very annoying error – network service in the system can’t be started. When you issue the systemctl status network.service command, you can see output like this:
 
 Jan ######## localhost.localdomain systemd[1]: Failed to start LSB: Bring up/down networking.
