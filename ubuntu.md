@@ -114,9 +114,9 @@ Group all Terminal into one - Super+g
 Note: Super is a key with the windows logo right of left CTRL.
 --------------------------------------------------------------------
 
-## install qwen coder
+## set screen blank time to 1hr (default 15m)
 
-https://github.com/QwenLM/qwen-code
+gsettings set org.gnome.desktop.session idle-delay 1800
 
 ## Motion (webcam)
 
@@ -160,3 +160,5 @@ Run:
 sudo motion
 /etc/init.d/motion restart
 ```
+
+
