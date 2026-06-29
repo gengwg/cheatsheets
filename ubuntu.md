@@ -77,6 +77,15 @@ Install Tweaks:
 
 This applies each time you log in and is the easiest option on default Ubuntu with GNOME.
 
+### Option 2
+
+```
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+```
+
+needs a log out and log back in to take effect on Wayland. GNOME Wayland doesn't apply xkb-options to an already-running session.
+
+```
 -----------------------
 Terminator shortcuts
 ------------------------
@@ -113,6 +122,7 @@ Remove all the terminal grouping - Super+Shift+t
 Group all Terminal into one - Super+g
 Note: Super is a key with the windows logo right of left CTRL.
 --------------------------------------------------------------------
+```
 
 ## set screen blank time to 1hr (default 15m)
 
