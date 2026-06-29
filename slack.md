@@ -17,7 +17,11 @@ https://necessary-eucalyptus-012.notion.site/Slack-Cheat-Sheet-Essential-Shortcu
 
 you can transfer a public channel to private, but not private channel to public. by design.
 
+## Apps
 
+- Google Calendar (Turn on auto status update)
+- Google Drive
+- Forkable
 
 ## Notes
 
