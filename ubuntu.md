@@ -63,6 +63,8 @@ If you see there is zh in the upper right in Ubuntu, input with that it is Engli
 Click on 'Chinese', now you will have the option to chose "Chinese (Intelligent pinyin)".
 You should get a "拼" rather than "zh".
 
+https://gengwg.medium.com/ubuntu-22-04-chinese-simplified-pinyin-input-6d193d572669
+
 ## Turn Caps into Ctrl in GNOME
 
 Install Tweaks:
