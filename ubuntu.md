@@ -26,6 +26,177 @@ sudo apt install imagemagick
 sudo apt install gimp
 ```
 
+`setup-ubuntu.sh`:
+
+```
+#!/usr/bin/env bash
+# Ubuntu 26.04 LTS (Resolute Raccoon) setup — translated from macOS Homebrew list
+set -euo pipefail
+
+sudo apt update
+
+###############################################################################
+## CLI applications — all available directly via apt
+###############################################################################
+sudo apt install -y \
+  tty-clock \
+  ddgr \
+  trash-cli \
+  ansible \
+  jq \
+  wget \
+  curl \
+  nmap \
+  git \
+  telnet \
+  tmux \
+  neovim \
+  zoxide
+# Notes:
+# - `watch` is part of procps and already installed on Ubuntu.
+# - apt's neovim can lag upstream; for latest: sudo snap install nvim --classic
+
+# uv — not packaged in Ubuntu; use the official installer
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+###############################################################################
+## AWS tools
+###############################################################################
+# awscli v2 — the apt package is v1/outdated; use snap (or AWS's zip installer)
+sudo snap install aws-cli --classic
+
+# awsume — Python tool, install via pipx
+sudo apt install -y pipx
+pipx ensurepath
+pipx install awsume
+
+# granted (common-fate) — Linux tarball from GitHub releases
+GRANTED_VERSION="0.36.1"  # check https://github.com/common-fate/granted/releases
+curl -fsSLo /tmp/granted.tar.gz \
+  "https://releases.commonfate.io/granted/v${GRANTED_VERSION}/granted_${GRANTED_VERSION}_linux_x86_64.tar.gz" \
+  || echo "Check the latest granted release URL manually"
+sudo tar -xzf /tmp/granted.tar.gz -C /usr/local/bin granted assumego assume assume.fish
+
+###############################################################################
+## Kubernetes tools
+###############################################################################
+# kubectl — official Kubernetes apt repo (adjust v1.3x to the minor you want)
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.36/deb/Release.key \
+  | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.36/deb/ /' \
+  | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt update
+sudo apt install -y kubectl
+
+# kubectx + kubens — in the Ubuntu archive
+sudo apt install -y kubectx
+
+# podman — in the Ubuntu archive
+sudo apt install -y podman
+
+# helm - using snap
+sudo snap install helm --classic
+
+# kustomize — snap (also note: kubectl has `kubectl kustomize` built in)
+sudo snap install kustomize
+
+# k9s — .deb from GitHub releases
+curl -fsSLo /tmp/k9s.deb \
+  "https://github.com/derailed/k9s/releases/latest/download/k9s_linux_amd64.deb"
+sudo apt install -y /tmp/k9s.deb
+
+# clusterctl — binary from releases
+curl -fsSLo /tmp/clusterctl \
+  "https://github.com/kubernetes-sigs/cluster-api/releases/latest/download/clusterctl-linux-amd64"
+sudo install -m 0755 /tmp/clusterctl /usr/local/bin/clusterctl
+
+# kubeconform — replacement for kubeval (kubeval is archived/deprecated)
+curl -fsSL "https://github.com/yannh/kubeconform/releases/latest/download/kubeconform-linux-amd64.tar.gz" \
+  | sudo tar -xz -C /usr/local/bin kubeconform
+
+# NOTE: octant was archived by VMware and is no longer maintained.
+# Consider Headlamp (https://headlamp.dev) or Lens as a replacement, or rely on k9s.
+
+# NOTE: colima is not needed on Linux — it exists to run a Linux VM on macOS.
+# Docker/podman run natively here.
+
+###############################################################################
+## k8s test environments
+###############################################################################
+# kind — binary from releases
+curl -fsSLo /tmp/kind \
+  "https://github.com/kubernetes-sigs/kind/releases/latest/download/kind-linux-amd64"
+sudo install -m 0755 /tmp/kind /usr/local/bin/kind
+
+# minikube — official .deb
+curl -fsSLo /tmp/minikube.deb \
+  "https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb"
+sudo apt install -y /tmp/minikube.deb
+
+###############################################################################
+## k8s operator / API build tools
+###############################################################################
+# kubebuilder — binary from releases
+curl -fsSLo /tmp/kubebuilder \
+  "https://github.com/kubernetes-sigs/kubebuilder/releases/latest/download/kubebuilder_linux_amd64"
+sudo install -m 0755 /tmp/kubebuilder /usr/local/bin/kubebuilder
+
+# tilt — official install script
+curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
+
+###############################################################################
+## Terraform — HashiCorp official apt repo
+###############################################################################
+curl -fsSL https://apt.releases.hashicorp.com/gpg \
+  | sudo gpg --dearmor -o /etc/apt/keyrings/hashicorp.gpg
+echo "deb [signed-by=/etc/apt/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" \
+  | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update
+sudo apt install -y terraform
+# If HashiCorp hasn't added "resolute" yet, substitute the previous LTS codename:
+# echo "deb [...] https://apt.releases.hashicorp.com noble main"
+
+###############################################################################
+## krew (kubectl plugin manager) — official install method
+###############################################################################
+(
+  set -x; cd "$(mktemp -d)" &&
+  OS="$(uname | tr '[:upper:]' '[:lower:]')" &&
+  ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')" &&
+  KREW="krew-${OS}_${ARCH}" &&
+  curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/${KREW}.tar.gz" &&
+  tar zxvf "${KREW}.tar.gz" &&
+  ./"${KREW}" install krew
+)
+# Add to your shell rc (~/.bashrc or ~/.zshrc):
+#   export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+kubectl krew update
+kubectl krew install access-matrix
+
+###############################################################################
+## GUI applications
+###############################################################################
+# keepassxc — in the Ubuntu archive
+sudo apt install -y keepassxc
+
+# Docker: on Linux you usually want Docker Engine, not Docker Desktop.
+# Docker Engine (recommended):
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+  | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
+  | sudo tee /etc/apt/sources.list.d/docker.list
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo usermod -aG docker "$USER"   # log out/in afterwards
+# If Docker's repo doesn't list "resolute" yet, use "noble" as the codename.
+# If you specifically want Docker Desktop, download the .deb from:
+#   https://docs.docker.com/desktop/setup/install/linux/ubuntu/
+
+echo "Done. Remember to: 1) restart your shell for uv/pipx/krew PATH changes, 2) re-login for the docker group."
+```
+
 ### VS Code
 
 https://code.visualstudio.com/docs/setup/linux
