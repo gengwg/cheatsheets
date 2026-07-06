@@ -201,6 +201,14 @@ echo "Done. Remember to: 1) restart your shell for uv/pipx/krew PATH changes, 2)
 
 https://code.visualstudio.com/docs/setup/linux
 
+VSCodium:
+
+https://vscodium.com/#install-with-snap-linux
+
+```
+snap install codium --classic
+```
+
 ### Zoom
 
 https://zoom.us/download?os=linux
