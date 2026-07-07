@@ -15,7 +15,7 @@ sudo apt install -y gnome-tweaks
  
 # optional
 sudo apt install golang-go
-# later version of go
+# newer version of go
 sudo snap install go --classic
 sudo apt install -y dnsutils
 sudo apt install -y moreutils
@@ -24,6 +24,10 @@ sudo apt install -y at
 sudo apt install -y parted
 sudo apt install imagemagick
 sudo apt install gimp
+
+# snaps
+sudo snap install spotify
+sudo snap install notion-desktop
 ```
 
 `setup-ubuntu.sh`:
