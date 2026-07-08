@@ -59,6 +59,10 @@ detect, respond, learn all in IRM
   - PIR (post-incident review)
   - incident analytics
 
+### Change alert notification policy.
+
+Grafana → Alerting → Notification policies → Default policy → ⋮ (Edit) → Repeat interval: change 1m → 4h → Update.
+
 ## Resources
 
 - [Getting started with Grafana dashboard design](https://watch.getcontrast.io/watch/grafana-labs-getting-started-with-grafana-dashboard-design-2)
