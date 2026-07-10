@@ -55,6 +55,7 @@ sudo apt install -y \
   git \
   telnet \
   tmux \
+  tmuxp \
   neovim \
   zoxide
 # Notes:
