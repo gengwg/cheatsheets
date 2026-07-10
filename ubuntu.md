@@ -28,6 +28,7 @@ sudo apt install gimp
 # snaps
 sudo snap install spotify
 sudo snap install notion-desktop
+sudo snap install libreoffice
 ```
 
 `setup-ubuntu.sh`:
