@@ -1,5 +1,9 @@
 # tmux shortcuts & cheatsheet
 
+```
+❯ sudo apt install tmuxp
+```
+
 // vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 start new session with name:
