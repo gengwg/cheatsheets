@@ -56,6 +56,15 @@ Switching between panes:
     C-a o          go to the next pane (cycle through all of them)
     C-a ;          go to the ‘last’ (previously used) pane
 
+### Enable mouse support
+
+```
+❯ cat .tmux.conf
+
+# Enable mouse support (scroll, select panes/windows, resize panes)
+set -g mouse on
+```
+
 ## Remap prefix to Control + a
 
 ```
