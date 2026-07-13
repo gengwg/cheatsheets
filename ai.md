@@ -6,6 +6,12 @@
 - Chips
 - Energy
 
+In modern machine learning, there's a standard two-phase workflow:
+
+    Pre-training: Learn general features from abundant, cheap, unlabeled data.
+    Fine-tuning: Learn specific features from scarce, expensive, labeled data.
+
+
 RL is not a replacement for SFT. it's next step. Most LLMs go through: Pre-training > SFT > RL for alignment.
 
 Why you cannot skip SFT: it establishes the model quality baseline and provides the KL-divergence reference point for stable RL optimization.
@@ -90,4 +96,9 @@ ml training is network, HBM and BF16/FP16/FP8 tensor core intensive.
 - GQA: Grouped-query attention
 - MLA: Multi-head Latent Attention (DeepSeek V2)
 - DSA: DeepSeek Sparse Attention (DeepSeek V3)
+- RoPE: rotary positional embedding
+- BPE: bytepair encoding
+
+
+
 
