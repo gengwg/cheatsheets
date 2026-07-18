@@ -1,66 +1,75 @@
-## Packages
-
-```
-sudo apt install -y keepassxc
-sudo apt install -y git
-sudo apt install -y zsh
-sudo apt install -y neovim 
-sudo apt install -y rsync
-sudo apt install -y xclip
-sudo apt install -y tree
-sudo apt install -y tmux
-sudo apt install -y terminator
-sudo apt install -y curl
-sudo apt install -y gnome-tweaks
- 
-# optional
-sudo apt install golang-go
-# newer version of go
-sudo snap install go --classic
-sudo apt install -y dnsutils
-sudo apt install -y moreutils
-sudo apt install -y file
-sudo apt install -y at
-sudo apt install -y parted
-sudo apt install imagemagick
-sudo apt install gimp
-
-# snaps
-sudo snap install spotify
-sudo snap install notion-desktop
-sudo snap install libreoffice
-```
-
-`setup-ubuntu.sh`:
+## setup-ubuntu.sh
 
 ```
 #!/usr/bin/env bash
-# Ubuntu 26.04 LTS (Resolute Raccoon) setup — translated from macOS Homebrew list
+# Ubuntu 26.04 LTS (Resolute Raccoon) setup 
 set -euo pipefail
+
+# Kubernetes repo
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.36/deb/Release.key \
+  | sudo gpg --dearmor --yes -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.36/deb/ /' \
+  | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+# HashiCorp repo
+curl -fsSL https://apt.releases.hashicorp.com/gpg \
+  | sudo gpg --dearmor --yes -o /etc/apt/keyrings/hashicorp.gpg
+echo "deb [signed-by=/etc/apt/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" \
+  | sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+# Docker repo
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+  | sudo gpg --dearmor --yes -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
+  | sudo tee /etc/apt/sources.list.d/docker.list
 
 sudo apt update
 
 ###############################################################################
-## CLI applications — all available directly via apt
+## applications — all available directly via apt
 ###############################################################################
 sudo apt install -y \
+  git \
+  zsh \
+  neovim \
+  rsync \
+  xclip \
+  tree \
+  tmux \
+  curl \
   tty-clock \
   ddgr \
   trash-cli \
   ansible \
   jq \
   wget \
-  curl \
   nmap \
-  git \
   telnet \
-  tmux \
   tmuxp \
-  neovim \
-  zoxide
+  zoxide \
+  dnsutils \
+  moreutils \
+  file \
+  at \
+  parted \
+  imagemagick \
+  keepassxc \
+  gnome-tweaks \
+  terminator \
+  gimp
+
 # Notes:
 # - `watch` is part of procps and already installed on Ubuntu.
 # - apt's neovim can lag upstream; for latest: sudo snap install nvim --classic
+
+###############################################################################
+## GUI applications
+###############################################################################
+sudo apt install -y keepassxc
+sudo apt install -y gnome-tweaks
+sudo apt install -y terminator
+sudo apt install -y gimp
 
 # uv — not packaged in Ubuntu; use the official installer
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -68,9 +77,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ###############################################################################
 ## AWS tools
 ###############################################################################
-# awscli v2 — the apt package is v1/outdated; use snap (or AWS's zip installer)
-sudo snap install aws-cli --classic
-
 # awsume — Python tool, install via pipx
 sudo apt install -y pipx
 pipx ensurepath
@@ -86,13 +92,7 @@ sudo tar -xzf /tmp/granted.tar.gz -C /usr/local/bin granted assumego assume assu
 ###############################################################################
 ## Kubernetes tools
 ###############################################################################
-# kubectl — official Kubernetes apt repo (adjust v1.3x to the minor you want)
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.36/deb/Release.key \
-  | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
-echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.36/deb/ /' \
-  | sudo tee /etc/apt/sources.list.d/kubernetes.list
-sudo apt update
+# kubectl
 sudo apt install -y kubectl
 
 # kubectx + kubens — in the Ubuntu archive
@@ -100,12 +100,6 @@ sudo apt install -y kubectx
 
 # podman — in the Ubuntu archive
 sudo apt install -y podman
-
-# helm - using snap
-sudo snap install helm --classic
-
-# kustomize — snap (also note: kubectl has `kubectl kustomize` built in)
-sudo snap install kustomize
 
 # k9s — .deb from GitHub releases
 curl -fsSLo /tmp/k9s.deb \
@@ -154,11 +148,6 @@ curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/instal
 ###############################################################################
 ## Terraform — HashiCorp official apt repo
 ###############################################################################
-curl -fsSL https://apt.releases.hashicorp.com/gpg \
-  | sudo gpg --dearmor -o /etc/apt/keyrings/hashicorp.gpg
-echo "deb [signed-by=/etc/apt/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" \
-  | sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt update
 sudo apt install -y terraform
 # If HashiCorp hasn't added "resolute" yet, substitute the previous LTS codename:
 # echo "deb [...] https://apt.releases.hashicorp.com noble main"
@@ -192,38 +181,38 @@ rm cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
 
 
 ###############################################################################
-## GUI applications
+## Docker
 ###############################################################################
-# keepassxc — in the Ubuntu archive
-sudo apt install -y keepassxc
-
 # Docker: on Linux you usually want Docker Engine, not Docker Desktop.
-# Docker Engine (recommended):
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
-  | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
-  | sudo tee /etc/apt/sources.list.d/docker.list
-sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo usermod -aG docker "$USER"   # log out/in afterwards
 # If Docker's repo doesn't list "resolute" yet, use "noble" as the codename.
 # If you specifically want Docker Desktop, download the .deb from:
 #   https://docs.docker.com/desktop/setup/install/linux/ubuntu/
 
+###############################################################################
+## Snaps
+###############################################################################
+# strict confinement
+for snap in spotify notion-desktop libreoffice; do
+  sudo snap install "$snap"
+done
+
+# classic confinement
+for snap in go aws-cli helm kustomize codium; do
+  sudo snap install "$snap" --classic
+done
+
 echo "Done. Remember to: 1) restart your shell for uv/pipx/krew PATH changes, 2) re-login for the docker group."
 ```
 
-### VS Code
+## VS Code
 
 https://code.visualstudio.com/docs/setup/linux
 
 VSCodium:
 
 https://vscodium.com/#install-with-snap-linux
-
-```
-snap install codium --classic
-```
 
 ### Zoom
 
