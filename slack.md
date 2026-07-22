@@ -65,3 +65,9 @@ https://www.webpagefx.com/tools/emoji-cheat-sheet/
 
 🚀 **Guidelines:** Weekly check-ins, async updates only, no memes (unless really good).
 
+## Message management
+
+inbox 0:
+  - notifications clear when responded
+  - long term task add to 'save for later', then clear
+
