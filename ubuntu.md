@@ -199,7 +199,7 @@ for snap in spotify notion-desktop libreoffice; do
 done
 
 # classic confinement
-for snap in go aws-cli helm kustomize codium; do
+for snap in go aws-cli helm kustomize codium gh; do
   sudo snap install "$snap" --classic
 done
 
