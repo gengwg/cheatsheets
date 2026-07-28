@@ -57,6 +57,7 @@ sudo apt install -y \
   keepassxc \
   gnome-tweaks \
   terminator \
+  yq \
   gimp
 
 # Notes:
