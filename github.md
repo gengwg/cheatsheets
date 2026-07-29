@@ -59,3 +59,24 @@ $ docker push ghcr.io/gengwg/gtin:0.1.0
 View your package at:
 
 https://github.com/gengwg/gtin/pkgs/container/gtin
+
+## GH
+
+Log in:
+
+```
+❯ gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account? /home/gengwg/.ssh/id_ed25519.pub
+? Title for your SSH key: <mykey-name>
+? How would you like to authenticate GitHub CLI? Login with a web browser
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+✓ Uploaded the SSH key to your GitHub account: /home/gengwg/.ssh/id_ed25519.pub
+✓ Logged in as gengwg
+
+❯ ssh-agent -a /tmp/authenticated-agent.sock
+SSH_AUTH_SOCK=/tmp/authenticated-agent.sock ssh-add ~/.ssh/id_ed25519
+```
