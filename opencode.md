@@ -76,12 +76,8 @@ opencode mcp logout notion  # revoke stored credentials
       "enabled": true
     },
     "grafana": {
-      "type": "local",
-      "command": [
-        "zsh",
-        "-c",
-        "set -a; source ~/.config/grafana-mcp/token.env; set +a; exec $HOME/.local/bin/mcp-grafana"
-      ],
+      "type": "remote",
+      "url": "https://mcp.grafana.com/mcp",
       "enabled": true
     },
     "desktop-commander": {
