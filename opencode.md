@@ -70,6 +70,9 @@ opencode mcp logout notion  # revoke stored credentials
     "kubernetes": {
       "type": "local",
       "command": ["npx", "-y", "mcp-server-kubernetes"],
+      "environment": {
+        "KUBECONFIG": "/home/gengwg/.kube/mcp-merged.yaml"
+      },
       "enabled": true
     },
     "grafana": {
