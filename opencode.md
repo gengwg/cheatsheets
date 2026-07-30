@@ -15,6 +15,7 @@ Inside the TUI itself you can also switch between sessions from the session list
 ```
 opencode mcp auth notion
 opencode mcp auth granola
+opencode mcp auth grafana
 ```
 
 Each one opens your browser for the OAuth consent flow — approve access, and opencode stores the tokens for future sessions.
