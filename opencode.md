@@ -99,3 +99,47 @@ opencode mcp logout notion  # revoke stored credentials
   }
 }
 ```
+
+Verify all connected:
+
+```
+❯ kubectl config view --flatten > ~/.kube/mcp-merged.yaml
+❯ oc mcp list
+
+┌  MCP Servers
+│
+●  ✓ slack connected
+│      zsh -c set -a; source ~/.config/slack-mcp/token.env; set +a; exec npx -y slack-mcp-server@1.3.0 --transport stdio
+│
+●  ✓ gitlab connected
+│      https://gitlab.com/api/v4/mcp
+│
+●  ✓ context7 connected
+│      npx -y @upstash/context7-mcp
+│
+●  ✓ filesystem connected
+│      npx -y @modelcontextprotocol/server-filesystem /home/gengwg/Aranya
+│
+●  ✓ pdf connected
+│      npx -y @modelcontextprotocol/server-pdf --stdio
+│
+●  ✓ blender connected
+│      uvx blender-mcp
+│
+●  ✓ kubernetes connected
+│      npx -y mcp-server-kubernetes
+│
+●  ✓ grafana connected
+│      zsh -c set -a; source ~/.config/grafana-mcp/token.env; set +a; exec $HOME/.local/bin/mcp-grafana
+│
+●  ✓ desktop-commander connected
+│      npx -y @wonderwhy-er/desktop-commander@latest
+│
+●  ✓ notion connected
+│      https://mcp.notion.com/mcp
+│
+●  ✓ granola connected
+│      https://mcp.granola.ai/mcp
+│
+└  11 server(s)
+```
