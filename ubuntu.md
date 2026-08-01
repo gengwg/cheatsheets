@@ -42,6 +42,7 @@ sudo apt install -y \
   ddgr \
   trash-cli \
   ansible \
+  ansible-lint \
   jq \
   wget \
   nmap \
