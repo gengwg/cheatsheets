@@ -9,6 +9,8 @@ opencode session list          # shows all sessions + IDs for this project
 opencode -s <sessionID>        # resume it
 ```
 
+The right-hand panel shows session/context info. Toggle it with <leader>b = ctrl+x b (leader key defaults to ctrl+x, then press b).                                                     
+
 Inside the TUI itself you can also switch between sessions from the session list dialog, without exiting.                                                                                                  
 ## Authenticat MCPs using interactive OAuth
 
