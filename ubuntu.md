@@ -37,6 +37,7 @@ sudo apt install -y \
   xclip \
   tree \
   tmux \
+  tmuxp \
   curl \
   tty-clock \
   ddgr \
@@ -47,18 +48,19 @@ sudo apt install -y \
   wget \
   nmap \
   telnet \
-  tmuxp \
   zoxide \
   dnsutils \
   moreutils \
   file \
   at \
+  gnome-network-displays \
   parted \
   imagemagick \
   keepassxc \
   gnome-tweaks \
   terminator \
   yq \
+  mtr-tiny \
   gimp
 
 # Notes:
