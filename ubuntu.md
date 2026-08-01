@@ -198,7 +198,7 @@ sudo usermod -aG docker "$USER"   # log out/in afterwards
 ## Snaps
 ###############################################################################
 # strict confinement
-for snap in spotify notion-desktop libreoffice; do
+for snap in spotify notion-desktop libreoffice proton-pass slack; do
   sudo snap install "$snap"
 done
 
