@@ -6,7 +6,7 @@ https://necessary-eucalyptus-012.notion.site/Slack-Cheat-Sheet-Essential-Shortcu
 - `/remind @channel` to Breath at 10:20pm.
 - `/dm @username` start a direct message with someone
 - `/collapse` to hide all images and files in chat
-- `/expande` to hide all images and files in chat
+- `/expand` to show all images and files in chat
 - `/mute #channel`
 - `/leave #channel`
 - `/search [keyword]`
