@@ -10,11 +10,8 @@ https://necessary-eucalyptus-012.notion.site/Slack-Cheat-Sheet-Essential-Shortcu
 - `/mute #channel`
 - `/leave #channel`
 - `/search [keyword]`
-- `cmd + ^` to edit last message.
-- `cmd + z` to unsend a message
-- `cmd + <number>` to switch between workspaces
-- `cmd + shift + enter` to add code snipts
-- `ctrl + shift + d`: toggle/hide channels view.
+
+(Keyboard shortcuts moved to the section below.)
 
 you can transfer a public channel to private, but not private channel to public. by design.
 
@@ -27,9 +24,10 @@ Linux/Windows use `Ctrl`; on macOS swap in `Cmd`. `Ctrl + /` opens Slack's own f
 | Shortcut | Action |
 |---|---|
 | `Ctrl + K` | Quick switcher — jump to any channel/DM by typing |
+| `Ctrl + <number>` | Switch between workspaces |
 | `Ctrl + G` | Search |
 | `Ctrl + F` | Search within the current channel |
-| `Ctrl + Shift + D` | Toggle the left sidebar |
+| `Ctrl + Shift + D` | Toggle / hide the left sidebar (channels view) |
 | `Ctrl + .` | Toggle the right pane (thread/details) |
 | `Ctrl + [` / `Ctrl + ]` | History back / forward |
 | `Alt + ↑` / `Alt + ↓` | Previous / next conversation |
@@ -61,13 +59,15 @@ Activity toolbar (*Select all* → clear), which is mouse-only.
 
 | Shortcut | Action |
 |---|---|
-| `↑` (empty input) | Edit your last message |
+| `↑` (empty input) | Edit your last message (`Cmd + ^` also works on macOS) |
+| `Ctrl + Z` | Undo / unsend a message |
 | `Ctrl + Shift + \` | Emoji reaction picker for the last message |
 | `Ctrl + U` | Upload a file |
 | `Shift + Enter` | Newline without sending |
 | `Ctrl + B` / `Ctrl + I` | Bold / italic |
 | `Ctrl + Shift + C` | Inline code |
 | `Ctrl + Alt + Shift + C` | Code block |
+| `Ctrl + Shift + Enter` | Insert a code snippet |
 | `Ctrl + Shift + 9` | Blockquote |
 | `Ctrl + Shift + 8` / `Ctrl + Shift + 7` | Bulleted / numbered list |
 | `Ctrl + Shift + X` | Strikethrough |
