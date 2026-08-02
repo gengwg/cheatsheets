@@ -1,3 +1,8 @@
+## Usage
+
+- new line: ctrl + J
+- plan/build mode: shift + tab
+
 Resume the last session (run from the same project directory — sessions are project-scoped):
 ```
 opencode -c          # short for --continue
