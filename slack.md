@@ -14,6 +14,7 @@ https://necessary-eucalyptus-012.notion.site/Slack-Cheat-Sheet-Essential-Shortcu
 - `cmd + z` to unsend a message
 - `cmd + <number>` to switch between workspaces
 - `cmd + shift + enter` to add code snipts
+- `ctrl + shift + d`: toggle/hide channels view.
 
 you can transfer a public channel to private, but not private channel to public. by design.
 
