@@ -18,6 +18,69 @@ https://necessary-eucalyptus-012.notion.site/Slack-Cheat-Sheet-Essential-Shortcu
 
 you can transfer a public channel to private, but not private channel to public. by design.
 
+## Keyboard shortcuts
+
+Linux/Windows use `Ctrl`; on macOS swap in `Cmd`. `Ctrl + /` opens Slack's own full list in-app.
+
+### Navigation
+
+| Shortcut | Action |
+|---|---|
+| `Ctrl + K` | Quick switcher — jump to any channel/DM by typing |
+| `Ctrl + G` | Search |
+| `Ctrl + F` | Search within the current channel |
+| `Ctrl + Shift + D` | Toggle the left sidebar |
+| `Ctrl + .` | Toggle the right pane (thread/details) |
+| `Ctrl + [` / `Ctrl + ]` | History back / forward |
+| `Alt + ↑` / `Alt + ↓` | Previous / next conversation |
+| `Alt + Shift + ↑` / `Alt + Shift + ↓` | Previous / next **unread** conversation |
+
+### Triage (unread sweeps, alert channels)
+
+| Shortcut | Action |
+|---|---|
+| `Ctrl + Shift + A` | All unreads |
+| `Ctrl + Shift + T` | Threads view |
+| `Ctrl + Shift + M` | Activity (mentions & reactions) |
+| `Ctrl + Shift + K` | DM list |
+| `Ctrl + Shift + S` | Later / saved items |
+| `C` | Clear the hovered/focused Activity item (the eraser icon) |
+| `↓` / `Tab` in Activity | Move focus between items — chain with `C` to clear the whole list keyboard-only |
+| `Esc` | Mark current channel read |
+| `Shift + Esc` | Mark **all** channels read |
+| `Alt + Click` a message | Mark unread from that message down |
+
+Highest-leverage pair: `Ctrl + K` to never touch the sidebar again, and
+`Alt + Shift + ↓` to walk unread channels one at a time, `Esc` to clear each as you go.
+
+Draining Activity: `Ctrl + Shift + M`, then `↓` `C` `↓` `C` … all the way down. There is no
+clear-**all** shortcut — the only batch path is the checkbox dropdown at the far left of the
+Activity toolbar (*Select all* → clear), which is mouse-only.
+
+### Composing
+
+| Shortcut | Action |
+|---|---|
+| `↑` (empty input) | Edit your last message |
+| `Ctrl + Shift + \` | Emoji reaction picker for the last message |
+| `Ctrl + U` | Upload a file |
+| `Shift + Enter` | Newline without sending |
+| `Ctrl + B` / `Ctrl + I` | Bold / italic |
+| `Ctrl + Shift + C` | Inline code |
+| `Ctrl + Alt + Shift + C` | Code block |
+| `Ctrl + Shift + 9` | Blockquote |
+| `Ctrl + Shift + 8` / `Ctrl + Shift + 7` | Bulleted / numbered list |
+| `Ctrl + Shift + X` | Strikethrough |
+
+### Misc
+
+| Shortcut | Action |
+|---|---|
+| `Ctrl + Shift + H` | Start / join a huddle |
+| `Ctrl + Shift + Space` | Mute / unmute in a huddle |
+| `Ctrl + Shift + Y` | Set your status |
+| `Ctrl + /` | Show all keyboard shortcuts |
+
 ## Apps
 
 - Google Calendar (Turn on auto status update)
