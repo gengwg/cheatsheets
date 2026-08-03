@@ -1,5 +1,55 @@
-shift + enter to run query.
+## Keyboard shortcuts
 
+Linux/Windows use `Ctrl`; on macOS swap in `Cmd`. `?` opens Grafana's own list in-app.
+Sequences like `d` `k` mean press the keys one after the other, not together.
+
+### Global
+
+| Shortcut | Action |
+|---|---|
+| `Ctrl + K` | Command palette — jump to any dashboard, page, or action |
+| `g` `h` | Go to the Home dashboard |
+| `g` `e` | Go to Explore |
+| `g` `p` | Go to your Profile |
+| `?` | Show all keyboard shortcuts |
+| `Esc` | Exit edit / settings / fullscreen view |
+
+### Dashboard
+
+| Shortcut | Action |
+|---|---|
+| `Ctrl + S` | Save dashboard |
+| `d` `s` | Dashboard settings |
+| `d` `r` | Refresh all panels |
+| `d` `k` | Kiosk mode (hide chrome) |
+| `d` `E` / `d` `C` | Expand / collapse all rows |
+| `d` `l` | Toggle all panel legends |
+| `Ctrl + O` | Toggle shared crosshair across panels |
+
+### Panel (hover over the panel first)
+
+| Shortcut | Action |
+|---|---|
+| `e` | Edit panel |
+| `v` | View panel fullscreen |
+| `p` `s` | Share panel |
+| `p` `d` | Duplicate panel |
+| `p` `l` | Toggle panel legend |
+| `p` `r` | Remove panel |
+
+### Time range
+
+| Shortcut | Action |
+|---|---|
+| `t` `z` | Zoom out time range |
+| `t` `←` / `t` `→` | Shift time range back / forward |
+| `t` `a` | Make the time range absolute |
+
+### Query editors (Explore, panel edit)
+
+| Shortcut | Action |
+|---|---|
+| `Shift + Enter` | Run the query |
 
 ## Notes
 
