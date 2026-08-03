@@ -38,6 +38,39 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#oh-my-zsh
 
+## Enable vi-mode
+
+Add `vi-mode` to the plugins list in `~/.zshrc`:
+
+```
+plugins=(
+  git
+  vi-mode
+  ...
+)
+```
+
+Usage: `Esc` for Normal mode (`hjkl`, `w`/`b`, `dd`, `yy`, `p`, `u`, `v` to edit cmd in $EDITOR), `i`/`a` back to Insert mode.
+
+vi-mode drops some default emacs bindings — restore history search at the end of `~/.zshrc`:
+
+```
+# vi-mode: restore emacs-style history bindings (Ctrl+R search, Ctrl+P/N)
+bindkey '^R' history-incremental-search-backward
+bindkey '^P' up-line-or-history
+bindkey '^N' down-line-or-history
+```
+
+Full-featured alternative (text objects, surround, visual mode): https://github.com/jeffreytse/zsh-vi-mode
+
+## Keep tmux window names stable
+
+oh-my-zsh auto-renames the terminal title on every command. Disable it so tmuxp window names stick (exported so tmuxp sees it):
+
+```
+export DISABLE_AUTO_TITLE="true"
+```
+
 ## Ref
 
 - https://www.bretfisher.com/shell/
