@@ -150,3 +150,40 @@ Verify all connected:
 │
 └  11 server(s)
 ```
+
+## Useful plugins
+
+Browse the full ecosystem: <https://opencode.ai/docs/ecosystem/>
+
+Add to `~/.config/opencode/opencode.jsonc` under `"plugin"`, then restart opencode (bun auto-installs them on startup):
+
+```
+{
+  "plugin": [
+    "opencode-gitlab-plugin",
+    "opencode-scheduler",
+    "opencode-notify",
+    "opencode-dynamic-context-pruning",
+    "opencode-supermemory",
+    "opencode-tavily",
+    "opencode-worktree",
+    "opencode-pty"
+  ]
+}
+```
+
+- `opencode-gitlab-plugin` — MR review, issues, pipelines, CI/CD tools
+- `opencode-scheduler` — recurring jobs via systemd/launchd with cron syntax
+- `opencode-notify` — desktop notification when a task finishes/needs you
+- `opencode-dynamic-context-pruning` — prunes stale tool output, saves tokens (big win with many MCP servers)
+- `opencode-supermemory` — persistent memory across sessions (needs API key)
+- `opencode-tavily` — web search/extraction/crawling (needs API key, free tier)
+- `opencode-worktree` — zero-friction git worktrees for parallel work
+- `opencode-pty` — run/interact with background processes in a PTY
+
+Auth-subscription plugins (use a plan instead of API billing):
+
+- `opencode-gemini-auth` — existing Gemini plan
+- `opencode-google-antigravity-auth` — Google Antigravity free models (OAuth)
+
+NOTE: ChatGPT Plus / GitHub Copilot / GitLab Duo subscriptions are supported natively via `/connect` with zero setup.
