@@ -25,6 +25,7 @@ Linux/Windows use `Ctrl`; on macOS swap in `Cmd`. `Ctrl + /` opens Slack's own f
 |---|---|
 | `Ctrl + K` | Quick switcher — jump to any channel/DM by typing |
 | `Ctrl + <number>` | Switch between workspaces |
+| `Ctrl + Shift + 1` | Return to the Home tab from Activity/DMs/More (on macOS: `Ctrl + 1` — `Cmd + 1` is reserved for switching to your first workspace) |
 | `Ctrl + G` | Search |
 | `Ctrl + F` | Search within the current channel |
 | `Ctrl + Shift + D` | Toggle / hide the left sidebar (channels view) |
