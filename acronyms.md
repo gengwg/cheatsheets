@@ -248,6 +248,7 @@
 | POC     | Proof of Concept                            |
 | POP     | Points of presence                          |
 | POR     | Plan of Record                              |
+| PortCo  | portfolio  company                          |
 | PP      | [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) |
 | PPS     | Proofpoint Protection Service               |
 | potus   | President of the United States              |
