@@ -5,6 +5,8 @@
 # Ubuntu 26.04 LTS (Resolute Raccoon) setup 
 set -euo pipefail
 
+sudo apt install -y curl
+
 # Kubernetes repo
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.36/deb/Release.key \
@@ -38,7 +40,6 @@ sudo apt install -y \
   tree \
   tmux \
   tmuxp \
-  curl \
   tty-clock \
   ddgr \
   trash-cli \
@@ -60,6 +61,7 @@ sudo apt install -y \
   gnome-tweaks \
   terminator \
   yq \
+  libsecret-tools \
   mtr-tiny \
   gimp
 
