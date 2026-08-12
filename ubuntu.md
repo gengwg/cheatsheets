@@ -61,6 +61,7 @@ sudo apt install -y \
   gnome-tweaks \
   terminator \
   yq \
+  sqlite3 \
   libsecret-tools \
   mtr-tiny \
   gimp
