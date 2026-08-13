@@ -34,7 +34,6 @@ sudo apt update
 sudo apt install -y \
   git \
   zsh \
-  neovim \
   rsync \
   xclip \
   tree \
@@ -67,17 +66,9 @@ sudo apt install -y \
   mtr-tiny \
   gimp
 
-# Notes:
-# - `watch` is part of procps and already installed on Ubuntu.
-# - apt's neovim can lag upstream; for latest: sudo snap install nvim --classic
-
-###############################################################################
-## GUI applications
-###############################################################################
-sudo apt install -y keepassxc
-sudo apt install -y gnome-tweaks
-sudo apt install -y terminator
-sudo apt install -y gimp
+# Zoom Linux client
+wget -P /tmp https://zoom.us/client/latest/zoom_amd64.deb
+sudo apt install /tmp/zoom_amd64.deb
 
 # uv — not packaged in Ubuntu; use the official installer
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -215,21 +206,15 @@ for snap in spotify notion-desktop libreoffice proton-pass slack; do
 done
 
 # classic confinement
-for snap in go aws-cli helm kustomize codium gh; do
+for snap in go aws-cli helm kustomize codium nvim gh; do
   sudo snap install "$snap" --classic
 done
-
-
 
 # set screen blank time to 1hr (default 15m)
 gsettings set org.gnome.desktop.session idle-delay 3600
 
 echo "Done. Remember to: 1) restart your shell for uv/pipx/krew PATH changes, 2) re-login for the docker group."
 ```
-
-### Install Zoom
-
-https://zoom.us/download?os=linux
 
 ### Syncthing
 
