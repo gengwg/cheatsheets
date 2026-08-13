@@ -61,6 +61,7 @@ sudo apt install -y \
   gnome-tweaks \
   terminator \
   yq \
+  gnome-tweaks \
   sqlite3 \
   libsecret-tools \
   mtr-tiny \
@@ -218,6 +219,11 @@ for snap in go aws-cli helm kustomize codium gh; do
   sudo snap install "$snap" --classic
 done
 
+
+
+# set screen blank time to 1hr (default 15m)
+gsettings set org.gnome.desktop.session idle-delay 3600
+
 echo "Done. Remember to: 1) restart your shell for uv/pipx/krew PATH changes, 2) re-login for the docker group."
 ```
 
@@ -324,10 +330,6 @@ Group all Terminal into one - Super+g
 Note: Super is a key with the windows logo right of left CTRL.
 --------------------------------------------------------------------
 ```
-
-## set screen blank time to 1hr (default 15m)
-
-gsettings set org.gnome.desktop.session idle-delay 1800
 
 ## Motion (webcam)
 
