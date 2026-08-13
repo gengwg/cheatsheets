@@ -227,7 +227,7 @@ gsettings set org.gnome.desktop.session idle-delay 3600
 echo "Done. Remember to: 1) restart your shell for uv/pipx/krew PATH changes, 2) re-login for the docker group."
 ```
 
-### Zoom
+### Install Zoom
 
 https://zoom.us/download?os=linux
 
@@ -235,13 +235,17 @@ https://zoom.us/download?os=linux
 
 https://gengwg.medium.com/set-up-syncthing-on-ubuntu-b3c78668a23e
 
-### Zsh
+### Configure Zsh
 
 ```
 ➜  ~ mv .zshrc .zshrc.orig
 ➜  ~ ln -s ./Nextcloud/bash_conf/zshrc .zshrc
 ➜  ~ ln -s ~/Nextcloud/bash_conf/aliases.zsh $ZSH_CUSTOM/aliases.zsh
 ```
+
+### Configure Terminator
+
+https://github.com/gengwg/terminator
 
 ## Ubuntu 22.04 Chinese (simplified) pinyin input
 
@@ -282,49 +286,3 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 ```
 
 needs a log out and log back in to take effect on Wayland. GNOME Wayland doesn't apply xkb-options to an already-running session.
-
-
-## Motion (webcam)
-
-Install:
-
-```
-sudo apt-get install motion
-```
-
-Edit `/etc/motion.conf`. Change:
-
-```
-target_dir /tmp/motion
-```
-
-to:
-
-```
-target_dir /var/www/motion
-```
-
-Organize files by date instead of all in one directory:
-
-```
-# Snapshots
-snapshot_filename %Y%m%d/camera-%t/snapshots/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-snapshot
-
-# Motion-triggered images
-jpeg_filename %Y%m%d/camera-%t/motions/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-%q-motion
-
-# Motion-triggered movies
-movie_filename %Y%m%d/camera-%t/movies/hour-%H/camera-%t-%v-%Y%m%d%H%M%S-movie
-
-# Timelapse
-timelapse_filename %Y%m%d/camera-%t/timelapses/hour-%H/camera-%t-%Y%m%d-timelapse
-```
-
-Run:
-
-```
-sudo motion
-/etc/init.d/motion restart
-```
-
-
