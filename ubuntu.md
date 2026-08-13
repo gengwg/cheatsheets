@@ -227,14 +227,6 @@ gsettings set org.gnome.desktop.session idle-delay 3600
 echo "Done. Remember to: 1) restart your shell for uv/pipx/krew PATH changes, 2) re-login for the docker group."
 ```
 
-## VS Code
-
-https://code.visualstudio.com/docs/setup/linux
-
-VSCodium:
-
-https://vscodium.com/#install-with-snap-linux
-
 ### Zoom
 
 https://zoom.us/download?os=linux
@@ -262,7 +254,6 @@ https://askubuntu.com/questions/1408873/ubuntu-22-04-chinese-simplified-pinyin-i
     Click on the "+" sign under Input sources.
     Select Chinese (China) and then Chinese (Intelligent Pinyin).
 
-
 If you see there is zh in the upper right in Ubuntu, input with that it is English.
 --> uninstall it and reinstall it. 
 Click on 'Chinese', now you will have the option to chose "Chinese (Intelligent pinyin)".
@@ -276,11 +267,11 @@ Install Tweaks:
 
     sudo apt install gnome-tweaks
 
+Then:
+
     Open Tweaks → Keyboard.
-
     Click Additional Layout Options.
-
-    Under Ctrl position, choose Caps Lock as Ctrl or Swap Ctrl and Caps Lock, depending on what you prefer.
+    Under Ctrl position, choose Caps Lock as Ctrl.
 
 This applies each time you log in and is the easiest option on default Ubuntu with GNOME.
 
@@ -292,44 +283,6 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 
 needs a log out and log back in to take effect on Wayland. GNOME Wayland doesn't apply xkb-options to an already-running session.
 
-```
------------------------
-Terminator shortcuts
-------------------------
-Split Terminal Horizontally - Ctrl+Shift+0
-Split Terminal Vertically   - Ctrl+Shift+E
-    Move Parent Dragbar Right - Ctrl+Shift+Right_Arrow_key
-    Move Parent Dragbar Left - Ctrl+Shift+Left_Arrow_key
-    Move Parent Dragbar Up - Ctrl+Shift+Up_Arrow_key
-    Move Parent Dragbar Down - Ctrl+Shift+Down_Arrow_key
-Hide/Show Scrollbar          - Ctrl+Shift+s
-
-Move to Next Terminal        - Ctrl+Shift+N or Ctrl+Tab
-Move to the Above Terminal - Alt+Up_Arrow_Key
-Move to the Below Terminal - Alt+Down_Arrow_Key
-Move to the Left Terminal - Alt+Left_Arrow_Key
-Move to the Right Terminal - Alt+Right_Arrow_Key
-
-Copy a text to clipboard - Ctrl+Shift+c
-Paste a text from Clipboard - Ctrl+Shift+v
-Close the Current Terminal - Ctrl+Shift+w
-Quit the Terminator - Ctrl+Shift+q
-Toggle Between Terminals - Ctrl+Shift+x
-Open New Tab - Ctrl+Shift+t
-
-Move to Next Tab - Ctrl+page_Down
-Move to Previous Tab - Ctrl+Page_up
-Increase Font size - Ctrl+(+)
-Decrease Font Size - Ctrl+(-)
-Reset Font Size to Original - Ctrl+0
-Toggle Full Screen Mode - F11
-Reset Terminal - Ctrl+Shift+R
-Reset Terminal and Clear Window - Ctrl+Shift+G
-Remove all the terminal grouping - Super+Shift+t
-Group all Terminal into one - Super+g
-Note: Super is a key with the windows logo right of left CTRL.
---------------------------------------------------------------------
-```
 
 ## Motion (webcam)
 
