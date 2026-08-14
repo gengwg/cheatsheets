@@ -201,7 +201,7 @@ sudo usermod -aG docker "$USER"   # log out/in afterwards
 #      Snaps auto-refresh ~4x per day.                                                                                                          
 ###############################################################################
 # strict confinement
-for snap in spotify notion-desktop libreoffice proton-pass slack; do
+for snap in spotify notion-desktop libreoffice proton-pass doctl slack; do
   sudo snap install "$snap"
 done
 
