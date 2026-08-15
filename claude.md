@@ -1,3 +1,9 @@
+## Install
+
+https://code.claude.com/docs/en/desktop-linux
+
+https://code.claude.com/docs/en/quickstart
+
 `claude --continue` continues last session
 `claude --resume` choose which session to continue
 if already in claude code, use `/resume` to choose.
