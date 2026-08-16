@@ -60,6 +60,8 @@ sudo apt install -y \
   gnome-tweaks \
   terminator \
   yq \
+  nodejs \
+  npm \
   gnome-tweaks \
   sqlite3 \
   libsecret-tools \
