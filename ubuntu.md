@@ -64,6 +64,7 @@ sudo apt install -y \
   npm \
   gnome-tweaks \
   sqlite3 \
+  net-tools \
   libsecret-tools \
   mtr-tiny \
   gimp
