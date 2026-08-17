@@ -209,7 +209,7 @@ for snap in spotify notion-desktop libreoffice proton-pass doctl slack; do
 done
 
 # classic confinement
-for snap in go aws-cli helm kustomize codium nvim discord gh; do
+for snap in go aws-cli helm kustomize codium nvim discord gh glab; do
   sudo snap install "$snap" --classic
 done
 
