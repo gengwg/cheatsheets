@@ -20,6 +20,9 @@ Tip: You're 92 turns deep and tracing a complex incident across multiple systems
 
 `/resume`: to previous sessions.
 
+`claude --dangerously-skip-permissions`
+
+
 ## Using free models in claude code
 
 ```
