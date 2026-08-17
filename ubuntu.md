@@ -209,9 +209,15 @@ for snap in spotify notion-desktop libreoffice proton-pass doctl slack; do
 done
 
 # classic confinement
-for snap in go aws-cli helm kustomize codium nvim discord gh glab; do
+for snap in go aws-cli helm kustomize codium nvim discord gh; do
   sudo snap install "$snap" --classic
 done
+
+# Snap glab doesn't work well with claude. also stores secrets as plaintext in snap.
+# Apt glab version is too old.
+curl -L -o /tmp/glab.deb https://gitlab.com/gitlab-org/cli/-/releases/v1.113.0/downloads/glab_1.113.0_linux_amd64.deb
+sudo dpkg -i /tmp/glab.deb
+glab auth login
 
 # set screen blank time to 1hr (default 15m)
 gsettings set org.gnome.desktop.session idle-delay 3600
