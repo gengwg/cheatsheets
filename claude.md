@@ -20,7 +20,7 @@ Tip: You're 92 turns deep and tracing a complex incident across multiple systems
 
 `/resume`: to previous sessions.
 
-`claude --dangerously-skip-permissions`
+`claude --dangerously-skip-permissions`: YOLO mode
 
 
 ## Using free models in claude code
