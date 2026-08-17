@@ -16,6 +16,10 @@ Tip: You're 92 turns deep and tracing a complex incident across multiple systems
 
 `/rename [name]`: give another name for current session.
 
+`/rewind`: to previous checkpoints.
+
+`/resume`: to previous sessions.
+
 ## Using free models in claude code
 
 ```
