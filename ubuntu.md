@@ -28,6 +28,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 
 sudo apt update
 
+
 ###############################################################################
 ## applications — all available directly via apt
 ###############################################################################
