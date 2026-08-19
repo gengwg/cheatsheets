@@ -61,6 +61,7 @@ sudo apt install -y \
   terminator \
   yq \
   nodejs \
+  grim \
   npm \
   gnome-tweaks \
   sqlite3 \
