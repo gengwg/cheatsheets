@@ -69,6 +69,7 @@ sudo apt install -y \
   net-tools \
   libsecret-tools \
   mtr-tiny \
+  ripgrep \
   gimp
 
 # Zoom Linux client
