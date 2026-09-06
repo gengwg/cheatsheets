@@ -16,7 +16,12 @@ opencode -s <sessionID>        # resume it
 
 The right-hand panel shows session/context info. Toggle it with <leader>b = ctrl+x b (leader key defaults to ctrl+x, then press b).                                                     
 
-Inside the TUI itself you can also switch between sessions from the session list dialog, without exiting.                                                                                                  
+Inside the TUI itself you can also switch between sessions from the session list dialog, without exiting.      
+
+
+Use /undo (or ctrl+x u) — it reverts the last message and restores the original text into the input area so you can edit and re-send it.    
+
+
 ## Authenticat MCPs using interactive OAuth
 
 ```
