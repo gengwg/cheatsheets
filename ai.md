@@ -85,6 +85,14 @@ ml training is network, HBM and BF16/FP16/FP8 tensor core intensive.
 LLM performance can degrade with long context.
 mult-agent swarms, orchestrate
 
+controlled chaos
+driven by project maturity and your comfort
+start by prioritizing control
+analogy: nuclear reactor
+
+subagents keeps context separated.
+
+
 ## Metrics:
 - TTFT
 - E2E latency
