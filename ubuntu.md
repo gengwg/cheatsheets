@@ -284,3 +284,9 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 ```
 
 needs a log out and log back in to take effect on Wayland. GNOME Wayland doesn't apply xkb-options to an already-running session.
+
+## Screen recording
+
+`Ctrl+Alt+Shift+R` to start (red dot appears top-right; GNOME 50.1 has no time cap).
+
+`Ctrl+Alt+Shift+R` to stop — saves to ~/Videos/Screencasts/.
