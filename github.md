@@ -80,3 +80,9 @@ Log in:
 ❯ ssh-agent -a /tmp/authenticated-agent.sock
 SSH_AUTH_SOCK=/tmp/authenticated-agent.sock ssh-add ~/.ssh/id_ed25519
 ```
+
+Make repo public
+
+```
+gh repo edit gengwg/oncall-copilot --visibility public --accept-visibility-change-consequences
+```
