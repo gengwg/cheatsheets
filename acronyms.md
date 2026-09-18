@@ -356,6 +356,7 @@
 | VAS     | Value-Added Services                        |
 | VDI     | Virtual Desktop Infrastructure              |
 | ViT     | Vision Transformers                         |
+| VLM     | Vision Language Model                       |
 | VWOP    | Vendor Worker Onboarding Portal             |
 | VRAM    | Video Random Access Memory                  |
 | VRF     | Virtual Routing and Forwarding              |
