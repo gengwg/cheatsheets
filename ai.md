@@ -92,6 +92,11 @@ analogy: nuclear reactor
 
 subagents keeps context separated.
 
+Agent = Model + Harness
+
+The model is the soul of an agent.
+
+A harness lets an agent understand its environment, use tools, and keep working in real-world settings.
 
 ## Metrics:
 - TTFT
