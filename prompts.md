@@ -16,6 +16,14 @@ In dsh web, to create a reusable review agent:
 Add a new agent preset for code review
 ```
 
+## Debugging
+
+With the superpowers plugin in Claude Code, to trigger its systematic-debugging skill:
+
+```
+use superpower debug mode to help me debug this slack message
+```
+
 ## Sanity checks
 
 Quick prompts to compare models or check a new endpoint works.
