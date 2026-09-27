@@ -98,6 +98,7 @@ optimized for fast lookup over long-form documentation.
 
 [AI](ai.md) ·
 [ChatGPT / LLM APIs](chatgpt.md) ·
+[Prompts](prompts.md) ·
 [GPU](gpu.md) ·
 [NVIDIA A100](a100.md) ·
 [PyTorch (2024)](pytorch2024.md)

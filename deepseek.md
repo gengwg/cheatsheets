@@ -61,10 +61,6 @@ dsh web --patch <(echo '- id: kubectl-guard
 ss -ltnp | awk '$4 ~ /:3080$/'
 ```
 
-## Add a new agent preset for code review
+## Prompts
 
-Paste this in dsh web.
-
-```
-Add a new agent preset for code review
-```
+See [prompts.md](prompts.md).
