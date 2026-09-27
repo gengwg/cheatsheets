@@ -24,6 +24,17 @@ With the superpowers plugin in Claude Code, to trigger its systematic-debugging 
 use superpower debug mode to help me debug this slack message
 ```
 
+## Long-running agent tasks
+
+Paste above a task to keep the agent working until it is actually done:
+
+```
+use tmux with subagent registers to work on below task.
+keep going until the task is genuinely finished, and all success criteria pass.
+make sure not only tests pass, but also end to end works.
+check slack or other connectors for latest info.
+```
+
 ## Sanity checks
 
 Quick prompts to compare models or check a new endpoint works.
