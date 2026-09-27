@@ -35,6 +35,12 @@ make sure not only tests pass, but also end to end works.
 check slack or other connectors for latest info.
 ```
 
+To split several independent tasks across parallel subagents:
+
+```
+use tmux with subagent registers to work on these 3 tasks below: ...
+```
+
 ## Sanity checks
 
 Quick prompts to compare models or check a new endpoint works.
