@@ -41,6 +41,28 @@ To split several independent tasks across parallel subagents:
 use tmux with subagent registers to work on these 3 tasks below: ...
 ```
 
+## Triaging Slack feedback into issues
+
+Turn bug reports in a Slack feedback channel into GitLab issues without duplicates:
+
+```
+Create a GitLab issue for each bug report thread in <slack channel URL>.
+
+- Go through the channel from newest to oldest, so recent reports are
+  less likely to have an issue already.
+- For each thread, search the project's existing issues for the same bug.
+  - If one exists, skip it.
+  - If not, create one that links to the Slack thread. Mimic existing bug
+    reports in the project, including their labels (I think it is
+    <label>, but double check).
+- If several Slack threads report the same bug, create one issue and link
+  the other threads to it.
+- Confirm with me before creating each issue, so I can decide whether it
+  deserves a ticket.
+- Once the backlog is done, check the channel every 30 minutes and handle
+  new reports the same way. Save state so you don't re-read old messages.
+```
+
 ## Sanity checks
 
 Quick prompts to compare models or check a new endpoint works.
