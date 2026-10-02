@@ -18,6 +18,7 @@
 | ASI     | [Artificial Superintelligence](https://www.ibm.com/think/topics/artificial-superintelligence)        |
 | ASIC    | Application-Specific Integrated Circuit     |
 | ASN     | advanced shipping notice                    |
+| ASR     | Automatic Speech Recognition                |
 | ATN     | Altoona, Iowa                               |
 | ATR     | Asset Tag Report                            |
 | BCI     | brain computer interface                    |
