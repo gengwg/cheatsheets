@@ -8,6 +8,12 @@ not by model, since most work anywhere.
 Explain the codebase to a newcomer. What is the general structure, what are the
 important things to know, and what are some pointers for things to learn next?
 
+## Explaining a message, link or technology
+
+```
+In a nutshell, explain <Slack message, link or technology>
+```
+
 ## Code review
 
 In dsh web, to create a reusable review agent:
