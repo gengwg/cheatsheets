@@ -113,6 +113,17 @@ detect, respond, learn all in IRM
 
 Grafana → Alerting → Notification policies → Default policy → ⋮ (Edit) → Repeat interval: change 1m → 4h → Update.
 
+### Alert rule writes on Grafana 13
+
+The legacy `PUT /api/v1/provisioning/alert-rules/<uid>` returns 200 and changes nothing. Write through the App Platform API as a merge patch, then confirm `metadata.resourceVersion` changed on a GET:
+
+```
+curl -s -X PATCH -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/merge-patch+json" \
+  --data @patch.json "$GRAFANA/apis/rules.alerting.grafana.app/v0alpha1/namespaces/$NS/alertrules/$RULE_UID"
+```
+
+`$NS` is `default` on self-hosted Grafana and `stacks-<id>` on Grafana Cloud.
+
 ## Resources
 
 - [Getting started with Grafana dashboard design](https://watch.getcontrast.io/watch/grafana-labs-getting-started-with-grafana-dashboard-design-2)

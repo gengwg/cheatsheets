@@ -383,3 +383,27 @@ systemctl list-units --type target
 ```
 $ systemctl list-timers --user -a
 ```
+
+### User service fails with `Result: resources`
+
+`Active: failed (Result: resources)` with `Mem peak: 0B` means the unit never started. The usual cause is a missing `EnvironmentFile=`. Create the file, or prefix the path with `-` to make it optional.
+
+### Timer missing from `list-timers`
+
+`systemctl --user list-timers foo.timer` lists nothing: the timer is not enabled.
+
+```
+systemctl --user enable --now foo.timer
+```
+
+### Shell variables in `ExecStart`
+
+systemd expands `$g` itself, to an empty string, before the shell runs. Write `$$g`:
+
+```
+ExecStart=/bin/sh -c 'for g in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance > $$g; done'
+```
+
+### A failed `Condition*` is not a failure
+
+When `ConditionPathExists=` is false the unit is skipped and the start job reports success. Use `AssertPathExists=` to fail loudly.

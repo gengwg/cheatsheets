@@ -74,3 +74,10 @@ export DISABLE_AUTO_TITLE="true"
 ## Ref
 
 - https://www.bretfisher.com/shell/
+
+## zsh gotchas
+
+- `$EDITOR file` with `EDITOR` unset runs `file` as a command: `permission denied`. Set `export EDITOR=nvim` in `.zshrc`.
+- Unquoted variables are not word-split: `ids="a b c"; for i in $ids` loops once. Use `${=ids}` or an array.
+- `echo ===` fails with `== not found`: a word starting with `=` expands `=cmd` to that command's path. Quote it.
+- Bypass an alias such as `rm='rm -i'` with `command rm` (or `\rm`).
