@@ -115,6 +115,20 @@ date | slacker -n SlackerBot -i :dancer: -c testhubot
 echo 'This is a test' | slacker -n 'Your Name' -i :congratulations: -c testhubot
 ```
 
+### incoming webhook: post from a script with curl
+
+No token or library. https://api.slack.com/apps -> Create New App -> Blank app -> Incoming Webhooks -> On -> Add New Webhook -> pick the channel -> Allow. A company workspace may need admin approval.
+
+The URL is the credential: anyone holding it can post to that channel. Keep it in an env file, never on the command line or in chat. If it leaks, delete the webhook and add a new one.
+
+```bash
+# ~/.config/myapp/env (chmod 600): SLACK_WEBHOOK=https://hooks.slack.com/services/...
+set -a; . ~/.config/myapp/env; set +a
+curl -s -X POST -H 'Content-Type: application/json' --data '{"text":"hello"}' "$SLACK_WEBHOOK"   # prints ok
+```
+
+Example: https://github.com/gengwg/bart-slack-alerts
+
 ### emoji-cheat-sheet
 
 https://www.webpagefx.com/tools/emoji-cheat-sheet/
