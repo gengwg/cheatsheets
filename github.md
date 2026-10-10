@@ -86,3 +86,12 @@ Make repo public
 ```
 gh repo edit gengwg/oncall-copilot --visibility public --accept-visibility-change-consequences
 ```
+
+Fork remotes
+
+```
+gh repo clone gengwg/kubespray                          # a fork: also adds its parent as `upstream`
+gh api repos/gengwg/kubespray --jq .parent.full_name   # kubernetes-sigs/kubespray
+```
+
+EasyCLA (Kubernetes and other Linux Foundation repos) fails a PR when any `Co-authored-by:` trailer cannot be matched to a GitHub account that signed the CLA, e.g. `noreply@anthropic.com`. Keep `Signed-off-by` only. To fix a pushed PR: amend the trailer out, force-push, comment `/easycla`.

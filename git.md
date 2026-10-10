@@ -416,6 +416,17 @@ git clean -fd
 git clean -fdn
 ```
 
+### `--force-with-lease` rejected as `(stale info)`
+
+A `--depth 1` clone is single-branch, so pushing a new branch never creates `origin/<branch>`, and a bare `--force-with-lease` has nothing to compare against. `git fetch --unshallow` does not fix it; the refspec stays single-branch.
+
+```
+git fetch origin mybranch:refs/remotes/origin/mybranch
+git push --force-with-lease origin mybranch
+# permanent fix for this clone
+git remote set-branches --add origin mybranch
+```
+
 ## Errors
 
 ```

@@ -39,3 +39,29 @@ claude --model z-ai/glm-5.2:free
 
 https://claude.ai/code/routines
 
+
+## Attribution trailers
+
+In `settings.json` (user, project or local scope):
+
+```json
+{ "attribution": { "commit": "", "pr": "" } }
+```
+
+Empty strings drop the `Co-Authored-By` commit trailer and the PR description line. `includeCoAuthoredBy` is deprecated.
+
+## Plugins
+
+```
+/plugin marketplace update <marketplace>
+/plugin update <plugin>@<marketplace>
+/reload-plugins
+```
+
+## Print mode
+
+`claude -p --tools "" "prompt"` fails with `Input must be provided`: `--tools` consumes the prompt. Pipe it instead:
+
+```
+echo "prompt" | claude -p --tools ""
+```
