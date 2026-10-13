@@ -65,3 +65,7 @@ Empty strings drop the `Co-Authored-By` commit trailer and the PR description li
 ```
 echo "prompt" | claude -p --tools ""
 ```
+
+Use your limit reset to reset it now: clau.de/reset
+
+/usage-credits to request more usage from your admin.
