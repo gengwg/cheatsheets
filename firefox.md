@@ -25,6 +25,7 @@
 2. Toggle the “browser.tabs.insertAfterCurrent” switch to “true” (default is “false”)
 [stefanjudis](https://www.stefanjudis.com/notes/open-new-tabs-next-to-the-current-one-in-firefox/)
 3. (Optional) Make sure `browser.tabs.insertRelatedAfterCurrent` is also **true** so links you open in a new tab (e.g., middle‑click) appear next to the current tab as well. [ghacks](https://www.ghacks.net/2018/05/10/open-tabs-in-firefox-to-the-right-of-the-current-tab/)
+4. (Optional) `browser.tabs.insertAfterCurrentExceptPinned` to `false`, so it opens as the first tab on the right of pinned tabs.
 
 If `browser.tabs.insertAfterCurrent` is missing in your Firefox version, you can add it manually as a new Boolean preference with that exact name and set it to true. [ghacks](https://www.ghacks.net/2018/05/10/open-tabs-in-firefox-to-the-right-of-the-current-tab/)
 
