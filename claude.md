@@ -69,3 +69,12 @@ echo "prompt" | claude -p --tools ""
 Use your limit reset to reset it now: clau.de/reset
 
 /usage-credits to request more usage from your admin.
+
+
+
+    CLAUDE.md — always-on project standards
+    Skills — task-specific expertise that loads on demand
+    Hooks — automated operations triggered by events
+    Subagents — isolated execution contexts for delegated work
+    MCP servers — external tools and integrations
+
