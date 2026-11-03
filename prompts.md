@@ -14,6 +14,14 @@ important things to know, and what are some pointers for things to learn next?
 In a nutshell, explain <Slack message, link or technology>
 ```
 
+## Research
+
+```
+Use the research skill to research <topic>. Search the internet and GitHub,
+preferring official documentation and primary sources. Summarize the findings
+and include source links.
+```
+
 ## Code review
 
 In dsh web, to create a reusable review agent:
