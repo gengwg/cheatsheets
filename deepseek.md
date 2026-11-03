@@ -48,6 +48,12 @@ dsh plugin --profile web add dsh-kubectl-guard
       name: dsh-kubectl-guard
 ```
 
+Add plugin:
+
+```
+dsh plugin --profile web list dsh-cursor-subscription --depth 0
+```
+
 Disable one plugin for a single run:
 
 ```
