@@ -19,6 +19,27 @@ The right-hand panel shows session/context info. Toggle it with <leader>b = ctrl
 Inside the TUI itself you can also switch between sessions from the session list dialog, without exiting.      
 
 
+### OpenCode 2 session and tab navigation
+
+The leader key is `Ctrl+X`: press and release it, then press the next key.
+
+- Switch sessions: `Ctrl+X`, then `L`; use `Up`/`Down` and `Enter`.
+- Close the current session tab without quitting OpenCode: `Ctrl+X`, then `W`. The session remains available in the session list.
+- Next/previous session tab: `Ctrl+X`, then `]`/`[`. These are custom bindings in `~/.config/opencode/cli.json`:
+
+```json
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "keybinds": {
+    "session.tab.next": ["ctrl+tab", "alt+down", "<leader>]"],
+    "session.tab.previous": ["ctrl+shift+tab", "alt+up", "<leader>["]
+  }
+}
+```
+
+The leader-based tab bindings avoid relying on `Ctrl+Tab` or `Alt+Up`/`Alt+Down` in Terminator.
+
+
 Use /undo (or ctrl+x u) — it reverts the last message and restores the original text into the input area so you can edit and re-send it.    
 
 
