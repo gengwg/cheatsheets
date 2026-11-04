@@ -124,6 +124,18 @@ How many words are there in your answer to this prompt?
 In 3 sentences, describe the color Blue to someone who's never been able to see.
 ```
 
+## Autonomous agent continue
+
+```
+Continue working autonomously until the task is complete or you are blocked by something only I can resolve.
+
+Use your best judgment for routine, reversible decisions. Follow existing conventions, make the smallest reasonable changes, and verify your work as you go. Don’t stop to ask about minor ambiguities or implementation details.
+
+Ask me only when your input is genuinely necessary—for example, when a decision has significant trade-offs, changes the requirements, is costly, or involves destructive or irreversible actions. If you must ask, briefly explain the issue, present the relevant options, and recommend a default.
+
+Otherwise, keep going without seeking repeated confirmation. When finished, give me a concise summary of the outcome, important assumptions you made, and anything that still needs my attention.
+``
+
 ## Multi-model workflows
 
 - Gemini is a good reviewer. Use it to review Claude's plans and code.
