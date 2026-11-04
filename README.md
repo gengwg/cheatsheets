@@ -103,6 +103,10 @@ optimized for fast lookup over long-form documentation.
 [NVIDIA A100](a100.md) ·
 [PyTorch (2024)](pytorch2024.md)
 
+### Business & Analytics
+
+[Customer 360](customer-360.md)
+
 ### Cloud
 
 [GCP](gcp.md)
