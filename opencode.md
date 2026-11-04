@@ -40,7 +40,7 @@ These notes use OpenCode 2.2.5. The leader key is `Ctrl+X`: press and release it
 }
 ```
 
-The leader-based tab bindings avoid relying on `Ctrl+Tab` or `Alt+Up`/`Alt+Down` in Terminator.
+The arrays retain OpenCode's default shortcuts and add the leader alternatives. The leader-based bindings avoid relying on `Ctrl+Tab` or `Alt+Up`/`Alt+Down` in Terminator.
 
 
 ## Authenticat MCPs using interactive OAuth
