@@ -12,15 +12,15 @@ What it takes to give leadership one view of customers: revenue, renewals, conce
 | [Gainsight](https://www.gainsight.com/pricing/), [Vitally](https://www.vitally.io/pricing), [Planhat](https://www.planhat.com/pricing) | Quote only | Built around CSM playbooks; exec dashboards exist, but you pay for the whole CS platform |
 | [Metabase](https://www.metabase.com/pricing) | OSS free; Starter $100/mo (5 users); Pro $575/mo | Good value for read-only business dashboards |
 | [Hex](https://hex.tech/pricing) | $36-75 per editor/mo | Better for analysis than a daily dashboard |
-| [Grafana Cloud](https://grafana.com/pricing/) | Free (3 users); Pro $19/mo + $8/user | Fine via a Postgres datasource if you already run it |
+| [Grafana Cloud](https://grafana.com/pricing/) | Free (3 active users/mo); Pro $19/mo incl. 3 active users, then $8/active user | Fine via a Postgres datasource if you already run it |
 
 ### Minimal build
 
 Connectors -> Postgres -> SQL/dbt models -> dashboard.
 
-- Ingest: [dlt](https://dlthub.com/docs/dlt-ecosystem/destinations/) (OSS Python), [Airbyte](https://airbyte.com/pricing) (cloud from $20/mo), or [Fivetran](https://www.fivetran.com/pricing) (free up to 500k MAR).
+- Ingest: [dlt](https://dlthub.com/docs/dlt-ecosystem/destinations/), [Airbyte](https://airbyte.com/pricing) (cloud from $20/mo), or [Fivetran](https://www.fivetran.com/pricing) (free up to 500k MAR).
 - Model: dbt Core is free; dbt Developer is free for 1 seat ([pricing](https://www.getdbt.com/pricing)).
-- Freshness: `dbt source freshness` checks sources against an SLA ([docs](https://docs.getdbt.com/docs/deploy/source-freshness)).
+- Freshness: `dbt source freshness` checks sources against configured warn/error thresholds ([docs](https://docs.getdbt.com/reference/commands/source)).
 
 ### Metrics
 
