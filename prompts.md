@@ -134,7 +134,7 @@ Use your best judgment for routine, reversible decisions. Follow existing conven
 Ask me only when your input is genuinely necessary—for example, when a decision has significant trade-offs, changes the requirements, is costly, or involves destructive or irreversible actions. If you must ask, briefly explain the issue, present the relevant options, and recommend a default.
 
 Otherwise, keep going without seeking repeated confirmation. When finished, give me a concise summary of the outcome, important assumptions you made, and anything that still needs my attention.
-``
+```
 
 ## Multi-model workflows
 
