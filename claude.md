@@ -52,11 +52,41 @@ Empty strings drop the `Co-Authored-By` commit trailer and the PR description li
 
 ## Plugins
 
+- only available in cc
+- highest level contstruct. a fundle of features include mcp servers, skills, commands.
+- most simple
+- commands explicitly triggered
+- most of the time start with plugins. e.g. ralph-loop.
+
+
 ```
 /plugin marketplace update <marketplace>
 /plugin update <plugin>@<marketplace>
 /reload-plugins
 ```
+
+
+## Skills
+
+skills primarily focused on instuctions as markdown rather than tools.
+
+- lightweight and simple
+- 'progressive disclosure'; reduces context overhead
+  - metadata: name + description
+  - instructions: instructions
+  - resources + code: 
+- supports running scripts locally; an alternative to tools
+- easy to make and share
+- usually install as plugin
+- triggering a skill is ad-hoc
+- might replace mcp in claude code
+
+- implemented with file system architecture: 
+  - `.claude/skills/my-great-skill/{SKILL.md, more_stuff.md, scripts/scripts_in_any_lang.py}`
+  - script itself is out of context.
+  - works in home dir (all projects) or one projet only
+
+
 
 ## Print mode
 
