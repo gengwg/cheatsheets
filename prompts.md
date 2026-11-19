@@ -18,6 +18,7 @@ In a nutshell, explain <Slack message, link or technology>
 
 ```
 Use the research skill to research <topic>. Search the internet and GitHub,
+
 preferring official documentation and primary sources. Summarize the findings
 and include source links.
 ```
